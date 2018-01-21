@@ -1,0 +1,44 @@
+﻿<UserControl x:Class="Ecom.View.MeatChoice"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+             xmlns:local="clr-namespace:Ecom.View"
+             mc:Ignorable="d" 
+             d:DesignHeight="300" d:DesignWidth="300">
+    <Grid Background="White">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="0.2*"></RowDefinition>
+            <RowDefinition Height="0.8*"></RowDefinition>
+            <RowDefinition Height="0.2*"></RowDefinition>
+        </Grid.RowDefinitions>
+        <TextBlock Grid.Row="0">Choix de viande</TextBlock>
+        <ListBox Grid.Row="1" x:Name="lb_choixViande" SelectionMode="Multiple" Width="300">
+            <!--<TextBlock Text="{Binding Ingredient_title}" Margin="5,0" Background="#FFB62D" Foreground="white"/>-->
+            <ListBox.ItemTemplate>
+                <DataTemplate>
+                    <StackPanel >
+                        <TextBlock Text="{Binding Path=Ingredient_title}" />
+                        <TextBox x:Name="tb_quantity" Text="{Binding Path=Ingredient_quanity}"/>
+                    </StackPanel>
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+        </ListBox>
+        <Button 
+                IsDefault="True" Style="{DynamicResource MaterialDesignFlatButton}"
+                HorizontalAlignment="Right"
+                Margin="5 5 5 5"
+                Click="addMeat"
+                Command="{x:Static materialDesign:DialogHost.CloseDialogCommand}" >
+            Ajouter
+        </Button>
+        <Button 
+                IsDefault="True" Style="{DynamicResource MaterialDesignFlatButton}"
+                HorizontalAlignment="Left"
+                Margin="5 5 5 5"
+                Command="{x:Static materialDesign:DialogHost.CloseDialogCommand}" >
+            Annuler
+        </Button>
+    </Grid>
+</UserControl>
