@@ -5,7 +5,11 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
              xmlns:local="clr-namespace:Ecom.View"
-             mc:Ignorable="d">
+              xmlns:s="clr-namespace:System;assembly=mscorlib"
+             mc:Ignorable="d"
+
+             
+             >
     <UserControl.Resources>
         <ResourceDictionary>
             <ResourceDictionary.MergedDictionaries>
@@ -20,36 +24,49 @@
 
     <Grid Background="White" Opacity="0.8" ShowGridLines="False">
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="0.4*"></ColumnDefinition>
+            <ColumnDefinition Width="0.5*"></ColumnDefinition>
             <ColumnDefinition></ColumnDefinition>
         </Grid.ColumnDefinitions>
         <!--#region VOLET GAUCHE-->
         <Grid Grid.Row="0" Grid.Column="0" ShowGridLines="False" >
             <Grid.RowDefinitions>
-                <RowDefinition Height="0.55*"></RowDefinition>
-                <RowDefinition Height="0.05*"></RowDefinition>
-                <RowDefinition Height="0.4*"></RowDefinition>
+                <RowDefinition Height="0.65*"></RowDefinition>
+                <RowDefinition Height="0.15*"></RowDefinition>
+                <RowDefinition Height="0.20*"></RowDefinition>
             </Grid.RowDefinitions> 
             <!--#region Commande détail-->
                 <Grid Grid.Row="0">
-                <ListView x:Name="lv_cartItems" ItemsSource="{Binding cartList}" >
+                <ListView x:Name="lv_cartItems" PreviewMouseLeftButtonUp="onSelectedItem" ItemsSource="{Binding cartList}">
                     <ListView.View>
                         <GridView>
                             <GridViewColumn>
                                 <GridViewColumn.CellTemplate>
                                     <DataTemplate>
-                                        <Grid Width="300">
+                                        <Grid Width="380" HorizontalAlignment="Stretch">
                                             <Grid.ColumnDefinitions>
                                                 <ColumnDefinition Width="20"></ColumnDefinition>
-                                                <ColumnDefinition Width="190"></ColumnDefinition>
-                                                <ColumnDefinition Width="50"></ColumnDefinition>
-                                                <ColumnDefinition Width="40"></ColumnDefinition>
-                                                <ColumnDefinition Width="40"></ColumnDefinition>
+                                                <ColumnDefinition Width="140"></ColumnDefinition>
+                                                <ColumnDefinition Width="30"></ColumnDefinition>
+                                                <ColumnDefinition Width="140"></ColumnDefinition>
+                                                <ColumnDefinition Width="30"></ColumnDefinition>
+                                                <ColumnDefinition Width="20"></ColumnDefinition>
                                             </Grid.ColumnDefinitions>
                                             <TextBlock Grid.Column="0" Text="{Binding ItemQuantity}"/>
                                             <TextBlock Grid.Column="1" Text="{Binding ItemTitle}" />
                                             <TextBlock Grid.Column="2" Text="{Binding ItemPriceTxt}"/>
-                                            <Button Grid.Column="3" Click="deleteItemFromCart" Height="25" Width="25" Background="Transparent" BorderBrush="Transparent" Style="{StaticResource MaterialDesignFloatingActionButton}">
+                                            <ListBox Grid.Column="3" ItemsSource="{Binding SelectedIngredients}">
+                                                <ListBox.ItemTemplate>
+                                                    <DataTemplate>
+                                                        <StackPanel Orientation="Horizontal" VerticalAlignment="Center">
+                                                            <TextBlock Text="{Binding Path=Ingredient_quantity}" />
+                                                            <TextBlock Text=" " />
+                                                            <TextBlock Text="{Binding Path=Ingredient_title}" />
+                                                 
+                                                        </StackPanel>
+                                                    </DataTemplate>
+                                                </ListBox.ItemTemplate>
+                                            </ListBox>
+                                            <Button Grid.Column="4" Click="deleteItemFromCart" Height="25" Width="25" Background="Transparent" BorderBrush="Transparent" Style="{StaticResource MaterialDesignFloatingActionButton}">
                                                 <materialDesign:PackIcon Kind="CloseCircleOutline" Width="25" Height="25" Foreground="#B94B50"/>
                                             </Button>
                                         </Grid>
@@ -64,14 +81,44 @@
                 </Grid>
             <!--#endregion-->
             
-            <!--#TotTal-->
+       <!--#region Totaux -->
             <Grid Grid.Row="1" Background="#F0FFF0">
-            <StackPanel  Orientation="Horizontal" HorizontalAlignment="Right" >
-                <TextBlock FontSize="20" Margin="10,0,10,0">Total</TextBlock>
-                <TextBlock x:Name="tb_total" Foreground="Green" FontSize="20" FontWeight="Bold" Margin="0,0,10,0"/>
-            </StackPanel>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="0.25*"></RowDefinition>
+                    <RowDefinition Height="0.85*"></RowDefinition>
+                </Grid.RowDefinitions>
+                <StackPanel  Orientation="Horizontal" HorizontalAlignment="Left" >
+                    <TextBlock FontSize="20" Margin="10,0,10,0">Total(TTC)</TextBlock>
+                    <TextBlock x:Name="tb_total" Foreground="DarkGreen" FontSize="20" FontWeight="Bold" Margin="0,0,10,0"/>
+                    <TextBlock FontSize="20" Margin="10,0,10,0">Reste à payer(TTC)</TextBlock>
+                    <TextBlock x:Name="tb_totalRest" Foreground="Green" FontSize="20" FontWeight="Bold" Margin="0,0,10,0"/>
+
+                </StackPanel>
+                <ListBox x:Name="lb_payement" Grid.Row="1" ItemsSource="{Binding Path=listPayement}" HorizontalAlignment="Right">
+                    <ListBox.ItemTemplate>
+                        <DataTemplate>
+                            <Grid  Width="{Binding RelativeSource={RelativeSource AncestorType=Grid}, Path=ActualWidth}">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition></ColumnDefinition>
+                                    <ColumnDefinition></ColumnDefinition>
+                                    <ColumnDefinition></ColumnDefinition>
+                                </Grid.ColumnDefinitions>
+                                <TextBlock Grid.Column="0" Text="{Binding PayementType}" />
+                                <StackPanel Grid.Column="1" Orientation="Horizontal">
+                                    <TextBlock Text="{Binding PayementValue}" />
+                                    <TextBlock Text="€" />
+                                </StackPanel>
+                                <Button Grid.Column="2" Click="deleteItemFromPayement" Height="25" Width="25" Background="Transparent" BorderBrush="Transparent" Style="{StaticResource MaterialDesignFloatingActionButton}">
+                                    <materialDesign:PackIcon Kind="CloseCircleOutline" Width="25" Height="25" Foreground="#B94B50"/>
+                                </Button>
+
+                            </Grid>
+                        </DataTemplate>
+                     </ListBox.ItemTemplate>
+                                      
+                </ListBox>
             </Grid>
-            <!--#region -->
+    <!--#endregion-->
 
 
 
@@ -80,8 +127,7 @@
                 <Grid.RowDefinitions>
                     <RowDefinition></RowDefinition>
                     <RowDefinition></RowDefinition>
-                    <RowDefinition></RowDefinition>
-                    <RowDefinition></RowDefinition>
+
                 </Grid.RowDefinitions>
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition></ColumnDefinition>
@@ -89,11 +135,22 @@
                     <ColumnDefinition></ColumnDefinition>
              
                 </Grid.ColumnDefinitions>
-                <Button Grid.Row="0" Grid.Column="0" Background="#3CB371" BorderBrush="#3CB371"
+                <Button Grid.Row="0" Click="sendOrder" Grid.Column="0" Background="#3CB371" BorderBrush="#3CB371" Margin="5"
                         Height="{Binding RelativeSource={RelativeSource AncestorType=DataGridCell}, Path=ActualHeight}"
                         Width="{Binding RelativeSource={RelativeSource AncestorType=DataGridCell}, Path=ActualWidth}"> 
                     Envoyer
                 </Button>
+                <Button Grid.Row="0" Grid.Column="1" Click="cashingOrder" Background="#e55039" BorderBrush="#e55039" Margin="5"
+                        Height="{Binding RelativeSource={RelativeSource AncestorType=DataGridCell}, Path=ActualHeight}"
+                        Width="{Binding RelativeSource={RelativeSource AncestorType=DataGridCell}, Path=ActualWidth}">
+                    Encaisser
+                </Button>
+                <Button Grid.Row="0" Grid.Column="2" Click="discountOrder" Background="#4a69bd" BorderBrush="#4a69bd" Margin="5"
+                        Height="{Binding RelativeSource={RelativeSource AncestorType=DataGridCell}, Path=ActualHeight}"
+                        Width="{Binding RelativeSource={RelativeSource AncestorType=DataGridCell}, Path=ActualWidth}">
+                    Remises
+                </Button>
+
                 <!--<StackPanel Grid.Row="0" Grid.Column="1">
                     <TextBlock FontSize="25" HorizontalAlignment="Center">Total</TextBlock>
                     <TextBlock x:Name="tb_total" Foreground="Green" FontSize="25" HorizontalAlignment="Center"/>
@@ -108,13 +165,13 @@
         <!--#endregion-->
         <!--#region VOLET DROIT-->
         <Grid Grid.Row="0" Grid.Column="1" ShowGridLines="False" Background="#F8F8FF">
-            <Grid.RowDefinitions>
-                <RowDefinition Height="0.78*"></RowDefinition>
-                <RowDefinition Height="0.12*"></RowDefinition>
-                <RowDefinition Height="0.10*"></RowDefinition>
-            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="0.85*"></ColumnDefinition>
+                <ColumnDefinition Width="0.15*"></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+
             <!--Liste des articles-->
-            <Grid x:Name="itemsGrid" Grid.Row="0" Margin="10">
+            <Grid x:Name="itemsGrid" Grid.Column="0" Margin="10">
 
                 <ScrollViewer VerticalScrollBarVisibility="Auto" >
 
@@ -127,17 +184,24 @@
                         </ItemsControl.ItemsPanel>
                         <ItemsControl.ItemTemplate>
                             <DataTemplate>
-                                <Button 
+                                <!-- Article boites de dialogues-->
+                                 <Button 
                                     HorizontalAlignment="Center" VerticalAlignment="Top"  
-                                    Background="#8B008B" BorderBrush="#8B008B"
+                                    Background="{Binding Path= item_button_color}" BorderBrush="{Binding Path= item_button_color}" 
                                     Margin="2 0 0 0" Click="addToCart" Tag="{Binding}"
-                                    Height="{Binding RelativeSource={RelativeSource AncestorType=DataGridCell}, Path=ActualHeight}"
-                                    Width="{Binding RelativeSource={RelativeSource AncestorType=DataGridCell}, Path=ActualWidth}">
-                                    <StackPanel >
-                                        <TextBlock HorizontalAlignment="Center" Text="{Binding Path=item_title}"></TextBlock>
-                                        <TextBlock HorizontalAlignment="Center" FontSize="20" Text="{Binding Path=item_price}">€</TextBlock>
-                                    </StackPanel>
+                                    Width="150" Height="150"
+                                         Command="{x:Static materialDesign:DialogHost.OpenDialogCommand}">
+                                    <!--Height="{Binding RelativeSource={RelativeSource AncestorType=DataGridCell}, Path=ActualHeight}"
+                                    Width="{Binding RelativeSource={RelativeSource AncestorType=DataGridCell}, Path=ActualWidth}"-->
+                                    <StackPanel>
+                                           <!--<Path Data="M19,13H13V19H11V13H5V11H11V5H13V11H19V13Z" Fill="{Binding RelativeSource={RelativeSource FindAncestor, AncestorType=Button}, Path=Foreground}" />-->
+                                           <TextBlock HorizontalAlignment="Center" Text="{Binding Path=item_title}"></TextBlock>
+                                           <TextBlock HorizontalAlignment="Center" FontSize="20" Text="{Binding Path=item_price}">€</TextBlock>
+                                        </StackPanel>
+                                                                            
                                 </Button>
+
+                                <!---->
                             </DataTemplate>
                         </ItemsControl.ItemTemplate>
                     </ItemsControl>
@@ -145,21 +209,22 @@
             </Grid>
             
             <!--Liste des catégories-->
-            <Grid Grid.Row="1">
+            <Grid Grid.Column="1">
                 <ScrollViewer HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Disabled">
                     <ItemsControl x:Name="icCat" ItemsSource="{Binding listCategories}" 
                                   IsManipulationEnabled="True">
                         <ItemsControl.ItemsPanel>
                             <ItemsPanelTemplate>
-                                <!--<WrapPanel />-->
-                                <UniformGrid Rows="1"/>
+
+                                                    <!--<WrapPanel />-->
+                                <UniformGrid Columns="1"/>
                             </ItemsPanelTemplate>
                         </ItemsControl.ItemsPanel>
                         <ItemsControl.ItemTemplate>
                             <DataTemplate>
                              
                                 <Button Click="getItemsByCatId" BorderBrush="Transparent" 
-                                        Background="#3498db" 
+                                        Background="{Binding Path=category_button_color}" 
                                         Content="{Binding Path=category_title}" 
                                         Tag="{Binding}"  
                                         Margin="5,0,5,0"
@@ -174,14 +239,7 @@
             </Grid>
 
             <Grid Grid.Row="2">
-                <StackPanel Orientation="Horizontal">
-                    <Button  BorderBrush="Transparent" Background="#FF6347" Content="Carte" Margin="5,0,5,5" 
-                             Height="{Binding RelativeSource={RelativeSource AncestorType=DataGridCell}, Path=ActualHeight}"
-                             Width="{Binding RelativeSource={RelativeSource AncestorType=DataGridCell}, Path=ActualWidth}"/>
-                    <Button BorderBrush="Transparent" Background="#FF7F50" Content="Menu" Margin="5,0,5,5"
-                            Height="{Binding RelativeSource={RelativeSource AncestorType=DataGridCell}, Path=ActualHeight}"
-                            Width="{Binding RelativeSource={RelativeSource AncestorType=DataGridCell}, Path=ActualWidth}"/>
-                </StackPanel>
+
 
             </Grid>
         </Grid>

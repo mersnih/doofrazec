@@ -24,6 +24,7 @@ namespace Ecom.DataModel
         public virtual DbSet<ORDERS> ORDERS { get; set; }
         public virtual DbSet<ORDERS_STATUS> ORDERS_STATUS { get; set; }
         public virtual DbSet<ORDERS_TYPE> ORDERS_TYPE { get; set; }
+        public virtual DbSet<PAYEMENT_DETAIL> PAYEMENT_DETAIL { get; set; }
         public virtual DbSet<TAG> TAG { get; set; }
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
@@ -54,6 +55,10 @@ namespace Ecom.DataModel
 
             modelBuilder.Entity<CATEGORY>()
                 .Property(e => e.category_description)
+                .IsUnicode(false);
+
+            modelBuilder.Entity<CATEGORY>()
+                .Property(e => e.category_button_color)
                 .IsUnicode(false);
 
             modelBuilder.Entity<CATEGORY>()
@@ -91,16 +96,6 @@ namespace Ecom.DataModel
                 .HasPrecision(15, 3);
 
             modelBuilder.Entity<INGREDIENT>()
-                .HasMany(e => e.item_selection)
-                .WithRequired(e => e.INGREDIENT)
-                .WillCascadeOnDelete(false);
-
-            modelBuilder.Entity<INGREDIENT>()
-                .HasMany(e => e.menu_selection)
-                .WithRequired(e => e.INGREDIENT)
-                .WillCascadeOnDelete(false);
-
-            modelBuilder.Entity<INGREDIENT>()
                 .HasMany(e => e.ITEM)
                 .WithMany(e => e.INGREDIENT)
                 .Map(m => m.ToTable("have").MapLeftKey("id_ingredient").MapRightKey("id_item"));
@@ -119,11 +114,15 @@ namespace Ecom.DataModel
 
             modelBuilder.Entity<ITEM>()
                 .Property(e => e.item_price)
-                .HasPrecision(15, 3);
+                .HasPrecision(15, 2);
 
             modelBuilder.Entity<ITEM>()
                 .Property(e => e.item_promotion_price)
-                .HasPrecision(15, 3);
+                .HasPrecision(15, 2);
+
+            modelBuilder.Entity<ITEM>()
+                .Property(e => e.item_button_color)
+                .IsUnicode(false);
 
             modelBuilder.Entity<ITEM>()
                 .HasMany(e => e.ADVICE)
@@ -186,7 +185,11 @@ namespace Ecom.DataModel
 
             modelBuilder.Entity<ORDERS>()
                 .Property(e => e.orders_price)
-                .HasPrecision(15, 3);
+                .HasPrecision(15, 2);
+
+            modelBuilder.Entity<ORDERS>()
+                .Property(e => e.orders_leftToPay)
+                .HasPrecision(15, 2);
 
             modelBuilder.Entity<ORDERS>()
                 .Property(e => e.orders_date)
@@ -210,6 +213,11 @@ namespace Ecom.DataModel
                 .WithRequired(e => e.ORDERS)
                 .WillCascadeOnDelete(false);
 
+            modelBuilder.Entity<ORDERS>()
+                .HasMany(e => e.PAYEMENT_DETAIL)
+                .WithRequired(e => e.ORDERS)
+                .WillCascadeOnDelete(false);
+
             modelBuilder.Entity<ORDERS_STATUS>()
                 .Property(e => e.orders_status_title)
                 .IsUnicode(false);
@@ -227,6 +235,14 @@ namespace Ecom.DataModel
                 .HasMany(e => e.ORDERS)
                 .WithRequired(e => e.ORDERS_TYPE)
                 .WillCascadeOnDelete(false);
+
+            modelBuilder.Entity<PAYEMENT_DETAIL>()
+                .Property(e => e.way)
+                .IsUnicode(false);
+
+            modelBuilder.Entity<PAYEMENT_DETAIL>()
+                .Property(e => e.payement_detail_price)
+                .HasPrecision(15, 3);
 
             modelBuilder.Entity<TAG>()
                 .Property(e => e.tag_title)

@@ -25,6 +25,9 @@ namespace Ecom.DataModel
         [StringLength(100)]
         public string category_description { get; set; }
 
+        [StringLength(50)]
+        public string category_button_color { get; set; }
+
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<ITEM> ITEM { get; set; }
     }

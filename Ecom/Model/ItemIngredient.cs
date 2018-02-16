@@ -7,13 +7,14 @@ using System.Threading.Tasks;
 
 namespace Ecom.Model
 {
-    class ItemIngredient : INotifyPropertyChanged
+    public class ItemIngredient : INotifyPropertyChanged
     {
 
         private int idItem;
         private int idIngredient;
         private string item_title;
         private string ingredient_title;
+        private double ingredient_price;
         private int ingredient_quantity;
 
         public event PropertyChangedEventHandler PropertyChanged;
@@ -54,7 +55,15 @@ namespace Ecom.Model
                 NotifyPropertyChanged("Ingredient_title");
             }
         }
-
+        public double Ingredient_price
+        {
+            get { return ingredient_price; }
+            set
+            {
+                ingredient_price = value;
+                NotifyPropertyChanged("Ingredient_price");
+            }
+        }
         public int Ingredient_quantity
         {
             get { return ingredient_quantity; }

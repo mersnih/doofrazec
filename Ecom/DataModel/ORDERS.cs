@@ -13,6 +13,7 @@ namespace Ecom.DataModel
         {
             item_selection = new HashSet<item_selection>();
             menu_selection = new HashSet<menu_selection>();
+            PAYEMENT_DETAIL = new HashSet<PAYEMENT_DETAIL>();
         }
 
         [Key]
@@ -23,6 +24,8 @@ namespace Ecom.DataModel
         public string orders_number { get; set; }
 
         public decimal orders_price { get; set; }
+
+        public decimal? orders_leftToPay { get; set; }
 
         [Column(TypeName = "datetime2")]
         public DateTime orders_date { get; set; }
@@ -50,5 +53,8 @@ namespace Ecom.DataModel
         public virtual ORDERS_STATUS ORDERS_STATUS { get; set; }
 
         public virtual ORDERS_TYPE ORDERS_TYPE { get; set; }
+
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<PAYEMENT_DETAIL> PAYEMENT_DETAIL { get; set; }
     }
 }

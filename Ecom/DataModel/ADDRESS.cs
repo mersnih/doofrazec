@@ -25,7 +25,7 @@ namespace Ecom.DataModel
         public int street_number { get; set; }
 
         [Required]
-        [StringLength(100)]
+        [StringLength(50)]
         public string street_name { get; set; }
 
         public int zip_code { get; set; }

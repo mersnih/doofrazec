@@ -1,0 +1,150 @@
+﻿<UserControl x:Class="Ecom.View.Cashing"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+             xmlns:x ="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Ecom.View"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" Width="400"
+              >
+    <Grid Background="#FFA06363" >
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="80"></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Grid Grid.Column="1">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="75"></RowDefinition>
+                <RowDefinition Height="75"></RowDefinition>
+                <RowDefinition Height="250"></RowDefinition>
+                <RowDefinition Height="50"></RowDefinition>
+            </Grid.RowDefinitions>
+
+            <Grid Grid.Row="0">
+                <!--TYPE D'ENCAISSEMENT-->
+                <StackPanel Orientation="Vertical" Background="#FF169CFF">
+                    <TextBlock x:Name="tb_payementType" Foreground="white" FontSize="20" VerticalAlignment="Center" HorizontalAlignment="Center" Text="{Binding Path=SelectedItem.Tag, ElementName=lb_cash}"/>
+                    <StackPanel Orientation="Horizontal" VerticalAlignment="Center" HorizontalAlignment="Center">
+                        <TextBlock x:Name="tb_total" Foreground="White" FontSize="16" />
+
+                        <TextBlock x:Name="tb_totalRest" Foreground="White" FontSize="16"/>
+                    </StackPanel>
+                </StackPanel>
+            </Grid>
+            <Grid Grid.Row="1" Background="#FF169CFF">
+                <!--SOMME SAISIE-->
+                <TextBlock x:Name="tb_number" Foreground="White" VerticalAlignment="Center" HorizontalAlignment="Right" FontSize="30" Margin="10"></TextBlock>
+            </Grid>
+            <Grid Grid.Row="2" Background="#2C3A47">
+                <!--CLAVIER-->
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="2*"></ColumnDefinition>
+                    <ColumnDefinition Width="105*"/>
+                    <ColumnDefinition Width="107*"></ColumnDefinition>
+                    <ColumnDefinition Width="107*"></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                </Grid.RowDefinitions>
+                <Button Grid.Row="0" Grid.Column="0" Height="{Binding RelativeSource={RelativeSource AncestorType=DataGridCell}, Path=ActualHeight}"
+                        Width="{Binding RelativeSource={RelativeSource AncestorType=DataGridCell}, Path=ActualWidth}" 
+                        Background="Transparent" BorderBrush="Transparent"
+                        FontSize="30"
+                        Click="buttonNumberClick" Content="1" Grid.ColumnSpan="3" Margin="0,0,106.334,62.333" Grid.RowSpan="2"/>
+
+                <Button Grid.Row="0" Grid.Column="2" Height="{Binding RelativeSource={RelativeSource AncestorType=DataGridCell}, Path=ActualHeight}"
+                        Width="{Binding RelativeSource={RelativeSource AncestorType=DataGridCell}, Path=ActualWidth}" 
+                        Background="Transparent" BorderBrush="Transparent"
+                        FontSize="30"
+                        Click="buttonNumberClick" Content="2" Margin="0.333,0,0.334,62.333" Grid.RowSpan="2"/>
+
+                <Button Grid.Row="0" Grid.Column="2" Height="{Binding RelativeSource={RelativeSource AncestorType=DataGridCell}, Path=ActualHeight}"
+                        Width="{Binding RelativeSource={RelativeSource AncestorType=DataGridCell}, Path=ActualWidth}" 
+                        Background="Transparent" BorderBrush="Transparent"
+                        FontSize="30"
+                        Click="buttonNumberClick" Content="3" Grid.ColumnSpan="2" Margin="106.333,0,0,62.333" Grid.RowSpan="2"/>
+                <Button Grid.Row="1" Grid.Column="0" Height="{Binding RelativeSource={RelativeSource AncestorType=DataGridCell}, Path=ActualHeight}"
+                        Width="{Binding RelativeSource={RelativeSource AncestorType=DataGridCell}, Path=ActualWidth}" 
+                        Background="Transparent" BorderBrush="Transparent"
+                        FontSize="30"
+                       Click="buttonNumberClick" Content="4" Grid.ColumnSpan="3" Margin="0,0.333,106.334,0.333"/>
+                <Button Grid.Row="1" Grid.Column="2" Height="{Binding RelativeSource={RelativeSource AncestorType=DataGridCell}, Path=ActualHeight}"
+                        Width="{Binding RelativeSource={RelativeSource AncestorType=DataGridCell}, Path=ActualWidth}" 
+                        Background="Transparent" BorderBrush="Transparent"
+                        FontSize="30"
+                        Click="buttonNumberClick" Content="5" Margin="0.333,0.333,0.334,0.333"/>
+                <Button Grid.Row="1" Grid.Column="2" Height="{Binding RelativeSource={RelativeSource AncestorType=DataGridCell}, Path=ActualHeight}"
+                        Width="{Binding RelativeSource={RelativeSource AncestorType=DataGridCell}, Path=ActualWidth}" 
+                        Background="Transparent" BorderBrush="Transparent"
+                        FontSize="30"
+                        Click="buttonNumberClick" Content="6" Grid.ColumnSpan="2" Margin="106.333,0.333,0,0.333"/>
+                <Button Grid.Row="1" Grid.Column="0" Height="{Binding RelativeSource={RelativeSource AncestorType=DataGridCell}, Path=ActualHeight}"
+                        Width="{Binding RelativeSource={RelativeSource AncestorType=DataGridCell}, Path=ActualWidth}" 
+                        Background="Transparent" BorderBrush="Transparent"
+                        FontSize="30"
+                        Click="buttonNumberClick" Content="7" Grid.ColumnSpan="3" Margin="0,62.333,106.334,62.333" Grid.RowSpan="3"/>
+                <Button Grid.Row="1" Grid.Column="2" Height="{Binding RelativeSource={RelativeSource AncestorType=DataGridCell}, Path=ActualHeight}"
+                        Width="{Binding RelativeSource={RelativeSource AncestorType=DataGridCell}, Path=ActualWidth}" 
+                        Background="Transparent" BorderBrush="Transparent"
+                        FontSize="30"
+                        Click="buttonNumberClick" Content="8" Margin="0.333,62.333,0.334,62.333" Grid.RowSpan="3"/>
+                <Button Grid.Row="1" Grid.Column="2" Height="{Binding RelativeSource={RelativeSource AncestorType=DataGridCell}, Path=ActualHeight}"
+                        Width="{Binding RelativeSource={RelativeSource AncestorType=DataGridCell}, Path=ActualWidth}" 
+                        Background="Transparent" BorderBrush="Transparent"
+                        FontSize="30"
+                        Click="buttonNumberClick" Content="9" Grid.ColumnSpan="2" Margin="106.333,62.333,0,62.333" Grid.RowSpan="3"/>
+                <Button Grid.Row="3" Grid.Column="2" Height="{Binding RelativeSource={RelativeSource AncestorType=DataGridCell}, Path=ActualHeight}"
+                        Width="{Binding RelativeSource={RelativeSource AncestorType=DataGridCell}, Path=ActualWidth}" 
+                        Background="Transparent" BorderBrush="Transparent"
+                        FontSize="30"
+                        Click="buttonNumberClick" Content="0" Margin="0.333,0.333,0.334,0.333"/>
+                <Button Grid.Row="3" Grid.Column="0" Height="{Binding RelativeSource={RelativeSource AncestorType=DataGridCell}, Path=ActualHeight}"
+                        Width="{Binding RelativeSource={RelativeSource AncestorType=DataGridCell}, Path=ActualWidth}" 
+                        Background="Transparent" BorderBrush="Transparent"
+                        FontSize="20"
+                        Click="buttonDeleteClick" Content="Effacer" Grid.ColumnSpan="3" Margin="0,0.333,106.334,0.333"/>
+            </Grid>
+            <Grid Grid.Row="3">
+                <!--BOUTON ACTION-->
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition></ColumnDefinition>
+                    <ColumnDefinition></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <Button Margin="0"  Height="{Binding RelativeSource={RelativeSource AncestorType=DataGridCell}, Path=ActualHeight}"
+                        Width="{Binding RelativeSource={RelativeSource AncestorType=DataGridCell}, Path=ActualWidth}" Background="Transparent" BorderBrush="{x:Null}" 
+                        Command="{x:Static materialDesign:DialogHost.CloseDialogCommand}" Foreground="White" >FERMER</Button>
+                <Button Grid.Column="1" Click="buttonCashClick" Background="#FF169CFF" BorderBrush="Transparent" Height="{Binding RelativeSource={RelativeSource AncestorType=DataGridCell}, Path=ActualHeight}"
+                        Width="{Binding RelativeSource={RelativeSource AncestorType=DataGridCell}, Path=ActualWidth}"
+                         Command="{x:Static materialDesign:DialogHost.CloseDialogCommand}">ENCAISSER</Button>
+            </Grid>
+
+
+
+
+
+        </Grid>
+
+        <Grid Grid.Column="0" Background="#0984e3">
+            <ListBox x:Name="lb_cash" Background="Transparent" >
+                <ListBoxItem Tag="CB">
+                    <StackPanel >
+                        <materialDesign:PackIcon Kind="CreditCard" Foreground="#2C3A47" Width="50" Height="50" />
+                    </StackPanel>
+                </ListBoxItem>
+                <ListBoxItem  Tag="ESP">
+                    <StackPanel>
+                        <materialDesign:PackIcon Kind="CurrencyEur" Foreground="#2C3A47" Width="50" Height="50"/>
+                    </StackPanel>
+                </ListBoxItem>
+                <ListBoxItem Tag="TR">
+                    <Label Content="TR" FontWeight="Bold"  FontSize="30" Foreground="#2C3A47" Width="50" Height="50" />
+                </ListBoxItem>
+            </ListBox>
+        </Grid>
+
+    </Grid>
+</UserControl>

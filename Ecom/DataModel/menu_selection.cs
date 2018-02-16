@@ -8,30 +8,21 @@ namespace Ecom.DataModel
 
     public partial class menu_selection
     {
+        [Key]
+        public int id_menuSelection { get; set; }
+
         public int? menu_selection_quantity { get; set; }
 
         [StringLength(500)]
         public string menu_selection_note { get; set; }
 
-        [Key]
-        [Column(Order = 0)]
-        [DatabaseGenerated(DatabaseGeneratedOption.None)]
         public int id_item { get; set; }
 
-        [Key]
-        [Column(Order = 1)]
-        [DatabaseGenerated(DatabaseGeneratedOption.None)]
         public int id_menu { get; set; }
 
-        [Key]
-        [Column(Order = 2)]
-        [DatabaseGenerated(DatabaseGeneratedOption.None)]
         public int id_orders { get; set; }
 
-        [Key]
-        [Column(Order = 3)]
-        [DatabaseGenerated(DatabaseGeneratedOption.None)]
-        public int id_ingredient { get; set; }
+        public int? id_ingredient { get; set; }
 
         public virtual INGREDIENT INGREDIENT { get; set; }
 

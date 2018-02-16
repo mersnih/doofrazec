@@ -39,6 +39,9 @@ namespace Ecom.DataModel
 
         public decimal? item_promotion_price { get; set; }
 
+        [StringLength(50)]
+        public string item_button_color { get; set; }
+
         public bool actif { get; set; }
 
         public int id_category { get; set; }

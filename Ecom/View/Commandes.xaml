@@ -1,0 +1,63 @@
+﻿<UserControl x:Class="Ecom.View.Commandes"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+             xmlns:local="clr-namespace:Ecom.View"
+             mc:Ignorable="d" 
+             
+             >
+    <!--Width="1000" Height="1200"-->
+    <Grid Background="White">
+        <DockPanel>
+            <StackPanel DockPanel.Dock="Top" Background="Bisque">
+                <Label>Liste des commandes</Label>
+            </StackPanel>
+            <DockPanel>
+                <Grid DockPanel.Dock="Left" Background="#ecf0f1" Width="500">
+                    <ListView x:Name="lv_OrdersList" ItemsSource="{Binding orderList}" >
+                        <ListView.View>
+                            <GridView>
+                                <GridViewColumn>
+                                    <GridViewColumn.CellTemplate>
+                                        <DataTemplate>
+                                            <Grid Width="480" HorizontalAlignment="Stretch">
+                                                <Grid.ColumnDefinitions>
+                                                    <ColumnDefinition Width="80"></ColumnDefinition>
+                                                    <ColumnDefinition Width="110"></ColumnDefinition>
+                                                    <ColumnDefinition Width="110"></ColumnDefinition>
+                                                    <ColumnDefinition Width="60"></ColumnDefinition>
+                                                    <ColumnDefinition Width="60"></ColumnDefinition>
+                                                    <ColumnDefinition Width="60"></ColumnDefinition>
+                                                </Grid.ColumnDefinitions>
+                                                <TextBlock Grid.Column="0" Text="{Binding OrderNumber}"/>
+                                                <TextBlock Grid.Column="1" Text="{Binding OrderDate , StringFormat={}{0:dd/MM/yyyy}}" />
+                                                <TextBlock Grid.Column="2" Text="{Binding OrderType}"/>
+                                                <TextBlock Grid.Column="3" Text="{Binding ItemPriceTxt}"/>
+                                                <TextBlock Grid.Column="4" Text="{Binding ItemPriceRestTxt}"/>
+                                                
+                                                <Button Grid.Column="5"  Height="25" Width="25" Background="Transparent" BorderBrush="Transparent" Style="{StaticResource MaterialDesignFloatingActionButton}">
+                                                    <materialDesign:PackIcon Kind="CloseCircleOutline" Width="25" Height="25" Foreground="#B94B50"/>
+                                                </Button>
+                                            </Grid>
+
+
+                                        </DataTemplate>
+                                    </GridViewColumn.CellTemplate>
+                                </GridViewColumn>
+                            </GridView>
+                        </ListView.View>
+                    </ListView>
+                </Grid>
+                <Grid>
+
+                </Grid>
+                <Grid DockPanel.Dock="Right">
+
+                </Grid>
+            </DockPanel>
+        </DockPanel>
+        
+    </Grid>
+</UserControl>
