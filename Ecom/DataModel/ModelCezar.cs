@@ -8,7 +8,7 @@ namespace Ecom.DataModel
     public partial class ModelCezar : DbContext
     {
         public ModelCezar()
-            : base("name=ModelCezar")
+            : base("name=ModelCezar2")
         {
         }
 
@@ -79,6 +79,11 @@ namespace Ecom.DataModel
                 .WithRequired(e => e.CATEGORY_INGREDIENT)
                 .WillCascadeOnDelete(false);
 
+            modelBuilder.Entity<CATEGORY_INGREDIENT>()
+                .HasMany(e => e.ITEM)
+                .WithMany(e => e.CATEGORY_INGREDIENT)
+                .Map(m => m.ToTable("have").MapLeftKey("id_category_ingredient").MapRightKey("id_item"));
+
             modelBuilder.Entity<INGREDIENT>()
                 .Property(e => e.ingredient_title)
                 .IsUnicode(false);
@@ -94,11 +99,6 @@ namespace Ecom.DataModel
             modelBuilder.Entity<INGREDIENT>()
                 .Property(e => e.ingredient_price)
                 .HasPrecision(15, 3);
-
-            modelBuilder.Entity<INGREDIENT>()
-                .HasMany(e => e.ITEM)
-                .WithMany(e => e.INGREDIENT)
-                .Map(m => m.ToTable("have").MapLeftKey("id_ingredient").MapRightKey("id_item"));
 
             modelBuilder.Entity<ITEM>()
                 .Property(e => e.item_title)
@@ -135,19 +135,13 @@ namespace Ecom.DataModel
                 .WillCascadeOnDelete(false);
 
             modelBuilder.Entity<ITEM>()
-                .HasMany(e => e.MENU)
-                .WithRequired(e => e.ITEM)
-                .HasForeignKey(e => e.id_item)
-                .WillCascadeOnDelete(false);
-
-            modelBuilder.Entity<ITEM>()
                 .HasMany(e => e.menu_selection)
                 .WithRequired(e => e.ITEM)
                 .WillCascadeOnDelete(false);
 
             modelBuilder.Entity<ITEM>()
-                .HasMany(e => e.MENU1)
-                .WithMany(e => e.ITEM1)
+                .HasMany(e => e.MENU)
+                .WithMany(e => e.ITEM)
                 .Map(m => m.ToTable("composed").MapLeftKey("id_item").MapRightKey("id_menu"));
 
             modelBuilder.Entity<item_selection>()

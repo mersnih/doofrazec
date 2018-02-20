@@ -13,7 +13,7 @@ namespace Ecom.DataModel
         public MENU()
         {
             menu_selection = new HashSet<menu_selection>();
-            ITEM1 = new HashSet<ITEM>();
+            ITEM = new HashSet<ITEM>();
         }
 
         [Key]
@@ -32,14 +32,10 @@ namespace Ecom.DataModel
 
         public bool actif { get; set; }
 
-        public int id_item { get; set; }
-
-        public virtual ITEM ITEM { get; set; }
-
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<menu_selection> menu_selection { get; set; }
 
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<ITEM> ITEM1 { get; set; }
+        public virtual ICollection<ITEM> ITEM { get; set; }
     }
 }

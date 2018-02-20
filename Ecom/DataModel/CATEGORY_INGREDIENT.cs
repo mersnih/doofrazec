@@ -12,6 +12,7 @@ namespace Ecom.DataModel
         public CATEGORY_INGREDIENT()
         {
             INGREDIENT = new HashSet<INGREDIENT>();
+            ITEM = new HashSet<ITEM>();
         }
 
         [Key]
@@ -26,5 +27,8 @@ namespace Ecom.DataModel
 
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<INGREDIENT> INGREDIENT { get; set; }
+
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<ITEM> ITEM { get; set; }
     }
 }

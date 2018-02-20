@@ -36,20 +36,22 @@
             </Grid.RowDefinitions> 
             <!--#region Commande détail-->
                 <Grid Grid.Row="0">
-                <ListView x:Name="lv_cartItems" PreviewMouseLeftButtonUp="onSelectedItem" ItemsSource="{Binding cartList}">
+                <ListView x:Name="lv_cartItems"  ItemsSource="{Binding cartList}">
+                    <!--PreviewMouseLeftButtonUp="onSelectedItem"-->
                     <ListView.View>
                         <GridView>
                             <GridViewColumn>
                                 <GridViewColumn.CellTemplate>
                                     <DataTemplate>
-                                        <Grid Width="380" HorizontalAlignment="Stretch">
+                                        <Grid Width="420" HorizontalAlignment="Stretch">
                                             <Grid.ColumnDefinitions>
                                                 <ColumnDefinition Width="20"></ColumnDefinition>
                                                 <ColumnDefinition Width="140"></ColumnDefinition>
                                                 <ColumnDefinition Width="30"></ColumnDefinition>
                                                 <ColumnDefinition Width="140"></ColumnDefinition>
                                                 <ColumnDefinition Width="30"></ColumnDefinition>
-                                                <ColumnDefinition Width="20"></ColumnDefinition>
+                                                <ColumnDefinition Width="30"></ColumnDefinition>
+                                              
                                             </Grid.ColumnDefinitions>
                                             <TextBlock Grid.Column="0" Text="{Binding ItemQuantity}"/>
                                             <TextBlock Grid.Column="1" Text="{Binding ItemTitle}" />
@@ -66,9 +68,13 @@
                                                     </DataTemplate>
                                                 </ListBox.ItemTemplate>
                                             </ListBox>
-                                            <Button Grid.Column="4" Click="deleteItemFromCart" Height="25" Width="25" Background="Transparent" BorderBrush="Transparent" Style="{StaticResource MaterialDesignFloatingActionButton}">
+                                            <Button Grid.Column="4" Click="editItemFromCart" Height="25" Width="25" Background="Transparent" BorderBrush="Transparent" Style="{StaticResource MaterialDesignFloatingActionButton}">
+                                                <materialDesign:PackIcon Kind="PencilBoxOutline" Width="25" Height="25" Foreground="#2e86de"/>
+                                            </Button>
+                                            <Button Grid.Column="5" Click="deleteItemFromCart" Height="25" Width="25" Background="Transparent" BorderBrush="Transparent" Style="{StaticResource MaterialDesignFloatingActionButton}">
                                                 <materialDesign:PackIcon Kind="CloseCircleOutline" Width="25" Height="25" Foreground="#B94B50"/>
                                             </Button>
+
                                         </Grid>
                                             
                                       
@@ -190,7 +196,9 @@
                                     Background="{Binding Path= item_button_color}" BorderBrush="{Binding Path= item_button_color}" 
                                     Margin="2 0 0 0" Click="addToCart" Tag="{Binding}"
                                     Width="150" Height="150"
-                                         Command="{x:Static materialDesign:DialogHost.OpenDialogCommand}">
+
+                                     >
+                                    <!--Command="{x:Static materialDesign:DialogHost.OpenDialogCommand}"-->
                                     <!--Height="{Binding RelativeSource={RelativeSource AncestorType=DataGridCell}, Path=ActualHeight}"
                                     Width="{Binding RelativeSource={RelativeSource AncestorType=DataGridCell}, Path=ActualWidth}"-->
                                     <StackPanel>

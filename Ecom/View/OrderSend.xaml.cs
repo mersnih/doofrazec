@@ -68,7 +68,7 @@ namespace Ecom.View
                 itemSelection.id_item = item.ItemId;
                 itemSelection.id_orders = idOrder;
 
-                if(item.SelectedIngredients.Count > 0)
+                if(item.SelectedIngredients!= null && item.SelectedIngredients.Count > 0)
                 {
                     foreach (var subItem in item.SelectedIngredients)
                     {
@@ -120,7 +120,7 @@ namespace Ecom.View
                 itemSelection.id_item = item.ItemId;
                 itemSelection.id_orders = idOrder;
 
-                if (item.SelectedIngredients.Count > 0)
+                if (item.SelectedIngredients!= null &&  item.SelectedIngredients.Count > 0)
                 {
                     foreach (var subItem in item.SelectedIngredients)
                     {

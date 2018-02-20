@@ -11,6 +11,7 @@ namespace Ecom.Model
     {
 
         private int idItem;
+        private int ingredientSelectedIndex;
         private int idIngredient;
         private string item_title;
         private string ingredient_title;
@@ -26,6 +27,15 @@ namespace Ecom.Model
             {
                 idItem = value;
                 NotifyPropertyChanged("IdItem");
+            }
+        }
+        public int IngredientSelectedIndex
+        {
+            get { return ingredientSelectedIndex; }
+            set
+            {
+                ingredientSelectedIndex = value;
+                NotifyPropertyChanged("IngredientSelectedIndex");
             }
         }
         public int IdIngredient

@@ -37,6 +37,8 @@ namespace Ecom.View
         // Static collections objects 
         CartViewModel cvm { get; set; }
 
+        ITEM itemTest;
+
         public Caisse()
         {
             InitializeComponent();
@@ -71,7 +73,7 @@ namespace Ecom.View
             cat = ((Button)sender).Tag as CATEGORY;
             if(cat != null)
             {
-                var itemQuery = db.ITEM.Where(i => i.id_category== cat.id_category).ToList();
+                var itemQuery = db.ITEM.Where(i => i.id_category== cat.id_category && i.actif == true).ToList();
                 foreach (ITEM item in itemQuery)
                 {
                     listItems.Add(new ITEM
@@ -83,8 +85,6 @@ namespace Ecom.View
                     });
                 }
                 icItem.ItemsSource = listItems;
-
-
             }
 
         }
@@ -94,11 +94,51 @@ namespace Ecom.View
         {
             ITEM item = new ITEM();    
             item = ((Button)sender).Tag as ITEM;
-            DialogHost.Show(new ItemOption(item), "RootDialog", onCLosingDialog);
+
+            itemTest = item;
+            var queryIngCat = (from cat in db.CATEGORY_INGREDIENT.Where(ci => ci.ITEM.Any())
+                               from itm in db.ITEM.Where(i => i.CATEGORY_INGREDIENT.Contains(cat) && i.id_item == item.id_item)
+                               select cat).ToList() ;
+            if(queryIngCat.Count > 0)
+            {
+               DialogHost.Show(new ItemOption(item, queryIngCat), "RootDialog", onCLosingDialog);
+
+            }
+            else
+            {             
+                cvm.Cart.Add(new Cart
+                {
+                    ItemQuantity = 1,
+                    ItemId = item.id_item,
+                    ItemTitle = item.item_title,
+                    ItemPriceWithoutSupp = (double)item.item_price,
+                    SuppPrice = 0,
+                });
+
+                double totalCartLocal = 0.00;
+                cartList = cvm.Cart;
+                foreach (Cart itm in cartList)
+                {
+                    totalCartLocal = totalCartLocal + itm.ItemPrice;
+                }
+                cvm.TotalPrice = totalCartLocal;
+                cvm.TotalRestPrice = cvm.TotalPrice - cvm.TotalPayed;
+                tb_total.Text = cvm.TotalPrice + "€";
+                tb_totalRest.Text = cvm.TotalRestPrice + "€";
+                lv_cartItems.ItemsSource = cvm.Cart;
+            }
+
+
+            //foreach (CATEGORY_INGREDIENT list in queryIngCat)
+            //{
+            //    int id = list.id_category_ingredient;
+            //    DialogHost.Show(new ItemOption(item, id), "RootDialog", onCLosingDialog);
+            //}
         }
 
         private void onCLosingDialog(object sender, DialogClosingEventArgs eventArgs)
         {
+
             double totalCartLocal = 0.00;
             cartList = cvm.Cart;
             foreach (Cart itm in cartList)
@@ -206,16 +246,48 @@ namespace Ecom.View
             //   tb_total.Text = totalPrice + "€";
         }
 
-        private void onSelectedItem(object sender, RoutedEventArgs e)
-        {
-            Cart item = (Cart)(sender as ListView).SelectedItem;
-            int index = lv_cartItems.SelectedIndex;
-            if (item != null)
-            {
-                int idItem = item.ItemId;
-                DialogHost.Show(new ItemOption(item, idItem, index), "RootDialog", onCLosingDialog);
-            }
+        //private void onSelectedItem(object sender, RoutedEventArgs e)
+        //{
+        //    Cart item = (Cart)(sender as ListView).SelectedItem;
+        //    int index = lv_cartItems.SelectedIndex;
+        //    if (item != null)
+        //    {
+        //        int idItem = item.ItemId;
+        //        DialogHost.Show(new ItemOption(item, idItem, index), "RootDialog", onCLosingDialog);
+        //    }
           
+        //}
+
+        private void editItemFromCart(object sender, RoutedEventArgs e)
+        {
+            var item = ((ListViewItem)lv_cartItems.ContainerFromElement((Button)sender)).Content;
+            int index = lv_cartItems.Items.IndexOf(item);
+            Cart cart = (Cart)item;
+
+
+
+           // ITEM item = new ITEM();
+           // item = ((Button)sender).Tag as ITEM;
+
+           // itemTest = item;
+    
+
+
+            // Cart item = (Cart)(sender as ListView).SelectedItem;
+
+            if (cart != null)
+            {
+                int idItem = cart.ItemId;
+                var queryIngCat = (from cat in db.CATEGORY_INGREDIENT.Where(ci => ci.ITEM.Any())
+                                   from itm in db.ITEM.Where(i => i.CATEGORY_INGREDIENT.Contains(cat) && i.id_item == idItem)
+                                   select cat).ToList();
+                if (queryIngCat.Count > 0)
+                {
+                    DialogHost.Show(new ItemOption(cart, idItem, index, queryIngCat), "RootDialog", onCLosingDialog);
+
+                }
+           //     DialogHost.Show(new ItemOption(cart, idItem, index), "RootDialog", onCLosingDialog);
+            }
         }
     }
 }

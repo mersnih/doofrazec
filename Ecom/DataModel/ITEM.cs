@@ -14,10 +14,9 @@ namespace Ecom.DataModel
         {
             ADVICE = new HashSet<ADVICE>();
             item_selection = new HashSet<item_selection>();
-            MENU = new HashSet<MENU>();
             menu_selection = new HashSet<menu_selection>();
-            MENU1 = new HashSet<MENU>();
-            INGREDIENT = new HashSet<INGREDIENT>();
+            MENU = new HashSet<MENU>();
+            CATEGORY_INGREDIENT = new HashSet<CATEGORY_INGREDIENT>();
         }
 
         [Key]
@@ -59,15 +58,12 @@ namespace Ecom.DataModel
         public virtual ICollection<item_selection> item_selection { get; set; }
 
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<MENU> MENU { get; set; }
-
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<menu_selection> menu_selection { get; set; }
 
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<MENU> MENU1 { get; set; }
+        public virtual ICollection<MENU> MENU { get; set; }
 
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<INGREDIENT> INGREDIENT { get; set; }
+        public virtual ICollection<CATEGORY_INGREDIENT> CATEGORY_INGREDIENT { get; set; }
     }
 }

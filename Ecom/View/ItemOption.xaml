@@ -44,7 +44,25 @@
             <RowDefinition Height="0.8*"></RowDefinition>
             <RowDefinition Height="0.18*"></RowDefinition>
         </Grid.RowDefinitions>
-        <Grid Grid.Row="1">
+
+        <ListBox x:Name="lb_itemOptions"  Grid.Row="1" ItemsSource="{Binding }" SelectionMode="Multiple" ItemContainerStyle="{StaticResource ContainerStyle}" >
+
+            <!--<TextBlock Text="{Binding Ingredient_title}" Margin="5,0" Background="#FFB62D" Foreground="white"/>-->
+
+            <ListBox.ItemTemplate>
+                <DataTemplate>
+                    <StackPanel >
+                        <TextBlock Text="{Binding Path=Ingredient_title}" />
+
+                        <TextBox x:Name="tb_quantity" Text="{Binding Path=Ingredient_quanity}"/>
+                    </StackPanel>
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+        </ListBox>
+
+
+
+        <!--<Grid Grid.Row="1">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition></ColumnDefinition>
                 <ColumnDefinition></ColumnDefinition>
@@ -63,13 +81,15 @@
                     
 
                 <ListBox  Grid.Row="1" x:Name="lb_choixViande" SelectionMode="Multiple" ItemContainerStyle="{StaticResource ContainerStyle}" >
-                    <!--<TextBlock Text="{Binding Ingredient_title}" Margin="5,0" Background="#FFB62D" Foreground="white"/>-->
+                    
+        <TextBlock Text="{Binding Ingredient_title}" Margin="5,0" Background="#FFB62D" Foreground="white"/>
        
                     <ListBox.ItemTemplate>
                         <DataTemplate>
                             <StackPanel >
                                 <TextBlock Text="{Binding Path=Ingredient_title}" />
-                                <!--<TextBox x:Name="tb_quantity" Text="{Binding Path=Ingredient_quanity}"/>-->
+                                
+        <TextBox x:Name="tb_quantity" Text="{Binding Path=Ingredient_quanity}"/>
                             </StackPanel>
                         </DataTemplate>
                     </ListBox.ItemTemplate>
@@ -87,42 +107,46 @@
                     <TextBlock HorizontalAlignment="Center" Foreground="White" FontSize="16">Choix sauce</TextBlock>
                 </StackPanel>
                 <ListBox Grid.Row="1" x:Name="lb_choixSauce" SelectionMode="Multiple" ItemContainerStyle="{StaticResource ContainerStyle}" >
-                    <!--<TextBlock Text="{Binding Ingredient_title}" Margin="5,0" Background="#FFB62D" Foreground="white"/>-->
+                    
+        <TextBlock Text="{Binding Ingredient_title}" Margin="5,0" Background="#FFB62D" Foreground="white"/>
                     <ListBox.ItemTemplate>
                         <DataTemplate>
                             <StackPanel >
                                 <TextBlock Text="{Binding Path=Ingredient_title}" />
-                                <!--<TextBox x:Name="tb_quantity" Text="{Binding Path=Ingredient_quanity}"/>-->
+                                
+        <TextBox x:Name="tb_quantity" Text="{Binding Path=Ingredient_quanity}"/>
                             </StackPanel>
                         </DataTemplate>
                     </ListBox.ItemTemplate>
                 </ListBox>
               </DockPanel>
             </Grid>
-            <!--Choix supplèment-->
-            <Grid Grid.Column="2">
-                <Grid.RowDefinitions>
-                    <RowDefinition Height="0.10*"></RowDefinition>
-                    <RowDefinition Height="0.90*"></RowDefinition>
-                </Grid.RowDefinitions>
-                <DockPanel Grid.Row="0">
-                    <StackPanel DockPanel.Dock="Top" Background="Black">
-                        <TextBlock HorizontalAlignment="Center" Foreground="White" FontSize="16">Choix supplèment</TextBlock>
-                    </StackPanel>
-                    <ListBox Grid.Row="1" x:Name="lb_choixSupp" SelectionMode="Multiple" ItemContainerStyle="{StaticResource ContainerStyle}" >
-                        <!--<TextBlock Text="{Binding Ingredient_title}" Margin="5,0" Background="#FFB62D" Foreground="white"/>-->
-                        <ListBox.ItemTemplate>
-                            <DataTemplate>
-                                <StackPanel Orientation="Horizontal">
-                                    <TextBlock Text="{Binding Path=Ingredient_title}" />
+            
+        --><!--Choix supplèment--><!--
+        <Grid Grid.Column="2">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="0.10*"></RowDefinition>
+                <RowDefinition Height="0.90*"></RowDefinition>
+            </Grid.RowDefinitions>
+            <DockPanel Grid.Row="0">
+                <StackPanel DockPanel.Dock="Top" Background="Black">
+                    <TextBlock HorizontalAlignment="Center" Foreground="White" FontSize="16">Choix supplèment</TextBlock>
+                </StackPanel>
+                <ListBox Grid.Row="1" x:Name="lb_choixSupp" SelectionMode="Multiple" ItemContainerStyle="{StaticResource ContainerStyle}" >
+                    <TextBlock Text="{Binding Ingredient_title}" Margin="5,0" Background="#FFB62D" Foreground="white"/>
+                    <ListBox.ItemTemplate>
+                        <DataTemplate>
+                            <StackPanel Orientation="Horizontal">
+                                <TextBlock Text="{Binding Path=Ingredient_title}" />
 
-                                </StackPanel>
-                            </DataTemplate>
-                        </ListBox.ItemTemplate>
-                    </ListBox>
-                </DockPanel>
-            </Grid>
+                            </StackPanel>
+                        </DataTemplate>
+                    </ListBox.ItemTemplate>
+                </ListBox>
+            </DockPanel>
         </Grid>
+    </Grid>--> 
+
 
         <StackPanel Grid.Row="0" Orientation="Vertical" HorizontalAlignment="Stretch"  VerticalAlignment="Stretch" Background="#4a69bd" >
             <TextBlock x:Name="tb_optionTitle"  Grid.Row="0" HorizontalAlignment="Center" VerticalAlignment="Stretch" FontSize="24" Foreground="White" />
@@ -144,6 +168,16 @@
                 Command="{x:Static materialDesign:DialogHost.CloseDialogCommand}" >
                 Ajouter
             </Button>
+            <Button 
+                x:Name="bt_NextOption"
+                IsDefault="True" Style="{DynamicResource MaterialDesignFlatButton}"
+                HorizontalAlignment="Center"
+                Margin="5"
+                Click="test"
+               >
+                Suivant
+            </Button>
+
         </StackPanel>
 
     </Grid>
