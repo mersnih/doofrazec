@@ -35,7 +35,7 @@ namespace Ecom.View
             InitializeComponent();
             db = new ModelCezar();
             OrderList oList = new OrderList();
-            lv_OrdersList.ItemsSource =  oList.GetOrderList();
+            lv_OrdersList.ItemsSource =  oList.GetNotPayedOrderList();
 
             this.Loaded += new RoutedEventHandler(MainWindow_Loaded);
         }
@@ -43,7 +43,7 @@ namespace Ecom.View
         private void MainWindow_Loaded(object sender, RoutedEventArgs e)
         {
             OrderList oList = new OrderList();
-            lv_OrdersList.ItemsSource = oList.GetOrderList();
+            lv_OrdersList.ItemsSource = oList.GetNotPayedOrderList();
         }
     }
 }

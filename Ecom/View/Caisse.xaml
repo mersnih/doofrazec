@@ -5,10 +5,8 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
              xmlns:local="clr-namespace:Ecom.View"
-              xmlns:s="clr-namespace:System;assembly=mscorlib"
+             xmlns:s="clr-namespace:System;assembly=mscorlib"
              mc:Ignorable="d"
-
-             
              >
     <UserControl.Resources>
         <ResourceDictionary>
@@ -179,7 +177,7 @@
             <!--Liste des articles-->
             <Grid x:Name="itemsGrid" Grid.Column="0" Margin="10">
 
-                <ScrollViewer VerticalScrollBarVisibility="Auto" >
+                <ScrollViewer  >
 
                     <ItemsControl x:Name="icItem" ItemsSource="{Binding listItems}">
                         <ItemsControl.ItemsPanel>
@@ -205,7 +203,7 @@
                                            <!--<Path Data="M19,13H13V19H11V13H5V11H11V5H13V11H19V13Z" Fill="{Binding RelativeSource={RelativeSource FindAncestor, AncestorType=Button}, Path=Foreground}" />-->
                                            <TextBlock HorizontalAlignment="Center" Text="{Binding Path=item_title}"></TextBlock>
                                            <TextBlock HorizontalAlignment="Center" FontSize="20" Text="{Binding Path=item_price}">€</TextBlock>
-                                        </StackPanel>
+                                     </StackPanel>
                                                                             
                                 </Button>
 
@@ -218,7 +216,7 @@
             
             <!--Liste des catégories-->
             <Grid Grid.Column="1">
-                <ScrollViewer HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Disabled">
+                <ScrollViewer HorizontalScrollBarVisibility="Disabled" VerticalScrollBarVisibility="Auto" PanningMode="Both" >
                     <ItemsControl x:Name="icCat" ItemsSource="{Binding listCategories}" 
                                   IsManipulationEnabled="True">
                         <ItemsControl.ItemsPanel>
@@ -236,11 +234,11 @@
                                         Content="{Binding Path=category_title}" 
                                         Tag="{Binding}"  
                                         Margin="5,0,5,0"
-                                        Height="{Binding RelativeSource={RelativeSource AncestorType=DataGridCell}, Path=ActualHeight}"
-                                        Width="{Binding RelativeSource={RelativeSource AncestorType=DataGridCell}, Path=ActualWidth}"
+Height="150"
                                       />
-                              
-                            </DataTemplate>
+                                                    <!--Height="{Binding RelativeSource={RelativeSource AncestorType=DataGridCell}, Path=ActualHeight}"
+                                        Width="{Binding RelativeSource={RelativeSource AncestorType=DataGridCell}, Path=ActualWidth}"-->
+                                                </DataTemplate>
                         </ItemsControl.ItemTemplate>
                     </ItemsControl>
                 </ScrollViewer>

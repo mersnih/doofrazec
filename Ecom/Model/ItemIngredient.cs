@@ -15,6 +15,7 @@ namespace Ecom.Model
         private int idIngredient;
         private string item_title;
         private string ingredient_title;
+        private string ingredient_category_tutle;
         private double ingredient_price;
         private int ingredient_quantity;
 
@@ -63,6 +64,15 @@ namespace Ecom.Model
             {
                 ingredient_title = value;
                 NotifyPropertyChanged("Ingredient_title");
+            }
+        }
+        public string Ingredient_category_tutle
+        {
+            get { return ingredient_category_tutle; }
+            set
+            {
+                ingredient_category_tutle = value;
+                NotifyPropertyChanged("Ingredient_category_tutle");
             }
         }
         public double Ingredient_price

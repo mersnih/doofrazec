@@ -18,6 +18,8 @@ namespace Ecom.ViewModel
         static ObservableCollection<Payement> payement = new ObservableCollection<Payement>();
         private static string totalCart;
         private static string totalRest;
+        private static int ingredientCounter;
+
         public string TotalCart
         {
             get { return totalCart; }
@@ -75,6 +77,16 @@ namespace Ecom.ViewModel
 
         }
 
+        public int IngredientCounter
+        {
+            get { return ingredientCounter; }
+            set
+            {
+                ingredientCounter = value;
+                NotifyPropertyChanged("IngredientCounter");
+            }
+
+        }
 
 
         public ObservableCollection<Cart> Cart

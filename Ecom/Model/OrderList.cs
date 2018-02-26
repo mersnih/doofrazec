@@ -19,7 +19,7 @@ namespace Ecom.Model
             orderList = new ObservableCollection<Cart>();
         }
 
-        public  ObservableCollection<Cart> GetOrderList()
+        public  ObservableCollection<Cart> GetAllOrderList()
         {
             try
             {
@@ -44,5 +44,29 @@ namespace Ecom.Model
             }
         }
 
+        public ObservableCollection<Cart> GetNotPayedOrderList()
+        {
+            try
+            {
+                var queryGenerated = from orders in db.ORDERS
+
+                                     join ot in db.ORDERS_TYPE on orders.id_orders_type equals ot.id_orders_type
+
+                                     where orders.orders_leftToPay != 0
+                                     select new Cart
+                                     {
+                                         OrderNumber = orders.orders_number,
+                                         OrderDate = orders.orders_date,
+                                         OrderType = ot.orders_type_title,
+                                         ItemPriceTxt = orders.orders_price.ToString() + "€",
+                                         ItemPriceRestTxt = orders.orders_leftToPay.ToString() + "€"
+                                     };
+                return new ObservableCollection<Cart>(queryGenerated.ToList());
+            }
+            catch
+            {
+                return null;
+            }
+        }
     }
 }

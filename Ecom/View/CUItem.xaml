@@ -6,7 +6,7 @@
              xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
              xmlns:local="clr-namespace:Ecom.View"
              mc:Ignorable="d" 
-             Height="800" Width="600">
+            >
     <Grid>
         <Grid Grid.Row="1" ShowGridLines="False"  Background="White" Opacity="0.75" Margin="10,0,10,20">
             <Grid.RowDefinitions>
@@ -23,14 +23,20 @@
             <TextBox x:Name="tb_description"  Grid.Row="1" Margin="5" materialDesign:HintAssist.Hint="Description" Style="{StaticResource MaterialDesignFloatingHintTextBox}" 
                      Validation.Error="Validation_Error" Grid.ColumnSpan="2" PreviewKeyDown="CheckWiteSpace" 
                      Text="{Binding UpdateSourceTrigger=PropertyChanged, Path=Title,ValidatesOnDataErrors=True, NotifyOnValidationError=True}"/>
-            <Button Grid.Row="2" Content="Image" Width="100" Click="OnClickLoadImage"/>
-            <Image Name="imgPhoto" Stretch="Fill" Grid.Row="3" />
-            <TextBox x:Name="tb_price"  Grid.Row="4" Margin="5" materialDesign:HintAssist.Hint="Prix" Style="{StaticResource MaterialDesignFloatingHintTextBox}" 
+            <StackPanel Grid.Row="2" Orientation="Horizontal">
+                <Button Content="Image" Margin="10,0" Width="100" Click="OnClickLoadImage" HorizontalAlignment="Left"/>
+                <Image Name="imgPhoto" Margin="10,0" Stretch="UniformToFill" Grid.Row="3" HorizontalAlignment="Right"/>
+            </StackPanel>
+
+            <TextBox x:Name="tb_price"  Grid.Row="3" Margin="5" materialDesign:HintAssist.Hint="Prix" Style="{StaticResource MaterialDesignFloatingHintTextBox}" 
                      Validation.Error="Validation_Error" Grid.ColumnSpan="2" PreviewKeyDown="CheckWiteSpace" 
                      Text="{Binding UpdateSourceTrigger=PropertyChanged, Path=Title,ValidatesOnDataErrors=True, NotifyOnValidationError=True}"/>
+            <ComboBox Grid.Row="4" Text="Catégorie"></ComboBox>
+            <StackPanel Grid.Row="5" Orientation="Horizontal">
+                <Button  VerticalAlignment="Bottom" Margin="5" Tag="3" Command="{x:Static materialDesign:DialogHost.CloseDialogCommand}" >Ajouter</Button>
+                <Button Grid.Row="5" VerticalAlignment="Bottom" Margin="5" Tag="3" Command="{x:Static materialDesign:DialogHost.CloseDialogCommand}" >Fermer</Button>
 
-
+            </StackPanel>
         </Grid>
-        <Button Grid.Row="1" VerticalAlignment="Bottom" Margin="5" Tag="3" Command="{x:Static materialDesign:DialogHost.CloseDialogCommand}" >Fermer</Button>
     </Grid>
 </UserControl>

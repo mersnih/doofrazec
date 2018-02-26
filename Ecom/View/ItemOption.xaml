@@ -5,6 +5,7 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
              xmlns:local="clr-namespace:Ecom.View"
+            xmlns:s="clr-namespace:System;assembly=mscorlib"
              mc:Ignorable="d" 
              HorizontalAlignment="Stretch"
 	        VerticalAlignment="Stretch"
@@ -45,21 +46,91 @@
             <RowDefinition Height="0.18*"></RowDefinition>
         </Grid.RowDefinitions>
 
-        <ListBox x:Name="lb_itemOptions"  Grid.Row="1" ItemsSource="{Binding }" SelectionMode="Multiple" ItemContainerStyle="{StaticResource ContainerStyle}" >
+        <!--<ListBox x:Name="lb_itemOptions"  Grid.Row="1" ItemsSource="{Binding }" SelectionMode="Multiple" ItemContainerStyle="{StaticResource ContainerStyle}" >
 
-            <!--<TextBlock Text="{Binding Ingredient_title}" Margin="5,0" Background="#FFB62D" Foreground="white"/>-->
+            --><!--<TextBlock Text="{Binding Ingredient_title}" Margin="5,0" Background="#FFB62D" Foreground="white"/>--><!--
 
             <ListBox.ItemTemplate>
                 <DataTemplate>
-                    <StackPanel >
+                    --><!--<StackPanel >
                         <TextBlock Text="{Binding Path=Ingredient_title}" />
-
                         <TextBox x:Name="tb_quantity" Text="{Binding Path=Ingredient_quanity}"/>
-                    </StackPanel>
+                    </StackPanel>--><!--
+                    
                 </DataTemplate>
             </ListBox.ItemTemplate>
-        </ListBox>
+        </ListBox>-->
 
+        <ScrollViewer VerticalScrollBarVisibility="Auto" Grid.Row="1" >
+
+            <ItemsControl x:Name="icItem" ItemsSource="{Binding listIngredient}" AlternationCount="{x:Static s:Int32.MaxValue}">
+                <ItemsControl.ItemsPanel>
+                    <ItemsPanelTemplate>
+                        <WrapPanel />
+                        <!--<UniformGrid Rows="1"/>-->
+                    </ItemsPanelTemplate>
+                </ItemsControl.ItemsPanel>
+                <ItemsControl.ItemTemplate>
+                    <DataTemplate>
+                        <!-- Article boites de dialogues-->
+                        <Grid Margin="5,10">
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="0.7*"></RowDefinition>
+                                <RowDefinition Height="0.3*"></RowDefinition>
+                            </Grid.RowDefinitions>
+
+
+                            <StackPanel Orientation="Horizontal" Grid.Row="0">
+                                <!--<Button Margin="10,0,0,0" Click="OnClickSubstractIngredient" Tag="{Binding}">-</Button>-->
+
+                                <materialDesign:Badged Badge="{Binding Path=Ingredient_quantity}" 
+                                                   BadgeColorZoneMode="Accent" 
+                                                   BadgeForeground="Black"
+                                                   BadgePlacementMode="TopRight"
+                                                   >
+                                    <Button 
+                                    x:Name="bt_addIngredient"
+                                    Background="#576574" BorderBrush="#576574"
+                                    HorizontalAlignment="Center" VerticalAlignment="Top"  
+                                    Click="OnClickAddIngredient"
+                                   
+                                    Tag="{Binding RelativeSource={RelativeSource Mode=TemplatedParent},
+                                    Path=(ItemsControl.AlternationIndex)}"
+                                    Width="150" Height="150">
+                                        <StackPanel >
+                                            <!--<Path Data="M19,13H13V19H11V13H5V11H11V5H13V11H19V13Z" Fill="{Binding RelativeSource={RelativeSource FindAncestor, AncestorType=Button}, Path=Foreground}" />-->
+                                            <TextBlock FontSize="40" Text="+" HorizontalAlignment="Center"/>
+                                            <TextBlock HorizontalAlignment="Center" FontSize="18" Text="{Binding Path=Ingredient_title}"></TextBlock>
+                                            <TextBlock HorizontalAlignment="Center" FontSize="15" Text="{Binding Path=Ingredient_price}">€</TextBlock>
+
+                                        </StackPanel>
+                                    </Button>
+
+                                </materialDesign:Badged>
+
+                                <!--Command="{x:Static materialDesign:DialogHost.OpenDialogCommand}"-->
+                                <!--Height="{Binding RelativeSource={RelativeSource AncestorType=DataGridCell}, Path=ActualHeight}"
+                                    Width="{Binding RelativeSource={RelativeSource AncestorType=DataGridCell}, Path=ActualWidth}"-->
+
+
+
+                            </StackPanel>
+                            <Button                                             
+                                    HorizontalAlignment="Stretch"  
+                                    Background="#ff7675" BorderBrush="#ff7675" Foreground="White"
+                                    Content="-"
+                                    FontSize="30"
+                                    Click="OnClickSubstractIngredient"
+                                    Tag="{Binding}"
+                                    Grid.Row="1"/>
+                        </Grid>
+                        <!---->
+                     
+                            </DataTemplate>
+                        </ItemsControl.ItemTemplate>
+                    </ItemsControl>
+                </ScrollViewer>
+              <TextBlock x:Name="tb_value"></TextBlock>
 
 
         <!--<Grid Grid.Row="1">
@@ -149,7 +220,8 @@
 
 
         <StackPanel Grid.Row="0" Orientation="Vertical" HorizontalAlignment="Stretch"  VerticalAlignment="Stretch" Background="#4a69bd" >
-            <TextBlock x:Name="tb_optionTitle"  Grid.Row="0" HorizontalAlignment="Center" VerticalAlignment="Stretch" FontSize="24" Foreground="White" />
+            <TextBlock x:Name="tb_optionTitle"  Grid.Row="0" HorizontalAlignment="Center" VerticalAlignment="Stretch" FontSize="24" Foreground="White"
+                />
         </StackPanel>
 
         <StackPanel Grid.Row="2" Orientation="Horizontal" HorizontalAlignment="Right">

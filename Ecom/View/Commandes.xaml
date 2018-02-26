@@ -19,30 +19,43 @@
                     <ListView x:Name="lv_OrdersList" ItemsSource="{Binding orderList}" >
                         <ListView.View>
                             <GridView>
-                                <GridViewColumn>
+                                <GridViewColumn Header="N°Commande">
                                     <GridViewColumn.CellTemplate>
                                         <DataTemplate>
-                                            <Grid Width="480" HorizontalAlignment="Stretch">
-                                                <Grid.ColumnDefinitions>
-                                                    <ColumnDefinition Width="80"></ColumnDefinition>
-                                                    <ColumnDefinition Width="110"></ColumnDefinition>
-                                                    <ColumnDefinition Width="110"></ColumnDefinition>
-                                                    <ColumnDefinition Width="60"></ColumnDefinition>
-                                                    <ColumnDefinition Width="60"></ColumnDefinition>
-                                                    <ColumnDefinition Width="60"></ColumnDefinition>
-                                                </Grid.ColumnDefinitions>
-                                                <TextBlock Grid.Column="0" Text="{Binding OrderNumber}"/>
-                                                <TextBlock Grid.Column="1" Text="{Binding OrderDate , StringFormat={}{0:dd/MM/yyyy}}" />
-                                                <TextBlock Grid.Column="2" Text="{Binding OrderType}"/>
-                                                <TextBlock Grid.Column="3" Text="{Binding ItemPriceTxt}"/>
-                                                <TextBlock Grid.Column="4" Text="{Binding ItemPriceRestTxt}"/>
-                                                
-                                                <Button Grid.Column="5"  Height="25" Width="25" Background="Transparent" BorderBrush="Transparent" Style="{StaticResource MaterialDesignFloatingActionButton}">
-                                                    <materialDesign:PackIcon Kind="CloseCircleOutline" Width="25" Height="25" Foreground="#B94B50"/>
-                                                </Button>
-                                            </Grid>
-
-
+                                            <TextBlock Grid.Column="0" Text="{Binding OrderNumber}"/>
+                                        </DataTemplate>
+                                    </GridViewColumn.CellTemplate>
+                         
+                                </GridViewColumn>
+                                <!--Date-->
+                                <GridViewColumn Header="Date"> 
+                                    <GridViewColumn.CellTemplate>
+                                        <DataTemplate>
+                                            <TextBlock Text="{Binding OrderDate , StringFormat={}{0:dd/MM/yyyy}}" />
+                                        </DataTemplate>
+                                    </GridViewColumn.CellTemplate>
+                                </GridViewColumn>
+                                <!--Type-->
+                                <GridViewColumn Header="Type">
+                                    <GridViewColumn.CellTemplate>
+                                        <DataTemplate>
+                                            <TextBlock Grid.Column="2" Text="{Binding OrderType}"/>
+                                        </DataTemplate>
+                                    </GridViewColumn.CellTemplate>
+                                </GridViewColumn>
+                                <!--Prix-->
+                                <GridViewColumn Header="Prix">
+                                    <GridViewColumn.CellTemplate>
+                                        <DataTemplate>
+                                            <TextBlock Grid.Column="3" Text="{Binding ItemPriceTxt}"/>
+                                        </DataTemplate>
+                                    </GridViewColumn.CellTemplate>
+                                </GridViewColumn>
+                                <!--Reste à payer-->
+                                <GridViewColumn Header="Reste à payer">
+                                    <GridViewColumn.CellTemplate>
+                                        <DataTemplate>
+                                            <TextBlock Grid.Column="4" Text="{Binding ItemPriceRestTxt}"/>
                                         </DataTemplate>
                                     </GridViewColumn.CellTemplate>
                                 </GridViewColumn>

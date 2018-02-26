@@ -26,23 +26,33 @@ namespace Ecom.View
     {
         ModelCezar db;
 
-        ObservableCollection<Cart> cart = new ObservableCollection<Cart>();
-        ObservableCollection<Cart> cartList = new ObservableCollection<Cart>();    
+    
         ObservableCollection<ItemIngredient> lst = new ObservableCollection<ItemIngredient>();
+
+        // Cette collection contiendra la liste de tous les ingrédients liée à l'article selectionné
+        ObservableCollection<ItemIngredient> listIngredient = new ObservableCollection<ItemIngredient>();
+        // Cette collection vontiendra la liste des ingrédients selectionnés 
         ObservableCollection<ItemIngredient> itemIngredientLocal = new ObservableCollection<ItemIngredient>();
+        //Cette collection récuperera la liste des ingrédients selectionnées à partir de la caisse
+        List<CATEGORY_INGREDIENT> catIngLocal = new List<CATEGORY_INGREDIENT>();
+
+        // Mise en place de la carte virtuelle qui va être mise à jour à chaque ajout 
+        CartViewModel cvm = new CartViewModel();
+        // Mise en place du modele des articles 
+        ITEM itemLocal = new ITEM();
+
 
         Cart _cart = new Cart();
         int indexLocal =-1;
-        CartViewModel cvm = new CartViewModel();
-
-        ITEM itemLocal = new ITEM();
-        List<CATEGORY_INGREDIENT> catIngLocal = new List<CATEGORY_INGREDIENT>();
-
-
+      
+        // Params d'initialisation
         int catIngLocalCount = 0;
         int counter = 0;
         double totalSupp = 0;
+        
+        
 
+        // Cette méthode est appelée lorsque l'utilisateur veut modifier un article ajouter dans le panier
         public ItemOption(Cart list, int idItem, int index, List<CATEGORY_INGREDIENT> catIng)
         {
             InitializeComponent();
@@ -74,11 +84,22 @@ namespace Ecom.View
                                        Ingredient_quantity = 0
 
                                    });
-                lb_itemOptions.ItemsSource = new ObservableCollection<ItemIngredient>(optionQuery.ToList());
-                foreach(ItemIngredient ii in list.SelectedIngredients)
+                foreach (ItemIngredient itmIng in optionQuery.ToList())
                 {
-                    lb_itemOptions.SelectedIndex = ii.IngredientSelectedIndex;
+                    listIngredient.Add(new ItemIngredient
+                    {
+                        IdItem = idItem,
+                        IdIngredient = itmIng.IdIngredient,
+                        Item_title = list.ItemTitle,
+                        Ingredient_title = itmIng.Ingredient_title,
+                        Ingredient_price = (double)itmIng.Ingredient_price,
+                        Ingredient_quantity = 0
+                    });
                 }
+                
+
+                icItem.ItemsSource = listIngredient;
+          
              
 
                 //var reqForMeat = (from ing in db.INGREDIENT.Where(i => i.ITEM.Any() && i.id_category_ingredient == 1)
@@ -143,13 +164,20 @@ namespace Ecom.View
         }
 
 
-
+        // Cette méthode est appelée lorsque l'utilisateur souhaite ajouter un article dans le panier
         public ItemOption(ITEM item, List<CATEGORY_INGREDIENT> catIng)
         {
             InitializeComponent();
             db = new ModelCezar();
-
-
+            cvm.IngredientCounter = 0;
+            
+            
+            /*
+             catIng : la liste des catégories d'ingrédients liées à l'article
+             item : l'article selectionné
+             catIngLocalCount :  le nombre total des catégories d'ingrédients liées à l'article
+             counter : compteur 
+            */
             itemLocal = item;
             catIngLocal = catIng;
             catIngLocalCount = catIng.Count;
@@ -158,18 +186,22 @@ namespace Ecom.View
             CATEGORY_INGREDIENT ci = new CATEGORY_INGREDIENT();
             ci = catIng[counter];
             int id = catIng[counter].id_category_ingredient;
+
             var optionQuery = (from ing in db.INGREDIENT.Where(i => i.id_category_ingredient == id)
+                               join ingCat in db.CATEGORY_INGREDIENT on ing.id_category_ingredient equals ingCat.id_category_ingredient
                                select new ItemIngredient()
                                {
                                    IdItem = item.id_item,
                                    IdIngredient = ing.id_ingredient,
                                    Item_title = item.item_title,
                                    Ingredient_title = ing.ingredient_title,
+                                   Ingredient_category_tutle = ingCat.category_ingredient_title,
                                    Ingredient_price = (double)ing.ingredient_price,
                                    Ingredient_quantity = 0
 
                                });
-            lb_itemOptions.ItemsSource = new ObservableCollection<ItemIngredient>(optionQuery.ToList());
+            // Affiche la première liste des ingrédients 
+            icItem.ItemsSource = new ObservableCollection<ItemIngredient>(optionQuery.ToList());
 
 
             //foreach (CATEGORY_INGREDIENT list in catIng)
@@ -237,45 +269,6 @@ namespace Ecom.View
 
         private void addMeat(object sender, RoutedEventArgs e)
         {
-            //foreach (ItemIngredient ii in lb_choixViande.SelectedItems)
-            //{
-            //    itemIngredientLocal.Add(new ItemIngredient()
-            //    {
-            //        IdItem = ii.IdItem,
-            //        IdIngredient = ii.IdIngredient,
-            //        Item_title = ii.Item_title,
-            //        Ingredient_title = ii.Ingredient_title,
-            //        Ingredient_quantity = 1
-            //    });
-            //}
-            //foreach (ItemIngredient ii in lb_choixSauce.SelectedItems)
-            //{
-            //    itemIngredientLocal.Add(new ItemIngredient()
-            //    {
-            //        IdItem = ii.IdItem,
-            //        IdIngredient = ii.IdIngredient,
-            //        Item_title = ii.Item_title,
-            //        Ingredient_title = ii.Ingredient_title,
-            //        Ingredient_quantity = 1
-            //    });
-            //}
-            //foreach (ItemIngredient ii in lb_choixSupp.SelectedItems)
-            //{
-            //    itemIngredientLocal.Add(new ItemIngredient()
-            //    {
-            //        IdItem = ii.IdItem,
-            //        IdIngredient = ii.IdIngredient,
-            //        Item_title = ii.Item_title,
-            //        Ingredient_title = ii.Ingredient_title,
-            //        Ingredient_price = ii.Ingredient_price,
-            //        Ingredient_quantity = 1
-            //    });
-            //}
-            //foreach(var par in itemIngredientLocal)
-            //{
-            //    totalSupp = totalSupp + par.Ingredient_price;
-
-            //}
             foreach (var par in itemIngredientLocal)
             {
                 totalSupp = totalSupp + par.Ingredient_price;
@@ -314,60 +307,106 @@ namespace Ecom.View
         }
 
         private void test(object sender, RoutedEventArgs e)
-        {
-            // first count = 0
-            // 1 - add selected items 
-            // 2 - populate next view 
-
-            if (counter < catIngLocalCount)
-            {
-                foreach (ItemIngredient ii in lb_itemOptions.SelectedItems)
-                {
-                   
-
-                    itemIngredientLocal.Add(new ItemIngredient()
-                    {
-                        IdItem = ii.IdItem,                      
-                        IngredientSelectedIndex = lb_itemOptions.SelectedIndex,
-                        IdIngredient = ii.IdIngredient,
-                        Item_title = ii.Item_title,
-                        Ingredient_title = ii.Ingredient_title,
-                        Ingredient_price = ii.Ingredient_price,
-                        Ingredient_quantity = 1
-                    });
-                }
-                counter = counter + 1;
-            }
-
-       
-            if(counter <= catIngLocalCount - 1)
+        {     
+            counter = counter + 1;
+            if (counter <= catIngLocalCount - 1)
             { 
                 int id = catIngLocal[counter].id_category_ingredient;
-                var optionQuery = (from ing in db.INGREDIENT.Where(i => i.id_category_ingredient == id)
-                                    select new ItemIngredient()
-                                    {
-                                        IdItem = itemLocal.id_item,
-                                        IdIngredient = ing.id_ingredient,
-                                        Item_title = itemLocal.item_title,
-                                        Ingredient_title = ing.ingredient_title,
-                                        Ingredient_price = (double)ing.ingredient_price,
-                                        Ingredient_quantity = 0
-                                    });
-                lb_itemOptions.ItemsSource = new ObservableCollection<ItemIngredient>(optionQuery.ToList());
-                if(_cart.SelectedIngredients != null && _cart.SelectedIngredients.Count > 0)
-                {
-                    foreach (ItemIngredient ii in _cart.SelectedIngredients)
-                    {
-                        lb_itemOptions.SelectedIndex = ii.IngredientSelectedIndex;
-                    }
-                }
+            var optionQuery = (from ing in db.INGREDIENT.Where(i => i.id_category_ingredient == id)
+                               join ingCat in db.CATEGORY_INGREDIENT on ing.id_category_ingredient equals ingCat.id_category_ingredient
+                               select new ItemIngredient()
+                               {
+                                   IdItem = itemLocal.id_item,
+                                   IdIngredient = ing.id_ingredient,
+                                   Item_title = itemLocal.item_title,
+                                   Ingredient_title = ing.ingredient_title,
+                                   Ingredient_category_tutle = ingCat.category_ingredient_title,
+                                   Ingredient_price = (double)ing.ingredient_price,
+                                   Ingredient_quantity = 0
 
-
+                               });
+                icItem.ItemsSource = new ObservableCollection<ItemIngredient>(optionQuery.ToList());
+         
             }
             else
             {
                 bt_NextOption.Visibility = Visibility.Collapsed;
             }
+        }
+
+        private void OnClickAddIngredient(object sender, RoutedEventArgs e)
+        {
+            
+            ItemIngredient ingr = new ItemIngredient();
+            //ingr = ((Button)sender).Content as ItemIngredient;
+
+            Button bt = sender as Button;
+            int index = (int)bt.Tag;
+            ingr = icItem.Items[index] as ItemIngredient;
+
+            var  content = ((Button)sender).Content;
+                var item = itemIngredientLocal.FirstOrDefault(i => i.IdIngredient == ingr.IdIngredient);
+                if (item != null)
+                {
+                    item.Ingredient_quantity = item.Ingredient_quantity + 1;
+                    item.Ingredient_price += item.Ingredient_price;
+                 
+                      tb_value.Text = item.Ingredient_quantity.ToString();
+                      content = item.Ingredient_quantity.ToString();
+                      ingr.Ingredient_quantity = item.Ingredient_quantity;
+
+                
+
+                }
+          
+            else
+            {
+
+                itemIngredientLocal.Add(new ItemIngredient()
+                {
+                    IdItem = ingr.IdItem,
+
+                    IdIngredient = ingr.IdIngredient,
+                    Item_title = ingr.Item_title,
+                    Ingredient_title = ingr.Ingredient_title,
+                    Ingredient_price = ingr.Ingredient_price,
+                    Ingredient_quantity = 1
+                });
+                ingr.Ingredient_quantity = 1;
+            }
+           // tb_value.Text = cvm.IngredientCounter.ToString();
+
+
+        }
+
+
+        private void OnClickSubstractIngredient(object sender, RoutedEventArgs e)
+        {
+
+
+           
+            ItemIngredient ingr = new ItemIngredient();
+            ingr = ((Button)sender).Tag as ItemIngredient;
+
+
+            var item = itemIngredientLocal.FirstOrDefault(i => i.IdIngredient == ingr.IdIngredient);
+            if (item != null)
+            {
+                if(item.Ingredient_quantity == 1)
+                {
+                    itemIngredientLocal.Remove(item);
+                    ingr.Ingredient_quantity = 0;
+                   
+                }
+                else
+                {
+                    item.Ingredient_quantity = item.Ingredient_quantity - 1;
+                    item.Ingredient_price -= item.Ingredient_price;
+                    ingr.Ingredient_quantity = item.Ingredient_quantity;
+                }
+               
+            }
+
         }
     }
 }
