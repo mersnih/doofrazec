@@ -26,7 +26,9 @@ namespace Ecom.View
     public partial class Management : UserControl
     {
         ManagementModel mg;
-
+        int idItemCat = 0;
+        int idItem = 0;
+        string nameItemCat;
         public Management()
         {
             InitializeComponent();
@@ -43,8 +45,9 @@ namespace Ecom.View
             var liste = (CategoryModel)lv_itemsCategory.SelectedItem;
             if (liste != null)
             {
-                int id = liste.Id;
-                lv_items.ItemsSource = mg.GetItemsByCat(id);                    
+                idItemCat= liste.Id;
+                nameItemCat = liste.Title;
+                lv_items.ItemsSource = mg.GetItemsByCat(idItemCat);                    
             }
         }
 
@@ -54,8 +57,8 @@ namespace Ecom.View
             var liste = (ItemModel)lv_items.SelectedItem;
             if (liste != null)
             {
-                int id = liste.Id;
-                lv_itemsOptions.ItemsSource = mg.GetItemsOptionsByItem(id);
+                idItem = liste.Id;
+                lv_itemsOptions.ItemsSource = mg.GetItemsOptionsByItem(idItem);
             }
 
         }
@@ -74,7 +77,18 @@ namespace Ecom.View
 
         private void OnClickAddItem(object sender, RoutedEventArgs e)
         {
-            DialogHost.Show(new CUItem(), "RootDialog");
+            if(idItemCat > 0)
+            {
+                DialogHost.Show(new CUItem(idItemCat, nameItemCat), "RootDialog");
+            }
+            else
+            {
+                DialogHost.Show(new Message()
+                {
+                    message_tb = { Text = "Veuillez selectionner une catégorie d'abord" }
+                }, "RootDialog");
+            }
+ 
         }
     }
 }
