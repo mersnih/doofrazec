@@ -1,23 +1,15 @@
 ﻿using Ecom.DataModel;
 using Ecom.Model;
+using Ecom.Tools;
 using Ecom.ViewModel;
 using MaterialDesignThemes.Wpf;
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
-using System.ComponentModel;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
 using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
 
 namespace Ecom.View
 {
@@ -42,35 +34,67 @@ namespace Ecom.View
         public Caisse()
         {
             InitializeComponent();
-            db = new ModelCezar();
-            cvm = new CartViewModel();
-            cvm.TotalPrice = 0.00;
-            cvm.TotalRestPrice = 0.00;
-            cvm.TotalPayed = 0.00;
-
-            lv_cartItems.ItemsSource = cartList;
-            lb_payement.ItemsSource = listPayement;
-
-            var categoryQuery = db.CATEGORY.ToList();
-            foreach (CATEGORY cat in categoryQuery)
-            {
-                listCategories.Add(new CATEGORY
-                {
-                    id_category = cat.id_category,
-                    category_title = cat.category_title,
-                    category_description = cat.category_description,
-                    category_button_color = cat.category_button_color
-                });
-            }
-            icCat.ItemsSource = listCategories;
-            
+            this.Loaded += new RoutedEventHandler(PosLoaded);
+            this.DataContext = new NavigationViewModel();
         }
+
+        private void PosLoaded(object sender, RoutedEventArgs e)
+        {
+            if (Network.BddConnection())
+            {
+                try
+                {
+                    db = new ModelCezar();
+                    cvm = new CartViewModel();
+                    cvm.TotalPrice = 0.00;
+                    cvm.TotalRestPrice = 0.00;
+                    cvm.TotalPayed = 0.00;
+                    listCategories.Clear();
+                    lv_cartItems.ItemsSource = cartList;
+                    lb_payement.ItemsSource = listPayement;
+
+                    var categoryQuery = db.CATEGORY.ToList();
+                    foreach (CATEGORY cat in categoryQuery)
+                    {
+                        listCategories.Add(new CATEGORY
+                        {
+                            id_category = cat.id_category,
+                            category_title = cat.category_title,
+                            category_description = cat.category_description,
+                            category_button_color = cat.category_button_color
+                        });
+                    }
+                    icCat.ItemsSource = listCategories;
+                }
+                catch (Exception ex)
+                {
+                    DialogHost.Show(new Message()
+                    {
+                        message_tb = { Text = "Problème réseau " + ex.Message }
+                    }, "RootDialog");
+                }
+            }
+            else
+            {
+                DialogHost.Show(new Message()
+                {
+                    message_tb = { Text = "Connexion imossible" }
+                }, "RootDialog");
+            }
+           
+        }
+
         // Affiche les articles par catégorie 
         private void getItemsByCatId(object sender, RoutedEventArgs e)
         {
             CATEGORY cat = new CATEGORY();
             listItems = new ObservableCollection<ITEM>();
-            cat = ((Button)sender).Tag as CATEGORY;
+
+            Button bt = sender as Button;
+            int index = (int)bt.Tag;
+            cat = icCat.Items[index] as CATEGORY;
+
+           // cat = ((Button)sender).Tag as CATEGORY;
             if(cat != null)
             {
                 var itemQuery = db.ITEM.Where(i => i.id_category== cat.id_category && i.actif == true).ToList();
@@ -85,38 +109,72 @@ namespace Ecom.View
                     });
                 }
                 icItem.ItemsSource = listItems;
+
+                int count = 0;
+                foreach (Object itm in icCat.Items)
+                {
+                  
+                  
+                    if(count != index)
+                    {
+
+                        Button happyButton = FindItemControl(icCat, "getItemsBtn", itm) as Button;
+                         happyButton.Background = Brushes.Transparent;
+                    }
+                    else
+                    {
+                        Button happyButton = FindItemControl(icCat, "getItemsBtn", itm) as Button;
+                        happyButton.Background = Brushes.Black;
+                    }
+                    count = count+ 1;
+
+                }
             }
 
         }
-
+        private object FindItemControl(ItemsControl itemsControl, string controlName, object item)
+        {
+            ContentPresenter container = itemsControl.ItemContainerGenerator.ContainerFromItem(item) as ContentPresenter;
+            container.ApplyTemplate();
+            return container.ContentTemplate.FindName(controlName, container);
+        }
         // Ajout d'un article au panier
         private void addToCart(object sender, RoutedEventArgs e)
         {
             ITEM item = new ITEM();    
             item = ((Button)sender).Tag as ITEM;
-
             itemTest = item;
             var queryIngCat = (from cat in db.CATEGORY_INGREDIENT.Where(ci => ci.ITEM.Any())
                                from itm in db.ITEM.Where(i => i.CATEGORY_INGREDIENT.Contains(cat) && i.id_item == item.id_item)
-                               select cat).ToList() ;
+                               select cat).ToList();
             if(queryIngCat.Count > 0)
             {
                DialogHost.Show(new ItemOption(item, queryIngCat), "RootDialog", onCLosingDialog);
-
+               
             }
             else
-            {             
-                cvm.Cart.Add(new Cart
+            {
+                var it = cvm.Cart.FirstOrDefault(i => i.ItemId == item.id_item);
+                if(it != null)
+                {                   
+                    it.ItemQuantity = it.ItemQuantity + 1;
+                  //  it.ItemPriceWithoutSupp = it.ItemPriceWithoutSupp + it.ItemPrice;
+                  //  it.ItemPrice += it.ItemPrice;
+                }
+                else
                 {
-                    ItemQuantity = 1,
-                    ItemId = item.id_item,
-                    ItemTitle = item.item_title,
-                    ItemPriceWithoutSupp = (double)item.item_price,
-                    SuppPrice = 0,
-                });
-
+                    cvm.Cart.Add(new Cart
+                    {
+                        ItemQuantity = 1,
+                        ItemId = item.id_item,
+                        ItemTitle = item.item_title,
+                        ItemPriceWithoutSupp = (double)item.item_price,
+                        SuppPrice = 0,
+                    });
+                }
                 double totalCartLocal = 0.00;
                 cartList = cvm.Cart;
+      
                 foreach (Cart itm in cartList)
                 {
                     totalCartLocal = totalCartLocal + itm.ItemPrice;
@@ -126,14 +184,57 @@ namespace Ecom.View
                 tb_total.Text = cvm.TotalPrice + "€";
                 tb_totalRest.Text = cvm.TotalRestPrice + "€";
                 lv_cartItems.ItemsSource = cvm.Cart;
+
+                //Detect menu
+              
+
             }
 
-
+         
             //foreach (CATEGORY_INGREDIENT list in queryIngCat)
             //{
             //    int id = list.id_category_ingredient;
             //    DialogHost.Show(new ItemOption(item, id), "RootDialog", onCLosingDialog);
             //}
+        }
+
+        private void DetectMenu()
+        {
+            // Je recupere le panier 
+            var cartList = cvm.Cart;
+
+            // je recupère la liste des menus
+            var menu = db.MENU.ToList();
+            // Je parcoure la liste des menus // un par un 
+            foreach(var menuItem in menu)
+            {
+                // Je recupère la liste des options 
+                var option = menuItem.OPTION_CHOIX_MENU.ToList();
+                // Je parcoure la liste des options 
+                foreach (var optionItem in option)
+                {
+                    // Dans chaque option je vais chercher la liste des produits liés 
+                    var optionContainer = optionItem.ITEM_OPTION_MENU.ToList();
+                    HashSet<int> cartHash = new HashSet<int>(cartList.Where(c => c.Tag != true).Select(s => s.ItemId));
+                   // var cartIDs = cvm.Cart;
+                  //  var results = optionContainer.Where(m => cartIDs.Any(z => z.ItemId == m.id_item) );
+                    var results2 = optionContainer.Where(m => cartHash.Contains(m.id_item)).ToList();
+                    if (results2.Count() > 0)
+                    {
+                       foreach (var res in results2)
+                        {
+                            var updateCartList = cartList.FirstOrDefault(i => i.ItemId == res.id_item);
+                            if (updateCartList != null)
+                            {
+                                updateCartList.Tag = true;
+                            }
+                            
+                        }                             
+                    }
+              
+                }
+            }
+            var test = cartList;
         }
 
         private void onCLosingDialog(object sender, DialogClosingEventArgs eventArgs)
@@ -150,6 +251,8 @@ namespace Ecom.View
             tb_total.Text = cvm.TotalPrice + "€";
             tb_totalRest.Text = cvm.TotalRestPrice + "€";
             lv_cartItems.ItemsSource = cvm.Cart;
+           
+
         }
 
         //Suppression d'un article du panier 
@@ -180,7 +283,7 @@ namespace Ecom.View
                 DialogHost.Show(new Message()
                 {
                     message_tb = { Text = "La liste est vide"}
-                }, "RootDialog", onCLosingDialog);
+                }, "RootDialog");
             }
             
         }
@@ -188,18 +291,22 @@ namespace Ecom.View
         private void onCLosingSenderOrderDialog(object sender, DialogClosingEventArgs eventArgs)
         {
        
-            cvm.TotalPrice = 0;
-            cvm.TotalRestPrice = 0;
-            cvm.TotalPayed = 0;
-
-            listPayement = cvm.Payement;
-            lb_payement.ItemsSource = listPayement;
-            foreach (Payement p in listPayement)
+            if(cartList.Count == 0)
             {
-                cvm.TotalPayed += p.PayementValue;
+                cvm.TotalPrice = 0;
+                cvm.TotalRestPrice = 0;
+                cvm.TotalPayed = 0;
+
+                listPayement = cvm.Payement;
+                lb_payement.ItemsSource = listPayement;
+                foreach (Payement p in listPayement)
+                {
+                    cvm.TotalPayed += p.PayementValue;
+                }
+                tb_totalRest.Text = cvm.TotalPrice - cvm.TotalPayed + "€";
+                tb_total.Text = cvm.TotalPrice + "€";
             }
-            tb_totalRest.Text = cvm.TotalPrice - cvm.TotalPayed + "€";
-            tb_total.Text = cvm.TotalPrice + "€";
+
         }
 
         private void cashingOrder(object sender, RoutedEventArgs e)
@@ -260,7 +367,7 @@ namespace Ecom.View
 
         private void editItemFromCart(object sender, RoutedEventArgs e)
         {
-            var item = ((ListViewItem)lv_cartItems.ContainerFromElement((Button)sender)).Content;
+             var item = ((ListViewItem)lv_cartItems.ContainerFromElement((Button)sender)).Content;
             int index = lv_cartItems.Items.IndexOf(item);
             Cart cart = (Cart)item;
 
@@ -276,18 +383,33 @@ namespace Ecom.View
             // Cart item = (Cart)(sender as ListView).SelectedItem;
 
             if (cart != null)
-            {
+            {                 
                 int idItem = cart.ItemId;
+                ObservableCollection<ItemIngredient> listIng = cart.SelectedIngredients;
                 var queryIngCat = (from cat in db.CATEGORY_INGREDIENT.Where(ci => ci.ITEM.Any())
                                    from itm in db.ITEM.Where(i => i.CATEGORY_INGREDIENT.Contains(cat) && i.id_item == idItem)
                                    select cat).ToList();
                 if (queryIngCat.Count > 0)
                 {
-                    DialogHost.Show(new ItemOption(cart, idItem, index, queryIngCat), "RootDialog", onCLosingDialog);
+                    DialogHost.Show(new ItemOption(cart, idItem, index, queryIngCat, listIng), "RootDialog", onCLosingDialog);
 
                 }
            //     DialogHost.Show(new ItemOption(cart, idItem, index), "RootDialog", onCLosingDialog);
             }
+        }
+
+        private void commandPlusOne(object sender, RoutedEventArgs e)
+        {
+            var ViewModel = (NavigationViewModel)DataContext;
+
+            if (ViewModel.GenCommand.CanExecute(null))
+                ViewModel.GenCommand.Execute(null);
+            // new Commandes();
+        }
+
+        private void DetectMenuClick(object sender, RoutedEventArgs e)
+        {
+            DetectMenu();
         }
     }
 }

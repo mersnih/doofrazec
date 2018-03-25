@@ -8,7 +8,7 @@ namespace Ecom.DataModel
     public partial class ModelCezar : DbContext
     {
         public ModelCezar()
-            : base("name=ModelCezar2")
+            : base("name=ModelCezar")
         {
         }
 
@@ -18,9 +18,10 @@ namespace Ecom.DataModel
         public virtual DbSet<CATEGORY_INGREDIENT> CATEGORY_INGREDIENT { get; set; }
         public virtual DbSet<INGREDIENT> INGREDIENT { get; set; }
         public virtual DbSet<ITEM> ITEM { get; set; }
+        public virtual DbSet<ITEM_OPTION_MENU> ITEM_OPTION_MENU { get; set; }
         public virtual DbSet<item_selection> item_selection { get; set; }
         public virtual DbSet<MENU> MENU { get; set; }
-        public virtual DbSet<menu_selection> menu_selection { get; set; }
+        public virtual DbSet<OPTION_CHOIX_MENU> OPTION_CHOIX_MENU { get; set; }
         public virtual DbSet<ORDERS> ORDERS { get; set; }
         public virtual DbSet<ORDERS_STATUS> ORDERS_STATUS { get; set; }
         public virtual DbSet<ORDERS_TYPE> ORDERS_TYPE { get; set; }
@@ -98,7 +99,7 @@ namespace Ecom.DataModel
 
             modelBuilder.Entity<INGREDIENT>()
                 .Property(e => e.ingredient_price)
-                .HasPrecision(15, 3);
+                .HasPrecision(15, 2);
 
             modelBuilder.Entity<ITEM>()
                 .Property(e => e.item_title)
@@ -130,19 +131,14 @@ namespace Ecom.DataModel
                 .WillCascadeOnDelete(false);
 
             modelBuilder.Entity<ITEM>()
+                .HasMany(e => e.ITEM_OPTION_MENU)
+                .WithRequired(e => e.ITEM)
+                .WillCascadeOnDelete(false);
+
+            modelBuilder.Entity<ITEM>()
                 .HasMany(e => e.item_selection)
                 .WithRequired(e => e.ITEM)
                 .WillCascadeOnDelete(false);
-
-            modelBuilder.Entity<ITEM>()
-                .HasMany(e => e.menu_selection)
-                .WithRequired(e => e.ITEM)
-                .WillCascadeOnDelete(false);
-
-            modelBuilder.Entity<ITEM>()
-                .HasMany(e => e.MENU)
-                .WithMany(e => e.ITEM)
-                .Map(m => m.ToTable("composed").MapLeftKey("id_item").MapRightKey("id_menu"));
 
             modelBuilder.Entity<item_selection>()
                 .Property(e => e.item_selection_note)
@@ -165,13 +161,18 @@ namespace Ecom.DataModel
                 .HasPrecision(15, 3);
 
             modelBuilder.Entity<MENU>()
-                .HasMany(e => e.menu_selection)
-                .WithRequired(e => e.MENU)
-                .WillCascadeOnDelete(false);
+                .HasMany(e => e.OPTION_CHOIX_MENU)
+                .WithMany(e => e.MENU)
+                .Map(m => m.ToTable("Options_Menu").MapLeftKey("id_menu").MapRightKey("id_option_choix_menu"));
 
-            modelBuilder.Entity<menu_selection>()
-                .Property(e => e.menu_selection_note)
+            modelBuilder.Entity<OPTION_CHOIX_MENU>()
+                .Property(e => e.option_choix_menu_title)
                 .IsUnicode(false);
+
+            modelBuilder.Entity<OPTION_CHOIX_MENU>()
+                .HasMany(e => e.ITEM_OPTION_MENU)
+                .WithRequired(e => e.OPTION_CHOIX_MENU)
+                .WillCascadeOnDelete(false);
 
             modelBuilder.Entity<ORDERS>()
                 .Property(e => e.orders_number)
@@ -199,11 +200,6 @@ namespace Ecom.DataModel
 
             modelBuilder.Entity<ORDERS>()
                 .HasMany(e => e.item_selection)
-                .WithRequired(e => e.ORDERS)
-                .WillCascadeOnDelete(false);
-
-            modelBuilder.Entity<ORDERS>()
-                .HasMany(e => e.menu_selection)
                 .WithRequired(e => e.ORDERS)
                 .WillCascadeOnDelete(false);
 
@@ -236,7 +232,7 @@ namespace Ecom.DataModel
 
             modelBuilder.Entity<PAYEMENT_DETAIL>()
                 .Property(e => e.payement_detail_price)
-                .HasPrecision(15, 3);
+                .HasPrecision(15, 2);
 
             modelBuilder.Entity<TAG>()
                 .Property(e => e.tag_title)

@@ -5,178 +5,278 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
              xmlns:local="clr-namespace:Ecom.View"
+             xmlns:dragablz="clr-namespace:Dragablz;assembly=Dragablz"
              mc:Ignorable="d" 
              d:DesignHeight="300" d:DesignWidth="300">
-    <Grid>
-        <Grid.RowDefinitions>
-            <RowDefinition></RowDefinition> <!--ITEMS-->
-            <RowDefinition></RowDefinition> <!--INGREDIENTS--> 
-            <RowDefinition></RowDefinition> <!--MENUS--> 
-        </Grid.RowDefinitions>
-        <Grid Grid.Row="0" Margin="0,5"> <!--ITEMS-->
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition></ColumnDefinition>
-                <ColumnDefinition></ColumnDefinition>
-                <ColumnDefinition></ColumnDefinition>
-            </Grid.ColumnDefinitions>
-            <Grid  Grid.Row="0" Grid.Column="0" >
-            <DockPanel Background="White" Margin="5,0">
+    <UserControl.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <!-- primary color -->
+                <ResourceDictionary>
+                    <!-- include your primary palette -->
+                    <ResourceDictionary.MergedDictionaries>
+                        <ResourceDictionary Source="pack://application:,,,/MaterialDesignColors;component/Themes/MaterialDesignColor.Indigo.xaml" />
+                    </ResourceDictionary.MergedDictionaries>
+                    <!--
+                            include three hues from the primary palette (and the associated forecolours).
+                            Do not rename, keep in sequence; light to dark.
+                        -->
+                    <SolidColorBrush x:Key="PrimaryHueLightBrush" Color="{StaticResource Primary100}"/>
+                    <SolidColorBrush x:Key="PrimaryHueLightForegroundBrush" Color="{StaticResource Primary100Foreground}"/>
+                    <SolidColorBrush x:Key="PrimaryHueMidBrush" Color="{StaticResource Primary500}"/>
+                    <SolidColorBrush x:Key="PrimaryHueMidForegroundBrush" Color="{StaticResource Primary500Foreground}"/>
+                    <SolidColorBrush x:Key="PrimaryHueDarkBrush" Color="{StaticResource Primary700}"/>
+                    <SolidColorBrush x:Key="PrimaryHueDarkForegroundBrush" Color="{StaticResource Primary700Foreground}"/>
+                </ResourceDictionary>
 
-                <StackPanel DockPanel.Dock="Top" Background="#2e86de" Height="50">
-                    <TextBlock HorizontalAlignment="Center" Foreground="White" FontSize="20">Familles des articles</TextBlock>
+                <!-- secondary colour -->
+                <ResourceDictionary>
+                    <!-- include your secondary pallette -->
+                    <ResourceDictionary.MergedDictionaries>
+                        <ResourceDictionary Source="pack://application:,,,/MaterialDesignColors;component/Themes/MaterialDesignColor.Yellow.xaml" />
+                    </ResourceDictionary.MergedDictionaries>
 
-                </StackPanel>
+                    <!-- include a single secondary accent color (and the associated forecolour) -->
+                    <SolidColorBrush x:Key="SecondaryAccentBrush" Color="{StaticResource Accent200}"/>
+                    <SolidColorBrush x:Key="SecondaryAccentForegroundBrush" Color="{StaticResource Accent200Foreground}"/>
+                </ResourceDictionary>
 
-                <Grid Grid.Row="1">
-                    <ListView x:Name="lv_itemsCategory" SelectionChanged="showItemsOnSelectionChanged">
-                        <ListBox.ItemTemplate>
-                            <DataTemplate>
-                                <Grid >
-                                    <StackPanel Grid.Column="1" Orientation="Horizontal">
-                                        <TextBlock Text="{Binding Title}" FontSize="20" />
-                                    </StackPanel>
+                <!-- Include the Dragablz Material Design style -->
+                <ResourceDictionary Source="pack://application:,,,/Dragablz;component/Themes/materialdesign.xaml"/>
+
+            </ResourceDictionary.MergedDictionaries>
+
+            <!-- tell Dragablz tab control to use the Material Design theme -->
+            <Style TargetType="{x:Type dragablz:TabablzControl}" BasedOn="{StaticResource MaterialDesignTabablzControlStyle}" />
+        </ResourceDictionary>
+    </UserControl.Resources>
+    <dragablz:TabablzControl>
+
+        <TabItem Header="Gestion des produits">
+            <Grid>
+
+                    <Grid.RowDefinitions>
+                        <RowDefinition></RowDefinition>
+                        <!--ITEMS-->
+                        <RowDefinition></RowDefinition>
+                        <!--INGREDIENTS-->
+
+                    </Grid.RowDefinitions>
+                    <Grid Grid.Row="0" Margin="0,5">
+                        <!--ITEMS-->
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition></ColumnDefinition>
+                            <ColumnDefinition></ColumnDefinition>
+                            <ColumnDefinition></ColumnDefinition>
+                        </Grid.ColumnDefinitions>
+                        <Grid  Grid.Row="0" Grid.Column="0" >
+                            <DockPanel Background="White" Margin="5,0">
+
+                                <StackPanel DockPanel.Dock="Top" Background="#2e86de" Height="50">
+                                    <TextBlock HorizontalAlignment="Center" Foreground="White" FontSize="20">Familles des articles</TextBlock>
+
+                                </StackPanel>
+
+                                <Grid Grid.Row="1">
+                                    <ListView x:Name="lv_itemsCategory" SelectionChanged="showItemsOnSelectionChanged">
+                                        <ListBox.ItemTemplate>
+                                            <DataTemplate>
+                                                <Grid>
+                                                    <Grid.ColumnDefinitions>
+                                                        <ColumnDefinition Width="150"></ColumnDefinition>
+                                                        <ColumnDefinition Width="50"></ColumnDefinition>
+                                                    </Grid.ColumnDefinitions>
+
+                                                    <TextBlock Grid.Column="0" Text="{Binding Title}" FontSize="20" />
+                                                    <Button Grid.Column="1"  Click="OnClickDeleteItemCat" Height="25" Width="25" Background="Transparent" BorderBrush="Transparent" Style="{StaticResource MaterialDesignFloatingActionButton}">
+                                                        <materialDesign:PackIcon Kind="CloseCircleOutline" Width="25" Height="25" Foreground="#B94B50"/>
+                                                    </Button>
+
+                                                </Grid>
+                                            </DataTemplate>
+                                        </ListBox.ItemTemplate>
+                                    </ListView>
                                 </Grid>
-                            </DataTemplate>
-                        </ListBox.ItemTemplate>
-                    </ListView>
-                </Grid>
 
-            </DockPanel>
-                <Button x:Name="D_ajouter_bt"  Margin="0,30,30,0" Grid.Row="1" Style="{StaticResource MaterialDesignFloatingActionButton}" Grid.Column="10" HorizontalAlignment="Right" VerticalAlignment="Top"  BorderBrush="#4CAF50" Width="40" Height="40" Background="#4CAF50" Foreground="White" ToolTip="Ajouter">
-                    <materialDesign:PackIcon Kind="Plus"  Width="35" Height="35" />
-                </Button>
-            </Grid>
-            <Grid Grid.Row="0" Grid.Column="1" >
-            <DockPanel Background="White" Margin="5,0">
+                            </DockPanel>
+                            <Button x:Name="D_ajouter_bt" Click="OnClickAddItemCat" Margin="0,30,30,0" Grid.Row="1" Style="{StaticResource MaterialDesignFloatingActionButton}" Grid.Column="10" HorizontalAlignment="Right" VerticalAlignment="Top"  BorderBrush="#4CAF50" Width="40" Height="40" Background="#4CAF50" Foreground="White" ToolTip="Ajouter">
+                                <materialDesign:PackIcon Kind="Plus"  Width="35" Height="35" />
+                            </Button>
 
-                <StackPanel DockPanel.Dock="Top" Background="#2e86de" Height="50">
-                    <TextBlock HorizontalAlignment="Center" Foreground="White" FontSize="20">Les articles</TextBlock>
+                        </Grid>
+                        <Grid Grid.Row="0" Grid.Column="1" >
+                            <DockPanel Background="White" Margin="5,0">
 
-                </StackPanel>
+                                <StackPanel DockPanel.Dock="Top" Background="#2e86de" Height="50">
+                                    <TextBlock HorizontalAlignment="Center" Foreground="White" FontSize="20">Les articles</TextBlock>
 
-                <Grid Grid.Row="1">
-                    <ListView x:Name="lv_items" SelectionChanged="showItemsOptionsOnSelectionChanged">
-                        <ListBox.ItemTemplate >
-                            <DataTemplate>
-                                <Grid >
-                                    <Grid.ColumnDefinitions>
-                                        <ColumnDefinition Width="150"></ColumnDefinition>
-                                        <ColumnDefinition Width="50"></ColumnDefinition>
-                                        <ColumnDefinition Width="50"></ColumnDefinition>
-                                        <ColumnDefinition Width="50"></ColumnDefinition>
-                                    </Grid.ColumnDefinitions>
+                                </StackPanel>
 
-                                    <TextBlock Grid.Column="0" Text="{Binding Title}" FontSize="20"/>
-                                    <StackPanel Grid.Column="1" Orientation="Horizontal" >
-                                        <TextBlock Text="{Binding Price}" FontSize="20" Foreground="DarkGreen"/>
-                                        <TextBlock Text="€" FontSize="20" Foreground="DarkGreen"/>
-                                    </StackPanel>
+                                <Grid Grid.Row="1">
+                                    <ListView x:Name="lv_items" SelectionChanged="showItemsOptionsOnSelectionChanged">
+                                        <ListBox.ItemTemplate >
+                                            <DataTemplate>
+                                                <Grid >
+                                                    <Grid.ColumnDefinitions>
+                                                        <ColumnDefinition Width="50"></ColumnDefinition>
+                                                        <ColumnDefinition Width="150"></ColumnDefinition>
+                                                        <ColumnDefinition Width="50"></ColumnDefinition>
+                                                        <ColumnDefinition Width="50"></ColumnDefinition>
+                                                        <ColumnDefinition Width="100"></ColumnDefinition>
+                                                        <ColumnDefinition Width="50"></ColumnDefinition>
+                                                    </Grid.ColumnDefinitions>
+                                                    <materialDesign:PackIcon Kind="Brightness1" Grid.Column="0" Width="25" Height="25" BorderBrush="{Binding Color}" Foreground="{Binding Color}" />
+                                                    <TextBlock Grid.Column="1" Text="{Binding Title}" FontSize="20"/>
+                                                    <StackPanel Grid.Column="2" Orientation="Horizontal" >
+                                                        <TextBlock Text="{Binding Price}" FontSize="20" Foreground="DarkGreen"/>
+                                                        <TextBlock Text="€" FontSize="20" Foreground="DarkGreen"/>
+                                                    </StackPanel>
 
-                                    <ToggleButton Grid.Column="2" Style="{StaticResource MaterialDesignSwitchAccentToggleButton}" IsEnabled="False" IsChecked="{Binding Actif}"/>
-                                    <materialDesign:PackIcon Kind="Brightness1" Grid.Column="3" Width="25" Height="25" BorderBrush="{Binding Color}" Foreground="{Binding Color}" />
+                                                    <ToggleButton Grid.Column="3" Style="{StaticResource MaterialDesignSwitchAccentToggleButton}" IsEnabled="False" IsChecked="{Binding Actif}"/>
 
+                                                    <Button Grid.Column="4" Click="OnClickEditItem">Modifier</Button>
+                                                    <Button Grid.Column="5" Click="OnClickDeleteItem" Height="25" Width="25" Background="Transparent" BorderBrush="Transparent" Style="{StaticResource MaterialDesignFloatingActionButton}">
+                                                        <materialDesign:PackIcon Kind="CloseCircleOutline" Width="25" Height="25" Foreground="#B94B50"/>
+                                                    </Button>
+
+                                                </Grid>
+                                            </DataTemplate>
+
+                                        </ListBox.ItemTemplate>
+                                    </ListView>
                                 </Grid>
-                            </DataTemplate>
-                            
-                        </ListBox.ItemTemplate>
-                    </ListView>
-                </Grid>
 
-            </DockPanel>
-                <Button x:Name="bt_addItem" Click="OnClickAddItem"  Margin="0,30,30,0"  Grid.Row="1" Style="{StaticResource MaterialDesignFloatingActionButton}" Grid.Column="10" HorizontalAlignment="Right" VerticalAlignment="Top"  BorderBrush="#4CAF50" Width="40" Height="40" Background="#4CAF50" Foreground="White" ToolTip="Ajouter">
-                    <materialDesign:PackIcon Kind="Plus"  Width="35" Height="35" />
-                </Button>
-            </Grid>
-            <Grid Grid.Row="0" Grid.Column="2" >
-            <DockPanel  Background="White" Margin="5,0">
+                            </DockPanel>
+                            <Button x:Name="bt_addItem" Click="OnClickAddItem"  Margin="0,30,30,0"  Grid.Row="1" Style="{StaticResource MaterialDesignFloatingActionButton}" Grid.Column="10" HorizontalAlignment="Right" VerticalAlignment="Top"  BorderBrush="#4CAF50" Width="40" Height="40" Background="#4CAF50" Foreground="White" ToolTip="Ajouter">
+                                <materialDesign:PackIcon Kind="Plus"  Width="35" Height="35" />
+                            </Button>
+                        </Grid>
+                        <Grid Grid.Row="0" Grid.Column="2" >
+                            <DockPanel  Background="White" Margin="5,0">
 
-                <StackPanel DockPanel.Dock="Top" Background="#2e86de" Height="50">
-                    <TextBlock HorizontalAlignment="Center" Foreground="White" FontSize="20">Options des articles</TextBlock>
+                                <StackPanel DockPanel.Dock="Top" Background="#2e86de" Height="50">
+                                    <TextBlock HorizontalAlignment="Center" Foreground="White" FontSize="20">Options des articles</TextBlock>
 
-                </StackPanel>
+                                </StackPanel>
 
-                    <Grid Grid.Row="1">
-                        <ListView x:Name="lv_itemsOptions">
-                            <ListBox.ItemTemplate>
-                                <DataTemplate>
-                                    <Grid>
-                                        <StackPanel Grid.Column="1" Orientation="Horizontal">
-                                            <TextBlock Text="{Binding Title}" FontSize="20" />
-                                        </StackPanel>
-                                    </Grid>
-                                </DataTemplate>
-                            </ListBox.ItemTemplate>
-                        </ListView>
+                                <Grid Grid.Row="1">
+                                    <ListView x:Name="lv_itemsOptions">
+                                        <ListBox.ItemTemplate>
+                                            <DataTemplate>
+                                                <Grid>
+                                                    <Grid.ColumnDefinitions>
+                                                        <ColumnDefinition Width="150"></ColumnDefinition>
+                                                        <ColumnDefinition Width="50"></ColumnDefinition>
+                                                    </Grid.ColumnDefinitions>
+                                                    <StackPanel Grid.Column="0" Orientation="Horizontal">
+                                                        <TextBlock Text="{Binding Title}" FontSize="20" />
+                                                    </StackPanel>
+                                                    <Button Grid.Column="1" Click="OnClickDeleteOption" Height="25" Width="25" Background="Transparent" BorderBrush="Transparent" Style="{StaticResource MaterialDesignFloatingActionButton}">
+                                                        <materialDesign:PackIcon Kind="CloseCircleOutline" Width="25" Height="25" Foreground="#B94B50"/>
+                                                    </Button>
+                                                </Grid>
+                                            </DataTemplate>
+                                        </ListBox.ItemTemplate>
+                                    </ListView>
+                                </Grid>
+                            </DockPanel>
+                            <Button x:Name="bt_addItemOption" Click="OnClickAffectOptionToItem"  Margin="0,30,30,0"  Grid.Row="1" Style="{StaticResource MaterialDesignFloatingActionButton}" Grid.Column="10" HorizontalAlignment="Right" VerticalAlignment="Top"  BorderBrush="#4CAF50" Width="40" Height="40" Background="#4CAF50" Foreground="White" ToolTip="Ajouter">
+                                <materialDesign:PackIcon Kind="Plus"  Width="35" Height="35" />
+                            </Button>
+                        </Grid>
+
+
                     </Grid>
-                </DockPanel>
-                <Button x:Name="bt_addItemOption"  Margin="0,30,30,0"  Grid.Row="1" Style="{StaticResource MaterialDesignFloatingActionButton}" Grid.Column="10" HorizontalAlignment="Right" VerticalAlignment="Top"  BorderBrush="#4CAF50" Width="40" Height="40" Background="#4CAF50" Foreground="White" ToolTip="Ajouter">
-                    <materialDesign:PackIcon Kind="Plus"  Width="35" Height="35" />
-                </Button>
-            </Grid>
 
+                    <Grid Grid.Row="1" Margin="0,5">
+                        <!--INGREDIENT-->
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition></ColumnDefinition>
+                            <ColumnDefinition></ColumnDefinition>
+                        </Grid.ColumnDefinitions>
+                        <Grid Grid.Column="0">
+                            <DockPanel  Background="White" Margin="5,0">
 
-        </Grid>
+                                <StackPanel DockPanel.Dock="Top" Background="#2e86de" Height="50">
+                                    <TextBlock HorizontalAlignment="Center" Foreground="White" FontSize="20">Familles des ingrédients</TextBlock>
 
-        <Grid Grid.Row="1" Margin="0,5"> <!--INGREDIENT-->
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition></ColumnDefinition>
-                <ColumnDefinition></ColumnDefinition>
-            </Grid.ColumnDefinitions>
-            <Grid Grid.Column="0">
-            <DockPanel  Background="White" Margin="5,0">
+                                </StackPanel>
 
-                <StackPanel DockPanel.Dock="Top" Background="#2e86de" Height="50">
-                    <TextBlock HorizontalAlignment="Center" Foreground="White" FontSize="20">Familles des ingrédients</TextBlock>
+                                <Grid Grid.Row="1">
+                                    <ListView x:Name="lv_ingredientCategory" SelectionChanged="showIngredientsOnSelectionChanged">
+                                        <ListBox.ItemTemplate>
+                                            <DataTemplate>
+                                                <Grid HorizontalAlignment="Stretch">
+                                                    <Grid.ColumnDefinitions>
+                                                        <ColumnDefinition Width="150"></ColumnDefinition>
+                                                        <ColumnDefinition Width="100"></ColumnDefinition>
+                                                        <ColumnDefinition Width="50"></ColumnDefinition>
+                                                    </Grid.ColumnDefinitions>
 
-                </StackPanel>
+                                                    <TextBlock Grid.Column="0" Text="{Binding Title}" FontSize="20" />
+                                                    <Button Grid.Column="1" Click="OnClickEditIngCat">Modifier</Button>
+                                                    <Button Grid.Column="2" Click="OnClickDeleteIngCat" Height="25" Width="25" Background="Transparent" BorderBrush="Transparent" Style="{StaticResource MaterialDesignFloatingActionButton}">
+                                                        <materialDesign:PackIcon Kind="CloseCircleOutline" Width="25" Height="25" Foreground="#B94B50"/>
+                                                    </Button>
 
-                <Grid Grid.Row="1">
-                    <ListView x:Name="lv_ingredientCategory" SelectionChanged="showIngredientsOnSelectionChanged">
-                        <ListBox.ItemTemplate>
-                            <DataTemplate>
-                                <Grid>
-                                    <StackPanel Grid.Column="1" Orientation="Horizontal">
-                                            <TextBlock Text="{Binding Title}" FontSize="20" />
-                                    </StackPanel>
+                                                </Grid>
+                                            </DataTemplate>
+                                        </ListBox.ItemTemplate>
+                                    </ListView>
                                 </Grid>
-                            </DataTemplate>
-                        </ListBox.ItemTemplate>
-                    </ListView>
+
+                            </DockPanel>
+                            <Button x:Name="bt_addIngredientCat" Click="OnClickAddIngCat"  Margin="0,30,30,0"  Grid.Row="1" Style="{StaticResource MaterialDesignFloatingActionButton}" Grid.Column="10" HorizontalAlignment="Right" VerticalAlignment="Top"  BorderBrush="#4CAF50" Width="40" Height="40" Background="#4CAF50" Foreground="White" ToolTip="Ajouter">
+                                <materialDesign:PackIcon Kind="Plus"  Width="35" Height="35" />
+                            </Button>
+                        </Grid>
+                        <Grid Grid.Column="1" >
+                            <DockPanel Background="White" Margin="5,0">
+
+                                <StackPanel DockPanel.Dock="Top" Background="#2e86de" Height="50">
+                                    <TextBlock HorizontalAlignment="Center" Foreground="White" FontSize="20">Les ingrédients</TextBlock>
+
+                                </StackPanel>
+
+                                <Grid Grid.Row="1">
+                                    <ListView x:Name="lv_ingredient" SelectionChanged="showIngredientsOnSelectionChanged">
+                                        <ListBox.ItemTemplate>
+                                            <DataTemplate>
+                                                <Grid>
+                                                    <Grid.ColumnDefinitions>
+                                                        <ColumnDefinition Width="120"></ColumnDefinition>
+                                                        <ColumnDefinition Width="50"></ColumnDefinition>
+                                                        <ColumnDefinition></ColumnDefinition>
+                                                    </Grid.ColumnDefinitions>
+                                                    <TextBlock Grid.Column="0" Text="{Binding Title}" FontSize="20" />
+                                                    <Button Grid.Column="1" Click="OnClickDeleteIng" Height="25" Width="25" Background="Transparent" BorderBrush="Transparent" Style="{StaticResource MaterialDesignFloatingActionButton}">
+                                                        <materialDesign:PackIcon Kind="CloseCircleOutline" Width="25" Height="25" Foreground="#B94B50"/>
+                                                    </Button>
+
+
+                                                </Grid>
+                                            </DataTemplate>
+                                        </ListBox.ItemTemplate>
+                                    </ListView>
+                                </Grid>
+                            </DockPanel>
+                            <Button x:Name="bt_addIngredient" Click="OnClickAddIngredientItem"  Margin="0,30,30,0"  Grid.Row="1" Style="{StaticResource MaterialDesignFloatingActionButton}" Grid.Column="10" HorizontalAlignment="Right" VerticalAlignment="Top"  BorderBrush="#4CAF50" Width="40" Height="40" Background="#4CAF50" Foreground="White" ToolTip="Ajouter">
+                                <materialDesign:PackIcon Kind="Plus"  Width="35" Height="35" />
+                            </Button>
+
+
+                        </Grid>
+                    </Grid>
+
                 </Grid>
 
-            </DockPanel>
-                <Button x:Name="bt_addIngredientCat"  Margin="0,30,30,0"  Grid.Row="1" Style="{StaticResource MaterialDesignFloatingActionButton}" Grid.Column="10" HorizontalAlignment="Right" VerticalAlignment="Top"  BorderBrush="#4CAF50" Width="40" Height="40" Background="#4CAF50" Foreground="White" ToolTip="Ajouter">
-                    <materialDesign:PackIcon Kind="Plus"  Width="35" Height="35" />
-                </Button>
-            </Grid>
-            <Grid Grid.Column="1" >
-            <DockPanel Background="White" Margin="5,0">
 
-                <StackPanel DockPanel.Dock="Top" Background="#2e86de" Height="50">
-                    <TextBlock HorizontalAlignment="Center" Foreground="White" FontSize="20">Les ingrédients</TextBlock>
 
-                </StackPanel>
+            </TabItem>
+            <TabItem Header="Gestion des menus" />
+         
+     
 
-                    <Grid Grid.Row="1">
-                        <ListView x:Name="lv_ingredient" SelectionChanged="showIngredientsOnSelectionChanged">
-                            <ListBox.ItemTemplate>
-                                <DataTemplate>
-                                    <Grid>
-                                        <StackPanel Grid.Column="1" Orientation="Horizontal">
-                                            <TextBlock Text="{Binding Title}" FontSize="20" />
+    </dragablz:TabablzControl>
 
-                                        </StackPanel>
-                                    </Grid>
-                                </DataTemplate>
-                            </ListBox.ItemTemplate>
-                        </ListView>
-                    </Grid>
-                </DockPanel>
-                <Button x:Name="bt_addIngredient"  Margin="0,30,30,0"  Grid.Row="1" Style="{StaticResource MaterialDesignFloatingActionButton}" Grid.Column="10" HorizontalAlignment="Right" VerticalAlignment="Top"  BorderBrush="#4CAF50" Width="40" Height="40" Background="#4CAF50" Foreground="White" ToolTip="Ajouter">
-                    <materialDesign:PackIcon Kind="Plus"  Width="35" Height="35" />
-                </Button>
-            </Grid>
-        </Grid>
-            
-    </Grid>
 </UserControl>

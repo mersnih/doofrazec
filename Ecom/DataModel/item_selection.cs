@@ -22,9 +22,13 @@ namespace Ecom.DataModel
 
         public int id_orders { get; set; }
 
+        public int? id_menu { get; set; }
+
         public virtual INGREDIENT INGREDIENT { get; set; }
 
         public virtual ITEM ITEM { get; set; }
+
+        public virtual MENU MENU { get; set; }
 
         public virtual ORDERS ORDERS { get; set; }
     }

@@ -12,7 +12,6 @@ namespace Ecom.DataModel
         public ORDERS()
         {
             item_selection = new HashSet<item_selection>();
-            menu_selection = new HashSet<menu_selection>();
             PAYEMENT_DETAIL = new HashSet<PAYEMENT_DETAIL>();
         }
 
@@ -46,9 +45,6 @@ namespace Ecom.DataModel
 
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<item_selection> item_selection { get; set; }
-
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<menu_selection> menu_selection { get; set; }
 
         public virtual ORDERS_STATUS ORDERS_STATUS { get; set; }
 

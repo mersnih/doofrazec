@@ -1,22 +1,9 @@
 ﻿using Ecom.DataModel;
 using Ecom.Model;
 using Ecom.ViewModel;
-using System;
-using System.Collections.Generic;
 using System.Collections.ObjectModel;
-using System.ComponentModel;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
 
 
 namespace Ecom.View
@@ -28,22 +15,42 @@ namespace Ecom.View
     {
         ModelCezar db;
         ObservableCollection<Cart> orderList = new ObservableCollection<Cart>();
+        ObservableCollection<Cart> commandDetailList = new ObservableCollection<Cart>();
 
         CartViewModel cvm = new CartViewModel();
         public Commandes()
         {
             InitializeComponent();
-            db = new ModelCezar();
-            OrderList oList = new OrderList();
-            lv_OrdersList.ItemsSource =  oList.GetNotPayedOrderList();
-
             this.Loaded += new RoutedEventHandler(MainWindow_Loaded);
         }
 
         private void MainWindow_Loaded(object sender, RoutedEventArgs e)
         {
+            db = new ModelCezar();
             OrderList oList = new OrderList();
-            lv_OrdersList.ItemsSource = oList.GetNotPayedOrderList();
+            lv_OrdersList.ItemsSource = oList.GetNotPayedOrderList();    
+        }
+
+        private void BackToCaisse(object sender, RoutedEventArgs e)
+        {
+            try
+            {
+            var ViewModel = (NavigationViewModel)DataContext;
+   
+            if (ViewModel.ListeCommand.CanExecute(null))
+                ViewModel.ListeCommand.Execute(null);
+            }
+            catch
+            {
+
+            }
+
+        }
+
+        private void OnSelectionCommand(object sender, SelectionChangedEventArgs e)
+        {
+
+
         }
     }
 }

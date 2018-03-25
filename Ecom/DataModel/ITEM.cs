@@ -13,9 +13,8 @@ namespace Ecom.DataModel
         public ITEM()
         {
             ADVICE = new HashSet<ADVICE>();
+            ITEM_OPTION_MENU = new HashSet<ITEM_OPTION_MENU>();
             item_selection = new HashSet<item_selection>();
-            menu_selection = new HashSet<menu_selection>();
-            MENU = new HashSet<MENU>();
             CATEGORY_INGREDIENT = new HashSet<CATEGORY_INGREDIENT>();
         }
 
@@ -38,10 +37,13 @@ namespace Ecom.DataModel
 
         public decimal? item_promotion_price { get; set; }
 
+        [Required]
         [StringLength(50)]
         public string item_button_color { get; set; }
 
         public bool actif { get; set; }
+
+        public bool cooked { get; set; }
 
         public int id_category { get; set; }
 
@@ -55,13 +57,10 @@ namespace Ecom.DataModel
         public virtual TAG TAG { get; set; }
 
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<ITEM_OPTION_MENU> ITEM_OPTION_MENU { get; set; }
+
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<item_selection> item_selection { get; set; }
-
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<menu_selection> menu_selection { get; set; }
-
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<MENU> MENU { get; set; }
 
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<CATEGORY_INGREDIENT> CATEGORY_INGREDIENT { get; set; }

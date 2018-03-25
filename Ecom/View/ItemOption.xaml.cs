@@ -1,21 +1,11 @@
 ﻿using Ecom.DataModel;
 using Ecom.Model;
 using Ecom.ViewModel;
-using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
 
 namespace Ecom.View
 {
@@ -26,9 +16,7 @@ namespace Ecom.View
     {
         ModelCezar db;
 
-    
         ObservableCollection<ItemIngredient> lst = new ObservableCollection<ItemIngredient>();
-
         // Cette collection contiendra la liste de tous les ingrédients liée à l'article selectionné
         ObservableCollection<ItemIngredient> listIngredient = new ObservableCollection<ItemIngredient>();
         // Cette collection vontiendra la liste des ingrédients selectionnés 
@@ -43,22 +31,23 @@ namespace Ecom.View
 
 
         Cart _cart = new Cart();
-        int indexLocal =-1;
-      
+        int indexLocal = -1;
+
         // Params d'initialisation
         int catIngLocalCount = 0;
         int counter = 0;
         double totalSupp = 0;
-        
-        
+
+        static IQueryable<ItemIngredient> ingredients;
+
 
         // Cette méthode est appelée lorsque l'utilisateur veut modifier un article ajouter dans le panier
-        public ItemOption(Cart list, int idItem, int index, List<CATEGORY_INGREDIENT> catIng)
+        public ItemOption(Cart list, int idItem, int index, List<CATEGORY_INGREDIENT> catIng,ObservableCollection<ItemIngredient> ingredients)
         {
             InitializeComponent();
             counter = 0;
-           
-            if(index > -1)
+
+            if (index > -1)
             {
                 indexLocal = index;
                 db = new ModelCezar();
@@ -73,35 +62,52 @@ namespace Ecom.View
                 CATEGORY_INGREDIENT ci = new CATEGORY_INGREDIENT();
                 ci = catIng[counter];
                 int id = catIng[counter].id_category_ingredient;
-                var optionQuery = (from ing in db.INGREDIENT.Where(i => i.id_category_ingredient == id)
+
+                var optionQuery = (from ing in db.INGREDIENT
+                                   join ingCat in db.CATEGORY_INGREDIENT on ing.id_category_ingredient equals ingCat.id_category_ingredient
                                    select new ItemIngredient()
                                    {
                                        IdItem = idItem,
                                        IdIngredient = ing.id_ingredient,
+                                       Ingredient_category_tutle = ingCat.category_ingredient_title,
                                        Item_title = list.ItemTitle,
+                                       Ingredient_category_id = ingCat.id_category_ingredient,
                                        Ingredient_title = ing.ingredient_title,
                                        Ingredient_price = (double)ing.ingredient_price,
                                        Ingredient_quantity = 0
 
                                    });
-                foreach (ItemIngredient itmIng in optionQuery.ToList())
+
+                listIngredient = new ObservableCollection<ItemIngredient>(optionQuery.ToList());
+                icItem.ItemsSource = listIngredient.Where(i => i.Ingredient_category_id == id);
+
+                ItemIngredient ingrr = new ItemIngredient();
+
+                for(int i = 0; i < listIngredient.Count; i++)
                 {
-                    listIngredient.Add(new ItemIngredient
+                    ingrr = listIngredient[i] as ItemIngredient;
+                    foreach (var itm in ingredients)
                     {
-                        IdItem = idItem,
-                        IdIngredient = itmIng.IdIngredient,
-                        Item_title = list.ItemTitle,
-                        Ingredient_title = itmIng.Ingredient_title,
-                        Ingredient_price = (double)itmIng.Ingredient_price,
-                        Ingredient_quantity = 0
-                    });
-                }
-                
+                        if (ingrr.IdIngredient == itm.IdIngredient)
+                        {
+                            itemIngredientLocal.Add(new ItemIngredient()
+                            {
+                                IdItem = itm.IdItem,
+                                IdIngredient = itm.IdIngredient,
+                                Item_title = itm.Item_title,
+                                Ingredient_title = itm.Ingredient_title,
+                                Ingredient_price = itm.Ingredient_category_id == 3 ? ingrr.Ingredient_price : 0,
+                                Ingredient_quantity = itm.Ingredient_quantity
+                            });
+                            ingrr.Ingredient_quantity = itm.Ingredient_quantity;
+                            break;
+                        }
+                 
+                    }
+                 
+                }           
 
-                icItem.ItemsSource = listIngredient;
-          
-             
-
+                #region COMMENT
                 //var reqForMeat = (from ing in db.INGREDIENT.Where(i => i.ITEM.Any() && i.id_category_ingredient == 1)
                 //                  from itm in db.ITEM.Where(it => it.INGREDIENT.Contains(ing) && it.id_item == idItem)
                 //                  select new ItemIngredient()
@@ -154,13 +160,9 @@ namespace Ecom.View
                 //  lb_choixSauce.ItemsSource = new ObservableCollection<ItemIngredient>(reqForSauce.ToList());
                 //  lb_choixSupp.ItemsSource = new ObservableCollection<ItemIngredient>(reqForSupp.ToList());
 
-
-
+                #endregion
             }
-  
-       
-        //    lb_choixViande.SelectedIndex = lb_choixViande.Items.IndexOf(lst[0].Ingredient_title);
-
+            //    lb_choixViande.SelectedIndex = lb_choixViande.Items.IndexOf(lst[0].Ingredient_title)
         }
 
 
@@ -170,8 +172,6 @@ namespace Ecom.View
             InitializeComponent();
             db = new ModelCezar();
             cvm.IngredientCounter = 0;
-            
-            
             /*
              catIng : la liste des catégories d'ingrédients liées à l'article
              item : l'article selectionné
@@ -186,8 +186,8 @@ namespace Ecom.View
             CATEGORY_INGREDIENT ci = new CATEGORY_INGREDIENT();
             ci = catIng[counter];
             int id = catIng[counter].id_category_ingredient;
-
-            var optionQuery = (from ing in db.INGREDIENT.Where(i => i.id_category_ingredient == id)
+            //.Where(i => i.id_category_ingredient == id)
+            var optionQuery = (from ing in db.INGREDIENT
                                join ingCat in db.CATEGORY_INGREDIENT on ing.id_category_ingredient equals ingCat.id_category_ingredient
                                select new ItemIngredient()
                                {
@@ -195,13 +195,14 @@ namespace Ecom.View
                                    IdIngredient = ing.id_ingredient,
                                    Item_title = item.item_title,
                                    Ingredient_title = ing.ingredient_title,
+                                   Ingredient_category_id = ingCat.id_category_ingredient,
                                    Ingredient_category_tutle = ingCat.category_ingredient_title,
                                    Ingredient_price = (double)ing.ingredient_price,
                                    Ingredient_quantity = 0
-
                                });
-            // Affiche la première liste des ingrédients 
-            icItem.ItemsSource = new ObservableCollection<ItemIngredient>(optionQuery.ToList());
+            listIngredient = new ObservableCollection<ItemIngredient>(optionQuery.ToList());
+            //Affiche la première liste des ingrédients
+            icItem.ItemsSource = listIngredient.Where(i => i.Ingredient_category_id == id);
 
 
             //foreach (CATEGORY_INGREDIENT list in catIng)
@@ -272,9 +273,7 @@ namespace Ecom.View
             foreach (var par in itemIngredientLocal)
             {
                 totalSupp = totalSupp + par.Ingredient_price;
-
             }
-
             if (indexLocal < 0)
             {
                 cvm.Cart.Add(new Cart
@@ -284,9 +283,7 @@ namespace Ecom.View
                     ItemTitle = itemLocal.item_title,
                     ItemPriceWithoutSupp = (double)itemLocal.item_price,
                     SuppPrice = totalSupp,
-
                     SelectedIngredients = itemIngredientLocal
-
                 });
             }
             else
@@ -298,93 +295,106 @@ namespace Ecom.View
                     ItemTitle = itemLocal.item_title,
                     ItemPriceWithoutSupp = (double)itemLocal.item_price,
                     SuppPrice = totalSupp,
-
-
                     SelectedIngredients = itemIngredientLocal
-
                 };
             }
         }
-
-        private void test(object sender, RoutedEventArgs e)
+        // Button next     ->
+        private void Next(object sender, RoutedEventArgs e)
         {     
-            counter = counter + 1;
+            counter = counter + 1;  
             if (counter <= catIngLocalCount - 1)
-            { 
-                int id = catIngLocal[counter].id_category_ingredient;
-            var optionQuery = (from ing in db.INGREDIENT.Where(i => i.id_category_ingredient == id)
-                               join ingCat in db.CATEGORY_INGREDIENT on ing.id_category_ingredient equals ingCat.id_category_ingredient
-                               select new ItemIngredient()
-                               {
-                                   IdItem = itemLocal.id_item,
-                                   IdIngredient = ing.id_ingredient,
-                                   Item_title = itemLocal.item_title,
-                                   Ingredient_title = ing.ingredient_title,
-                                   Ingredient_category_tutle = ingCat.category_ingredient_title,
-                                   Ingredient_price = (double)ing.ingredient_price,
-                                   Ingredient_quantity = 0
-
-                               });
-                icItem.ItemsSource = new ObservableCollection<ItemIngredient>(optionQuery.ToList());
-         
-            }
-            else
             {
-                bt_NextOption.Visibility = Visibility.Collapsed;
+                int id = catIngLocal[counter].id_category_ingredient;
+                icItem.ItemsSource = listIngredient.Where(i => i.Ingredient_category_id == id);
+                if (counter == catIngLocalCount - 1)
+                {
+                    bt_NextOption.Visibility = Visibility.Collapsed;
+                }
+                else
+                {
+                    bt_NextOption.Visibility = Visibility.Visible;
+                }
+                bt_BackOption.Visibility = Visibility.Visible;
+            }
+        }
+        // Button back    <-
+        private void Back(object sender, RoutedEventArgs e)
+        {
+            if (counter > 0)
+            {
+                counter = counter - 1;
+                int id = catIngLocal[counter].id_category_ingredient;
+                icItem.ItemsSource = listIngredient.Where(i => i.Ingredient_category_id == id);
+                if (counter == 0)
+                {
+                    bt_BackOption.Visibility = Visibility.Collapsed;
+                }
+                else
+                {
+                    bt_BackOption.Visibility = Visibility.Visible;
+                }
+                bt_NextOption.Visibility = Visibility.Visible;
             }
         }
 
+        // Button add +
         private void OnClickAddIngredient(object sender, RoutedEventArgs e)
         {
-            
+
             ItemIngredient ingr = new ItemIngredient();
             //ingr = ((Button)sender).Content as ItemIngredient;
 
-            Button bt = sender as Button;
+            Button bt  = sender as Button;
             int index = (int)bt.Tag;
             ingr = icItem.Items[index] as ItemIngredient;
 
-            var  content = ((Button)sender).Content;
-                var item = itemIngredientLocal.FirstOrDefault(i => i.IdIngredient == ingr.IdIngredient);
-                if (item != null)
+            var content = ((Button)sender).Content;
+            var item = itemIngredientLocal.FirstOrDefault(i => i.IdIngredient == ingr.IdIngredient);
+            if (item != null)
+            {
+                item.Ingredient_quantity = item.Ingredient_quantity + 1;
+                if (ingr.Ingredient_category_id == 3)
                 {
-                    item.Ingredient_quantity = item.Ingredient_quantity + 1;
                     item.Ingredient_price += item.Ingredient_price;
-                 
-                      tb_value.Text = item.Ingredient_quantity.ToString();
-                      content = item.Ingredient_quantity.ToString();
-                      ingr.Ingredient_quantity = item.Ingredient_quantity;
-
-                
-
                 }
-          
+
+
+                tb_value.Text = item.Ingredient_quantity.ToString();
+                content = item.Ingredient_quantity.ToString();
+                ingr.Ingredient_quantity = item.Ingredient_quantity;
+
+
+
+            }
+
             else
             {
+               
+                    itemIngredientLocal.Add(new ItemIngredient()
+                    {
+                        IdItem = ingr.IdItem,
 
-                itemIngredientLocal.Add(new ItemIngredient()
-                {
-                    IdItem = ingr.IdItem,
-
-                    IdIngredient = ingr.IdIngredient,
-                    Item_title = ingr.Item_title,
-                    Ingredient_title = ingr.Ingredient_title,
-                    Ingredient_price = ingr.Ingredient_price,
-                    Ingredient_quantity = 1
-                });
-                ingr.Ingredient_quantity = 1;
+                        IdIngredient = ingr.IdIngredient,
+                        Item_title = ingr.Item_title,
+                        Ingredient_title = ingr.Ingredient_title,
+                        Ingredient_price = ingr.Ingredient_category_id == 3 ? ingr.Ingredient_price : 0,
+                        Ingredient_quantity = 1
+                    });
+                    ingr.Ingredient_quantity = 1;
+               
             }
-           // tb_value.Text = cvm.IngredientCounter.ToString();
+            // tb_value.Text = cvm.IngredientCounter.ToString();
 
 
         }
 
-
+        // Button sub -
         private void OnClickSubstractIngredient(object sender, RoutedEventArgs e)
         {
 
 
-           
+
             ItemIngredient ingr = new ItemIngredient();
             ingr = ((Button)sender).Tag as ItemIngredient;
 
@@ -392,11 +402,11 @@ namespace Ecom.View
             var item = itemIngredientLocal.FirstOrDefault(i => i.IdIngredient == ingr.IdIngredient);
             if (item != null)
             {
-                if(item.Ingredient_quantity == 1)
+                if (item.Ingredient_quantity == 1)
                 {
                     itemIngredientLocal.Remove(item);
                     ingr.Ingredient_quantity = 0;
-                   
+
                 }
                 else
                 {
@@ -404,9 +414,11 @@ namespace Ecom.View
                     item.Ingredient_price -= item.Ingredient_price;
                     ingr.Ingredient_quantity = item.Ingredient_quantity;
                 }
-               
+
             }
 
         }
+
+
     }
 }

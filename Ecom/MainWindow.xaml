@@ -40,13 +40,14 @@
             </md:DrawerHost.LeftDrawerContent>
             <DockPanel Background="#3A3A3A">
                 <!--Background="#3A3A3A"-->
-                <materialDesign:ColorZone Padding="5" materialDesign:ShadowAssist.ShadowDepth="Depth2"
-                                            Background="#FF292626" Foreground="WhiteSmoke" DockPanel.Dock="Left" HorizontalAlignment="Left">
-                    <DockPanel>
+                <materialDesign:ColorZone materialDesign:ShadowAssist.ShadowDepth="Depth2"
+                                            Background="#FF292626" Foreground="WhiteSmoke" DockPanel.Dock="Top" HorizontalAlignment="Left">
+                    <DockPanel Height="30">
                         <ToggleButton Style="{StaticResource MaterialDesignHamburgerToggleButton}" IsChecked="False"
-                                        x:Name="MenuToggleButton" Background="#FF292626" HorizontalAlignment="Left"  VerticalAlignment="Top" Foreground="#FFFDFDFD"  Width="70" Height="60"/>
+                                        x:Name="MenuToggleButton" Background="#FF292626" HorizontalAlignment="Left"  VerticalAlignment="Top" Foreground="#FFFDFDFD"  />
                     </DockPanel>
                 </materialDesign:ColorZone>
+
                 <Grid>
                     <Grid.RowDefinitions>
                         <RowDefinition Height="Auto" />
@@ -57,14 +58,13 @@
                                   HorizontalScrollBarVisibility="{Binding ElementName=DemoItemsListBox, Path=SelectedItem.HorizontalScrollBarVisibilityRequirement}"
                                   VerticalScrollBarVisibility="{Binding ElementName=DemoItemsListBox, Path=SelectedItem.VerticalScrollBarVisibilityRequirement}" 
                                   Padding="{Binding ElementName=DemoItemsListBox, Path=SelectedItem.MarginRequirement}">
-                        <ContentControl Content="{Binding ElementName=DemoItemsListBox, Path=SelectedItem.Content}" />
+                        <ContentControl Content="{Binding ElementName=DemoItemsListBox, Path=SelectedItem.Content}"  />
 
                     </ScrollViewer>
 
-                    <md:Snackbar MessageQueue="{md:MessageQueue}" x:Name="MainSnackbar"
-                                            Grid.Row="1" />
+                    <md:Snackbar MessageQueue="{md:MessageQueue}" x:Name="MainSnackbar" Grid.Row="0" />
                 </Grid  >
-
+               
 
                 </DockPanel>
             

@@ -25,8 +25,15 @@ namespace Ecom
         public MainWindow()
         {
             InitializeComponent();
+            this.Loaded += new RoutedEventHandler(OnMainWindow_loaded);
+       
+        }
+
+        private void OnMainWindow_loaded(object sender, RoutedEventArgs e)
+        {
             DataContext = new MainWindowViewModel();
         }
+
         private void UIElement_OnPreviewMouseLeftButtonUp(object sender, MouseButtonEventArgs e)
         {
 

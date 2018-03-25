@@ -1,4 +1,5 @@
 ﻿using Ecom.Model;
+using Ecom.Tools;
 using Ecom.View;
 using System;
 using System.Collections.Generic;
@@ -10,13 +11,12 @@ namespace Ecom.ViewModel
 {
     class MainWindowViewModel
     {
-        public Item[] Items { get; }
+  
+        public ItemList[] Items { get; }
         public MainWindowViewModel()
-        {
-           
-                Items = new[] { new Item("ViewQuilt", "#505f89", "Caisse", new Caisse()), new Item("PlusOne", "#505f89", "Commandes", new Commandes()), new Item("settings", "#E55050", "Gestion produit", new Management()), new Model.Item("chartLine", "#63A06D", "Statistiques",null) };
-               // new Liste();
-          
+        {         
+            Items = new[] { new ItemList("ViewQuilt", "#505f89", "Caisse", new Caisse()), new ItemList("PlusOne", "#505f89", "Commandes", new Commandes()), new ItemList("settings", "#E55050", "Gestion produit", new Management()), new Model.ItemList("chartLine", "#63A06D", "Statistiques",null) };
+              // new Liste();    
         }
     }
 }

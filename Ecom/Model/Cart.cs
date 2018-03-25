@@ -107,7 +107,7 @@ namespace Ecom.Model
         private double itemPrice;
         public double ItemPrice
         {
-            get { return ItemPriceWithoutSupp + SuppPrice; }
+            get { return (ItemPriceWithoutSupp + SuppPrice) * ItemQuantity; }
             set
             {
                 itemPrice = value;
@@ -136,6 +136,7 @@ namespace Ecom.Model
                 NotifyPropertyChanged("ItemPriceTxt");
             }
         }
+
         private string itemPriceRestTxt;
         public string ItemPriceRestTxt
         {
@@ -159,6 +160,16 @@ namespace Ecom.Model
             }
         }
 
+        private bool tag;
+        public bool Tag
+        {
+            get { return tag; }
+            set
+            {
+                tag = value;
+                NotifyPropertyChanged("Tag");
+            }
+        }
         private ObservableCollection<ItemIngredient> selectedIngredients;
         public ObservableCollection<ItemIngredient> SelectedIngredients
         {
@@ -183,14 +194,7 @@ namespace Ecom.Model
                 NotifyPropertyChanged("SelectedItems");
             }
         }
-
-
- 
-
         public event PropertyChangedEventHandler PropertyChanged;
-
-
-
         private void NotifyPropertyChanged(string v)
         {
             if (this.PropertyChanged != null)

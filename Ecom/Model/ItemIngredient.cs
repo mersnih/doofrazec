@@ -18,6 +18,7 @@ namespace Ecom.Model
         private string ingredient_category_tutle;
         private double ingredient_price;
         private int ingredient_quantity;
+        private int ingredient_category_id;
 
         public event PropertyChangedEventHandler PropertyChanged;
 
@@ -94,6 +95,15 @@ namespace Ecom.Model
             }
         }
 
+        public int Ingredient_category_id
+        {
+            get { return ingredient_category_id; }
+            set
+            {
+                ingredient_category_id = value;
+                NotifyPropertyChanged("Ingredient_category_id");
+            }
+        }
         private void NotifyPropertyChanged(string v)
         {
             if (this.PropertyChanged != null)

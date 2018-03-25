@@ -69,7 +69,8 @@
                     <RowDefinition Height="0.1*"></RowDefinition>
                     <RowDefinition Height="0.9*"></RowDefinition>
                 </Grid.RowDefinitions>
-                <TextBlock Grid.Row="0" Text="Choix couleur" HorizontalAlignment="Center" VerticalAlignment="Center" />
+                <TextBlock Grid.Row="0" Text="Choix couleur" HorizontalAlignment="Center" 
+                           VerticalAlignment="Center" Margin="5"/>
                 <ScrollViewer  Grid.Row="1" VerticalScrollBarVisibility="Auto">
 
                     <ItemsControl x:Name="icColorsPalette" ItemsSource="{Binding colorList}">

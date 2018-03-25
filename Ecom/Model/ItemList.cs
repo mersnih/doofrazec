@@ -10,7 +10,8 @@ using System.Windows.Controls;
 
 namespace Ecom.Model
 {
-    class Item : INotifyPropertyChanged
+    //Appellé par le MainViewModel 
+    class ItemList : INotifyPropertyChanged
     {
         private string _icon;
         private string _name;
@@ -21,7 +22,7 @@ namespace Ecom.Model
         private Thickness _marginRequirement = new Thickness(16);
         public event PropertyChangedEventHandler PropertyChanged;
 
-        public Item(string icon, string color, string name, object content)
+        public ItemList(string icon, string color, string name, object content)
         {
             _icon = icon;
             _color = color;
