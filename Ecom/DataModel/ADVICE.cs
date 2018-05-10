@@ -13,13 +13,11 @@ namespace Ecom.DataModel
         public int id_advice { get; set; }
 
         [Column("advice")]
-        [StringLength(1024)]
         public string advice1 { get; set; }
 
         public int? advice_note { get; set; }
 
         [Required]
-        [StringLength(25)]
         public string id_user { get; set; }
 
         public int id_item { get; set; }

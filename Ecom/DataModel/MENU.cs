@@ -20,10 +20,8 @@ namespace Ecom.DataModel
         public int id_menu { get; set; }
 
         [Required]
-        [StringLength(25)]
         public string menu_title { get; set; }
 
-        [StringLength(255)]
         public string menu_description { get; set; }
 
         public decimal menu_price { get; set; }
@@ -31,6 +29,10 @@ namespace Ecom.DataModel
         public decimal? menu_promotion_price { get; set; }
 
         public bool actif { get; set; }
+
+        public int id_item { get; set; }
+
+        public virtual ITEM ITEM { get; set; }
 
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<item_selection> item_selection { get; set; }

@@ -53,10 +53,17 @@ namespace Ecom.View
                 db = new ModelCezar();
                 _cart = list;
                 lst = list.SelectedIngredients;
+                if(catIng.Count <= 1)
+                {   
+                    bt_NextOption.Visibility = Visibility.Collapsed;
+                }
+                bt_BackOption.Visibility = Visibility.Collapsed;
+
 
                 itemLocal.id_item = list.ItemId;
                 itemLocal.item_price = (decimal)list.ItemPriceWithoutSupp;
                 itemLocal.item_title = list.ItemTitle;
+                itemLocal.cooked = list.Cooked;
                 catIngLocalCount = catIng.Count;
                 catIngLocal = catIng;
                 CATEGORY_INGREDIENT ci = new CATEGORY_INGREDIENT();
@@ -183,6 +190,12 @@ namespace Ecom.View
             catIngLocalCount = catIng.Count;
             counter = 0;
 
+            if (catIng.Count <= 1)
+            {
+                bt_NextOption.Visibility = Visibility.Collapsed;
+            }
+            bt_BackOption.Visibility = Visibility.Collapsed;
+
             CATEGORY_INGREDIENT ci = new CATEGORY_INGREDIENT();
             ci = catIng[counter];
             int id = catIng[counter].id_category_ingredient;
@@ -203,69 +216,6 @@ namespace Ecom.View
             listIngredient = new ObservableCollection<ItemIngredient>(optionQuery.ToList());
             //Affiche la première liste des ingrédients
             icItem.ItemsSource = listIngredient.Where(i => i.Ingredient_category_id == id);
-
-
-            //foreach (CATEGORY_INGREDIENT list in catIng)
-            //{
-            //    int id = list.id_category_ingredient;
-            //    var optionQuery = (from ing in db.INGREDIENT.Where(i => i.id_category_ingredient == id)
-            //                      select new ItemIngredient()
-            //                      {
-            //                          IdItem = item.id_item,
-            //                          IdIngredient = ing.id_ingredient,
-            //                          Item_title = item.item_title,
-            //                          Ingredient_title = ing.ingredient_title,
-            //                          Ingredient_quantity = 0
-            //                      });
-
-
-
-            //}
-
-
-
-
-
-            //  var reqForMeat = (from ing in db.INGREDIENT.Where(i => i.ITEM.Any() && i.id_category_ingredient == 1)
-            //                    from itm in db.ITEM.Where(it => it.INGREDIENT.Contains(ing) && it.id_item == item.id_item)
-            //                    select new ItemIngredient()
-            //                    {
-            //                        IdItem = itm.id_item,
-            //                        IdIngredient = ing.id_ingredient,
-            //                        Item_title = itm.item_title,
-            //                        Ingredient_title = ing.ingredient_title,
-            //                        Ingredient_quantity = 0
-            //                    }
-            //            );
-            //  tb_optionTitle.Text = "Options " + itemLocal.item_title;
-            //  var reqForSauce = (from ing in db.INGREDIENT.Where(i => i.ITEM.Any() && i.id_category_ingredient == 2)
-            //                     from itm in db.ITEM.Where(it => it.INGREDIENT.Contains(ing) && it.id_item == item.id_item)
-            //                     select new ItemIngredient()
-            //                     {
-            //                         IdItem = itm.id_item,
-            //                         IdIngredient = ing.id_ingredient,
-            //                         Item_title = itm.item_title,
-            //                         Ingredient_title = ing.ingredient_title,
-            //                         Ingredient_quantity = 0
-            //                     }
-            //);
-            //  var reqForSupp = (from ing in db.INGREDIENT.Where(i => i.ITEM.Any() && i.id_category_ingredient == 3)
-            //                    from itm in db.ITEM.Where(it => it.INGREDIENT.Contains(ing) && it.id_item == item.id_item)
-            //                    select new ItemIngredient()
-            //                    {
-            //                        IdItem = itm.id_item,
-            //                        IdIngredient = ing.id_ingredient,
-            //                        Item_title = itm.item_title,
-            //                        Ingredient_title = ing.ingredient_title,
-            //                        Ingredient_price = (double)ing.ingredient_price,
-            //                        Ingredient_quantity = 0
-            //                    }
-            //);
-            // reqIngredient = new ObservableCollection<ItemIngredient>(req.ToList());
-
-
-            //lb_choixSauce.ItemsSource = new ObservableCollection<ItemIngredient>(reqForSauce.ToList());
-            //lb_choixSupp.ItemsSource = new ObservableCollection<ItemIngredient>(reqForSupp.ToList());
         }
 
         private void addMeat(object sender, RoutedEventArgs e)
@@ -283,6 +233,7 @@ namespace Ecom.View
                     ItemTitle = itemLocal.item_title,
                     ItemPriceWithoutSupp = (double)itemLocal.item_price,
                     SuppPrice = totalSupp,
+                    Cooked = itemLocal.cooked,
                     SelectedIngredients = itemIngredientLocal
                 });
             }
@@ -295,6 +246,7 @@ namespace Ecom.View
                     ItemTitle = itemLocal.item_title,
                     ItemPriceWithoutSupp = (double)itemLocal.item_price,
                     SuppPrice = totalSupp,
+                    Cooked = itemLocal.cooked,
                     SelectedIngredients = itemIngredientLocal
                 };
             }

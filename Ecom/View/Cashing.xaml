@@ -117,9 +117,10 @@
                 <Button Margin="0"  Height="{Binding RelativeSource={RelativeSource AncestorType=DataGridCell}, Path=ActualHeight}"
                         Width="{Binding RelativeSource={RelativeSource AncestorType=DataGridCell}, Path=ActualWidth}" Background="Transparent" BorderBrush="{x:Null}" 
                         Command="{x:Static materialDesign:DialogHost.CloseDialogCommand}" Foreground="White" >FERMER</Button>
-                <Button Grid.Column="1" Click="buttonCashClick" Background="#FF169CFF" BorderBrush="Transparent" Height="{Binding RelativeSource={RelativeSource AncestorType=DataGridCell}, Path=ActualHeight}"
+                <Button Name="bt_caching" Grid.Column="1" Click="buttonCashClick" Background="#FF169CFF" BorderBrush="Transparent" Height="{Binding RelativeSource={RelativeSource AncestorType=DataGridCell}, Path=ActualHeight}"
                         Width="{Binding RelativeSource={RelativeSource AncestorType=DataGridCell}, Path=ActualWidth}"
-                         Command="{x:Static materialDesign:DialogHost.CloseDialogCommand}">ENCAISSER</Button>
+                         Command="{x:Static materialDesign:DialogHost.CloseDialogCommand}"
+                        IsEnabled="False">ENCAISSER</Button>
             </Grid>
 
 
@@ -129,7 +130,7 @@
         </Grid>
 
         <Grid Grid.Column="0" Background="#0984e3">
-            <ListBox x:Name="lb_cash" Background="Transparent" >
+            <ListBox x:Name="lb_cash" SelectionChanged="OnSelectPayementType" Background="Transparent" >
                 <ListBoxItem Tag="CB">
                     <StackPanel >
                         <materialDesign:PackIcon Kind="CreditCard" Foreground="#2C3A47" Width="50" Height="50" />

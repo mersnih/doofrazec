@@ -1,0 +1,186 @@
+C:\Users\Hichem\Documents\Dossier partagé\CezarCaisse_v.0.1\Ecom\bin\Release\Ecom.exe.config
+C:\Users\Hichem\Documents\Dossier partagé\CezarCaisse_v.0.1\Ecom\bin\Release\Ecom.exe.manifest
+C:\Users\Hichem\Documents\Dossier partagé\CezarCaisse_v.0.1\Ecom\bin\Release\Ecom.application
+C:\Users\Hichem\Documents\Dossier partagé\CezarCaisse_v.0.1\Ecom\bin\Release\Ecom.exe
+C:\Users\Hichem\Documents\Dossier partagé\CezarCaisse_v.0.1\Ecom\bin\Release\Ecom.pdb
+C:\Users\Hichem\Documents\Dossier partagé\CezarCaisse_v.0.1\Ecom\bin\Release\EntityFramework.dll
+C:\Users\Hichem\Documents\Dossier partagé\CezarCaisse_v.0.1\Ecom\bin\Release\EntityFramework.SqlServer.dll
+C:\Users\Hichem\Documents\Dossier partagé\CezarCaisse_v.0.1\Ecom\bin\Release\MahApps.Metro.dll
+C:\Users\Hichem\Documents\Dossier partagé\CezarCaisse_v.0.1\Ecom\bin\Release\MaterialDesignColors.dll
+C:\Users\Hichem\Documents\Dossier partagé\CezarCaisse_v.0.1\Ecom\bin\Release\MaterialDesignThemes.MahApps.dll
+C:\Users\Hichem\Documents\Dossier partagé\CezarCaisse_v.0.1\Ecom\bin\Release\MaterialDesignThemes.Wpf.dll
+C:\Users\Hichem\Documents\Dossier partagé\CezarCaisse_v.0.1\Ecom\bin\Release\System.Windows.Interactivity.dll
+C:\Users\Hichem\Documents\Dossier partagé\CezarCaisse_v.0.1\Ecom\bin\Release\EntityFramework.xml
+C:\Users\Hichem\Documents\Dossier partagé\CezarCaisse_v.0.1\Ecom\bin\Release\EntityFramework.SqlServer.xml
+C:\Users\Hichem\Documents\Dossier partagé\CezarCaisse_v.0.1\Ecom\bin\Release\MahApps.Metro.pdb
+C:\Users\Hichem\Documents\Dossier partagé\CezarCaisse_v.0.1\Ecom\bin\Release\MahApps.Metro.xml
+C:\Users\Hichem\Documents\Dossier partagé\CezarCaisse_v.0.1\Ecom\bin\Release\MaterialDesignColors.pdb
+C:\Users\Hichem\Documents\Dossier partagé\CezarCaisse_v.0.1\Ecom\bin\Release\MaterialDesignThemes.Wpf.pdb
+C:\Users\Hichem\Documents\Dossier partagé\CezarCaisse_v.0.1\Ecom\bin\Release\MaterialDesignThemes.Wpf.xml
+C:\Users\Hichem\Documents\Dossier partagé\CezarCaisse_v.0.1\Ecom\bin\Release\fr\EntityFramework.resources.dll
+C:\Users\Hichem\Documents\Dossier partagé\CezarCaisse_v.0.1\Ecom\bin\Release\fr\EntityFramework.SqlServer.resources.dll
+C:\Users\Hichem\Documents\Dossier partagé\CezarCaisse_v.0.1\Ecom\obj\Release\MainWindow.g.cs
+C:\Users\Hichem\Documents\Dossier partagé\CezarCaisse_v.0.1\Ecom\obj\Release\View\Caisse.g.cs
+C:\Users\Hichem\Documents\Dossier partagé\CezarCaisse_v.0.1\Ecom\obj\Release\View\Cashing.g.cs
+C:\Users\Hichem\Documents\Dossier partagé\CezarCaisse_v.0.1\Ecom\obj\Release\View\Configuration.g.cs
+C:\Users\Hichem\Documents\Dossier partagé\CezarCaisse_v.0.1\Ecom\obj\Release\View\CUItem.g.cs
+C:\Users\Hichem\Documents\Dossier partagé\CezarCaisse_v.0.1\Ecom\obj\Release\View\ItemOption.g.cs
+C:\Users\Hichem\Documents\Dossier partagé\CezarCaisse_v.0.1\Ecom\obj\Release\View\Management.g.cs
+C:\Users\Hichem\Documents\Dossier partagé\CezarCaisse_v.0.1\Ecom\obj\Release\View\Message.g.cs
+C:\Users\Hichem\Documents\Dossier partagé\CezarCaisse_v.0.1\Ecom\obj\Release\View\OrderSend.g.cs
+C:\Users\Hichem\Documents\Dossier partagé\CezarCaisse_v.0.1\Ecom\obj\Release\View\Commandes.g.cs
+C:\Users\Hichem\Documents\Dossier partagé\CezarCaisse_v.0.1\Ecom\obj\Release\App.g.cs
+C:\Users\Hichem\Documents\Dossier partagé\CezarCaisse_v.0.1\Ecom\obj\Release\Ecom_MarkupCompile.cache
+C:\Users\Hichem\Documents\Dossier partagé\CezarCaisse_v.0.1\Ecom\obj\Release\Ecom_MarkupCompile.lref
+C:\Users\Hichem\Documents\Dossier partagé\CezarCaisse_v.0.1\Ecom\obj\Release\App.baml
+C:\Users\Hichem\Documents\Dossier partagé\CezarCaisse_v.0.1\Ecom\obj\Release\MainWindow.baml
+C:\Users\Hichem\Documents\Dossier partagé\CezarCaisse_v.0.1\Ecom\obj\Release\View\Caisse.baml
+C:\Users\Hichem\Documents\Dossier partagé\CezarCaisse_v.0.1\Ecom\obj\Release\View\Cashing.baml
+C:\Users\Hichem\Documents\Dossier partagé\CezarCaisse_v.0.1\Ecom\obj\Release\View\Configuration.baml
+C:\Users\Hichem\Documents\Dossier partagé\CezarCaisse_v.0.1\Ecom\obj\Release\View\CUItem.baml
+C:\Users\Hichem\Documents\Dossier partagé\CezarCaisse_v.0.1\Ecom\obj\Release\View\ItemOption.baml
+C:\Users\Hichem\Documents\Dossier partagé\CezarCaisse_v.0.1\Ecom\obj\Release\View\Management.baml
+C:\Users\Hichem\Documents\Dossier partagé\CezarCaisse_v.0.1\Ecom\obj\Release\View\Message.baml
+C:\Users\Hichem\Documents\Dossier partagé\CezarCaisse_v.0.1\Ecom\obj\Release\View\OrderSend.baml
+C:\Users\Hichem\Documents\Dossier partagé\CezarCaisse_v.0.1\Ecom\obj\Release\View\Commandes.baml
+C:\Users\Hichem\Documents\Dossier partagé\CezarCaisse_v.0.1\Ecom\obj\Release\Ecom.g.resources
+C:\Users\Hichem\Documents\Dossier partagé\CezarCaisse_v.0.1\Ecom\obj\Release\Ecom.Properties.Resources.resources
+C:\Users\Hichem\Documents\Dossier partagé\CezarCaisse_v.0.1\Ecom\obj\Release\Ecom.csproj.GenerateResource.Cache
+C:\Users\Hichem\Documents\Dossier partagé\CezarCaisse_v.0.1\Ecom\obj\Release\Ecom.exe.manifest
+C:\Users\Hichem\Documents\Dossier partagé\CezarCaisse_v.0.1\Ecom\obj\Release\Ecom.application
+C:\Users\Hichem\Documents\Dossier partagé\CezarCaisse_v.0.1\Ecom\obj\Release\Ecom.exe
+C:\Users\Hichem\Documents\Dossier partagé\CezarCaisse_v.0.1\Ecom\obj\Release\Ecom.pdb
+C:\Users\Hichem\Documents\Dossier partagé\CezarCaisse_v.0.1\Ecom\obj\Release\Ecom.csprojResolveAssemblyReference.cache
+C:\Users\Hichem\Desktop\CezarCaisse_v.0.5\CezarCaisse_v.0.5\Ecom\bin\Release\Ecom.exe.config
+C:\Users\Hichem\Desktop\CezarCaisse_v.0.5\CezarCaisse_v.0.5\Ecom\obj\Release\Ecom.exe
+C:\Users\Hichem\Desktop\CezarCaisse_v.0.5\CezarCaisse_v.0.5\Ecom\obj\Release\Ecom.pdb
+C:\Users\Hichem\Desktop\CezarCaisse_v.0.5\CezarCaisse_v.0.5\Ecom\bin\Release\Ecom.exe.manifest
+C:\Users\Hichem\Desktop\CezarCaisse_v.0.5\CezarCaisse_v.0.5\Ecom\bin\Release\Ecom.application
+C:\Users\Hichem\Desktop\CezarCaisse_v.0.5\CezarCaisse_v.0.5\Ecom\bin\Release\Ecom.exe
+C:\Users\Hichem\Desktop\CezarCaisse_v.0.5\CezarCaisse_v.0.5\Ecom\bin\Release\Ecom.pdb
+C:\Users\Hichem\Desktop\CezarCaisse_v.0.5\CezarCaisse_v.0.5\Ecom\bin\Release\Dragablz.dll
+C:\Users\Hichem\Desktop\CezarCaisse_v.0.5\CezarCaisse_v.0.5\Ecom\bin\Release\EntityFramework.dll
+C:\Users\Hichem\Desktop\CezarCaisse_v.0.5\CezarCaisse_v.0.5\Ecom\bin\Release\EntityFramework.SqlServer.dll
+C:\Users\Hichem\Desktop\CezarCaisse_v.0.5\CezarCaisse_v.0.5\Ecom\bin\Release\itextsharp.dll
+C:\Users\Hichem\Desktop\CezarCaisse_v.0.5\CezarCaisse_v.0.5\Ecom\bin\Release\itextsharp.xmlworker.dll
+C:\Users\Hichem\Desktop\CezarCaisse_v.0.5\CezarCaisse_v.0.5\Ecom\bin\Release\MahApps.Metro.dll
+C:\Users\Hichem\Desktop\CezarCaisse_v.0.5\CezarCaisse_v.0.5\Ecom\bin\Release\MaterialDesignColors.dll
+C:\Users\Hichem\Desktop\CezarCaisse_v.0.5\CezarCaisse_v.0.5\Ecom\bin\Release\MaterialDesignThemes.MahApps.dll
+C:\Users\Hichem\Desktop\CezarCaisse_v.0.5\CezarCaisse_v.0.5\Ecom\bin\Release\MaterialDesignThemes.Wpf.dll
+C:\Users\Hichem\Desktop\CezarCaisse_v.0.5\CezarCaisse_v.0.5\Ecom\bin\Release\System.Windows.Interactivity.dll
+C:\Users\Hichem\Desktop\CezarCaisse_v.0.5\CezarCaisse_v.0.5\Ecom\bin\Release\Dragablz.pdb
+C:\Users\Hichem\Desktop\CezarCaisse_v.0.5\CezarCaisse_v.0.5\Ecom\bin\Release\Dragablz.xml
+C:\Users\Hichem\Desktop\CezarCaisse_v.0.5\CezarCaisse_v.0.5\Ecom\bin\Release\EntityFramework.xml
+C:\Users\Hichem\Desktop\CezarCaisse_v.0.5\CezarCaisse_v.0.5\Ecom\bin\Release\EntityFramework.SqlServer.xml
+C:\Users\Hichem\Desktop\CezarCaisse_v.0.5\CezarCaisse_v.0.5\Ecom\bin\Release\itextsharp.xml
+C:\Users\Hichem\Desktop\CezarCaisse_v.0.5\CezarCaisse_v.0.5\Ecom\bin\Release\MahApps.Metro.pdb
+C:\Users\Hichem\Desktop\CezarCaisse_v.0.5\CezarCaisse_v.0.5\Ecom\bin\Release\MahApps.Metro.xml
+C:\Users\Hichem\Desktop\CezarCaisse_v.0.5\CezarCaisse_v.0.5\Ecom\bin\Release\MaterialDesignColors.pdb
+C:\Users\Hichem\Desktop\CezarCaisse_v.0.5\CezarCaisse_v.0.5\Ecom\bin\Release\MaterialDesignThemes.Wpf.pdb
+C:\Users\Hichem\Desktop\CezarCaisse_v.0.5\CezarCaisse_v.0.5\Ecom\bin\Release\MaterialDesignThemes.Wpf.xml
+C:\Users\Hichem\Desktop\CezarCaisse_v.0.5\CezarCaisse_v.0.5\Ecom\bin\Release\fr\EntityFramework.resources.dll
+C:\Users\Hichem\Desktop\CezarCaisse_v.0.5\CezarCaisse_v.0.5\Ecom\bin\Release\fr\EntityFramework.SqlServer.resources.dll
+C:\Users\Hichem\Desktop\CezarCaisse_v.0.5\CezarCaisse_v.0.5\Ecom\obj\Release\Ecom.csprojResolveAssemblyReference.cache
+C:\Users\Hichem\Desktop\CezarCaisse_v.0.5\CezarCaisse_v.0.5\Ecom\obj\Release\MainWindow.g.cs
+C:\Users\Hichem\Desktop\CezarCaisse_v.0.5\CezarCaisse_v.0.5\Ecom\obj\Release\View\Caisse.g.cs
+C:\Users\Hichem\Desktop\CezarCaisse_v.0.5\CezarCaisse_v.0.5\Ecom\obj\Release\View\Cashing.g.cs
+C:\Users\Hichem\Desktop\CezarCaisse_v.0.5\CezarCaisse_v.0.5\Ecom\obj\Release\View\Configuration.g.cs
+C:\Users\Hichem\Desktop\CezarCaisse_v.0.5\CezarCaisse_v.0.5\Ecom\obj\Release\View\CUCat.g.cs
+C:\Users\Hichem\Desktop\CezarCaisse_v.0.5\CezarCaisse_v.0.5\Ecom\obj\Release\View\CUItem.g.cs
+C:\Users\Hichem\Desktop\CezarCaisse_v.0.5\CezarCaisse_v.0.5\Ecom\obj\Release\View\IngredientCategoryList.g.cs
+C:\Users\Hichem\Desktop\CezarCaisse_v.0.5\CezarCaisse_v.0.5\Ecom\obj\Release\View\ItemOption.g.cs
+C:\Users\Hichem\Desktop\CezarCaisse_v.0.5\CezarCaisse_v.0.5\Ecom\obj\Release\View\Management.g.cs
+C:\Users\Hichem\Desktop\CezarCaisse_v.0.5\CezarCaisse_v.0.5\Ecom\obj\Release\View\Message.g.cs
+C:\Users\Hichem\Desktop\CezarCaisse_v.0.5\CezarCaisse_v.0.5\Ecom\obj\Release\View\OrderSend.g.cs
+C:\Users\Hichem\Desktop\CezarCaisse_v.0.5\CezarCaisse_v.0.5\Ecom\obj\Release\View\Commandes.g.cs
+C:\Users\Hichem\Desktop\CezarCaisse_v.0.5\CezarCaisse_v.0.5\Ecom\obj\Release\View\Settings.g.cs
+C:\Users\Hichem\Desktop\CezarCaisse_v.0.5\CezarCaisse_v.0.5\Ecom\obj\Release\App.g.cs
+C:\Users\Hichem\Desktop\CezarCaisse_v.0.5\CezarCaisse_v.0.5\Ecom\obj\Release\Ecom_MarkupCompile.cache
+C:\Users\Hichem\Desktop\CezarCaisse_v.0.5\CezarCaisse_v.0.5\Ecom\obj\Release\Ecom_MarkupCompile.lref
+C:\Users\Hichem\Desktop\CezarCaisse_v.0.5\CezarCaisse_v.0.5\Ecom\obj\Release\App.baml
+C:\Users\Hichem\Desktop\CezarCaisse_v.0.5\CezarCaisse_v.0.5\Ecom\obj\Release\MainWindow.baml
+C:\Users\Hichem\Desktop\CezarCaisse_v.0.5\CezarCaisse_v.0.5\Ecom\obj\Release\View\Caisse.baml
+C:\Users\Hichem\Desktop\CezarCaisse_v.0.5\CezarCaisse_v.0.5\Ecom\obj\Release\View\Cashing.baml
+C:\Users\Hichem\Desktop\CezarCaisse_v.0.5\CezarCaisse_v.0.5\Ecom\obj\Release\View\Configuration.baml
+C:\Users\Hichem\Desktop\CezarCaisse_v.0.5\CezarCaisse_v.0.5\Ecom\obj\Release\View\CUCat.baml
+C:\Users\Hichem\Desktop\CezarCaisse_v.0.5\CezarCaisse_v.0.5\Ecom\obj\Release\View\CUItem.baml
+C:\Users\Hichem\Desktop\CezarCaisse_v.0.5\CezarCaisse_v.0.5\Ecom\obj\Release\View\IngredientCategoryList.baml
+C:\Users\Hichem\Desktop\CezarCaisse_v.0.5\CezarCaisse_v.0.5\Ecom\obj\Release\View\ItemOption.baml
+C:\Users\Hichem\Desktop\CezarCaisse_v.0.5\CezarCaisse_v.0.5\Ecom\obj\Release\View\Management.baml
+C:\Users\Hichem\Desktop\CezarCaisse_v.0.5\CezarCaisse_v.0.5\Ecom\obj\Release\View\Message.baml
+C:\Users\Hichem\Desktop\CezarCaisse_v.0.5\CezarCaisse_v.0.5\Ecom\obj\Release\View\OrderSend.baml
+C:\Users\Hichem\Desktop\CezarCaisse_v.0.5\CezarCaisse_v.0.5\Ecom\obj\Release\View\Commandes.baml
+C:\Users\Hichem\Desktop\CezarCaisse_v.0.5\CezarCaisse_v.0.5\Ecom\obj\Release\View\Settings.baml
+C:\Users\Hichem\Desktop\CezarCaisse_v.0.5\CezarCaisse_v.0.5\Ecom\obj\Release\Ecom.g.resources
+C:\Users\Hichem\Desktop\CezarCaisse_v.0.5\CezarCaisse_v.0.5\Ecom\obj\Release\Ecom.Properties.Resources.resources
+C:\Users\Hichem\Desktop\CezarCaisse_v.0.5\CezarCaisse_v.0.5\Ecom\obj\Release\Ecom.csproj.GenerateResource.Cache
+C:\Users\Hichem\Desktop\CezarCaisse_v.0.5\CezarCaisse_v.0.5\Ecom\obj\Release\Ecom.exe.manifest
+C:\Users\Hichem\Desktop\CezarCaisse_v.0.5\CezarCaisse_v.0.5\Ecom\obj\Release\Ecom.application
+C:\Users\RZ63\Desktop\cz_v.0.6\CezarCaisse_v.0.5\Ecom\bin\Release\Ecom.exe.config
+C:\Users\RZ63\Desktop\cz_v.0.6\CezarCaisse_v.0.5\Ecom\obj\Release\Ecom.exe
+C:\Users\RZ63\Desktop\cz_v.0.6\CezarCaisse_v.0.5\Ecom\obj\Release\Ecom.pdb
+C:\Users\Hichem\Desktop\CezarCaisse_v.0.5\CezarCaisse_v.0.6\Ecom\bin\Release\Ecom.exe.config
+C:\Users\Hichem\Desktop\CezarCaisse_v.0.5\CezarCaisse_v.0.6\Ecom\obj\Release\Ecom.exe
+C:\Users\Hichem\Desktop\CezarCaisse_v.0.5\CezarCaisse_v.0.6\Ecom\obj\Release\Ecom.pdb
+C:\Users\Hichem\Desktop\CezarCaisse_v.0.5\CezarCaisse_v.0.6\Ecom\bin\Release\Ecom.exe.manifest
+C:\Users\Hichem\Desktop\CezarCaisse_v.0.5\CezarCaisse_v.0.6\Ecom\bin\Release\Ecom.application
+C:\Users\Hichem\Desktop\CezarCaisse_v.0.5\CezarCaisse_v.0.6\Ecom\bin\Release\Ecom.exe
+C:\Users\Hichem\Desktop\CezarCaisse_v.0.5\CezarCaisse_v.0.6\Ecom\bin\Release\Ecom.pdb
+C:\Users\Hichem\Desktop\CezarCaisse_v.0.5\CezarCaisse_v.0.6\Ecom\bin\Release\Dragablz.dll
+C:\Users\Hichem\Desktop\CezarCaisse_v.0.5\CezarCaisse_v.0.6\Ecom\bin\Release\EntityFramework.dll
+C:\Users\Hichem\Desktop\CezarCaisse_v.0.5\CezarCaisse_v.0.6\Ecom\bin\Release\EntityFramework.SqlServer.dll
+C:\Users\Hichem\Desktop\CezarCaisse_v.0.5\CezarCaisse_v.0.6\Ecom\bin\Release\itextsharp.dll
+C:\Users\Hichem\Desktop\CezarCaisse_v.0.5\CezarCaisse_v.0.6\Ecom\bin\Release\itextsharp.xmlworker.dll
+C:\Users\Hichem\Desktop\CezarCaisse_v.0.5\CezarCaisse_v.0.6\Ecom\bin\Release\MahApps.Metro.dll
+C:\Users\Hichem\Desktop\CezarCaisse_v.0.5\CezarCaisse_v.0.6\Ecom\bin\Release\MaterialDesignColors.dll
+C:\Users\Hichem\Desktop\CezarCaisse_v.0.5\CezarCaisse_v.0.6\Ecom\bin\Release\MaterialDesignThemes.MahApps.dll
+C:\Users\Hichem\Desktop\CezarCaisse_v.0.5\CezarCaisse_v.0.6\Ecom\bin\Release\MaterialDesignThemes.Wpf.dll
+C:\Users\Hichem\Desktop\CezarCaisse_v.0.5\CezarCaisse_v.0.6\Ecom\bin\Release\System.Windows.Interactivity.dll
+C:\Users\Hichem\Desktop\CezarCaisse_v.0.5\CezarCaisse_v.0.6\Ecom\bin\Release\Dragablz.pdb
+C:\Users\Hichem\Desktop\CezarCaisse_v.0.5\CezarCaisse_v.0.6\Ecom\bin\Release\Dragablz.xml
+C:\Users\Hichem\Desktop\CezarCaisse_v.0.5\CezarCaisse_v.0.6\Ecom\bin\Release\EntityFramework.xml
+C:\Users\Hichem\Desktop\CezarCaisse_v.0.5\CezarCaisse_v.0.6\Ecom\bin\Release\EntityFramework.SqlServer.xml
+C:\Users\Hichem\Desktop\CezarCaisse_v.0.5\CezarCaisse_v.0.6\Ecom\bin\Release\itextsharp.xml
+C:\Users\Hichem\Desktop\CezarCaisse_v.0.5\CezarCaisse_v.0.6\Ecom\bin\Release\MahApps.Metro.pdb
+C:\Users\Hichem\Desktop\CezarCaisse_v.0.5\CezarCaisse_v.0.6\Ecom\bin\Release\MahApps.Metro.xml
+C:\Users\Hichem\Desktop\CezarCaisse_v.0.5\CezarCaisse_v.0.6\Ecom\bin\Release\MaterialDesignColors.pdb
+C:\Users\Hichem\Desktop\CezarCaisse_v.0.5\CezarCaisse_v.0.6\Ecom\bin\Release\MaterialDesignThemes.Wpf.pdb
+C:\Users\Hichem\Desktop\CezarCaisse_v.0.5\CezarCaisse_v.0.6\Ecom\bin\Release\MaterialDesignThemes.Wpf.xml
+C:\Users\Hichem\Desktop\CezarCaisse_v.0.5\CezarCaisse_v.0.6\Ecom\bin\Release\fr\EntityFramework.resources.dll
+C:\Users\Hichem\Desktop\CezarCaisse_v.0.5\CezarCaisse_v.0.6\Ecom\bin\Release\fr\EntityFramework.SqlServer.resources.dll
+C:\Users\Hichem\Desktop\CezarCaisse_v.0.5\CezarCaisse_v.0.6\Ecom\obj\Release\Ecom.csprojResolveAssemblyReference.cache
+C:\Users\Hichem\Desktop\CezarCaisse_v.0.5\CezarCaisse_v.0.6\Ecom\obj\Release\MainWindow.g.cs
+C:\Users\Hichem\Desktop\CezarCaisse_v.0.5\CezarCaisse_v.0.6\Ecom\obj\Release\View\Caisse.g.cs
+C:\Users\Hichem\Desktop\CezarCaisse_v.0.5\CezarCaisse_v.0.6\Ecom\obj\Release\View\Cashing.g.cs
+C:\Users\Hichem\Desktop\CezarCaisse_v.0.5\CezarCaisse_v.0.6\Ecom\obj\Release\View\Configuration.g.cs
+C:\Users\Hichem\Desktop\CezarCaisse_v.0.5\CezarCaisse_v.0.6\Ecom\obj\Release\View\CUCat.g.cs
+C:\Users\Hichem\Desktop\CezarCaisse_v.0.5\CezarCaisse_v.0.6\Ecom\obj\Release\View\CUItem.g.cs
+C:\Users\Hichem\Desktop\CezarCaisse_v.0.5\CezarCaisse_v.0.6\Ecom\obj\Release\View\IngredientCategoryList.g.cs
+C:\Users\Hichem\Desktop\CezarCaisse_v.0.5\CezarCaisse_v.0.6\Ecom\obj\Release\View\ItemOption.g.cs
+C:\Users\Hichem\Desktop\CezarCaisse_v.0.5\CezarCaisse_v.0.6\Ecom\obj\Release\View\Management.g.cs
+C:\Users\Hichem\Desktop\CezarCaisse_v.0.5\CezarCaisse_v.0.6\Ecom\obj\Release\View\Message.g.cs
+C:\Users\Hichem\Desktop\CezarCaisse_v.0.5\CezarCaisse_v.0.6\Ecom\obj\Release\View\OrderSend.g.cs
+C:\Users\Hichem\Desktop\CezarCaisse_v.0.5\CezarCaisse_v.0.6\Ecom\obj\Release\View\Commandes.g.cs
+C:\Users\Hichem\Desktop\CezarCaisse_v.0.5\CezarCaisse_v.0.6\Ecom\obj\Release\View\Settings.g.cs
+C:\Users\Hichem\Desktop\CezarCaisse_v.0.5\CezarCaisse_v.0.6\Ecom\obj\Release\App.g.cs
+C:\Users\Hichem\Desktop\CezarCaisse_v.0.5\CezarCaisse_v.0.6\Ecom\obj\Release\Ecom_MarkupCompile.cache
+C:\Users\Hichem\Desktop\CezarCaisse_v.0.5\CezarCaisse_v.0.6\Ecom\obj\Release\Ecom_MarkupCompile.lref
+C:\Users\Hichem\Desktop\CezarCaisse_v.0.5\CezarCaisse_v.0.6\Ecom\obj\Release\App.baml
+C:\Users\Hichem\Desktop\CezarCaisse_v.0.5\CezarCaisse_v.0.6\Ecom\obj\Release\MainWindow.baml
+C:\Users\Hichem\Desktop\CezarCaisse_v.0.5\CezarCaisse_v.0.6\Ecom\obj\Release\View\Caisse.baml
+C:\Users\Hichem\Desktop\CezarCaisse_v.0.5\CezarCaisse_v.0.6\Ecom\obj\Release\View\Cashing.baml
+C:\Users\Hichem\Desktop\CezarCaisse_v.0.5\CezarCaisse_v.0.6\Ecom\obj\Release\View\Configuration.baml
+C:\Users\Hichem\Desktop\CezarCaisse_v.0.5\CezarCaisse_v.0.6\Ecom\obj\Release\View\CUCat.baml
+C:\Users\Hichem\Desktop\CezarCaisse_v.0.5\CezarCaisse_v.0.6\Ecom\obj\Release\View\CUItem.baml
+C:\Users\Hichem\Desktop\CezarCaisse_v.0.5\CezarCaisse_v.0.6\Ecom\obj\Release\View\IngredientCategoryList.baml
+C:\Users\Hichem\Desktop\CezarCaisse_v.0.5\CezarCaisse_v.0.6\Ecom\obj\Release\View\ItemOption.baml
+C:\Users\Hichem\Desktop\CezarCaisse_v.0.5\CezarCaisse_v.0.6\Ecom\obj\Release\View\Management.baml
+C:\Users\Hichem\Desktop\CezarCaisse_v.0.5\CezarCaisse_v.0.6\Ecom\obj\Release\View\Message.baml
+C:\Users\Hichem\Desktop\CezarCaisse_v.0.5\CezarCaisse_v.0.6\Ecom\obj\Release\View\OrderSend.baml
+C:\Users\Hichem\Desktop\CezarCaisse_v.0.5\CezarCaisse_v.0.6\Ecom\obj\Release\View\Commandes.baml
+C:\Users\Hichem\Desktop\CezarCaisse_v.0.5\CezarCaisse_v.0.6\Ecom\obj\Release\View\Settings.baml
+C:\Users\Hichem\Desktop\CezarCaisse_v.0.5\CezarCaisse_v.0.6\Ecom\obj\Release\Ecom.g.resources
+C:\Users\Hichem\Desktop\CezarCaisse_v.0.5\CezarCaisse_v.0.6\Ecom\obj\Release\Ecom.Properties.Resources.resources
+C:\Users\Hichem\Desktop\CezarCaisse_v.0.5\CezarCaisse_v.0.6\Ecom\obj\Release\Ecom.csproj.GenerateResource.Cache
+C:\Users\Hichem\Desktop\CezarCaisse_v.0.5\CezarCaisse_v.0.6\Ecom\obj\Release\Ecom.exe.manifest
+C:\Users\Hichem\Desktop\CezarCaisse_v.0.5\CezarCaisse_v.0.6\Ecom\obj\Release\Ecom.application

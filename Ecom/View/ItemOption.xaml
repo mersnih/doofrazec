@@ -13,8 +13,8 @@
 	        VerticalContentAlignment="Stretch"
             Height="auto"
             Width="auto"
-             MaxHeight="600" MaxWidth="800"
-             d:DesignHeight="450" d:DesignWidth="700">
+             MaxHeight="650" MaxWidth="800"
+             d:DesignHeight="500" d:DesignWidth="700">
     <UserControl.Resources>
         <Style TargetType="{x:Type Control}" x:Key="listBoxStyle">
             <Setter Property="FontSize" Value="25" />
@@ -42,9 +42,9 @@
 
     <Grid Background="White" Width="700">
         <Grid.RowDefinitions>
-            <RowDefinition Height="53"></RowDefinition>
-            <RowDefinition Height="355"></RowDefinition>
-            <RowDefinition Height="40"></RowDefinition>
+            <RowDefinition Height="50"></RowDefinition>
+            <RowDefinition Height="350"></RowDefinition>
+            <RowDefinition Height="70"></RowDefinition>
         </Grid.RowDefinitions>
 
         <!--<ListBox x:Name="lb_itemOptions"  Grid.Row="1" ItemsSource="{Binding }" SelectionMode="Multiple" ItemContainerStyle="{StaticResource ContainerStyle}" >
@@ -65,6 +65,10 @@
                 </DataTemplate>
             </ListBox.ItemTemplate>
         </ListBox>-->
+        <StackPanel Grid.Row="0" Orientation="Vertical" HorizontalAlignment="Stretch"  VerticalAlignment="Stretch" Background="#a5b1c2" >
+            <TextBlock x:Name="tb_optionTitle"  Grid.Row="0" HorizontalAlignment="Center" VerticalAlignment="Stretch" FontSize="24" Foreground="White"
+                                Text="" />
+        </StackPanel>
 
         <ScrollViewer VerticalScrollBarVisibility="Auto" Grid.Row="1" >
 
@@ -73,18 +77,18 @@
                     <ItemsPanelTemplate>
                         <WrapPanel />
                         <!--<UniformGrid Rows="1"/>-->
+
                     </ItemsPanelTemplate>
                 </ItemsControl.ItemsPanel>
                 <ItemsControl.ItemTemplate>
                     <DataTemplate>
                         <!-- Article boites de dialogues-->
-                        <Grid Margin="5,10">
+               
+                            <Grid Margin="5,10" Grid.Row="0">
                             <Grid.RowDefinitions>
                                 <RowDefinition Height="0.6*"></RowDefinition>
                                 <RowDefinition Height="0.4*"></RowDefinition>
                             </Grid.RowDefinitions>
-
-
                             <StackPanel Orientation="Horizontal" Grid.Row="0">
                                 <!--<Button Margin="10,0,0,0" Click="OnClickSubstractIngredient" Tag="{Binding}">-</Button>-->
 
@@ -117,7 +121,7 @@
                                 <!--Height="{Binding RelativeSource={RelativeSource AncestorType=DataGridCell}, Path=ActualHeight}"
                                     Width="{Binding RelativeSource={RelativeSource AncestorType=DataGridCell}, Path=ActualWidth}"-->
 
-
+                            
 
                             </StackPanel>
                             <Button                                             
@@ -129,14 +133,15 @@
                                     Click="OnClickSubstractIngredient"
                                     Tag="{Binding}"
                                     Grid.Row="1"/>
+                           
                         </Grid>
                         <!---->
-                     
+                    
                             </DataTemplate>
                         </ItemsControl.ItemTemplate>
                     </ItemsControl>
-                </ScrollViewer>
-              <TextBlock x:Name="tb_value"></TextBlock>
+          </ScrollViewer>
+          <TextBlock x:Name="tb_value" />
 
 
         <!--<Grid Grid.Row="1">
@@ -227,21 +232,18 @@
     </Grid>-->
 
 
-                        <StackPanel Grid.Row="0" Orientation="Vertical" HorizontalAlignment="Stretch"  VerticalAlignment="Stretch" Background="#4a69bd" >
-                            <TextBlock x:Name="tb_optionTitle"  Grid.Row="0" HorizontalAlignment="Center" VerticalAlignment="Stretch" FontSize="24" Foreground="White"
-                        Text="{Binding Path=Ingredient_category_tutle}" />
-                        </StackPanel>
 
                         <Button 
-                x:Name="bt_BackOption"
+                            x:Name="bt_BackOption"
                             Grid.Row="2" HorizontalAlignment="Left"
-                IsDefault="True" Style="{DynamicResource MaterialDesignFlatButton}"
-                Margin="5"
-                Visibility="Visible"
-                Click="Back">
-                            <materialDesign:PackIcon Kind="ArrowLeftBoldCircle" Height="25" Width="25"/>
+                            IsDefault="True" Style="{DynamicResource MaterialDesignFlatButton}"
+                            Visibility="Visible"
+                        
+                            Click="Back" Height="Auto"
+                            >
+                            <materialDesign:PackIcon Kind="ArrowLeftBoldCircle" Height="50" Width="50" Foreground="#2980b9"/>
                         </Button>
-                        <StackPanel Grid.Row="2" Orientation="Horizontal" HorizontalAlignment="Right">
+                        <StackPanel Grid.Row="2" Orientation="Horizontal" HorizontalAlignment="Center">
 
 
 
@@ -249,6 +251,7 @@
                             <Button 
                 IsDefault="True" Style="{DynamicResource MaterialDesignFlatButton}"
                 Margin="5"
+                                Background="#e74c3c" Foreground="White"
                 Command="{x:Static materialDesign:DialogHost.CloseDialogCommand}" >
                                 Annuler
                             </Button>
@@ -256,21 +259,24 @@
                 IsDefault="True" Style="{DynamicResource MaterialDesignFlatButton}"
                 HorizontalAlignment="Right"
                 Margin="5"
+                 Background="#27ae60" Foreground="White"
                 Click="addMeat"
                 Command="{x:Static materialDesign:DialogHost.CloseDialogCommand}" >
                                 Ajouter
                             </Button>
-                            <Button 
-                x:Name="bt_NextOption"
-                IsDefault="True" Style="{DynamicResource MaterialDesignFlatButton}"
-                HorizontalAlignment="Center"
-                
-                Click="Next"
-               >
-                                <materialDesign:PackIcon Kind="ArrowRightBoldCircle" Width="25" Height="25" />
-                            </Button>
+
 
                         </StackPanel>
+                        <Button   
+                            x:Name="bt_NextOption"
+                            Grid.Row="2"
+                            IsDefault="True" Style="{DynamicResource MaterialDesignFlatButton}"
+                            HorizontalAlignment="Right"
+                        
+                           
+                            Click="Next"  Height="Auto">
+                            <materialDesign:PackIcon Kind="ArrowRightBoldCircle" Width="50" Height="50" Foreground="#2980b9" />
+                        </Button>
 
     </Grid>
 </UserControl>

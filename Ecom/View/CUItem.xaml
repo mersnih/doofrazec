@@ -20,7 +20,7 @@
         </Grid.RowDefinitions>
         <StackPanel x:Name="sp_header" Grid.Row="0"  Orientation="Horizontal" Height="40" HorizontalAlignment="Center" >
             <TextBlock x:Name="tb_messageItem" FontSize="18" Visibility="Collapsed" Margin="5"/>
-            <materialDesign:PackIcon x:Name="icon_messageItem" Visibility="Collapsed" Margin="5" Height="30" />
+            <materialDesign:PackIcon x:Name="icon_messageItem" Visibility="Collapsed" Margin="5" />
         </StackPanel>
         <Grid Grid.Row="1" ShowGridLines="False">
            
@@ -34,31 +34,34 @@
                     <RowDefinition></RowDefinition>
                     <RowDefinition></RowDefinition>
                     <RowDefinition></RowDefinition>
-                    <RowDefinition></RowDefinition>
+                    <RowDefinition Height="100"></RowDefinition>
                     <RowDefinition></RowDefinition>
                     <RowDefinition></RowDefinition>
                 </Grid.RowDefinitions>
-                <TextBox x:Name="tb_name"  Grid.Row="0" Margin="5" materialDesign:HintAssist.Hint="Nom" Style="{StaticResource MaterialDesignFloatingHintTextBox}" 
+                <TextBox x:Name="tb_name"  Grid.Row="0" Margin="5,10" materialDesign:HintAssist.Hint="Nom" Style="{StaticResource MaterialDesignFloatingHintTextBox}" 
                      Validation.Error="Validation_Error" Grid.ColumnSpan="2" 
                      Text="{Binding UpdateSourceTrigger=PropertyChanged, Path=tb_name,ValidatesOnDataErrors=True, NotifyOnValidationError=True}"/>
-                <TextBox x:Name="tb_description"  Grid.Row="1" Margin="5" materialDesign:HintAssist.Hint="Description" Style="{StaticResource MaterialDesignFloatingHintTextBox}" 
+                <TextBox x:Name="tb_description"  Grid.Row="2" Margin="5,10" materialDesign:HintAssist.Hint="Description" Style="{StaticResource MaterialDesignFloatingHintTextBox}" 
                      Validation.Error="Validation_Error" Grid.ColumnSpan="2" 
                      Text="{Binding UpdateSourceTrigger=PropertyChanged, Path=Title,ValidatesOnDataErrors=True, NotifyOnValidationError=True}"/>
-                <StackPanel Grid.Row="4" Orientation="Horizontal">
-                    <Button Content="Image" Margin="10,0" Width="100" Click="OnClickLoadImage" HorizontalAlignment="Left"/>
-                    <Image Name="imgPhoto"  Margin="10,0" Stretch="UniformToFill"  HorizontalAlignment="Right"/>
-                </StackPanel>
-                <StackPanel  Grid.Row="2" Orientation="Horizontal" HorizontalAlignment="Center">
-                    <TextBox x:Name="tb_price" Width="150"  Margin="5" PreviewTextInput="NumericCheck" materialDesign:HintAssist.Hint="Prix" Style="{StaticResource MaterialDesignFloatingHintTextBox}" 
+
+                <StackPanel  Grid.Row="1" Orientation="Horizontal" HorizontalAlignment="Left">
+                    <TextBox x:Name="tb_price" Width="150"  Margin="5,10" PreviewTextInput="NumericCheck" materialDesign:HintAssist.Hint="Prix" Style="{StaticResource MaterialDesignFloatingHintTextBox}" 
                      Validation.Error="Validation_Error" Grid.ColumnSpan="2" PreviewKeyDown="CheckWiteSpace" 
                      Text="{Binding UpdateSourceTrigger=PropertyChanged, Path=tb_price,ValidatesOnDataErrors=True, NotifyOnValidationError=True}"/>
-                    <TextBox x:Name="tb_pricePromo" PreviewTextInput="NumericCheck"  Width="150" Margin="5" materialDesign:HintAssist.Hint="Prix promo" Style="{StaticResource MaterialDesignFloatingHintTextBox}" 
+                    <TextBox x:Name="tb_pricePromo" PreviewTextInput="NumericCheck"  Width="150" Margin="5,10"  materialDesign:HintAssist.Hint="Prix promo" Style="{StaticResource MaterialDesignFloatingHintTextBox}" 
                      Validation.Error="Validation_Error" Grid.ColumnSpan="2" PreviewKeyDown="CheckWiteSpace" 
                      Text="{Binding UpdateSourceTrigger=PropertyChanged, Path=Title,ValidatesOnDataErrors=True, NotifyOnValidationError=True}"/>
                 </StackPanel>
-                <StackPanel Grid.Row="3" Orientation="Horizontal" HorizontalAlignment="Center">
-                    <TextBlock Text="Actif" Margin="10"/>
-                    <ToggleButton x:Name="tg_actif"  IsChecked="True" Margin="10"></ToggleButton>
+                <StackPanel Grid.Row="3" Orientation="Horizontal" HorizontalAlignment="Left">
+                    <TextBlock Text="Actif" Margin="10,10"/>
+                    <ToggleButton x:Name="tg_actif"  IsChecked="True" Margin="5"></ToggleButton>
+                    <TextBlock Text="Préparé" Margin="10,10"/>
+                    <ToggleButton x:Name="tg_cooked"  IsChecked="True" Margin="5"></ToggleButton>
+                </StackPanel>
+                <StackPanel Grid.Row="4" Orientation="Horizontal">
+                    <Button Content="Image" Margin="10,20" Width="100" Click="OnClickLoadImage" HorizontalAlignment="Left"/>
+                    <Image Name="imgPhoto"  Margin="10,0" Stretch="UniformToFill"  HorizontalAlignment="Right"/>
                 </StackPanel>
             </Grid>
             
@@ -90,41 +93,18 @@
                                     </Grid.RowDefinitions>
 
 
-                                    <StackPanel Orientation="Horizontal" Grid.Row="0">
+                                    
                                         <!--<Button Margin="10,0,0,0" Click="OnClickSubstractIngredient" Tag="{Binding}">-</Button>-->
-                                        <ToggleButton Background="{Binding Path=Code}" BorderBrush="{Binding Path=Code}"
+                                        <ToggleButton Name="bt_color" Grid.Row="0" Background="{Binding Path=Code}" BorderBrush="{Binding Path=Code}"
                                                        Style="{StaticResource MaterialDesignActionLightToggleButton}" IsChecked="False"
-ToolTip="MaterialDesignActionLightToggleButton" Click="OnSelectColor" Tag="{Binding Path=Code}" Width="70" Height="70"/>
+ToolTip="MaterialDesignActionLightToggleButton" Click="OnSelectColor" Tag="{Binding RelativeSource={RelativeSource Mode=TemplatedParent},
+                                    Path=(ItemsControl.AlternationIndex)}" Width="70" Height="70"/>
 
-                                        <!--<Button 
-                                 
-                                            x:Name="bt_addIngredient"
-                                                Background="{Binding Path=Code}" BorderBrush="{Binding Path=Code}"
-                                                HorizontalAlignment="Center" VerticalAlignment="Top" 
-                                                
-                                                Click="OnSelectColor"
-                                                Width="150"
-                                                Tag="{Binding Path=Code}"
-                                                >
-                                        
-                                              <StackPanel >
-                                                    --><!--<Path Data="M19,13H13V19H11V13H5V11H11V5H13V11H19V13Z" Fill="{Binding RelativeSource={RelativeSource FindAncestor, AncestorType=Button}, Path=Foreground}" />--><!--
-
-                                                    <TextBlock HorizontalAlignment="Center" FontSize="18" Text="{Binding Path=Name}"></TextBlock>
-
-
-                                                </StackPanel>
-                                            </Button>-->
-
-                          
-
-                                        <!--Command="{x:Static materialDesign:DialogHost.OpenDialogCommand}"-->
-                                        <!--Height="{Binding RelativeSource={RelativeSource AncestorType=DataGridCell}, Path=ActualHeight}"
-                                    Width="{Binding RelativeSource={RelativeSource AncestorType=DataGridCell}, Path=ActualWidth}"-->
+                              
 
 
 
-                                    </StackPanel>
+                                   
                                    
                                 </Grid>
                                 <!---->

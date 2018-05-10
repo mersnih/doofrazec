@@ -2,24 +2,17 @@
 using MaterialDesignThemes.Wpf;
 using Microsoft.Win32;
 using System;
-using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Linq;
-using System.Text;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Controls.Primitives;
-using System.Windows.Data;
-using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
 using Ecom.Tools;
-using System.Globalization;
 using System.Threading;
 using Ecom.Model;
 using Ecom.ViewModel;
@@ -67,9 +60,10 @@ namespace Ecom.View
             
           
         }
-        public CUItem(ItemModel itemModel) //  For update
+        public CUItem(ItemModel itemModel, int source) //  For update
         {
             InitializeComponent();
+            IDSource = source;
             db = new ModelCezar();
             // Initialisation des erreurs
             itemModelLocal = itemModel;
@@ -93,10 +87,52 @@ namespace Ecom.View
             tb_price.Text = itemModelLocal.Price.ToString();
             tg_actif.IsChecked = itemModelLocal.Actif;
 
+            tg_cooked.IsChecked = itemModelLocal.Cooked;
+
             //
             icColorsPalette.ItemsSource = GetPalette();
+            //int count = icColorsPalette.Items.Count;
+            foreach (Object itm in icColorsPalette.Items)
+            {
+
+                ToggleButton tb = FindItemControl(icColorsPalette, "bt_color", itm) as ToggleButton;
+                string[] color = itemModelLocal.Color.Split('#');
+                string colorString = color[1].ToUpper();
+                if (tb.Background.ToString().Contains(colorString))
+                {
+                    tb.IsChecked = true;
+                }
+                else
+                {
+                    tb.IsChecked = false;
+                }
+            }
+
+            // foreach(var item in icColorsPalette.Items)
+            //{
+
+
+            //}
+
+
             bt_addItem.Content = "Modifier";
         }
+
+
+
+        //
+
+        private object FindItemControl(ItemsControl itemsControl, string controlName, object item)
+        {
+            ContentPresenter container = itemsControl.ItemContainerGenerator.ContainerFromItem(item) as ContentPresenter;
+            container.ApplyTemplate();
+            return container.ContentTemplate.FindName(controlName, container);
+        }
+
+
+        //
+
+
 
         #region Validation du formulaire - vérification des erreurs
 
@@ -132,28 +168,7 @@ namespace Ecom.View
             e.Handled = true;
         }
 
-        public class CommandHandler : ICommand
-        {
-            private System.Action _action;
-            private bool _canExecute;
-            public CommandHandler(System.Action action, bool canExecute)
-            {
-                _action = action;
-                _canExecute = canExecute;
-            }
-
-            public bool CanExecute(object parameter)
-            {
-                return _canExecute;
-            }
-
-            public event EventHandler CanExecuteChanged;
-
-            public void Execute(object parameter)
-            {
-                _action();
-            }
-        }
+       
 
         #endregion
 
@@ -205,6 +220,7 @@ namespace Ecom.View
 
                         itm.item_title = tb_name.Text;
                         itm.item_decription = tb_description.Text;
+                        
                         if (!string.IsNullOrEmpty(tb_price.Text))
                         {
                             itm.item_price = Decimal.Parse(tb_price.Text);
@@ -218,10 +234,27 @@ namespace Ecom.View
                             itm.item_button_color = color.ToString();
                         }
                         itm.actif = (bool)tg_actif.IsChecked;
+                        itm.cooked = (bool)tg_cooked.IsChecked;
                         db.SaveChanges();
-                        message = "l'article a été modifié avec succès ";
-                        rvm.Result  = true;
-                    } // If add 
+
+
+                        message = "Le produit a été ajouté avec succès ";
+                        rvm.Result = true; 
+
+                        _errors = new Errors();
+                        gridForms.DataContext = _errors;
+
+                        tb_messageItem.Visibility = Visibility.Visible;
+                        icon_messageItem.Visibility = Visibility.Visible;
+                        tb_messageItem.Text = message;
+                        tb_messageItem.Foreground = Brushes.DarkGreen;
+                        icon_messageItem.Kind = PackIconKind.CheckCircleOutline;
+                        icon_messageItem.Foreground = Brushes.DarkGreen;
+
+      
+              
+                    } 
+                    else// If add 
                     {
                         infoMessage = "ajout";
                         if (!string.IsNullOrEmpty(tb_name.Text)) // Obligatoire
@@ -257,9 +290,22 @@ namespace Ecom.View
                             item.item_button_color = "#9b59b6";
                         }
                         item.actif = (bool)tg_actif.IsChecked;
+                        item.cooked = (bool)tg_cooked.IsChecked;
                         item.id_category = IDCat;
                         db.ITEM.Add(item);
                         db.SaveChanges();
+       
+
+                        _errors = new Errors();
+                        gridForms.DataContext = _errors;
+
+                        tb_messageItem.Visibility = Visibility.Visible;
+                        icon_messageItem.Visibility = Visibility.Visible;
+                        tb_messageItem.Text = message;
+                        tb_messageItem.Foreground = Brushes.DarkGreen;
+                        icon_messageItem.Kind = PackIconKind.CheckCircleOutline;
+                        icon_messageItem.Foreground = Brushes.DarkGreen;
+
                         message = "Le produit a été ajouté avec succès ";
                         rvm.Result = true;
                     }
@@ -267,7 +313,12 @@ namespace Ecom.View
                 catch (Exception ex)
                 {
 
-                    message = "Echec d'ajout du produit ! ";
+                    tb_messageItem.Visibility = Visibility.Visible;
+                    icon_messageItem.Visibility = Visibility.Visible;
+                    tb_messageItem.Text = "Echec " + infoMessage + " de l'article " + ex.Message;
+                    tb_messageItem.Foreground = Brushes.DarkRed;
+                    icon_messageItem.Kind = PackIconKind.AlertCircleOutline;
+                    icon_messageItem.Foreground = Brushes.DarkRed;
                     rvm.Result = false;
                 }
 
@@ -294,7 +345,8 @@ namespace Ecom.View
                         db.SaveChanges();
                         message = "l'ingrédient a été modifié avec succès ";
                         rvm.Result = true;
-                    } // If add 
+                    } 
+                    else// If add 
                     {
                         infoMessage = "ajout";
                         if (!string.IsNullOrEmpty(tb_name.Text)) // Obligatoire
@@ -322,72 +374,89 @@ namespace Ecom.View
                         item.id_category_ingredient = IDCat;
                         db.INGREDIENT.Add(item);
                         db.SaveChanges();
+           
+
+                        _errors = new Errors();
+                        gridForms.DataContext = _errors;
+
+                        tb_messageItem.Visibility = Visibility.Visible;
+                        icon_messageItem.Visibility = Visibility.Visible;
+                        tb_messageItem.Text = message;
+                        tb_messageItem.Foreground = Brushes.DarkGreen;
+                        icon_messageItem.Kind = PackIconKind.CheckCircleOutline;
+                        icon_messageItem.Foreground = Brushes.DarkGreen;
+
                         message = "L'ingrédient a été ajouté avec succès ";
                         rvm.Result = true;
                     }
                 }
                 catch (Exception ex)
                 {
-
-                    message = "Echec d'ajout du produit ! ";
+            
+                    tb_messageItem.Visibility = Visibility.Visible;
+                    icon_messageItem.Visibility = Visibility.Visible;
+                    tb_messageItem.Text = "Echec " + infoMessage + " de l'article " + ex.Message;
+                    tb_messageItem.Foreground = Brushes.DarkRed;
+                    icon_messageItem.Kind = PackIconKind.AlertCircleOutline;
+                    icon_messageItem.Foreground = Brushes.DarkRed;
                     rvm.Result = false;
                 }
             }
 
-            try
-            {
-                // If update
-                if (IDItem > 0)
-                {
-                    infoMessage = "modification";
-                    ITEM itm = (from it in db.ITEM where it.id_item == IDItem select it).Single();
+            //try
+            //{
+            //    // If update
+            //    if (IDItem > 0)
+            //    {
+            //        infoMessage = "modification";
+            //        ITEM itm = (from it in db.ITEM where it.id_item == IDItem select it).Single();
 
-                    itm.item_title = tb_name.Text;
-                    itm.item_decription = tb_description.Text;
-                    if (!string.IsNullOrEmpty(tb_price.Text))
-                    {
-                        itm.item_price = Decimal.Parse(tb_price.Text);
-                    }
-                    if (!string.IsNullOrEmpty(tb_pricePromo.Text))
-                    {
-                        itm.item_promotion_price = Decimal.Parse(tb_pricePromo.Text);
-                    }
-                    itm.item_button_color = color.ToString();
-                    itm.actif = (bool)tg_actif.IsChecked;
-                    db.SaveChanges();
-                    message = "l'article a été modifié avec succès ";
-                    rvm.Result = true;
-                } // If add 
-                else
-                {
+            //        itm.item_title = tb_name.Text;
+            //        itm.item_decription = tb_description.Text;
+            //        if (!string.IsNullOrEmpty(tb_price.Text))
+            //        {
+            //            itm.item_price = Decimal.Parse(tb_price.Text);
+            //        }
+            //        if (!string.IsNullOrEmpty(tb_pricePromo.Text))
+            //        {
+            //            itm.item_promotion_price = Decimal.Parse(tb_pricePromo.Text);
+            //        }
+            //        itm.item_button_color = color.ToString();
+            //        itm.actif = (bool)tg_actif.IsChecked;
+            //        db.SaveChanges();
+            //        message = "l'article a été modifié avec succès ";
+            //        rvm.Result = true;
+            //    } // If add 
+            //    else
+            //    {
 
-                }
+            //    }
 
-                // OK => Init UI
-                _errors = new Errors();
-                gridForms.DataContext = _errors;
+            //    // OK => Init UI
+            //    _errors = new Errors();
+            //    gridForms.DataContext = _errors;
 
-                tb_messageItem.Visibility = Visibility.Visible;
-                icon_messageItem.Visibility = Visibility.Visible;
-                tb_messageItem.Text = message;
-                tb_messageItem.Foreground = Brushes.DarkGreen;
-                icon_messageItem.Kind = PackIconKind.CheckCircleOutline;
-                icon_messageItem.Foreground = Brushes.DarkGreen;
-            }
-            catch (Exception ex)
-            {
-                tb_messageItem.Visibility = Visibility.Visible;
-                icon_messageItem.Visibility = Visibility.Visible;
-                tb_messageItem.Text = "Echec " + infoMessage + " de l'article " + ex.Message;
-                tb_messageItem.Foreground = Brushes.DarkRed;
-                icon_messageItem.Kind = PackIconKind.AlertCircleOutline;
-                icon_messageItem.Foreground = Brushes.DarkRed;
-                rvm.Result = false;
-            }
+            //    tb_messageItem.Visibility = Visibility.Visible;
+            //    icon_messageItem.Visibility = Visibility.Visible;
+            //    tb_messageItem.Text = message;
+            //    tb_messageItem.Foreground = Brushes.DarkGreen;
+            //    icon_messageItem.Kind = PackIconKind.CheckCircleOutline;
+            //    icon_messageItem.Foreground = Brushes.DarkGreen;
+            //}
+            //catch (Exception ex)
+            //{
+            //    tb_messageItem.Visibility = Visibility.Visible;
+            //    icon_messageItem.Visibility = Visibility.Visible;
+            //    tb_messageItem.Text = "Echec " + infoMessage + " de l'article " + ex.Message;
+            //    tb_messageItem.Foreground = Brushes.DarkRed;
+            //    icon_messageItem.Kind = PackIconKind.AlertCircleOutline;
+            //    icon_messageItem.Foreground = Brushes.DarkRed;
+            //    rvm.Result = false;
+            //}
 
             await Task.Run(() =>
             {
-                Thread.Sleep(5000);
+                Thread.Sleep(2000);
             });
 
 
@@ -401,7 +470,7 @@ namespace Ecom.View
 
         private void OnSelectColor(object sender, RoutedEventArgs e)
         {
-            color = ((ToggleButton)sender).Tag;
+            color = ((ToggleButton)sender).Background;
         }
         #endregion
 

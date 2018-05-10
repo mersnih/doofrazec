@@ -15,7 +15,7 @@
     <WarningLevel>4</WarningLevel>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <IsWebBootstrapper>false</IsWebBootstrapper>
-    <PublishUrl>D:\Projets\Deploy\</PublishUrl>
+    <PublishUrl>E:\PublishCezarApp\</PublishUrl>
     <Install>true</Install>
     <InstallFrom>Disk</InstallFrom>
     <UpdateEnabled>false</UpdateEnabled>
@@ -25,7 +25,7 @@
     <UpdatePeriodically>false</UpdatePeriodically>
     <UpdateRequired>false</UpdateRequired>
     <MapFileExtensions>true</MapFileExtensions>
-    <ApplicationRevision>9</ApplicationRevision>
+    <ApplicationRevision>10</ApplicationRevision>
     <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
     <UseApplicationTrust>false</UseApplicationTrust>
     <PublishWizardCompleted>true</PublishWizardCompleted>
@@ -103,6 +103,7 @@
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Data" />
     <Reference Include="System.Drawing" />
+    <Reference Include="System.Management" />
     <Reference Include="System.Printing" />
     <Reference Include="System.Runtime.Serialization" />
     <Reference Include="System.Security" />
@@ -130,6 +131,7 @@
     </ApplicationDefinition>
     <Compile Include="DataModel\ADDRESS.cs" />
     <Compile Include="DataModel\ADVICE.cs" />
+    <Compile Include="DataModel\ARCHIVE.cs" />
     <Compile Include="DataModel\CATEGORY.cs" />
     <Compile Include="DataModel\CATEGORY_INGREDIENT.cs" />
     <Compile Include="DataModel\INGREDIENT.cs" />
@@ -151,7 +153,12 @@
     <Compile Include="Model\ItemIngredient.cs" />
     <Compile Include="Model\ItemModel.cs" />
     <Compile Include="Model\ItemsCategoryModel.cs" />
+    <Compile Include="Model\MenuModel.cs" />
+    <Compile Include="Model\MenuOptions.cs" />
+    <Compile Include="Tools\CommandHandler.cs" />
     <Compile Include="Tools\Network.cs" />
+    <Compile Include="Tools\Printer.cs" />
+    <Compile Include="ViewModel\CommandesViewModel.cs" />
     <Compile Include="ViewModel\ManagementModel.cs" />
     <Compile Include="Model\OrderList.cs" />
     <Compile Include="Model\Payement.cs" />
@@ -163,6 +170,9 @@
     <Compile Include="ViewModel\NavigationViewModel.cs" />
     <Compile Include="ViewModel\OrderViewModel.cs" />
     <Compile Include="ViewModel\ResultViewModel.cs" />
+    <Compile Include="View\AddMenuOption.xaml.cs">
+      <DependentUpon>AddMenuOption.xaml</DependentUpon>
+    </Compile>
     <Compile Include="View\Caisse.xaml.cs">
       <DependentUpon>Caisse.xaml</DependentUpon>
     </Compile>
@@ -177,6 +187,9 @@
     </Compile>
     <Compile Include="View\CUItem.xaml.cs">
       <DependentUpon>CUItem.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\CUMenu.xaml.cs">
+      <DependentUpon>CUMenu.xaml</DependentUpon>
     </Compile>
     <Compile Include="View\IngredientCategoryList.xaml.cs">
       <DependentUpon>IngredientCategoryList.xaml</DependentUpon>
@@ -196,6 +209,9 @@
     <Compile Include="View\Commandes.xaml.cs">
       <DependentUpon>Commandes.xaml</DependentUpon>
     </Compile>
+    <Compile Include="View\Settings.xaml.cs">
+      <DependentUpon>Settings.xaml</DependentUpon>
+    </Compile>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -208,6 +224,10 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="View\AddMenuOption.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="View\Caisse.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -225,6 +245,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="View\CUItem.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\CUMenu.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -249,6 +273,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="View\Commandes.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\Settings.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -288,7 +316,7 @@
   <ItemGroup>
     <BootstrapperPackage Include=".NETFramework,Version=v4.5.2">
       <Visible>False</Visible>
-      <ProductName>Microsoft .NET Framework 4.5.2 %28x86 and x64%29</ProductName>
+      <ProductName>Microsoft .NET Framework 4.5.2 %28x86 et x64%29</ProductName>
       <Install>true</Install>
     </BootstrapperPackage>
     <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
@@ -297,8 +325,9 @@
       <Install>false</Install>
     </BootstrapperPackage>
   </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
-    <Folder Include="Resources\" />
+    <None Include="Resources\croq.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

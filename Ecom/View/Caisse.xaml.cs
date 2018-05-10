@@ -34,6 +34,7 @@ namespace Ecom.View
         public Caisse()
         {
             InitializeComponent();
+
             this.Loaded += new RoutedEventHandler(PosLoaded);
             this.DataContext = new NavigationViewModel();
         }
@@ -80,8 +81,7 @@ namespace Ecom.View
                 {
                     message_tb = { Text = "Connexion imossible" }
                 }, "RootDialog");
-            }
-           
+            }           
         }
 
         // Affiche les articles par catégorie 
@@ -105,7 +105,8 @@ namespace Ecom.View
                         id_item = item.id_item,
                         item_title = item.item_title,
                         item_price = item.item_price,
-                        item_button_color = item.item_button_color
+                        item_button_color = item.item_button_color,
+                        cooked = item.cooked
                     });
                 }
                 icItem.ItemsSource = listItems;
@@ -113,18 +114,23 @@ namespace Ecom.View
                 int count = 0;
                 foreach (Object itm in icCat.Items)
                 {
-                  
-                  
-                    if(count != index)
+
+                    Button happyButton = FindItemControl(icCat, "getItemsBtn", itm) as Button;
+                    Label happyLabel = FindItemControl(icCat, "lb_getItems", itm) as Label;
+                    if (count != index)
                     {
 
-                        Button happyButton = FindItemControl(icCat, "getItemsBtn", itm) as Button;
-                         happyButton.Background = Brushes.Transparent;
+                     
+                         happyButton.Background = (SolidColorBrush)(new BrushConverter().ConvertFrom("#BE90D4"));
+                         happyButton.BorderBrush = Brushes.Transparent;
+                         happyLabel.Foreground = (SolidColorBrush)(new BrushConverter().ConvertFrom("#000000"));
                     }
                     else
                     {
-                        Button happyButton = FindItemControl(icCat, "getItemsBtn", itm) as Button;
-                        happyButton.Background = Brushes.Black;
+
+                        happyButton.BorderBrush = (SolidColorBrush)(new BrushConverter().ConvertFrom("#87D37C"));
+                        happyButton.Background = (SolidColorBrush)(new BrushConverter().ConvertFrom("#9B59B6"));
+                        happyLabel.Foreground = (SolidColorBrush)(new BrushConverter().ConvertFrom("#ffffff"));
                     }
                     count = count+ 1;
 
@@ -139,7 +145,7 @@ namespace Ecom.View
             return container.ContentTemplate.FindName(controlName, container);
         }
         // Ajout d'un article au panier
-        private void addToCart(object sender, RoutedEventArgs e)
+        private void  addToCart(object sender, RoutedEventArgs e)
         {
             ITEM item = new ITEM();    
             item = ((Button)sender).Tag as ITEM;
@@ -169,6 +175,7 @@ namespace Ecom.View
                         ItemId = item.id_item,
                         ItemTitle = item.item_title,
                         ItemPriceWithoutSupp = (double)item.item_price,
+                        Cooked = item.cooked,
                         SuppPrice = 0,
                     });
                 }
@@ -200,25 +207,63 @@ namespace Ecom.View
 
         private void DetectMenu()
         {
+            // Il me faut un indice qui, grace a lui, je peux savoir que j'ai une composition de menu 
+            // Le simple est de creer un boolén qui par defaut est actif
+            // Il suffit q'une option ne contient pas un élément avec la quantité qu'il faut l'indice passe en inactif 
+
+
+            bool indice = true;
+            MENU detectedMenu = new MENU();
+            // init tag in model cart
+            foreach (var c in cvm.Cart)
+            {
+                c.Tag = false;
+            }
+
             // Je recupere le panier 
             var cartList = cvm.Cart;
 
             // je recupère la liste des menus
             var menu = db.MENU.ToList();
+
             // Je parcoure la liste des menus // un par un 
             foreach(var menuItem in menu)
             {
+                indice = true;
+                detectedMenu = menuItem;
+                // Je verifie si le produit principal du menu est présent sur la carte 
+                bool contain = cartList.Where(c => c.Tag != true).Select(c => c.ItemId).Contains(menuItem.id_item);
+                if (contain)
+                {
+                    var updateCartList = cartList.FirstOrDefault(i => i.ItemId == menuItem.id_item);
+                    if (updateCartList != null)
+                    {
+                        updateCartList.Tag = true;
+                        updateCartList.
+                    }
+                }
+                else
+                {
+                    continue;
+                }
+
+
                 // Je recupère la liste des options 
                 var option = menuItem.OPTION_CHOIX_MENU.ToList();
+            
                 // Je parcoure la liste des options 
                 foreach (var optionItem in option)
                 {
-                    // Dans chaque option je vais chercher la liste des produits liés 
+                    // Dans chaque option je vais chercher la liste des produits en  lien  avec le menu
                     var optionContainer = optionItem.ITEM_OPTION_MENU.ToList();
+                   // optionContainer.Add(menuItem.ITEM);
                     HashSet<int> cartHash = new HashSet<int>(cartList.Where(c => c.Tag != true).Select(s => s.ItemId));
-                   // var cartIDs = cvm.Cart;
-                  //  var results = optionContainer.Where(m => cartIDs.Any(z => z.ItemId == m.id_item) );
+                    cartHash.Add(menuItem.id_item);
                     var results2 = optionContainer.Where(m => cartHash.Contains(m.id_item)).ToList();
+
+                    // var cartIDs = cvm.Cart;
+                    //  var results = optionContainer.Where(m => cartIDs.Any(z => z.ItemId == m.id_item) );
+
                     if (results2.Count() > 0)
                     {
                        foreach (var res in results2)
@@ -227,12 +272,21 @@ namespace Ecom.View
                             if (updateCartList != null)
                             {
                                 updateCartList.Tag = true;
-                            }
-                            
+                            }  
                         }                             
+                    }
+                    else
+                    {
+                        indice = false;
                     }
               
                 }
+                // Ici je peux tester si indice est actif je recupère le menu en question dans une liste 
+                if (indice)
+                {
+                    MessageBox.Show(detectedMenu.menu_title);
+                }
+               // Une fois le panier est parcourue entierrement j'affiche cette liste de menu :)
             }
             var test = cartList;
         }
@@ -323,8 +377,8 @@ namespace Ecom.View
                 {
                      tempCashingClose += p.PayementValue;
                 }
-               cvm.TotalPayed = tempCashingClose;
-                cvm.TotalRestPrice = cvm.TotalPrice - cvm.TotalPayed;
+                cvm.TotalPayed = tempCashingClose;
+                cvm.TotalRestPrice = Math.Round((cvm.TotalPrice - cvm.TotalPayed),2);
                 tb_totalRest.Text = cvm.TotalRestPrice + "€";
 
              }

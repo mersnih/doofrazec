@@ -59,6 +59,7 @@ namespace Ecom.Model
                                          where orders.orders_leftToPay != 0
                                          select new Cart
                                          {
+                                             OrderId = orders.id_orders,
                                              OrderNumber = orders.orders_number,
                                              OrderDate = orders.orders_date,
                                              OrderType = ot.orders_type_title,

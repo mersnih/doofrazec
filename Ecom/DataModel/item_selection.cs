@@ -13,7 +13,6 @@ namespace Ecom.DataModel
 
         public int? item_selection_quantity { get; set; }
 
-        [StringLength(500)]
         public string item_selection_note { get; set; }
 
         public int? id_ingredient { get; set; }

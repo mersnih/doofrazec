@@ -1,0 +1,137 @@
+﻿<UserControl x:Class="Ecom.View.CUMenu"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+                          xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+
+             xmlns:local="clr-namespace:Ecom.View"
+             mc:Ignorable="d" 
+             Height="600" 
+             d:DesignHeight="300" d:DesignWidth="600">
+    <Grid>
+
+
+        <Grid x:Name="gridMenuCrud" Background="White" Opacity="0.75" Margin="10,0,10,20">
+            <Grid.CommandBindings>
+                <CommandBinding Command="New" CanExecute="_CanExecute" Executed="_Executed" />
+            </Grid.CommandBindings>
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+                <!--Options-->
+            </Grid.ColumnDefinitions>
+            <Grid Grid.Column="0">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="0.15*"></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition Height="0.2*"></RowDefinition>
+                </Grid.RowDefinitions>
+
+
+                <StackPanel x:Name="sp_header" Grid.Row="0"  Orientation="Horizontal" Height="40" HorizontalAlignment="Center" >
+                    <TextBlock x:Name="tb_messageMenu" FontSize="18" Visibility="Collapsed" Margin="5"/>
+                    <materialDesign:PackIcon x:Name="icon_messageMenu" Visibility="Collapsed" Margin="5" />
+                </StackPanel>
+                <Grid Grid.Row="1" ShowGridLines="False">
+                    <Grid x:Name="gridForms" Grid.Column="0">
+                        <Grid.RowDefinitions>
+                            <RowDefinition></RowDefinition>
+                            <RowDefinition></RowDefinition>
+                            <RowDefinition></RowDefinition>
+                            <RowDefinition></RowDefinition>
+                            <RowDefinition Height="100"></RowDefinition>
+
+                        </Grid.RowDefinitions>
+
+                        <TextBox x:Name="tb_MenuName"  Grid.Row="0" Margin="5,10" materialDesign:HintAssist.Hint="Nom" Style="{StaticResource MaterialDesignFloatingHintTextBox}" 
+                     Validation.Error="Validation_Error" Grid.ColumnSpan="2" 
+                     Text="{Binding UpdateSourceTrigger=PropertyChanged, Path=tb_name,ValidatesOnDataErrors=True, NotifyOnValidationError=True}"/>
+
+                        <StackPanel  Grid.Row="1" Orientation="Horizontal" HorizontalAlignment="Left">
+                            <TextBox x:Name="tb_MenuPrice" Width="150"  Margin="5,10" PreviewTextInput="NumericCheck" materialDesign:HintAssist.Hint="Prix" Style="{StaticResource MaterialDesignFloatingHintTextBox}" 
+                     Validation.Error="Validation_Error" Grid.ColumnSpan="2" PreviewKeyDown="CheckWiteSpace" 
+                     Text="{Binding UpdateSourceTrigger=PropertyChanged, Path=tb_price,ValidatesOnDataErrors=True, NotifyOnValidationError=True}"/>
+                            <TextBox x:Name="tb_MenuPricePromo" PreviewTextInput="NumericCheck"  Width="150" Margin="5,10"  materialDesign:HintAssist.Hint="Prix promo" Style="{StaticResource MaterialDesignFloatingHintTextBox}" 
+                     Validation.Error="Validation_Error" Grid.ColumnSpan="2" PreviewKeyDown="CheckWiteSpace" 
+                     Text="{Binding UpdateSourceTrigger=PropertyChanged, Path=Title,ValidatesOnDataErrors=True, NotifyOnValidationError=True}"/>
+                        </StackPanel>
+
+
+                        <TextBox x:Name="tb_MenuDescription"  Grid.Row="2" Margin="5,10" materialDesign:HintAssist.Hint="Description" Style="{StaticResource MaterialDesignFloatingHintTextBox}" 
+                     Validation.Error="Validation_Error" Grid.ColumnSpan="2" 
+                     Text="{Binding UpdateSourceTrigger=PropertyChanged, Path=Title,ValidatesOnDataErrors=True, NotifyOnValidationError=True}"/>
+
+
+                        <StackPanel Grid.Row="3" Orientation="Horizontal" HorizontalAlignment="Left">
+                            <TextBlock Text="Actif" Margin="10,10"/>
+                            <ToggleButton x:Name="tg_MenuActif"  IsChecked="True" Margin="5"></ToggleButton>
+                        </StackPanel>
+                        <StackPanel Grid.Row="4" Orientation="Horizontal">
+                            <Button Content="Image" Margin="10,20" Width="100" Click="OnClickLoadMenuImage" HorizontalAlignment="Left"/>
+                            <Image Name="imgMenuPhoto"  Margin="10,0" Stretch="UniformToFill"  HorizontalAlignment="Right"/>
+                        </StackPanel>
+                    </Grid>
+
+                    <!--COLORS PALETTE-->
+
+                </Grid>
+
+                <StackPanel Grid.Row="2" Orientation="Horizontal" HorizontalAlignment="Center">
+                    <Button x:Name="bt_addItem" VerticalAlignment="Bottom" Margin="5" Tag="3" Click="OnCLickAddNewItem" Command="New" >Ajouter</Button>
+                    <Button  VerticalAlignment="Bottom" Margin="5" Tag="3" Command="{x:Static materialDesign:DialogHost.CloseDialogCommand}" >Fermer</Button>
+                </StackPanel>
+            </Grid>
+
+
+            <Grid Grid.Column="1">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="0.1*"></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                </Grid.RowDefinitions>
+                <Label Grid.Row="0" HorizontalAlignment="Center" VerticalAlignment="Center">Choix de produit</Label>
+                <ListView x:Name="lv_items" Grid.Row="1" SelectionMode="Single">
+                    <ListView.View>
+                        <GridView>
+                            <GridViewColumn>
+                                <GridViewColumn.CellTemplate>
+                                    <DataTemplate>
+                                        <TextBlock Text="{Binding item_title}"/>
+
+                                    </DataTemplate>
+                                </GridViewColumn.CellTemplate>
+                            </GridViewColumn>
+                        </GridView>
+                    </ListView.View>
+                </ListView>
+            </Grid>
+
+<!--Options-->
+            <Grid Grid.Column="2">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="0.1*"></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                </Grid.RowDefinitions>
+                <Label Grid.Row="0" HorizontalAlignment="Center" VerticalAlignment="Center"> Choix des options</Label>
+                <ListView x:Name="lv_options" Grid.Row="1" SelectionMode="Multiple">
+                    <ListView.View>
+                        <GridView>
+                            <GridViewColumn>
+                                <GridViewColumn.CellTemplate>
+                                    <DataTemplate>
+                                        <TextBlock Text="{Binding option_choix_menu_title}"/>
+
+                                    </DataTemplate>
+                                </GridViewColumn.CellTemplate>
+                            </GridViewColumn>
+                        </GridView>
+                    </ListView.View>
+                </ListView>
+            </Grid>
+            
+            
+        </Grid>
+    </Grid>
+</UserControl>

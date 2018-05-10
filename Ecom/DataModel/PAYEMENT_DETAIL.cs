@@ -12,7 +12,6 @@ namespace Ecom.DataModel
         public int id_payement_detail { get; set; }
 
         [Required]
-        [StringLength(25)]
         public string way { get; set; }
 
         public decimal payement_detail_price { get; set; }

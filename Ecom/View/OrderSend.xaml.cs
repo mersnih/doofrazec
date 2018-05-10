@@ -14,6 +14,7 @@ using System.Diagnostics;
 using System.Windows.Documents;
 using System.Windows;
 using System.Printing;
+using System.Management;
 
 namespace Ecom.View
 {
@@ -66,21 +67,26 @@ namespace Ecom.View
             {
                 itemSelection = new item_selection();
 
-                itemSelection.id_item = item.ItemId;
-                itemSelection.id_orders = idOrder;
+      
 
                 if(item.SelectedIngredients!= null && item.SelectedIngredients.Count > 0)
                 {
                     foreach (var subItem in item.SelectedIngredients)
                     {
+                        itemSelection.id_item = item.ItemId;
+                        itemSelection.id_orders = idOrder;
                         itemSelection.id_ingredient = subItem.IdIngredient;
-
+                        itemSelection.item_selection_quantity = item.ItemQuantity;
                         db.item_selection.Add(itemSelection);
                         db.SaveChanges();
                     }
+
                 }
                 else
                 {
+                    itemSelection.id_item = item.ItemId;
+                    itemSelection.id_orders = idOrder;
+                    itemSelection.item_selection_quantity = item.ItemQuantity;
                     db.item_selection.Add(itemSelection);
                     db.SaveChanges();
                 }          
@@ -98,7 +104,7 @@ namespace Ecom.View
             FlowDocument document = new FlowDocument();
             System.Windows.Documents.Paragraph par = new System.Windows.Documents.Paragraph();
             par.FontFamily = new System.Windows.Media.FontFamily("Times");
-            System.Windows.Documents.Paragraph subPar;
+            System.Windows.Documents.Paragraph subPar = new System.Windows.Documents.Paragraph(); 
             document.ColumnWidth = printDialog.PrintableAreaWidth;
             document.PagePadding = new Thickness(25);
             Span s = new Span();
@@ -116,7 +122,7 @@ namespace Ecom.View
             par.Inlines.Add(new Span(new Run("-------------------------------------")));
             document.Blocks.Add(par);
 
-            foreach (var item in cartList)
+            foreach (var item in cartList.Where(c => c.Cooked == true))
             {
 
                 par = new System.Windows.Documents.Paragraph(new Run(item.ItemQuantity.ToString()+" x "+  item.ItemTitle.ToString()));
@@ -124,23 +130,54 @@ namespace Ecom.View
                 par.TextAlignment = TextAlignment.Left;
                 document.Blocks.Add(par);
                 if (item.SelectedIngredients != null)
+                {
+                    subPar = new System.Windows.Documents.Paragraph();
                     foreach (var subItem in item.SelectedIngredients)
                     {
-                        subPar = new System.Windows.Documents.Paragraph(new Run(subItem.Ingredient_quantity+" x "+  subItem.Ingredient_title.ToString()));
+                        subPar.Inlines.Add(new Span(new Run(subItem.Ingredient_quantity+" x "+  subItem.Ingredient_title.ToString())));
+                        subPar.Inlines.Add( new Span(new Run("   ")));
                         subPar.FontSize = 12;
                         subPar.TextAlignment = TextAlignment.Center;
                         document.Blocks.Add(subPar);
                     }
+                }
+            }
+            System.Windows.Documents.Paragraph par1 = new System.Windows.Documents.Paragraph();
 
+            par1.Inlines.Add(new LineBreak());//Line break is used for next line. 
+            par1.Inlines.Add(new Span(new Run("-------------------------------------")));
+   
+            document.Blocks.Add(par1);
+            foreach (var item in cartList.Where(c => c.Cooked == false))
+            {
+
+                par1 = new System.Windows.Documents.Paragraph(new Run(item.ItemQuantity.ToString() + " x " + item.ItemTitle.ToString()));
+                par1.FontSize = 14;
+                par1.TextAlignment = TextAlignment.Left;
+                document.Blocks.Add(par1);
+               
             }
 
-            //par.Inlines.Add(new LineBreak());//Line break is used for next line. 
-            //par.Inlines.Add(new Span(new Run("-------------------------------------")));
+
+            //Config printer
+            //var query = new ManagementObjectSearcher("SELECT * FROM Win32_Printer");
+            //var printers = query.Get();
+            //string printerName = Properties.Settings.Default.printerName;
+
+            //foreach (ManagementObject p in printers)
+            //{
+            //    if (p["name"].ToString() == printerName.ToString())
+            //    {
+            //        p.InvokeMethod("SetDefaultPrinter", null, null);
+            //    }
+            //}
+
+
             //document.Blocks.Add(par);
             //  fdViewer.Document = document;
 
 
-            PrintQueue printer = LocalPrintServer.GetDefaultPrintQueue();
+
 
 
             IDocumentPaginatorSource idpSource = document;
@@ -201,6 +238,102 @@ namespace Ecom.View
                     db.SaveChanges();
                 }
             }
+
+            #region PRINT
+            // Show Print Dialog
+            PrintDialog printDialog = new PrintDialog();
+
+            FlowDocument document = new FlowDocument();
+            System.Windows.Documents.Paragraph par = new System.Windows.Documents.Paragraph();
+            par.FontFamily = new System.Windows.Media.FontFamily("Times");
+            System.Windows.Documents.Paragraph subPar = new System.Windows.Documents.Paragraph();
+            document.ColumnWidth = printDialog.PrintableAreaWidth;
+            document.PagePadding = new Thickness(25);
+            Span s = new Span();
+            s = new Span(new Run("Le Cezar food"));
+            s.Inlines.Add(new LineBreak());//Line break is used for next line.  
+            par.Inlines.Add(s);// Add the span content into paragraph.
+
+
+            par.Inlines.Add(new Span(new Run("Ticket fabrication")));
+            par.Inlines.Add(new LineBreak());//Line break is used for next line. 
+            par.Inlines.Add(new Span(new Run("A Emporté")));
+            par.Inlines.Add(new LineBreak());//Line break is used for next line. 
+            par.Inlines.Add(new Span(new Run("Commande n° " + orderModel.orders_number)));
+            par.Inlines.Add(new LineBreak());//Line break is used for next line. 
+            par.Inlines.Add(new Span(new Run("-------------------------------------")));
+            document.Blocks.Add(par);
+
+            foreach (var item in cartList.Where(c => c.Cooked == true))
+            {
+
+                par = new System.Windows.Documents.Paragraph(new Run(item.ItemQuantity.ToString() + " x " + item.ItemTitle.ToString()));
+                par.FontSize = 14;
+                par.TextAlignment = TextAlignment.Left;
+                document.Blocks.Add(par);
+                if (item.SelectedIngredients != null)
+                {
+                    subPar = new System.Windows.Documents.Paragraph();
+                    foreach (var subItem in item.SelectedIngredients)
+                    {
+                        subPar.Inlines.Add(new Span(new Run(subItem.Ingredient_quantity + " x " + subItem.Ingredient_title.ToString())));
+                        subPar.Inlines.Add(new Span(new Run("   ")));
+                        subPar.FontSize = 12;
+                        subPar.TextAlignment = TextAlignment.Center;
+                        document.Blocks.Add(subPar);
+                    }
+                }
+            }
+            System.Windows.Documents.Paragraph par1 = new System.Windows.Documents.Paragraph();
+
+            par1.Inlines.Add(new LineBreak());//Line break is used for next line. 
+            par1.Inlines.Add(new Span(new Run("-------------------------------------")));
+
+            document.Blocks.Add(par1);
+            foreach (var item in cartList.Where(c => c.Cooked == false))
+            {
+
+                par1 = new System.Windows.Documents.Paragraph(new Run(item.ItemQuantity.ToString() + " x " + item.ItemTitle.ToString()));
+                par1.FontSize = 14;
+                par1.TextAlignment = TextAlignment.Left;
+                document.Blocks.Add(par1);
+
+            }
+
+
+            //Config printer
+            //var query = new ManagementObjectSearcher("SELECT * FROM Win32_Printer");
+            //var printers = query.Get();
+            //string printerName = Properties.Settings.Default.printerName;
+
+            //foreach (ManagementObject p in printers)
+            //{
+            //    if (p["name"].ToString() == printerName.ToString())
+            //    {
+            //        p.InvokeMethod("SetDefaultPrinter", null, null);
+            //    }
+            //}
+
+
+            //document.Blocks.Add(par);
+            //  fdViewer.Document = document;
+
+
+
+
+
+            IDocumentPaginatorSource idpSource = document;
+            printDialog.PrintDocument(idpSource.DocumentPaginator, "Receipt");
+            //Give style and formatting to paragraph content.  
+            //par.FontSize = 14;
+            //par.FontStyle = FontStyles.Normal;
+            //par.TextAlignment = TextAlignment.Left;
+            //document.Blocks.Add(par);
+            //  DoThePrint(document);
+
+            #endregion
+
+
 
             cartList.Clear();
             cvm.Payement = new ObservableCollection<Payement>();

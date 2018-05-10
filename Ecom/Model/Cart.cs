@@ -181,7 +181,20 @@ namespace Ecom.Model
             }
 
         }
-        
+
+
+        private bool cooked;
+        public bool Cooked
+        {
+            get { return cooked; }
+            set
+            {
+                cooked = value;
+                NotifyPropertyChanged("Cooked");
+            }
+        }
+
+
         
         // Pour les menus 
         private List<int> selectedItems;

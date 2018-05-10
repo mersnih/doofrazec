@@ -53,6 +53,30 @@ namespace Ecom.Model
             }
         }
 
+        private string status;
+        public string Status
+        {
+            get { return status; }
+            set
+            {
+                status = value;
+                OnPropertyChanged("Status");
+            }
+
+        }
+
+
+        private string statusColor;
+        public string StatusColor
+        {
+            get { return statusColor; }
+            set
+            {
+                statusColor = value;
+                OnPropertyChanged("StatusColor");
+            }
+        }
+
         private bool actif;
         public bool Actif
         {
@@ -61,6 +85,17 @@ namespace Ecom.Model
             {
                 actif = value;
                 OnPropertyChanged("Actif");
+            }
+        }
+
+        private bool cooked;
+        public bool Cooked
+        {
+            get { return cooked; }
+            set
+            {
+                cooked = value;
+                OnPropertyChanged("Cooked");
             }
         }
 

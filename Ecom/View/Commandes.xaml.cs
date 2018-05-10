@@ -14,6 +14,7 @@ namespace Ecom.View
     public partial class Commandes : UserControl
     {
         ModelCezar db;
+        CommandesViewModel cmd;
         ObservableCollection<Cart> orderList = new ObservableCollection<Cart>();
         ObservableCollection<Cart> commandDetailList = new ObservableCollection<Cart>();
 
@@ -50,7 +51,21 @@ namespace Ecom.View
         private void OnSelectionCommand(object sender, SelectionChangedEventArgs e)
         {
 
+            cmd = new CommandesViewModel();
+            var liste = (Cart)lv_OrdersList.SelectedItem;
+            if (liste != null)
+            {
+                int id  = liste.OrderId;
 
+                lv_commandDetail.ItemsSource = cmd.GetOrderDetail(id);
+     
+            }
+        }
+
+        private void lv_commandDetail_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+
+           
         }
     }
 }

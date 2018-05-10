@@ -11,15 +11,29 @@ namespace Ecom.ViewModel
 {
     class CartViewModel : INotifyPropertyChanged
     {
-
-
-
         static ObservableCollection<Cart> cart = new ObservableCollection<Cart>();
-        static ObservableCollection<Payement> payement = new ObservableCollection<Payement>();
-        private static string totalCart;
-        private static string totalRest;
-        private static int ingredientCounter;
+        public ObservableCollection<Cart> Cart
+        {
+            get { return cart; }
+            set
+            {
+                cart = value;
+                NotifyPropertyChanged("Cart");
+            }
+        }
 
+        static ObservableCollection<Payement> payement = new ObservableCollection<Payement>();
+        public ObservableCollection<Payement> Payement
+        {
+            get { return payement; }
+            set
+            {
+                payement = value;
+                NotifyPropertyChanged("Payement");
+            }
+        }
+
+        private static string totalCart;
         public string TotalCart
         {
             get { return totalCart; }
@@ -30,6 +44,8 @@ namespace Ecom.ViewModel
             }
 
         }
+
+        private static string totalRest;
         public string TotalRest
         {
             get { return totalRest; }
@@ -40,6 +56,21 @@ namespace Ecom.ViewModel
             }
 
         }
+
+        private static int ingredientCounter;
+        public int IngredientCounter
+        {
+            get { return ingredientCounter; }
+            set
+            {
+                ingredientCounter = value;
+                NotifyPropertyChanged("IngredientCounter");
+            }
+
+        }
+
+
+
 
 
         private double totalPayed;
@@ -77,36 +108,11 @@ namespace Ecom.ViewModel
 
         }
 
-        public int IngredientCounter
-        {
-            get { return ingredientCounter; }
-            set
-            {
-                ingredientCounter = value;
-                NotifyPropertyChanged("IngredientCounter");
-            }
-
-        }
 
 
-        public ObservableCollection<Cart> Cart
-        {
-            get {return cart; }
-            set
-            {
-                cart = value;
-                NotifyPropertyChanged("Cart");
-            }
-        }
-        public ObservableCollection<Payement> Payement
-        {
-            get { return payement; }
-            set
-            {
-                payement = value;
-                NotifyPropertyChanged("Payement");
-            }
-        }
+
+
+
 
 
         public event PropertyChangedEventHandler PropertyChanged;

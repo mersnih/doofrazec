@@ -11,6 +11,7 @@ namespace Ecom.DataModel
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
         public ORDERS()
         {
+            ARCHIVE = new HashSet<ARCHIVE>();
             item_selection = new HashSet<item_selection>();
             PAYEMENT_DETAIL = new HashSet<PAYEMENT_DETAIL>();
         }
@@ -19,7 +20,6 @@ namespace Ecom.DataModel
         public int id_orders { get; set; }
 
         [Required]
-        [StringLength(25)]
         public string orders_number { get; set; }
 
         public decimal orders_price { get; set; }
@@ -32,7 +32,6 @@ namespace Ecom.DataModel
         [Column(TypeName = "datetime2")]
         public DateTime? orders_delay_date { get; set; }
 
-        [StringLength(100)]
         public string id_user { get; set; }
 
         public int id_orders_type { get; set; }
@@ -42,6 +41,9 @@ namespace Ecom.DataModel
         public int? id_address { get; set; }
 
         public virtual ADDRESS ADDRESS { get; set; }
+
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<ARCHIVE> ARCHIVE { get; set; }
 
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<item_selection> item_selection { get; set; }

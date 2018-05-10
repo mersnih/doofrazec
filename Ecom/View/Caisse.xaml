@@ -55,13 +55,13 @@
                                                     <ColumnDefinition Width="110"></ColumnDefinition>
                                                     <ColumnDefinition Width="30"></ColumnDefinition>
                                                     <ColumnDefinition Width="110"></ColumnDefinition>
+                                                    <ColumnDefinition Width="100"></ColumnDefinition>
                                                     <ColumnDefinition Width="50"></ColumnDefinition>
-                                                    <ColumnDefinition Width="50"></ColumnDefinition>
-                                                    <ColumnDefinition Width="50"></ColumnDefinition>
+                                                    <ColumnDefinition Width="0"></ColumnDefinition>
                                                 </Grid.ColumnDefinitions>
                                                 <TextBlock Grid.Column="0" Text="{Binding ItemQuantity}"/>
                                                 <TextBlock Grid.Column="1" Text="{Binding ItemTitle}" />
-                                                <TextBlock Grid.Column="2" Text="{Binding ItemPrice}"/>
+                                                <TextBlock Grid.Column="2" Text="{Binding ItemPriceTxt}" FontWeight="Bold" Foreground="#20bf6b"/>
                                                 <ListBox Grid.Column="3" ItemsSource="{Binding SelectedIngredients}">
                                                     <ListBox.ItemTemplate>
                                                         <DataTemplate>
@@ -74,13 +74,18 @@
                                                         </DataTemplate>
                                                     </ListBox.ItemTemplate>
                                                 </ListBox>
-                                                <Button Grid.Column="4" Click="editItemFromCart" Height="40" Width="50" Background="#4a69bd" BorderBrush="#4a69bd">
-                                                    <materialDesign:PackIcon Kind="Pencil" Width="20" Height="20"  Foreground="White"/>
-                                                </Button>
-                                                <Button Grid.Column="5" Click="deleteItemFromCart" Height="40" Width="50" Background="#e55039" BorderBrush="#e55039" >
-                                                    <materialDesign:PackIcon Kind="Close" Width="20" Height="20"   Foreground="White"/>
-                                                </Button>
-                                                <CheckBox Grid.Column="6" IsChecked="{Binding Path=Tag}"></CheckBox>
+                                                <StackPanel Grid.Column="4" Orientation="Horizontal">
+                                                    <Button Click="editItemFromCart" Height="40" Width="50"  Background="#3867d6" BorderBrush="#3867d6">
+                                                        <materialDesign:PackIcon Kind="Pencil" Width="20" Height="20"  Foreground="White"/>
+                                                    </Button>
+                                                    <Button Click="deleteItemFromCart" Height="40" Width="50" Background="#e55039" BorderBrush="#e55039" >
+                                                        <materialDesign:PackIcon Kind="Close" Width="20" Height="20"   Foreground="White"/>
+                                                    </Button>     
+                                                </StackPanel>
+                                
+                 
+                                                <CheckBox Grid.Column="5" IsChecked="{Binding Path=Tag}"></CheckBox>
+                                                
 
                                             </Grid>
 
@@ -254,25 +259,29 @@
                         <ItemsControl.ItemsPanel>
                             <ItemsPanelTemplate>
 
-                                                    <!--<WrapPanel />-->
-                                <UniformGrid Columns="1"/>
+                                                   
+                                <UniformGrid Columns="1" VerticalAlignment="Top"/>
                             </ItemsPanelTemplate>
                         </ItemsControl.ItemsPanel>
                         <ItemsControl.ItemTemplate>
                             <DataTemplate>
 
-                                                        <Button x:Name="getItemsBtn" Click="getItemsByCatId" BorderBrush="{Binding Path=category_button_color}" 
+                                                        <Button x:Name="getItemsBtn" Click="getItemsByCatId" BorderBrush="Transparent" 
                                                                 BorderThickness="5"
                                                                 Foreground="{Binding Path=category_button_color}"                                                          
-                                                                Background="Transparent" 
-                                                                Content="{Binding Path=category_title}" 
+                                                                Background="#BE90D4" 
+                                                                
                                                                 Tag="{Binding RelativeSource={RelativeSource Mode=TemplatedParent},
                                                                 Path=(ItemsControl.AlternationIndex)}"  
                                                                 FontSize="10"
                                                                 Margin="5,5,10,0"
-                                                                Height="90" Width="90"
+                                                                Height="100" Width="100"
                                                               >
-                        
+                                                            <StackPanel>
+
+                                                                <!--<Image Source="C:\Users\Hichem\Desktop\CezarCaisse_v.0.5\CezarCaisse_v.0.5\Ecom\Resources\croq.png" Height="64" Width="64" />-->
+                                                                <Label Name="lb_getItems" Content="{Binding Path=category_title}" HorizontalAlignment="Center"/>
+                                                            </StackPanel>
                                                         </Button>
                                                         <!--Height="{Binding RelativeSource={RelativeSource AncestorType=DataGridCell}, Path=ActualHeight}"
                                         Width="{Binding RelativeSource={RelativeSource AncestorType=DataGridCell}, Path=ActualWidth}"-->

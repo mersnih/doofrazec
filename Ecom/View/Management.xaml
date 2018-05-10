@@ -7,7 +7,7 @@
              xmlns:local="clr-namespace:Ecom.View"
              xmlns:dragablz="clr-namespace:Dragablz;assembly=Dragablz"
              mc:Ignorable="d" 
-             d:DesignHeight="300" d:DesignWidth="300">
+             d:DesignHeight="600" d:DesignWidth="800">
     <UserControl.Resources>
         <ResourceDictionary>
             <ResourceDictionary.MergedDictionaries>
@@ -65,10 +65,12 @@
                     <Grid Grid.Row="0" Margin="0,5">
                         <!--ITEMS-->
                         <Grid.ColumnDefinitions>
-                            <ColumnDefinition></ColumnDefinition>
-                            <ColumnDefinition></ColumnDefinition>
-                            <ColumnDefinition></ColumnDefinition>
+                            <ColumnDefinition Width="0.3*"></ColumnDefinition>
+                            <ColumnDefinition Width="0.5*"></ColumnDefinition>
+                            <ColumnDefinition Width="0.2 *"></ColumnDefinition>
                         </Grid.ColumnDefinitions>
+  
+                        
                         <Grid  Grid.Row="0" Grid.Column="0" >
                             <DockPanel Background="White" Margin="5,0">
 
@@ -121,7 +123,7 @@
                                                         <ColumnDefinition Width="50"></ColumnDefinition>
                                                         <ColumnDefinition Width="150"></ColumnDefinition>
                                                         <ColumnDefinition Width="50"></ColumnDefinition>
-                                                        <ColumnDefinition Width="50"></ColumnDefinition>
+                                                        <ColumnDefinition Width="80"></ColumnDefinition>
                                                         <ColumnDefinition Width="100"></ColumnDefinition>
                                                         <ColumnDefinition Width="50"></ColumnDefinition>
                                                     </Grid.ColumnDefinitions>
@@ -132,9 +134,8 @@
                                                         <TextBlock Text="€" FontSize="20" Foreground="DarkGreen"/>
                                                     </StackPanel>
 
-                                                    <ToggleButton Grid.Column="3" Style="{StaticResource MaterialDesignSwitchAccentToggleButton}" IsEnabled="False" IsChecked="{Binding Actif}"/>
-
-                                                    <Button Grid.Column="4" Click="OnClickEditItem">Modifier</Button>
+                                                <materialDesign:Chip Grid.Column="3"   IsHitTestVisible="{Binding Actif}"  Content="{Binding Status}" Background="{Binding StatusColor}" Foreground="White" />
+                                                <Button Grid.Column="4" Click="OnClickEditItem">Modifier</Button>
                                                     <Button Grid.Column="5" Click="OnClickDeleteItem" Height="25" Width="25" Background="Transparent" BorderBrush="Transparent" Style="{StaticResource MaterialDesignFloatingActionButton}">
                                                         <materialDesign:PackIcon Kind="CloseCircleOutline" Width="25" Height="25" Foreground="#B94B50"/>
                                                     </Button>
@@ -273,9 +274,180 @@
 
 
             </TabItem>
-            <TabItem Header="Gestion des menus" />
-         
-     
+
+
+ <!--************ Gestion des menus  ******************-->
+        <TabItem Header="Gestion des menus">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition></ColumnDefinition>
+                    <ColumnDefinition></ColumnDefinition>
+                    <ColumnDefinition></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                </Grid.RowDefinitions>
+
+                <!--Les menus-->
+                <Grid  Grid.Column="0" >
+                <DockPanel Background="White" Margin="5,0">
+
+                    <StackPanel DockPanel.Dock="Top" Background="#2e86de" Height="50">
+                        <TextBlock HorizontalAlignment="Center" Foreground="White" FontSize="20">Les menus</TextBlock>
+
+                    </StackPanel>
+
+                    <Grid>
+                        <ListView x:Name="lv_menu" SelectionChanged="ShowMenuChoice">
+                            <ListBox.ItemTemplate>
+                                <DataTemplate>
+                                    <Grid>
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition Width="180"></ColumnDefinition>
+                                            <ColumnDefinition Width="50"></ColumnDefinition>
+                                        </Grid.ColumnDefinitions>
+
+                                        <TextBlock Grid.Column="0" Text="{Binding Title}" FontSize="20" />
+                                        <Button Grid.Column="1"  Click="OnClickDeleteMenu" Height="25" Width="25" Background="Transparent" BorderBrush="Transparent" Style="{StaticResource MaterialDesignFloatingActionButton}">
+                                            <materialDesign:PackIcon Kind="CloseCircleOutline" Width="25" Height="25" Foreground="#B94B50"/>
+                                        </Button>
+
+                                    </Grid>
+                                </DataTemplate>
+                            </ListBox.ItemTemplate>
+                        </ListView>
+                    </Grid>
+
+                </DockPanel>
+                <Button x:Name="D_ajouterMenu_bt" Click="OnClickAddMenu" Margin="0,30,30,0" Grid.Row="1" Style="{StaticResource MaterialDesignFloatingActionButton}" Grid.Column="10" HorizontalAlignment="Right" VerticalAlignment="Top"  BorderBrush="#4CAF50" Width="40" Height="40" Background="#4CAF50" Foreground="White" ToolTip="Ajouter">
+                    <materialDesign:PackIcon Kind="Plus"  Width="35" Height="35" />
+                </Button>
+ 
+                </Grid>
+                
+                
+                
+                <!--Options -->
+                <Grid  Grid.Row ="0" Grid.Column="1" >
+                    <DockPanel Background="White" Margin="5,5">
+
+                        <StackPanel DockPanel.Dock="Top" Background="#2e86de" Height="50">
+                            <TextBlock HorizontalAlignment="Center" Foreground="White" FontSize="20">Options</TextBlock>
+
+                        </StackPanel>
+
+                        <Grid>
+                            <ListView x:Name="lv_menuSelectedOption" >
+                                <ListBox.ItemTemplate>
+                                    <DataTemplate>
+                                        <Grid>
+                                            <Grid.ColumnDefinitions>
+                                                <ColumnDefinition Width="150"></ColumnDefinition>
+                                                <ColumnDefinition Width="50"></ColumnDefinition>
+                                            </Grid.ColumnDefinitions>
+
+                                            <TextBlock Grid.Column="0" Text="{Binding Title}" FontSize="20" />
+                                            <Button Grid.Column="1"  Click="OnClickDeleteMenuSelectedOption" Height="25" Width="25" Background="Transparent" BorderBrush="Transparent" Style="{StaticResource MaterialDesignFloatingActionButton}">
+                                                <materialDesign:PackIcon Kind="CloseCircleOutline" Width="25" Height="25" Foreground="#B94B50"/>
+                                            </Button>
+
+                                        </Grid>
+                                    </DataTemplate>
+                                </ListBox.ItemTemplate>
+                            </ListView>
+                        </Grid>
+
+                    </DockPanel>
+                    <Button x:Name="D_ajouterMenuSelectedOption_bt" Click="OnClickAddMenuSelectedOption" Margin="0,30,30,0" Grid.Row="1" Style="{StaticResource MaterialDesignFloatingActionButton}" Grid.Column="10" HorizontalAlignment="Right" VerticalAlignment="Top"  BorderBrush="#4CAF50" Width="40" Height="40" Background="#4CAF50" Foreground="White" ToolTip="Ajouter">
+                        <materialDesign:PackIcon Kind="Plus"  Width="35" Height="35" />
+                    </Button>
+
+                </Grid>
+
+                <!--Choix du menu-->
+                <Grid  Grid.Row ="1" Grid.Column="0" >
+                    <DockPanel Background="White" Margin="5,5">
+
+                        <StackPanel DockPanel.Dock="Top" Background="#2e86de" Height="50">
+                            <TextBlock HorizontalAlignment="Center" Foreground="White" FontSize="20">Choix du menu</TextBlock>
+
+                        </StackPanel>
+
+                        <Grid>
+                            <ListView x:Name="lv_menuOption"  SelectionChanged="ShowItemsOptions">
+                                <ListBox.ItemTemplate>
+                                    <DataTemplate>
+                                        <Grid>
+                                            <Grid.ColumnDefinitions>
+                                                <ColumnDefinition Width="150"></ColumnDefinition>
+                                                <ColumnDefinition Width="50"></ColumnDefinition>
+                                            </Grid.ColumnDefinitions>
+
+                                            <TextBlock Grid.Column="0" Text="{Binding Title}" FontSize="20" />
+                                            <Button Grid.Column="1"  Click="OnClickDeleteMenu" Height="25" Width="25" Background="Transparent" BorderBrush="Transparent" Style="{StaticResource MaterialDesignFloatingActionButton}">
+                                                <materialDesign:PackIcon Kind="CloseCircleOutline" Width="25" Height="25" Foreground="#B94B50"/>
+                                            </Button>
+
+                                        </Grid>
+                                    </DataTemplate>
+                                </ListBox.ItemTemplate>
+                            </ListView>
+                        </Grid>
+
+                    </DockPanel>
+                    <Button x:Name="D_ajouterMenuOption_bt" Click="OnClickAddMenuOption" Margin="0,30,30,0" Grid.Row="1" Style="{StaticResource MaterialDesignFloatingActionButton}" Grid.Column="10" HorizontalAlignment="Right" VerticalAlignment="Top"  BorderBrush="#4CAF50" Width="40" Height="40" Background="#4CAF50" Foreground="White" ToolTip="Ajouter">
+                        <materialDesign:PackIcon Kind="Plus"  Width="35" Height="35" />
+                    </Button>
+
+                </Grid>
+
+                <!-- Articles -->
+                <Grid  Grid.Row ="1" Grid.Column="1" >
+                    <DockPanel Background="White" Margin="5,5">
+
+                        <StackPanel DockPanel.Dock="Top" Background="#2e86de" Height="50">
+                            <TextBlock HorizontalAlignment="Center" Foreground="White" FontSize="20">Les produits</TextBlock>
+
+                        </StackPanel>
+
+                        <Grid>
+                            <ListView x:Name="lv_menuItemsOptions" >
+                                <ListBox.ItemTemplate>
+                                    <DataTemplate>
+                                        <Grid>
+                                            <Grid.ColumnDefinitions>
+                                                <ColumnDefinition Width="150"></ColumnDefinition>
+                                                <ColumnDefinition Width="50"></ColumnDefinition>
+                                            </Grid.ColumnDefinitions>
+
+                                            <TextBlock Grid.Column="0" Text="{Binding Title}" FontSize="20" />
+                                            <Button Grid.Column="1"  Click="OnClickDeleteItemsOptions" Height="25" Width="25" Background="Transparent" BorderBrush="Transparent" 
+                                                    Style="{StaticResource MaterialDesignFloatingActionButton}">
+                                                <materialDesign:PackIcon Kind="CloseCircleOutline" Width="25" Height="25" Foreground="#B94B50"/>
+                                            </Button>
+
+                                        </Grid>
+                                    </DataTemplate>
+                                </ListBox.ItemTemplate>
+                            </ListView>
+                        </Grid>
+
+                    </DockPanel>
+                    <Button x:Name="D_ajouterItemsOptions_bt" Click="OnClickAddMenuItemsOptions" Margin="0,30,30,0" Grid.Row="1" Style="{StaticResource MaterialDesignFloatingActionButton}" 
+                            Grid.Column="10" HorizontalAlignment="Right" VerticalAlignment="Top"  BorderBrush="#4CAF50" Width="40" Height="40" Background="#4CAF50" 
+                            Foreground="White" ToolTip="Ajouter">
+                        <materialDesign:PackIcon Kind="Plus"  Width="35" Height="35" />
+                    </Button>
+
+                </Grid>
+
+
+
+            </Grid>
+        </TabItem>
+
+
 
     </dragablz:TabablzControl>
 

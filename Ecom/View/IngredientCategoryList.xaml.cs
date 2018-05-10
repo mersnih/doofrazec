@@ -42,7 +42,7 @@ namespace Ecom.View
             //  var idCat = ((ItemsCategoryModel)lv_ingredientCategoryList.SelectedItem).Id;
             var idCatList = (lv_ingredientCategoryList.SelectedItems);
 
-            count = lv_ingredientCategoryList.SelectedItems.Count;
+            count = idCatList.Count;
             using (var db = new ModelCezar())
             {
                 try

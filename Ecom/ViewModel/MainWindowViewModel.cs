@@ -15,7 +15,11 @@ namespace Ecom.ViewModel
         public ItemList[] Items { get; }
         public MainWindowViewModel()
         {         
-            Items = new[] { new ItemList("ViewQuilt", "#505f89", "Caisse", new Caisse()), new ItemList("PlusOne", "#505f89", "Commandes", new Commandes()), new ItemList("settings", "#E55050", "Gestion produit", new Management()), new Model.ItemList("chartLine", "#63A06D", "Statistiques",null) };
+            Items = new[] { new ItemList("ViewQuilt", "#505f89", "Caisse", new Caisse()),
+                            new ItemList("PlusOne", "#505f89", "Commandes", new Commandes()),
+                            new ItemList("settings", "#E55050", "Gestion produit", new Management()),
+                            new Model.ItemList("chartLine", "#63A06D", "Statistiques",null) ,
+                            new ItemList("Settings", "#505f89", "Reglages", new Settings()) };
               // new Liste();    
         }
     }

@@ -19,10 +19,8 @@ namespace Ecom.DataModel
         public int id_option_choix_menu { get; set; }
 
         [Required]
-        [StringLength(25)]
         public string option_choix_menu_title { get; set; }
 
-        public int option_choix_menu_quantity { get; set; }
 
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<ITEM_OPTION_MENU> ITEM_OPTION_MENU { get; set; }

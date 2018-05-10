@@ -1,0 +1,1040 @@
+C:\Users\RZ63\Desktop\Ecom\Ecom\bin\Debug\Ecom.exe.config
+C:\Users\RZ63\Desktop\Ecom\Ecom\bin\Debug\Ecom.exe
+C:\Users\RZ63\Desktop\Ecom\Ecom\bin\Debug\Ecom.pdb
+C:\Users\RZ63\Desktop\Ecom\Ecom\obj\Debug\MainWindow.g.cs
+C:\Users\RZ63\Desktop\Ecom\Ecom\obj\Debug\App.g.cs
+C:\Users\RZ63\Desktop\Ecom\Ecom\obj\Debug\Ecom_MarkupCompile.cache
+C:\Users\RZ63\Desktop\Ecom\Ecom\obj\Debug\Ecom_MarkupCompile.lref
+C:\Users\RZ63\Desktop\Ecom\Ecom\obj\Debug\App.baml
+C:\Users\RZ63\Desktop\Ecom\Ecom\obj\Debug\MainWindow.baml
+C:\Users\RZ63\Desktop\Ecom\Ecom\obj\Debug\Ecom.g.resources
+C:\Users\RZ63\Desktop\Ecom\Ecom\obj\Debug\Ecom.Properties.Resources.resources
+C:\Users\RZ63\Desktop\Ecom\Ecom\obj\Debug\Ecom.csproj.GenerateResource.Cache
+C:\Users\RZ63\Desktop\Ecom\Ecom\obj\Debug\Ecom.exe
+C:\Users\RZ63\Desktop\Ecom\Ecom\obj\Debug\Ecom.pdb
+C:\Users\RZ63\Desktop\Ecom\Ecom\bin\Debug\MahApps.Metro.dll
+C:\Users\RZ63\Desktop\Ecom\Ecom\bin\Debug\MaterialDesignColors.dll
+C:\Users\RZ63\Desktop\Ecom\Ecom\bin\Debug\MaterialDesignThemes.MahApps.dll
+C:\Users\RZ63\Desktop\Ecom\Ecom\bin\Debug\MaterialDesignThemes.Wpf.dll
+C:\Users\RZ63\Desktop\Ecom\Ecom\bin\Debug\System.Windows.Interactivity.dll
+C:\Users\RZ63\Desktop\Ecom\Ecom\bin\Debug\MahApps.Metro.pdb
+C:\Users\RZ63\Desktop\Ecom\Ecom\bin\Debug\MahApps.Metro.xml
+C:\Users\RZ63\Desktop\Ecom\Ecom\bin\Debug\MaterialDesignColors.pdb
+C:\Users\RZ63\Desktop\Ecom\Ecom\bin\Debug\MaterialDesignThemes.Wpf.pdb
+C:\Users\RZ63\Desktop\Ecom\Ecom\bin\Debug\MaterialDesignThemes.Wpf.xml
+C:\Users\RZ63\Desktop\Ecom\Ecom\obj\Debug\Ecom.csprojResolveAssemblyReference.cache
+C:\Users\RZ63\Desktop\Ecom\Ecom\obj\Debug\View\Caisse.g.cs
+C:\Users\RZ63\Desktop\Ecom\Ecom\obj\Debug\View\Caisse.baml
+C:\Users\Hichem\Documents\Projets\CEZAR_PROJECT\CezarCaisse_v.0.1\Ecom\bin\Debug\Ecom.exe.config
+C:\Users\Hichem\Documents\Projets\CEZAR_PROJECT\CezarCaisse_v.0.1\Ecom\bin\Debug\Ecom.exe
+C:\Users\Hichem\Documents\Projets\CEZAR_PROJECT\CezarCaisse_v.0.1\Ecom\bin\Debug\Ecom.pdb
+C:\Users\Hichem\Documents\Projets\CEZAR_PROJECT\CezarCaisse_v.0.1\Ecom\bin\Debug\EntityFramework.dll
+C:\Users\Hichem\Documents\Projets\CEZAR_PROJECT\CezarCaisse_v.0.1\Ecom\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Hichem\Documents\Projets\CEZAR_PROJECT\CezarCaisse_v.0.1\Ecom\bin\Debug\MahApps.Metro.dll
+C:\Users\Hichem\Documents\Projets\CEZAR_PROJECT\CezarCaisse_v.0.1\Ecom\bin\Debug\MaterialDesignColors.dll
+C:\Users\Hichem\Documents\Projets\CEZAR_PROJECT\CezarCaisse_v.0.1\Ecom\bin\Debug\MaterialDesignThemes.MahApps.dll
+C:\Users\Hichem\Documents\Projets\CEZAR_PROJECT\CezarCaisse_v.0.1\Ecom\bin\Debug\MaterialDesignThemes.Wpf.dll
+C:\Users\Hichem\Documents\Projets\CEZAR_PROJECT\CezarCaisse_v.0.1\Ecom\bin\Debug\System.Windows.Interactivity.dll
+C:\Users\Hichem\Documents\Projets\CEZAR_PROJECT\CezarCaisse_v.0.1\Ecom\bin\Debug\EntityFramework.xml
+C:\Users\Hichem\Documents\Projets\CEZAR_PROJECT\CezarCaisse_v.0.1\Ecom\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Hichem\Documents\Projets\CEZAR_PROJECT\CezarCaisse_v.0.1\Ecom\bin\Debug\MahApps.Metro.pdb
+C:\Users\Hichem\Documents\Projets\CEZAR_PROJECT\CezarCaisse_v.0.1\Ecom\bin\Debug\MahApps.Metro.xml
+C:\Users\Hichem\Documents\Projets\CEZAR_PROJECT\CezarCaisse_v.0.1\Ecom\bin\Debug\MaterialDesignColors.pdb
+C:\Users\Hichem\Documents\Projets\CEZAR_PROJECT\CezarCaisse_v.0.1\Ecom\bin\Debug\MaterialDesignThemes.Wpf.pdb
+C:\Users\Hichem\Documents\Projets\CEZAR_PROJECT\CezarCaisse_v.0.1\Ecom\bin\Debug\MaterialDesignThemes.Wpf.xml
+C:\Users\Hichem\Documents\Projets\CEZAR_PROJECT\CezarCaisse_v.0.1\Ecom\bin\Debug\fr\EntityFramework.resources.dll
+C:\Users\Hichem\Documents\Projets\CEZAR_PROJECT\CezarCaisse_v.0.1\Ecom\obj\Debug\MainWindow.g.cs
+C:\Users\Hichem\Documents\Projets\CEZAR_PROJECT\CezarCaisse_v.0.1\Ecom\obj\Debug\View\Caisse.g.cs
+C:\Users\Hichem\Documents\Projets\CEZAR_PROJECT\CezarCaisse_v.0.1\Ecom\obj\Debug\View\OrderSend.g.cs
+C:\Users\Hichem\Documents\Projets\CEZAR_PROJECT\CezarCaisse_v.0.1\Ecom\obj\Debug\App.g.cs
+C:\Users\Hichem\Documents\Projets\CEZAR_PROJECT\CezarCaisse_v.0.1\Ecom\obj\Debug\Ecom_MarkupCompile.cache
+C:\Users\Hichem\Documents\Projets\CEZAR_PROJECT\CezarCaisse_v.0.1\Ecom\obj\Debug\Ecom_MarkupCompile.lref
+C:\Users\Hichem\Documents\Projets\CEZAR_PROJECT\CezarCaisse_v.0.1\Ecom\obj\Debug\App.baml
+C:\Users\Hichem\Documents\Projets\CEZAR_PROJECT\CezarCaisse_v.0.1\Ecom\obj\Debug\MainWindow.baml
+C:\Users\Hichem\Documents\Projets\CEZAR_PROJECT\CezarCaisse_v.0.1\Ecom\obj\Debug\View\Caisse.baml
+C:\Users\Hichem\Documents\Projets\CEZAR_PROJECT\CezarCaisse_v.0.1\Ecom\obj\Debug\View\OrderSend.baml
+C:\Users\Hichem\Documents\Projets\CEZAR_PROJECT\CezarCaisse_v.0.1\Ecom\obj\Debug\Ecom.g.resources
+C:\Users\Hichem\Documents\Projets\CEZAR_PROJECT\CezarCaisse_v.0.1\Ecom\obj\Debug\Ecom.Properties.Resources.resources
+C:\Users\Hichem\Documents\Projets\CEZAR_PROJECT\CezarCaisse_v.0.1\Ecom\obj\Debug\Ecom.csproj.GenerateResource.Cache
+C:\Users\Hichem\Documents\Projets\CEZAR_PROJECT\CezarCaisse_v.0.1\Ecom\obj\Debug\Ecom.exe
+C:\Users\Hichem\Documents\Projets\CEZAR_PROJECT\CezarCaisse_v.0.1\Ecom\obj\Debug\Ecom.pdb
+C:\Users\Hichem\Documents\Projets\CEZAR_PROJECT\CezarCaisse_v.0.1\Ecom\obj\Debug\View\ItemOption.g.cs
+C:\Users\Hichem\Documents\Projets\CEZAR_PROJECT\CezarCaisse_v.0.1\Ecom\obj\Debug\View\ItemOption.baml
+C:\Users\Hichem\Documents\Projets\CEZAR_PROJECT\CezarCaisse_v.0.1\Ecom\obj\Debug\View\Commandes.g.cs
+C:\Users\Hichem\Documents\Projets\CEZAR_PROJECT\CezarCaisse_v.0.1\Ecom\obj\Debug\View\Commandes.baml
+C:\Users\Hichem\Documents\Projets\CEZAR_PROJECT\CezarCaisse_v.0.1\Ecom\obj\Debug\Ecom.csprojResolveAssemblyReference.cache
+C:\Users\Hichem\Documents\Projets\CEZAR_PROJECT\CezarCaisse_v.0.1\Ecom\obj\Debug\View\Message.g.cs
+C:\Users\Hichem\Documents\Projets\CEZAR_PROJECT\CezarCaisse_v.0.1\Ecom\obj\Debug\View\Message.baml
+C:\Users\Hichem\Documents\Projets\CEZAR_PROJECT\CezarCaisse_v.0.1\Ecom\obj\Debug\View\Cashing.g.cs
+C:\Users\Hichem\Documents\Projets\CEZAR_PROJECT\CezarCaisse_v.0.1\Ecom\obj\Debug\View\Cashing.baml
+C:\Users\Wave\Desktop\CEZAR_PROJECT\CezarCaisse_v.0.1\Ecom\bin\Debug\Ecom.exe.config
+C:\Users\Wave\Desktop\CEZAR_PROJECT\CezarCaisse_v.0.1\Ecom\bin\Debug\Ecom.exe
+C:\Users\Wave\Desktop\CEZAR_PROJECT\CezarCaisse_v.0.1\Ecom\bin\Debug\Ecom.pdb
+C:\Users\Wave\Desktop\CEZAR_PROJECT\CezarCaisse_v.0.1\Ecom\bin\Debug\EntityFramework.dll
+C:\Users\Wave\Desktop\CEZAR_PROJECT\CezarCaisse_v.0.1\Ecom\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Wave\Desktop\CEZAR_PROJECT\CezarCaisse_v.0.1\Ecom\bin\Debug\MahApps.Metro.dll
+C:\Users\Wave\Desktop\CEZAR_PROJECT\CezarCaisse_v.0.1\Ecom\bin\Debug\MaterialDesignColors.dll
+C:\Users\Wave\Desktop\CEZAR_PROJECT\CezarCaisse_v.0.1\Ecom\bin\Debug\MaterialDesignThemes.MahApps.dll
+C:\Users\Wave\Desktop\CEZAR_PROJECT\CezarCaisse_v.0.1\Ecom\bin\Debug\MaterialDesignThemes.Wpf.dll
+C:\Users\Wave\Desktop\CEZAR_PROJECT\CezarCaisse_v.0.1\Ecom\bin\Debug\System.Windows.Interactivity.dll
+C:\Users\Wave\Desktop\CEZAR_PROJECT\CezarCaisse_v.0.1\Ecom\bin\Debug\EntityFramework.xml
+C:\Users\Wave\Desktop\CEZAR_PROJECT\CezarCaisse_v.0.1\Ecom\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Wave\Desktop\CEZAR_PROJECT\CezarCaisse_v.0.1\Ecom\bin\Debug\MahApps.Metro.pdb
+C:\Users\Wave\Desktop\CEZAR_PROJECT\CezarCaisse_v.0.1\Ecom\bin\Debug\MahApps.Metro.xml
+C:\Users\Wave\Desktop\CEZAR_PROJECT\CezarCaisse_v.0.1\Ecom\bin\Debug\MaterialDesignColors.pdb
+C:\Users\Wave\Desktop\CEZAR_PROJECT\CezarCaisse_v.0.1\Ecom\bin\Debug\MaterialDesignThemes.Wpf.pdb
+C:\Users\Wave\Desktop\CEZAR_PROJECT\CezarCaisse_v.0.1\Ecom\bin\Debug\MaterialDesignThemes.Wpf.xml
+C:\Users\Wave\Desktop\CEZAR_PROJECT\CezarCaisse_v.0.1\Ecom\bin\Debug\fr\EntityFramework.resources.dll
+C:\Users\Wave\Desktop\CEZAR_PROJECT\CezarCaisse_v.0.1\Ecom\obj\Debug\Ecom.csprojResolveAssemblyReference.cache
+C:\Users\Wave\Desktop\CEZAR_PROJECT\CezarCaisse_v.0.1\Ecom\obj\Debug\MainWindow.g.cs
+C:\Users\Wave\Desktop\CEZAR_PROJECT\CezarCaisse_v.0.1\Ecom\obj\Debug\View\Caisse.g.cs
+C:\Users\Wave\Desktop\CEZAR_PROJECT\CezarCaisse_v.0.1\Ecom\obj\Debug\View\Cashing.g.cs
+C:\Users\Wave\Desktop\CEZAR_PROJECT\CezarCaisse_v.0.1\Ecom\obj\Debug\View\ItemOption.g.cs
+C:\Users\Wave\Desktop\CEZAR_PROJECT\CezarCaisse_v.0.1\Ecom\obj\Debug\View\Message.g.cs
+C:\Users\Wave\Desktop\CEZAR_PROJECT\CezarCaisse_v.0.1\Ecom\obj\Debug\View\OrderSend.g.cs
+C:\Users\Wave\Desktop\CEZAR_PROJECT\CezarCaisse_v.0.1\Ecom\obj\Debug\View\Commandes.g.cs
+C:\Users\Wave\Desktop\CEZAR_PROJECT\CezarCaisse_v.0.1\Ecom\obj\Debug\App.g.cs
+C:\Users\Wave\Desktop\CEZAR_PROJECT\CezarCaisse_v.0.1\Ecom\obj\Debug\Ecom_MarkupCompile.cache
+C:\Users\Wave\Desktop\CEZAR_PROJECT\CezarCaisse_v.0.1\Ecom\obj\Debug\Ecom_MarkupCompile.lref
+C:\Users\Wave\Desktop\CEZAR_PROJECT\CezarCaisse_v.0.1\Ecom\obj\Debug\App.baml
+C:\Users\Wave\Desktop\CEZAR_PROJECT\CezarCaisse_v.0.1\Ecom\obj\Debug\MainWindow.baml
+C:\Users\Wave\Desktop\CEZAR_PROJECT\CezarCaisse_v.0.1\Ecom\obj\Debug\View\Caisse.baml
+C:\Users\Wave\Desktop\CEZAR_PROJECT\CezarCaisse_v.0.1\Ecom\obj\Debug\View\Cashing.baml
+C:\Users\Wave\Desktop\CEZAR_PROJECT\CezarCaisse_v.0.1\Ecom\obj\Debug\View\ItemOption.baml
+C:\Users\Wave\Desktop\CEZAR_PROJECT\CezarCaisse_v.0.1\Ecom\obj\Debug\View\Message.baml
+C:\Users\Wave\Desktop\CEZAR_PROJECT\CezarCaisse_v.0.1\Ecom\obj\Debug\View\OrderSend.baml
+C:\Users\Wave\Desktop\CEZAR_PROJECT\CezarCaisse_v.0.1\Ecom\obj\Debug\View\Commandes.baml
+C:\Users\Wave\Desktop\CEZAR_PROJECT\CezarCaisse_v.0.1\Ecom\obj\Debug\Ecom.g.resources
+C:\Users\Wave\Desktop\CEZAR_PROJECT\CezarCaisse_v.0.1\Ecom\obj\Debug\Ecom.Properties.Resources.resources
+C:\Users\Wave\Desktop\CEZAR_PROJECT\CezarCaisse_v.0.1\Ecom\obj\Debug\Ecom.csproj.GenerateResource.Cache
+C:\Users\Wave\Desktop\CEZAR_PROJECT\CezarCaisse_v.0.1\Ecom\obj\Debug\Ecom.exe
+C:\Users\Wave\Desktop\CEZAR_PROJECT\CezarCaisse_v.0.1\Ecom\obj\Debug\Ecom.pdb
+C:\Users\Wave\Desktop\CEZAR_PROJECT\CezarCaisse_v.0.1\Ecom\bin\Debug\fr\EntityFramework.SqlServer.resources.dll
+C:\Users\Hichem\Documents\Dossier partagé\CezarCaisse_v.0.1\Ecom\bin\Debug\Ecom.exe.config
+C:\Users\Hichem\Documents\Dossier partagé\CezarCaisse_v.0.1\Ecom\bin\Debug\Ecom.exe.manifest
+C:\Users\Hichem\Documents\Dossier partagé\CezarCaisse_v.0.1\Ecom\bin\Debug\Ecom.application
+C:\Users\Hichem\Documents\Dossier partagé\CezarCaisse_v.0.1\Ecom\bin\Debug\Ecom.exe
+C:\Users\Hichem\Documents\Dossier partagé\CezarCaisse_v.0.1\Ecom\bin\Debug\Ecom.pdb
+C:\Users\Hichem\Documents\Dossier partagé\CezarCaisse_v.0.1\Ecom\bin\Debug\EntityFramework.dll
+C:\Users\Hichem\Documents\Dossier partagé\CezarCaisse_v.0.1\Ecom\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Hichem\Documents\Dossier partagé\CezarCaisse_v.0.1\Ecom\bin\Debug\MahApps.Metro.dll
+C:\Users\Hichem\Documents\Dossier partagé\CezarCaisse_v.0.1\Ecom\bin\Debug\MaterialDesignColors.dll
+C:\Users\Hichem\Documents\Dossier partagé\CezarCaisse_v.0.1\Ecom\bin\Debug\MaterialDesignThemes.MahApps.dll
+C:\Users\Hichem\Documents\Dossier partagé\CezarCaisse_v.0.1\Ecom\bin\Debug\MaterialDesignThemes.Wpf.dll
+C:\Users\Hichem\Documents\Dossier partagé\CezarCaisse_v.0.1\Ecom\bin\Debug\System.Windows.Interactivity.dll
+C:\Users\Hichem\Documents\Dossier partagé\CezarCaisse_v.0.1\Ecom\bin\Debug\EntityFramework.xml
+C:\Users\Hichem\Documents\Dossier partagé\CezarCaisse_v.0.1\Ecom\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Hichem\Documents\Dossier partagé\CezarCaisse_v.0.1\Ecom\bin\Debug\MahApps.Metro.pdb
+C:\Users\Hichem\Documents\Dossier partagé\CezarCaisse_v.0.1\Ecom\bin\Debug\MahApps.Metro.xml
+C:\Users\Hichem\Documents\Dossier partagé\CezarCaisse_v.0.1\Ecom\bin\Debug\MaterialDesignColors.pdb
+C:\Users\Hichem\Documents\Dossier partagé\CezarCaisse_v.0.1\Ecom\bin\Debug\MaterialDesignThemes.Wpf.pdb
+C:\Users\Hichem\Documents\Dossier partagé\CezarCaisse_v.0.1\Ecom\bin\Debug\MaterialDesignThemes.Wpf.xml
+C:\Users\Hichem\Documents\Dossier partagé\CezarCaisse_v.0.1\Ecom\bin\Debug\fr\EntityFramework.resources.dll
+C:\Users\Hichem\Documents\Dossier partagé\CezarCaisse_v.0.1\Ecom\bin\Debug\fr\EntityFramework.SqlServer.resources.dll
+C:\Users\Hichem\Documents\Dossier partagé\CezarCaisse_v.0.1\Ecom\obj\Debug\MainWindow.g.cs
+C:\Users\Hichem\Documents\Dossier partagé\CezarCaisse_v.0.1\Ecom\obj\Debug\View\Caisse.g.cs
+C:\Users\Hichem\Documents\Dossier partagé\CezarCaisse_v.0.1\Ecom\obj\Debug\View\Cashing.g.cs
+C:\Users\Hichem\Documents\Dossier partagé\CezarCaisse_v.0.1\Ecom\obj\Debug\View\Configuration.g.cs
+C:\Users\Hichem\Documents\Dossier partagé\CezarCaisse_v.0.1\Ecom\obj\Debug\View\CUItem.g.cs
+C:\Users\Hichem\Documents\Dossier partagé\CezarCaisse_v.0.1\Ecom\obj\Debug\View\ItemOption.g.cs
+C:\Users\Hichem\Documents\Dossier partagé\CezarCaisse_v.0.1\Ecom\obj\Debug\View\Management.g.cs
+C:\Users\Hichem\Documents\Dossier partagé\CezarCaisse_v.0.1\Ecom\obj\Debug\View\Message.g.cs
+C:\Users\Hichem\Documents\Dossier partagé\CezarCaisse_v.0.1\Ecom\obj\Debug\View\OrderSend.g.cs
+C:\Users\Hichem\Documents\Dossier partagé\CezarCaisse_v.0.1\Ecom\obj\Debug\View\Commandes.g.cs
+C:\Users\Hichem\Documents\Dossier partagé\CezarCaisse_v.0.1\Ecom\obj\Debug\App.g.cs
+C:\Users\Hichem\Documents\Dossier partagé\CezarCaisse_v.0.1\Ecom\obj\Debug\Ecom_MarkupCompile.cache
+C:\Users\Hichem\Documents\Dossier partagé\CezarCaisse_v.0.1\Ecom\obj\Debug\Ecom_MarkupCompile.lref
+C:\Users\Hichem\Documents\Dossier partagé\CezarCaisse_v.0.1\Ecom\obj\Debug\App.baml
+C:\Users\Hichem\Documents\Dossier partagé\CezarCaisse_v.0.1\Ecom\obj\Debug\MainWindow.baml
+C:\Users\Hichem\Documents\Dossier partagé\CezarCaisse_v.0.1\Ecom\obj\Debug\View\Caisse.baml
+C:\Users\Hichem\Documents\Dossier partagé\CezarCaisse_v.0.1\Ecom\obj\Debug\View\Cashing.baml
+C:\Users\Hichem\Documents\Dossier partagé\CezarCaisse_v.0.1\Ecom\obj\Debug\View\Configuration.baml
+C:\Users\Hichem\Documents\Dossier partagé\CezarCaisse_v.0.1\Ecom\obj\Debug\View\CUItem.baml
+C:\Users\Hichem\Documents\Dossier partagé\CezarCaisse_v.0.1\Ecom\obj\Debug\View\ItemOption.baml
+C:\Users\Hichem\Documents\Dossier partagé\CezarCaisse_v.0.1\Ecom\obj\Debug\View\Management.baml
+C:\Users\Hichem\Documents\Dossier partagé\CezarCaisse_v.0.1\Ecom\obj\Debug\View\Message.baml
+C:\Users\Hichem\Documents\Dossier partagé\CezarCaisse_v.0.1\Ecom\obj\Debug\View\OrderSend.baml
+C:\Users\Hichem\Documents\Dossier partagé\CezarCaisse_v.0.1\Ecom\obj\Debug\View\Commandes.baml
+C:\Users\Hichem\Documents\Dossier partagé\CezarCaisse_v.0.1\Ecom\obj\Debug\Ecom.g.resources
+C:\Users\Hichem\Documents\Dossier partagé\CezarCaisse_v.0.1\Ecom\obj\Debug\Ecom.Properties.Resources.resources
+C:\Users\Hichem\Documents\Dossier partagé\CezarCaisse_v.0.1\Ecom\obj\Debug\Ecom.csproj.GenerateResource.Cache
+C:\Users\Hichem\Documents\Dossier partagé\CezarCaisse_v.0.1\Ecom\obj\Debug\Ecom.exe.manifest
+C:\Users\Hichem\Documents\Dossier partagé\CezarCaisse_v.0.1\Ecom\obj\Debug\Ecom.application
+C:\Users\Hichem\Documents\Dossier partagé\CezarCaisse_v.0.1\Ecom\obj\Debug\Ecom.exe
+C:\Users\Hichem\Documents\Dossier partagé\CezarCaisse_v.0.1\Ecom\obj\Debug\Ecom.pdb
+C:\Users\Hichem\Documents\Dossier partagé\CezarCaisse_v.0.1\Ecom\obj\Debug\Ecom.csprojResolveAssemblyReference.cache
+E:\Le cezar food caisse\CezarCaisse_v.0.1\Ecom\bin\Debug\Ecom.exe.config
+E:\Le cezar food caisse\CezarCaisse_v.0.1\Ecom\obj\Debug\Ecom.exe
+E:\Le cezar food caisse\CezarCaisse_v.0.1\Ecom\obj\Debug\Ecom.pdb
+E:\Le cezar food caisse\CezarCaisse_v.0.1\Ecom\bin\Debug\Ecom.exe.manifest
+E:\Le cezar food caisse\CezarCaisse_v.0.1\Ecom\bin\Debug\Ecom.application
+E:\Le cezar food caisse\CezarCaisse_v.0.1\Ecom\bin\Debug\Ecom.exe
+E:\Le cezar food caisse\CezarCaisse_v.0.1\Ecom\bin\Debug\Ecom.pdb
+E:\Le cezar food caisse\CezarCaisse_v.0.1\Ecom\bin\Debug\EntityFramework.dll
+E:\Le cezar food caisse\CezarCaisse_v.0.1\Ecom\bin\Debug\EntityFramework.SqlServer.dll
+E:\Le cezar food caisse\CezarCaisse_v.0.1\Ecom\bin\Debug\MahApps.Metro.dll
+E:\Le cezar food caisse\CezarCaisse_v.0.1\Ecom\bin\Debug\MaterialDesignColors.dll
+E:\Le cezar food caisse\CezarCaisse_v.0.1\Ecom\bin\Debug\MaterialDesignThemes.MahApps.dll
+E:\Le cezar food caisse\CezarCaisse_v.0.1\Ecom\bin\Debug\MaterialDesignThemes.Wpf.dll
+E:\Le cezar food caisse\CezarCaisse_v.0.1\Ecom\bin\Debug\System.Windows.Interactivity.dll
+E:\Le cezar food caisse\CezarCaisse_v.0.1\Ecom\bin\Debug\EntityFramework.xml
+E:\Le cezar food caisse\CezarCaisse_v.0.1\Ecom\bin\Debug\EntityFramework.SqlServer.xml
+E:\Le cezar food caisse\CezarCaisse_v.0.1\Ecom\bin\Debug\MahApps.Metro.pdb
+E:\Le cezar food caisse\CezarCaisse_v.0.1\Ecom\bin\Debug\MahApps.Metro.xml
+E:\Le cezar food caisse\CezarCaisse_v.0.1\Ecom\bin\Debug\MaterialDesignColors.pdb
+E:\Le cezar food caisse\CezarCaisse_v.0.1\Ecom\bin\Debug\MaterialDesignThemes.Wpf.pdb
+E:\Le cezar food caisse\CezarCaisse_v.0.1\Ecom\bin\Debug\MaterialDesignThemes.Wpf.xml
+E:\Le cezar food caisse\CezarCaisse_v.0.1\Ecom\bin\Debug\fr\EntityFramework.resources.dll
+E:\Le cezar food caisse\CezarCaisse_v.0.1\Ecom\bin\Debug\fr\EntityFramework.SqlServer.resources.dll
+E:\Le cezar food caisse\CezarCaisse_v.0.1\Ecom\obj\Debug\Ecom.csprojResolveAssemblyReference.cache
+E:\Le cezar food caisse\CezarCaisse_v.0.1\Ecom\obj\Debug\MainWindow.g.cs
+E:\Le cezar food caisse\CezarCaisse_v.0.1\Ecom\obj\Debug\View\Caisse.g.cs
+E:\Le cezar food caisse\CezarCaisse_v.0.1\Ecom\obj\Debug\View\Cashing.g.cs
+E:\Le cezar food caisse\CezarCaisse_v.0.1\Ecom\obj\Debug\View\Configuration.g.cs
+E:\Le cezar food caisse\CezarCaisse_v.0.1\Ecom\obj\Debug\View\CUItem.g.cs
+E:\Le cezar food caisse\CezarCaisse_v.0.1\Ecom\obj\Debug\View\ItemOption.g.cs
+E:\Le cezar food caisse\CezarCaisse_v.0.1\Ecom\obj\Debug\View\Management.g.cs
+E:\Le cezar food caisse\CezarCaisse_v.0.1\Ecom\obj\Debug\View\Message.g.cs
+E:\Le cezar food caisse\CezarCaisse_v.0.1\Ecom\obj\Debug\View\OrderSend.g.cs
+E:\Le cezar food caisse\CezarCaisse_v.0.1\Ecom\obj\Debug\View\Commandes.g.cs
+E:\Le cezar food caisse\CezarCaisse_v.0.1\Ecom\obj\Debug\App.g.cs
+E:\Le cezar food caisse\CezarCaisse_v.0.1\Ecom\obj\Debug\Ecom_MarkupCompile.cache
+E:\Le cezar food caisse\CezarCaisse_v.0.1\Ecom\obj\Debug\Ecom_MarkupCompile.lref
+E:\Le cezar food caisse\CezarCaisse_v.0.1\Ecom\obj\Debug\App.baml
+E:\Le cezar food caisse\CezarCaisse_v.0.1\Ecom\obj\Debug\MainWindow.baml
+E:\Le cezar food caisse\CezarCaisse_v.0.1\Ecom\obj\Debug\View\Caisse.baml
+E:\Le cezar food caisse\CezarCaisse_v.0.1\Ecom\obj\Debug\View\Cashing.baml
+E:\Le cezar food caisse\CezarCaisse_v.0.1\Ecom\obj\Debug\View\Configuration.baml
+E:\Le cezar food caisse\CezarCaisse_v.0.1\Ecom\obj\Debug\View\CUItem.baml
+E:\Le cezar food caisse\CezarCaisse_v.0.1\Ecom\obj\Debug\View\ItemOption.baml
+E:\Le cezar food caisse\CezarCaisse_v.0.1\Ecom\obj\Debug\View\Management.baml
+E:\Le cezar food caisse\CezarCaisse_v.0.1\Ecom\obj\Debug\View\Message.baml
+E:\Le cezar food caisse\CezarCaisse_v.0.1\Ecom\obj\Debug\View\OrderSend.baml
+E:\Le cezar food caisse\CezarCaisse_v.0.1\Ecom\obj\Debug\View\Commandes.baml
+E:\Le cezar food caisse\CezarCaisse_v.0.1\Ecom\obj\Debug\Ecom.g.resources
+E:\Le cezar food caisse\CezarCaisse_v.0.1\Ecom\obj\Debug\Ecom.Properties.Resources.resources
+E:\Le cezar food caisse\CezarCaisse_v.0.1\Ecom\obj\Debug\Ecom.csproj.GenerateResource.Cache
+E:\Le cezar food caisse\CezarCaisse_v.0.1\Ecom\obj\Debug\Ecom.exe.manifest
+E:\Le cezar food caisse\CezarCaisse_v.0.1\Ecom\obj\Debug\Ecom.application
+C:\Users\Wave\Documents\Visual Studio 2015\Projects\Le cezar food caisse\CezarCaisse_v.0.1\Ecom\bin\Debug\Ecom.exe.config
+C:\Users\Wave\Documents\Visual Studio 2015\Projects\Le cezar food caisse\CezarCaisse_v.0.1\Ecom\obj\Debug\Ecom.exe
+C:\Users\Wave\Documents\Visual Studio 2015\Projects\Le cezar food caisse\CezarCaisse_v.0.1\Ecom\obj\Debug\Ecom.pdb
+C:\Users\Wave\Documents\Visual Studio 2015\Projects\Le cezar food caisse\CezarCaisse_v.0.1\Ecom\bin\Debug\Ecom.exe.manifest
+C:\Users\Wave\Documents\Visual Studio 2015\Projects\Le cezar food caisse\CezarCaisse_v.0.1\Ecom\bin\Debug\Ecom.application
+C:\Users\Wave\Documents\Visual Studio 2015\Projects\Le cezar food caisse\CezarCaisse_v.0.1\Ecom\bin\Debug\Ecom.exe
+C:\Users\Wave\Documents\Visual Studio 2015\Projects\Le cezar food caisse\CezarCaisse_v.0.1\Ecom\bin\Debug\Ecom.pdb
+C:\Users\Wave\Documents\Visual Studio 2015\Projects\Le cezar food caisse\CezarCaisse_v.0.1\Ecom\bin\Debug\EntityFramework.dll
+C:\Users\Wave\Documents\Visual Studio 2015\Projects\Le cezar food caisse\CezarCaisse_v.0.1\Ecom\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Wave\Documents\Visual Studio 2015\Projects\Le cezar food caisse\CezarCaisse_v.0.1\Ecom\bin\Debug\MahApps.Metro.dll
+C:\Users\Wave\Documents\Visual Studio 2015\Projects\Le cezar food caisse\CezarCaisse_v.0.1\Ecom\bin\Debug\MaterialDesignColors.dll
+C:\Users\Wave\Documents\Visual Studio 2015\Projects\Le cezar food caisse\CezarCaisse_v.0.1\Ecom\bin\Debug\MaterialDesignThemes.MahApps.dll
+C:\Users\Wave\Documents\Visual Studio 2015\Projects\Le cezar food caisse\CezarCaisse_v.0.1\Ecom\bin\Debug\MaterialDesignThemes.Wpf.dll
+C:\Users\Wave\Documents\Visual Studio 2015\Projects\Le cezar food caisse\CezarCaisse_v.0.1\Ecom\bin\Debug\System.Windows.Interactivity.dll
+C:\Users\Wave\Documents\Visual Studio 2015\Projects\Le cezar food caisse\CezarCaisse_v.0.1\Ecom\bin\Debug\EntityFramework.xml
+C:\Users\Wave\Documents\Visual Studio 2015\Projects\Le cezar food caisse\CezarCaisse_v.0.1\Ecom\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Wave\Documents\Visual Studio 2015\Projects\Le cezar food caisse\CezarCaisse_v.0.1\Ecom\bin\Debug\MahApps.Metro.pdb
+C:\Users\Wave\Documents\Visual Studio 2015\Projects\Le cezar food caisse\CezarCaisse_v.0.1\Ecom\bin\Debug\MahApps.Metro.xml
+C:\Users\Wave\Documents\Visual Studio 2015\Projects\Le cezar food caisse\CezarCaisse_v.0.1\Ecom\bin\Debug\MaterialDesignColors.pdb
+C:\Users\Wave\Documents\Visual Studio 2015\Projects\Le cezar food caisse\CezarCaisse_v.0.1\Ecom\bin\Debug\MaterialDesignThemes.Wpf.pdb
+C:\Users\Wave\Documents\Visual Studio 2015\Projects\Le cezar food caisse\CezarCaisse_v.0.1\Ecom\bin\Debug\MaterialDesignThemes.Wpf.xml
+C:\Users\Wave\Documents\Visual Studio 2015\Projects\Le cezar food caisse\CezarCaisse_v.0.1\Ecom\bin\Debug\fr\EntityFramework.resources.dll
+C:\Users\Wave\Documents\Visual Studio 2015\Projects\Le cezar food caisse\CezarCaisse_v.0.1\Ecom\bin\Debug\fr\EntityFramework.SqlServer.resources.dll
+C:\Users\Wave\Documents\Visual Studio 2015\Projects\Le cezar food caisse\CezarCaisse_v.0.1\Ecom\obj\Debug\Ecom.csprojResolveAssemblyReference.cache
+C:\Users\Wave\Documents\Visual Studio 2015\Projects\Le cezar food caisse\CezarCaisse_v.0.1\Ecom\obj\Debug\MainWindow.g.cs
+C:\Users\Wave\Documents\Visual Studio 2015\Projects\Le cezar food caisse\CezarCaisse_v.0.1\Ecom\obj\Debug\View\Caisse.g.cs
+C:\Users\Wave\Documents\Visual Studio 2015\Projects\Le cezar food caisse\CezarCaisse_v.0.1\Ecom\obj\Debug\View\Cashing.g.cs
+C:\Users\Wave\Documents\Visual Studio 2015\Projects\Le cezar food caisse\CezarCaisse_v.0.1\Ecom\obj\Debug\View\Configuration.g.cs
+C:\Users\Wave\Documents\Visual Studio 2015\Projects\Le cezar food caisse\CezarCaisse_v.0.1\Ecom\obj\Debug\View\CUItem.g.cs
+C:\Users\Wave\Documents\Visual Studio 2015\Projects\Le cezar food caisse\CezarCaisse_v.0.1\Ecom\obj\Debug\View\ItemOption.g.cs
+C:\Users\Wave\Documents\Visual Studio 2015\Projects\Le cezar food caisse\CezarCaisse_v.0.1\Ecom\obj\Debug\View\Management.g.cs
+C:\Users\Wave\Documents\Visual Studio 2015\Projects\Le cezar food caisse\CezarCaisse_v.0.1\Ecom\obj\Debug\View\Message.g.cs
+C:\Users\Wave\Documents\Visual Studio 2015\Projects\Le cezar food caisse\CezarCaisse_v.0.1\Ecom\obj\Debug\View\OrderSend.g.cs
+C:\Users\Wave\Documents\Visual Studio 2015\Projects\Le cezar food caisse\CezarCaisse_v.0.1\Ecom\obj\Debug\View\Commandes.g.cs
+C:\Users\Wave\Documents\Visual Studio 2015\Projects\Le cezar food caisse\CezarCaisse_v.0.1\Ecom\obj\Debug\App.g.cs
+C:\Users\Wave\Documents\Visual Studio 2015\Projects\Le cezar food caisse\CezarCaisse_v.0.1\Ecom\obj\Debug\Ecom_MarkupCompile.cache
+C:\Users\Wave\Documents\Visual Studio 2015\Projects\Le cezar food caisse\CezarCaisse_v.0.1\Ecom\obj\Debug\Ecom_MarkupCompile.lref
+C:\Users\Wave\Documents\Visual Studio 2015\Projects\Le cezar food caisse\CezarCaisse_v.0.1\Ecom\obj\Debug\App.baml
+C:\Users\Wave\Documents\Visual Studio 2015\Projects\Le cezar food caisse\CezarCaisse_v.0.1\Ecom\obj\Debug\MainWindow.baml
+C:\Users\Wave\Documents\Visual Studio 2015\Projects\Le cezar food caisse\CezarCaisse_v.0.1\Ecom\obj\Debug\View\Caisse.baml
+C:\Users\Wave\Documents\Visual Studio 2015\Projects\Le cezar food caisse\CezarCaisse_v.0.1\Ecom\obj\Debug\View\Cashing.baml
+C:\Users\Wave\Documents\Visual Studio 2015\Projects\Le cezar food caisse\CezarCaisse_v.0.1\Ecom\obj\Debug\View\Configuration.baml
+C:\Users\Wave\Documents\Visual Studio 2015\Projects\Le cezar food caisse\CezarCaisse_v.0.1\Ecom\obj\Debug\View\CUItem.baml
+C:\Users\Wave\Documents\Visual Studio 2015\Projects\Le cezar food caisse\CezarCaisse_v.0.1\Ecom\obj\Debug\View\ItemOption.baml
+C:\Users\Wave\Documents\Visual Studio 2015\Projects\Le cezar food caisse\CezarCaisse_v.0.1\Ecom\obj\Debug\View\Management.baml
+C:\Users\Wave\Documents\Visual Studio 2015\Projects\Le cezar food caisse\CezarCaisse_v.0.1\Ecom\obj\Debug\View\Message.baml
+C:\Users\Wave\Documents\Visual Studio 2015\Projects\Le cezar food caisse\CezarCaisse_v.0.1\Ecom\obj\Debug\View\OrderSend.baml
+C:\Users\Wave\Documents\Visual Studio 2015\Projects\Le cezar food caisse\CezarCaisse_v.0.1\Ecom\obj\Debug\View\Commandes.baml
+C:\Users\Wave\Documents\Visual Studio 2015\Projects\Le cezar food caisse\CezarCaisse_v.0.1\Ecom\obj\Debug\Ecom.g.resources
+C:\Users\Wave\Documents\Visual Studio 2015\Projects\Le cezar food caisse\CezarCaisse_v.0.1\Ecom\obj\Debug\Ecom.Properties.Resources.resources
+C:\Users\Wave\Documents\Visual Studio 2015\Projects\Le cezar food caisse\CezarCaisse_v.0.1\Ecom\obj\Debug\Ecom.csproj.GenerateResource.Cache
+C:\Users\Wave\Documents\Visual Studio 2015\Projects\Le cezar food caisse\CezarCaisse_v.0.1\Ecom\obj\Debug\Ecom.exe.manifest
+C:\Users\Wave\Documents\Visual Studio 2015\Projects\Le cezar food caisse\CezarCaisse_v.0.1\Ecom\obj\Debug\Ecom.application
+C:\Users\Wave\Documents\Visual Studio 2015\Projects\Le cezar food caisse\CezarCaisse_v.0.1\Ecom\obj\Debug\View\IngredientCategoryList.g.cs
+C:\Users\Wave\Documents\Visual Studio 2015\Projects\Le cezar food caisse\CezarCaisse_v.0.1\Ecom\obj\Debug\View\IngredientCategoryList.baml
+C:\Users\Wave\Documents\Visual Studio 2015\Projects\Le cezar food caisse\CezarCaisse_v.0.1\Ecom\bin\Debug\itextsharp.dll
+C:\Users\Wave\Documents\Visual Studio 2015\Projects\Le cezar food caisse\CezarCaisse_v.0.1\Ecom\bin\Debug\itextsharp.xmlworker.dll
+C:\Users\Wave\Documents\Visual Studio 2015\Projects\Le cezar food caisse\CezarCaisse_v.0.1\Ecom\bin\Debug\itextsharp.xml
+C:\Users\Wave\Desktop\CezarCaisse_v.0.1\Ecom\bin\Debug\Ecom.exe.config
+C:\Users\Wave\Desktop\CezarCaisse_v.0.1\Ecom\obj\Debug\Ecom.exe
+C:\Users\Wave\Desktop\CezarCaisse_v.0.1\Ecom\obj\Debug\Ecom.pdb
+C:\Users\Wave\Desktop\CezarCaisse_v.0.1\Ecom\bin\Debug\Ecom.exe.manifest
+C:\Users\Wave\Desktop\CezarCaisse_v.0.1\Ecom\bin\Debug\Ecom.application
+C:\Users\Wave\Desktop\CezarCaisse_v.0.1\Ecom\bin\Debug\Ecom.exe
+C:\Users\Wave\Desktop\CezarCaisse_v.0.1\Ecom\bin\Debug\Ecom.pdb
+C:\Users\Wave\Desktop\CezarCaisse_v.0.1\Ecom\bin\Debug\EntityFramework.dll
+C:\Users\Wave\Desktop\CezarCaisse_v.0.1\Ecom\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Wave\Desktop\CezarCaisse_v.0.1\Ecom\bin\Debug\itextsharp.dll
+C:\Users\Wave\Desktop\CezarCaisse_v.0.1\Ecom\bin\Debug\itextsharp.xmlworker.dll
+C:\Users\Wave\Desktop\CezarCaisse_v.0.1\Ecom\bin\Debug\MahApps.Metro.dll
+C:\Users\Wave\Desktop\CezarCaisse_v.0.1\Ecom\bin\Debug\MaterialDesignColors.dll
+C:\Users\Wave\Desktop\CezarCaisse_v.0.1\Ecom\bin\Debug\MaterialDesignThemes.MahApps.dll
+C:\Users\Wave\Desktop\CezarCaisse_v.0.1\Ecom\bin\Debug\MaterialDesignThemes.Wpf.dll
+C:\Users\Wave\Desktop\CezarCaisse_v.0.1\Ecom\bin\Debug\System.Windows.Interactivity.dll
+C:\Users\Wave\Desktop\CezarCaisse_v.0.1\Ecom\bin\Debug\EntityFramework.xml
+C:\Users\Wave\Desktop\CezarCaisse_v.0.1\Ecom\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Wave\Desktop\CezarCaisse_v.0.1\Ecom\bin\Debug\itextsharp.xml
+C:\Users\Wave\Desktop\CezarCaisse_v.0.1\Ecom\bin\Debug\MahApps.Metro.pdb
+C:\Users\Wave\Desktop\CezarCaisse_v.0.1\Ecom\bin\Debug\MahApps.Metro.xml
+C:\Users\Wave\Desktop\CezarCaisse_v.0.1\Ecom\bin\Debug\MaterialDesignColors.pdb
+C:\Users\Wave\Desktop\CezarCaisse_v.0.1\Ecom\bin\Debug\MaterialDesignThemes.Wpf.pdb
+C:\Users\Wave\Desktop\CezarCaisse_v.0.1\Ecom\bin\Debug\MaterialDesignThemes.Wpf.xml
+C:\Users\Wave\Desktop\CezarCaisse_v.0.1\Ecom\bin\Debug\fr\EntityFramework.resources.dll
+C:\Users\Wave\Desktop\CezarCaisse_v.0.1\Ecom\bin\Debug\fr\EntityFramework.SqlServer.resources.dll
+C:\Users\Wave\Desktop\CezarCaisse_v.0.1\Ecom\obj\Debug\Ecom.csprojResolveAssemblyReference.cache
+C:\Users\Wave\Desktop\CezarCaisse_v.0.1\Ecom\obj\Debug\MainWindow.g.cs
+C:\Users\Wave\Desktop\CezarCaisse_v.0.1\Ecom\obj\Debug\View\Caisse.g.cs
+C:\Users\Wave\Desktop\CezarCaisse_v.0.1\Ecom\obj\Debug\View\Cashing.g.cs
+C:\Users\Wave\Desktop\CezarCaisse_v.0.1\Ecom\obj\Debug\View\Configuration.g.cs
+C:\Users\Wave\Desktop\CezarCaisse_v.0.1\Ecom\obj\Debug\View\CUCat.g.cs
+C:\Users\Wave\Desktop\CezarCaisse_v.0.1\Ecom\obj\Debug\View\CUItem.g.cs
+C:\Users\Wave\Desktop\CezarCaisse_v.0.1\Ecom\obj\Debug\View\IngredientCategoryList.g.cs
+C:\Users\Wave\Desktop\CezarCaisse_v.0.1\Ecom\obj\Debug\View\ItemOption.g.cs
+C:\Users\Wave\Desktop\CezarCaisse_v.0.1\Ecom\obj\Debug\View\Management.g.cs
+C:\Users\Wave\Desktop\CezarCaisse_v.0.1\Ecom\obj\Debug\View\Message.g.cs
+C:\Users\Wave\Desktop\CezarCaisse_v.0.1\Ecom\obj\Debug\View\OrderSend.g.cs
+C:\Users\Wave\Desktop\CezarCaisse_v.0.1\Ecom\obj\Debug\View\Commandes.g.cs
+C:\Users\Wave\Desktop\CezarCaisse_v.0.1\Ecom\obj\Debug\App.g.cs
+C:\Users\Wave\Desktop\CezarCaisse_v.0.1\Ecom\obj\Debug\Ecom_MarkupCompile.cache
+C:\Users\Wave\Desktop\CezarCaisse_v.0.1\Ecom\obj\Debug\Ecom_MarkupCompile.lref
+C:\Users\Wave\Desktop\CezarCaisse_v.0.1\Ecom\obj\Debug\App.baml
+C:\Users\Wave\Desktop\CezarCaisse_v.0.1\Ecom\obj\Debug\MainWindow.baml
+C:\Users\Wave\Desktop\CezarCaisse_v.0.1\Ecom\obj\Debug\View\Caisse.baml
+C:\Users\Wave\Desktop\CezarCaisse_v.0.1\Ecom\obj\Debug\View\Cashing.baml
+C:\Users\Wave\Desktop\CezarCaisse_v.0.1\Ecom\obj\Debug\View\Configuration.baml
+C:\Users\Wave\Desktop\CezarCaisse_v.0.1\Ecom\obj\Debug\View\CUCat.baml
+C:\Users\Wave\Desktop\CezarCaisse_v.0.1\Ecom\obj\Debug\View\CUItem.baml
+C:\Users\Wave\Desktop\CezarCaisse_v.0.1\Ecom\obj\Debug\View\IngredientCategoryList.baml
+C:\Users\Wave\Desktop\CezarCaisse_v.0.1\Ecom\obj\Debug\View\ItemOption.baml
+C:\Users\Wave\Desktop\CezarCaisse_v.0.1\Ecom\obj\Debug\View\Management.baml
+C:\Users\Wave\Desktop\CezarCaisse_v.0.1\Ecom\obj\Debug\View\Message.baml
+C:\Users\Wave\Desktop\CezarCaisse_v.0.1\Ecom\obj\Debug\View\OrderSend.baml
+C:\Users\Wave\Desktop\CezarCaisse_v.0.1\Ecom\obj\Debug\View\Commandes.baml
+C:\Users\Wave\Desktop\CezarCaisse_v.0.1\Ecom\obj\Debug\Ecom.g.resources
+C:\Users\Wave\Desktop\CezarCaisse_v.0.1\Ecom\obj\Debug\Ecom.Properties.Resources.resources
+C:\Users\Wave\Desktop\CezarCaisse_v.0.1\Ecom\obj\Debug\Ecom.csproj.GenerateResource.Cache
+C:\Users\Wave\Desktop\CezarCaisse_v.0.1\Ecom\obj\Debug\Ecom.exe.manifest
+C:\Users\Wave\Desktop\CezarCaisse_v.0.1\Ecom\obj\Debug\Ecom.application
+C:\Users\RZ63\Desktop\doofRazec\CezarCaisse_v.0.1\Ecom\bin\Debug\Ecom.exe.config
+C:\Users\RZ63\Desktop\doofRazec\CezarCaisse_v.0.1\Ecom\bin\Debug\Ecom.exe.manifest
+C:\Users\RZ63\Desktop\doofRazec\CezarCaisse_v.0.1\Ecom\bin\Debug\Ecom.application
+C:\Users\RZ63\Desktop\doofRazec\CezarCaisse_v.0.1\Ecom\bin\Debug\Ecom.exe
+C:\Users\RZ63\Desktop\doofRazec\CezarCaisse_v.0.1\Ecom\bin\Debug\Ecom.pdb
+C:\Users\RZ63\Desktop\doofRazec\CezarCaisse_v.0.1\Ecom\bin\Debug\EntityFramework.dll
+C:\Users\RZ63\Desktop\doofRazec\CezarCaisse_v.0.1\Ecom\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\RZ63\Desktop\doofRazec\CezarCaisse_v.0.1\Ecom\bin\Debug\itextsharp.dll
+C:\Users\RZ63\Desktop\doofRazec\CezarCaisse_v.0.1\Ecom\bin\Debug\itextsharp.xmlworker.dll
+C:\Users\RZ63\Desktop\doofRazec\CezarCaisse_v.0.1\Ecom\bin\Debug\MahApps.Metro.dll
+C:\Users\RZ63\Desktop\doofRazec\CezarCaisse_v.0.1\Ecom\bin\Debug\MaterialDesignColors.dll
+C:\Users\RZ63\Desktop\doofRazec\CezarCaisse_v.0.1\Ecom\bin\Debug\MaterialDesignThemes.MahApps.dll
+C:\Users\RZ63\Desktop\doofRazec\CezarCaisse_v.0.1\Ecom\bin\Debug\MaterialDesignThemes.Wpf.dll
+C:\Users\RZ63\Desktop\doofRazec\CezarCaisse_v.0.1\Ecom\bin\Debug\System.Windows.Interactivity.dll
+C:\Users\RZ63\Desktop\doofRazec\CezarCaisse_v.0.1\Ecom\bin\Debug\EntityFramework.xml
+C:\Users\RZ63\Desktop\doofRazec\CezarCaisse_v.0.1\Ecom\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\RZ63\Desktop\doofRazec\CezarCaisse_v.0.1\Ecom\bin\Debug\itextsharp.xml
+C:\Users\RZ63\Desktop\doofRazec\CezarCaisse_v.0.1\Ecom\bin\Debug\MahApps.Metro.pdb
+C:\Users\RZ63\Desktop\doofRazec\CezarCaisse_v.0.1\Ecom\bin\Debug\MahApps.Metro.xml
+C:\Users\RZ63\Desktop\doofRazec\CezarCaisse_v.0.1\Ecom\bin\Debug\MaterialDesignColors.pdb
+C:\Users\RZ63\Desktop\doofRazec\CezarCaisse_v.0.1\Ecom\bin\Debug\MaterialDesignThemes.Wpf.pdb
+C:\Users\RZ63\Desktop\doofRazec\CezarCaisse_v.0.1\Ecom\bin\Debug\MaterialDesignThemes.Wpf.xml
+C:\Users\RZ63\Desktop\doofRazec\CezarCaisse_v.0.1\Ecom\bin\Debug\fr\EntityFramework.resources.dll
+C:\Users\RZ63\Desktop\doofRazec\CezarCaisse_v.0.1\Ecom\bin\Debug\fr\EntityFramework.SqlServer.resources.dll
+C:\Users\RZ63\Desktop\doofRazec\CezarCaisse_v.0.1\Ecom\obj\Debug\MainWindow.g.cs
+C:\Users\RZ63\Desktop\doofRazec\CezarCaisse_v.0.1\Ecom\obj\Debug\View\Caisse.g.cs
+C:\Users\RZ63\Desktop\doofRazec\CezarCaisse_v.0.1\Ecom\obj\Debug\View\Cashing.g.cs
+C:\Users\RZ63\Desktop\doofRazec\CezarCaisse_v.0.1\Ecom\obj\Debug\View\Configuration.g.cs
+C:\Users\RZ63\Desktop\doofRazec\CezarCaisse_v.0.1\Ecom\obj\Debug\View\CUCat.g.cs
+C:\Users\RZ63\Desktop\doofRazec\CezarCaisse_v.0.1\Ecom\obj\Debug\View\CUItem.g.cs
+C:\Users\RZ63\Desktop\doofRazec\CezarCaisse_v.0.1\Ecom\obj\Debug\View\IngredientCategoryList.g.cs
+C:\Users\RZ63\Desktop\doofRazec\CezarCaisse_v.0.1\Ecom\obj\Debug\View\ItemOption.g.cs
+C:\Users\RZ63\Desktop\doofRazec\CezarCaisse_v.0.1\Ecom\obj\Debug\View\Management.g.cs
+C:\Users\RZ63\Desktop\doofRazec\CezarCaisse_v.0.1\Ecom\obj\Debug\View\Message.g.cs
+C:\Users\RZ63\Desktop\doofRazec\CezarCaisse_v.0.1\Ecom\obj\Debug\View\OrderSend.g.cs
+C:\Users\RZ63\Desktop\doofRazec\CezarCaisse_v.0.1\Ecom\obj\Debug\View\Commandes.g.cs
+C:\Users\RZ63\Desktop\doofRazec\CezarCaisse_v.0.1\Ecom\obj\Debug\App.g.cs
+C:\Users\RZ63\Desktop\doofRazec\CezarCaisse_v.0.1\Ecom\obj\Debug\Ecom_MarkupCompile.cache
+C:\Users\RZ63\Desktop\doofRazec\CezarCaisse_v.0.1\Ecom\obj\Debug\Ecom_MarkupCompile.lref
+C:\Users\RZ63\Desktop\doofRazec\CezarCaisse_v.0.1\Ecom\obj\Debug\App.baml
+C:\Users\RZ63\Desktop\doofRazec\CezarCaisse_v.0.1\Ecom\obj\Debug\MainWindow.baml
+C:\Users\RZ63\Desktop\doofRazec\CezarCaisse_v.0.1\Ecom\obj\Debug\View\Caisse.baml
+C:\Users\RZ63\Desktop\doofRazec\CezarCaisse_v.0.1\Ecom\obj\Debug\View\Cashing.baml
+C:\Users\RZ63\Desktop\doofRazec\CezarCaisse_v.0.1\Ecom\obj\Debug\View\Configuration.baml
+C:\Users\RZ63\Desktop\doofRazec\CezarCaisse_v.0.1\Ecom\obj\Debug\View\CUCat.baml
+C:\Users\RZ63\Desktop\doofRazec\CezarCaisse_v.0.1\Ecom\obj\Debug\View\CUItem.baml
+C:\Users\RZ63\Desktop\doofRazec\CezarCaisse_v.0.1\Ecom\obj\Debug\View\IngredientCategoryList.baml
+C:\Users\RZ63\Desktop\doofRazec\CezarCaisse_v.0.1\Ecom\obj\Debug\View\ItemOption.baml
+C:\Users\RZ63\Desktop\doofRazec\CezarCaisse_v.0.1\Ecom\obj\Debug\View\Management.baml
+C:\Users\RZ63\Desktop\doofRazec\CezarCaisse_v.0.1\Ecom\obj\Debug\View\Message.baml
+C:\Users\RZ63\Desktop\doofRazec\CezarCaisse_v.0.1\Ecom\obj\Debug\View\OrderSend.baml
+C:\Users\RZ63\Desktop\doofRazec\CezarCaisse_v.0.1\Ecom\obj\Debug\View\Commandes.baml
+C:\Users\RZ63\Desktop\doofRazec\CezarCaisse_v.0.1\Ecom\obj\Debug\Ecom.g.resources
+C:\Users\RZ63\Desktop\doofRazec\CezarCaisse_v.0.1\Ecom\obj\Debug\Ecom.Properties.Resources.resources
+C:\Users\RZ63\Desktop\doofRazec\CezarCaisse_v.0.1\Ecom\obj\Debug\Ecom.csproj.GenerateResource.Cache
+C:\Users\RZ63\Desktop\doofRazec\CezarCaisse_v.0.1\Ecom\obj\Debug\Ecom.exe.manifest
+C:\Users\RZ63\Desktop\doofRazec\CezarCaisse_v.0.1\Ecom\obj\Debug\Ecom.application
+C:\Users\RZ63\Desktop\doofRazec\CezarCaisse_v.0.1\Ecom\obj\Debug\Ecom.exe
+C:\Users\RZ63\Desktop\doofRazec\CezarCaisse_v.0.1\Ecom\obj\Debug\Ecom.pdb
+C:\Users\Hichem\Desktop\CezarCaisse_v.0.2\Ecom\bin\Debug\Ecom.exe.config
+C:\Users\Hichem\Desktop\CezarCaisse_v.0.2\Ecom\obj\Debug\Ecom.exe
+C:\Users\Hichem\Desktop\CezarCaisse_v.0.2\Ecom\obj\Debug\Ecom.pdb
+C:\Users\Hichem\Desktop\CezarCaisse_v.0.2\Ecom\bin\Debug\Ecom.exe.manifest
+C:\Users\Hichem\Desktop\CezarCaisse_v.0.2\Ecom\bin\Debug\Ecom.application
+C:\Users\Hichem\Desktop\CezarCaisse_v.0.2\Ecom\bin\Debug\Ecom.exe
+C:\Users\Hichem\Desktop\CezarCaisse_v.0.2\Ecom\bin\Debug\Ecom.pdb
+C:\Users\Hichem\Desktop\CezarCaisse_v.0.2\Ecom\bin\Debug\EntityFramework.dll
+C:\Users\Hichem\Desktop\CezarCaisse_v.0.2\Ecom\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Hichem\Desktop\CezarCaisse_v.0.2\Ecom\bin\Debug\itextsharp.dll
+C:\Users\Hichem\Desktop\CezarCaisse_v.0.2\Ecom\bin\Debug\itextsharp.xmlworker.dll
+C:\Users\Hichem\Desktop\CezarCaisse_v.0.2\Ecom\bin\Debug\MahApps.Metro.dll
+C:\Users\Hichem\Desktop\CezarCaisse_v.0.2\Ecom\bin\Debug\MaterialDesignColors.dll
+C:\Users\Hichem\Desktop\CezarCaisse_v.0.2\Ecom\bin\Debug\MaterialDesignThemes.MahApps.dll
+C:\Users\Hichem\Desktop\CezarCaisse_v.0.2\Ecom\bin\Debug\MaterialDesignThemes.Wpf.dll
+C:\Users\Hichem\Desktop\CezarCaisse_v.0.2\Ecom\bin\Debug\System.Windows.Interactivity.dll
+C:\Users\Hichem\Desktop\CezarCaisse_v.0.2\Ecom\bin\Debug\EntityFramework.xml
+C:\Users\Hichem\Desktop\CezarCaisse_v.0.2\Ecom\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Hichem\Desktop\CezarCaisse_v.0.2\Ecom\bin\Debug\itextsharp.xml
+C:\Users\Hichem\Desktop\CezarCaisse_v.0.2\Ecom\bin\Debug\MahApps.Metro.pdb
+C:\Users\Hichem\Desktop\CezarCaisse_v.0.2\Ecom\bin\Debug\MahApps.Metro.xml
+C:\Users\Hichem\Desktop\CezarCaisse_v.0.2\Ecom\bin\Debug\MaterialDesignColors.pdb
+C:\Users\Hichem\Desktop\CezarCaisse_v.0.2\Ecom\bin\Debug\MaterialDesignThemes.Wpf.pdb
+C:\Users\Hichem\Desktop\CezarCaisse_v.0.2\Ecom\bin\Debug\MaterialDesignThemes.Wpf.xml
+C:\Users\Hichem\Desktop\CezarCaisse_v.0.2\Ecom\bin\Debug\fr\EntityFramework.resources.dll
+C:\Users\Hichem\Desktop\CezarCaisse_v.0.2\Ecom\bin\Debug\fr\EntityFramework.SqlServer.resources.dll
+C:\Users\Hichem\Desktop\CezarCaisse_v.0.2\Ecom\obj\Debug\Ecom.csprojResolveAssemblyReference.cache
+C:\Users\Hichem\Desktop\CezarCaisse_v.0.2\Ecom\obj\Debug\MainWindow.g.cs
+C:\Users\Hichem\Desktop\CezarCaisse_v.0.2\Ecom\obj\Debug\View\Caisse.g.cs
+C:\Users\Hichem\Desktop\CezarCaisse_v.0.2\Ecom\obj\Debug\View\Cashing.g.cs
+C:\Users\Hichem\Desktop\CezarCaisse_v.0.2\Ecom\obj\Debug\View\Configuration.g.cs
+C:\Users\Hichem\Desktop\CezarCaisse_v.0.2\Ecom\obj\Debug\View\CUCat.g.cs
+C:\Users\Hichem\Desktop\CezarCaisse_v.0.2\Ecom\obj\Debug\View\CUItem.g.cs
+C:\Users\Hichem\Desktop\CezarCaisse_v.0.2\Ecom\obj\Debug\View\IngredientCategoryList.g.cs
+C:\Users\Hichem\Desktop\CezarCaisse_v.0.2\Ecom\obj\Debug\View\ItemOption.g.cs
+C:\Users\Hichem\Desktop\CezarCaisse_v.0.2\Ecom\obj\Debug\View\Management.g.cs
+C:\Users\Hichem\Desktop\CezarCaisse_v.0.2\Ecom\obj\Debug\View\Message.g.cs
+C:\Users\Hichem\Desktop\CezarCaisse_v.0.2\Ecom\obj\Debug\View\OrderSend.g.cs
+C:\Users\Hichem\Desktop\CezarCaisse_v.0.2\Ecom\obj\Debug\View\Commandes.g.cs
+C:\Users\Hichem\Desktop\CezarCaisse_v.0.2\Ecom\obj\Debug\App.g.cs
+C:\Users\Hichem\Desktop\CezarCaisse_v.0.2\Ecom\obj\Debug\Ecom_MarkupCompile.cache
+C:\Users\Hichem\Desktop\CezarCaisse_v.0.2\Ecom\obj\Debug\Ecom_MarkupCompile.lref
+C:\Users\Hichem\Desktop\CezarCaisse_v.0.2\Ecom\obj\Debug\App.baml
+C:\Users\Hichem\Desktop\CezarCaisse_v.0.2\Ecom\obj\Debug\MainWindow.baml
+C:\Users\Hichem\Desktop\CezarCaisse_v.0.2\Ecom\obj\Debug\View\Caisse.baml
+C:\Users\Hichem\Desktop\CezarCaisse_v.0.2\Ecom\obj\Debug\View\Cashing.baml
+C:\Users\Hichem\Desktop\CezarCaisse_v.0.2\Ecom\obj\Debug\View\Configuration.baml
+C:\Users\Hichem\Desktop\CezarCaisse_v.0.2\Ecom\obj\Debug\View\CUCat.baml
+C:\Users\Hichem\Desktop\CezarCaisse_v.0.2\Ecom\obj\Debug\View\CUItem.baml
+C:\Users\Hichem\Desktop\CezarCaisse_v.0.2\Ecom\obj\Debug\View\IngredientCategoryList.baml
+C:\Users\Hichem\Desktop\CezarCaisse_v.0.2\Ecom\obj\Debug\View\ItemOption.baml
+C:\Users\Hichem\Desktop\CezarCaisse_v.0.2\Ecom\obj\Debug\View\Management.baml
+C:\Users\Hichem\Desktop\CezarCaisse_v.0.2\Ecom\obj\Debug\View\Message.baml
+C:\Users\Hichem\Desktop\CezarCaisse_v.0.2\Ecom\obj\Debug\View\OrderSend.baml
+C:\Users\Hichem\Desktop\CezarCaisse_v.0.2\Ecom\obj\Debug\View\Commandes.baml
+C:\Users\Hichem\Desktop\CezarCaisse_v.0.2\Ecom\obj\Debug\Ecom.g.resources
+C:\Users\Hichem\Desktop\CezarCaisse_v.0.2\Ecom\obj\Debug\Ecom.Properties.Resources.resources
+C:\Users\Hichem\Desktop\CezarCaisse_v.0.2\Ecom\obj\Debug\Ecom.csproj.GenerateResource.Cache
+C:\Users\Hichem\Desktop\CezarCaisse_v.0.2\Ecom\obj\Debug\Ecom.exe.manifest
+C:\Users\Hichem\Desktop\CezarCaisse_v.0.2\Ecom\obj\Debug\Ecom.application
+C:\Users\Wave\Desktop\CezarCaisse_v.0.2\CezarCaisse_v.0.2\Ecom\bin\Debug\Ecom.exe.config
+C:\Users\Wave\Desktop\CezarCaisse_v.0.2\CezarCaisse_v.0.2\Ecom\obj\Debug\Ecom.exe
+C:\Users\Wave\Desktop\CezarCaisse_v.0.2\CezarCaisse_v.0.2\Ecom\obj\Debug\Ecom.pdb
+C:\Users\Wave\Desktop\CezarCaisse_v.0.2\CezarCaisse_v.0.2\Ecom\bin\Debug\Ecom.exe.manifest
+C:\Users\Wave\Desktop\CezarCaisse_v.0.2\CezarCaisse_v.0.2\Ecom\bin\Debug\Ecom.application
+C:\Users\Wave\Desktop\CezarCaisse_v.0.2\CezarCaisse_v.0.2\Ecom\bin\Debug\Ecom.exe
+C:\Users\Wave\Desktop\CezarCaisse_v.0.2\CezarCaisse_v.0.2\Ecom\bin\Debug\Ecom.pdb
+C:\Users\Wave\Desktop\CezarCaisse_v.0.2\CezarCaisse_v.0.2\Ecom\bin\Debug\EntityFramework.dll
+C:\Users\Wave\Desktop\CezarCaisse_v.0.2\CezarCaisse_v.0.2\Ecom\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Wave\Desktop\CezarCaisse_v.0.2\CezarCaisse_v.0.2\Ecom\bin\Debug\itextsharp.dll
+C:\Users\Wave\Desktop\CezarCaisse_v.0.2\CezarCaisse_v.0.2\Ecom\bin\Debug\itextsharp.xmlworker.dll
+C:\Users\Wave\Desktop\CezarCaisse_v.0.2\CezarCaisse_v.0.2\Ecom\bin\Debug\MahApps.Metro.dll
+C:\Users\Wave\Desktop\CezarCaisse_v.0.2\CezarCaisse_v.0.2\Ecom\bin\Debug\MaterialDesignColors.dll
+C:\Users\Wave\Desktop\CezarCaisse_v.0.2\CezarCaisse_v.0.2\Ecom\bin\Debug\MaterialDesignThemes.MahApps.dll
+C:\Users\Wave\Desktop\CezarCaisse_v.0.2\CezarCaisse_v.0.2\Ecom\bin\Debug\MaterialDesignThemes.Wpf.dll
+C:\Users\Wave\Desktop\CezarCaisse_v.0.2\CezarCaisse_v.0.2\Ecom\bin\Debug\System.Windows.Interactivity.dll
+C:\Users\Wave\Desktop\CezarCaisse_v.0.2\CezarCaisse_v.0.2\Ecom\bin\Debug\EntityFramework.xml
+C:\Users\Wave\Desktop\CezarCaisse_v.0.2\CezarCaisse_v.0.2\Ecom\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Wave\Desktop\CezarCaisse_v.0.2\CezarCaisse_v.0.2\Ecom\bin\Debug\itextsharp.xml
+C:\Users\Wave\Desktop\CezarCaisse_v.0.2\CezarCaisse_v.0.2\Ecom\bin\Debug\MahApps.Metro.pdb
+C:\Users\Wave\Desktop\CezarCaisse_v.0.2\CezarCaisse_v.0.2\Ecom\bin\Debug\MahApps.Metro.xml
+C:\Users\Wave\Desktop\CezarCaisse_v.0.2\CezarCaisse_v.0.2\Ecom\bin\Debug\MaterialDesignColors.pdb
+C:\Users\Wave\Desktop\CezarCaisse_v.0.2\CezarCaisse_v.0.2\Ecom\bin\Debug\MaterialDesignThemes.Wpf.pdb
+C:\Users\Wave\Desktop\CezarCaisse_v.0.2\CezarCaisse_v.0.2\Ecom\bin\Debug\MaterialDesignThemes.Wpf.xml
+C:\Users\Wave\Desktop\CezarCaisse_v.0.2\CezarCaisse_v.0.2\Ecom\bin\Debug\fr\EntityFramework.resources.dll
+C:\Users\Wave\Desktop\CezarCaisse_v.0.2\CezarCaisse_v.0.2\Ecom\bin\Debug\fr\EntityFramework.SqlServer.resources.dll
+C:\Users\Wave\Desktop\CezarCaisse_v.0.2\CezarCaisse_v.0.2\Ecom\obj\Debug\Ecom.csprojResolveAssemblyReference.cache
+C:\Users\Wave\Desktop\CezarCaisse_v.0.2\CezarCaisse_v.0.2\Ecom\obj\Debug\MainWindow.g.cs
+C:\Users\Wave\Desktop\CezarCaisse_v.0.2\CezarCaisse_v.0.2\Ecom\obj\Debug\View\Caisse.g.cs
+C:\Users\Wave\Desktop\CezarCaisse_v.0.2\CezarCaisse_v.0.2\Ecom\obj\Debug\View\Cashing.g.cs
+C:\Users\Wave\Desktop\CezarCaisse_v.0.2\CezarCaisse_v.0.2\Ecom\obj\Debug\View\Configuration.g.cs
+C:\Users\Wave\Desktop\CezarCaisse_v.0.2\CezarCaisse_v.0.2\Ecom\obj\Debug\View\CUCat.g.cs
+C:\Users\Wave\Desktop\CezarCaisse_v.0.2\CezarCaisse_v.0.2\Ecom\obj\Debug\View\CUItem.g.cs
+C:\Users\Wave\Desktop\CezarCaisse_v.0.2\CezarCaisse_v.0.2\Ecom\obj\Debug\View\IngredientCategoryList.g.cs
+C:\Users\Wave\Desktop\CezarCaisse_v.0.2\CezarCaisse_v.0.2\Ecom\obj\Debug\View\ItemOption.g.cs
+C:\Users\Wave\Desktop\CezarCaisse_v.0.2\CezarCaisse_v.0.2\Ecom\obj\Debug\View\Management.g.cs
+C:\Users\Wave\Desktop\CezarCaisse_v.0.2\CezarCaisse_v.0.2\Ecom\obj\Debug\View\Message.g.cs
+C:\Users\Wave\Desktop\CezarCaisse_v.0.2\CezarCaisse_v.0.2\Ecom\obj\Debug\View\OrderSend.g.cs
+C:\Users\Wave\Desktop\CezarCaisse_v.0.2\CezarCaisse_v.0.2\Ecom\obj\Debug\View\Commandes.g.cs
+C:\Users\Wave\Desktop\CezarCaisse_v.0.2\CezarCaisse_v.0.2\Ecom\obj\Debug\App.g.cs
+C:\Users\Wave\Desktop\CezarCaisse_v.0.2\CezarCaisse_v.0.2\Ecom\obj\Debug\Ecom_MarkupCompile.cache
+C:\Users\Wave\Desktop\CezarCaisse_v.0.2\CezarCaisse_v.0.2\Ecom\obj\Debug\Ecom_MarkupCompile.lref
+C:\Users\Wave\Desktop\CezarCaisse_v.0.2\CezarCaisse_v.0.2\Ecom\obj\Debug\App.baml
+C:\Users\Wave\Desktop\CezarCaisse_v.0.2\CezarCaisse_v.0.2\Ecom\obj\Debug\MainWindow.baml
+C:\Users\Wave\Desktop\CezarCaisse_v.0.2\CezarCaisse_v.0.2\Ecom\obj\Debug\View\Caisse.baml
+C:\Users\Wave\Desktop\CezarCaisse_v.0.2\CezarCaisse_v.0.2\Ecom\obj\Debug\View\Cashing.baml
+C:\Users\Wave\Desktop\CezarCaisse_v.0.2\CezarCaisse_v.0.2\Ecom\obj\Debug\View\Configuration.baml
+C:\Users\Wave\Desktop\CezarCaisse_v.0.2\CezarCaisse_v.0.2\Ecom\obj\Debug\View\CUCat.baml
+C:\Users\Wave\Desktop\CezarCaisse_v.0.2\CezarCaisse_v.0.2\Ecom\obj\Debug\View\CUItem.baml
+C:\Users\Wave\Desktop\CezarCaisse_v.0.2\CezarCaisse_v.0.2\Ecom\obj\Debug\View\IngredientCategoryList.baml
+C:\Users\Wave\Desktop\CezarCaisse_v.0.2\CezarCaisse_v.0.2\Ecom\obj\Debug\View\ItemOption.baml
+C:\Users\Wave\Desktop\CezarCaisse_v.0.2\CezarCaisse_v.0.2\Ecom\obj\Debug\View\Management.baml
+C:\Users\Wave\Desktop\CezarCaisse_v.0.2\CezarCaisse_v.0.2\Ecom\obj\Debug\View\Message.baml
+C:\Users\Wave\Desktop\CezarCaisse_v.0.2\CezarCaisse_v.0.2\Ecom\obj\Debug\View\OrderSend.baml
+C:\Users\Wave\Desktop\CezarCaisse_v.0.2\CezarCaisse_v.0.2\Ecom\obj\Debug\View\Commandes.baml
+C:\Users\Wave\Desktop\CezarCaisse_v.0.2\CezarCaisse_v.0.2\Ecom\obj\Debug\Ecom.g.resources
+C:\Users\Wave\Desktop\CezarCaisse_v.0.2\CezarCaisse_v.0.2\Ecom\obj\Debug\Ecom.Properties.Resources.resources
+C:\Users\Wave\Desktop\CezarCaisse_v.0.2\CezarCaisse_v.0.2\Ecom\obj\Debug\Ecom.csproj.GenerateResource.Cache
+C:\Users\Wave\Desktop\CezarCaisse_v.0.2\CezarCaisse_v.0.2\Ecom\obj\Debug\Ecom.exe.manifest
+C:\Users\Wave\Desktop\CezarCaisse_v.0.2\CezarCaisse_v.0.2\Ecom\obj\Debug\Ecom.application
+C:\Users\Wave\Desktop\CEZAR_PROJECT_MASTER\CezarCaisse_v.0.3\Ecom\bin\Debug\Ecom.exe.config
+C:\Users\Wave\Desktop\CEZAR_PROJECT_MASTER\CezarCaisse_v.0.3\Ecom\bin\Debug\Ecom.exe.manifest
+C:\Users\Wave\Desktop\CEZAR_PROJECT_MASTER\CezarCaisse_v.0.3\Ecom\bin\Debug\Ecom.application
+C:\Users\Wave\Desktop\CEZAR_PROJECT_MASTER\CezarCaisse_v.0.3\Ecom\bin\Debug\Ecom.exe
+C:\Users\Wave\Desktop\CEZAR_PROJECT_MASTER\CezarCaisse_v.0.3\Ecom\bin\Debug\Ecom.pdb
+C:\Users\Wave\Desktop\CEZAR_PROJECT_MASTER\CezarCaisse_v.0.3\Ecom\bin\Debug\EntityFramework.dll
+C:\Users\Wave\Desktop\CEZAR_PROJECT_MASTER\CezarCaisse_v.0.3\Ecom\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Wave\Desktop\CEZAR_PROJECT_MASTER\CezarCaisse_v.0.3\Ecom\bin\Debug\itextsharp.dll
+C:\Users\Wave\Desktop\CEZAR_PROJECT_MASTER\CezarCaisse_v.0.3\Ecom\bin\Debug\itextsharp.xmlworker.dll
+C:\Users\Wave\Desktop\CEZAR_PROJECT_MASTER\CezarCaisse_v.0.3\Ecom\bin\Debug\MahApps.Metro.dll
+C:\Users\Wave\Desktop\CEZAR_PROJECT_MASTER\CezarCaisse_v.0.3\Ecom\bin\Debug\MaterialDesignColors.dll
+C:\Users\Wave\Desktop\CEZAR_PROJECT_MASTER\CezarCaisse_v.0.3\Ecom\bin\Debug\MaterialDesignThemes.MahApps.dll
+C:\Users\Wave\Desktop\CEZAR_PROJECT_MASTER\CezarCaisse_v.0.3\Ecom\bin\Debug\MaterialDesignThemes.Wpf.dll
+C:\Users\Wave\Desktop\CEZAR_PROJECT_MASTER\CezarCaisse_v.0.3\Ecom\bin\Debug\System.Windows.Interactivity.dll
+C:\Users\Wave\Desktop\CEZAR_PROJECT_MASTER\CezarCaisse_v.0.3\Ecom\bin\Debug\EntityFramework.xml
+C:\Users\Wave\Desktop\CEZAR_PROJECT_MASTER\CezarCaisse_v.0.3\Ecom\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Wave\Desktop\CEZAR_PROJECT_MASTER\CezarCaisse_v.0.3\Ecom\bin\Debug\itextsharp.xml
+C:\Users\Wave\Desktop\CEZAR_PROJECT_MASTER\CezarCaisse_v.0.3\Ecom\bin\Debug\MahApps.Metro.pdb
+C:\Users\Wave\Desktop\CEZAR_PROJECT_MASTER\CezarCaisse_v.0.3\Ecom\bin\Debug\MahApps.Metro.xml
+C:\Users\Wave\Desktop\CEZAR_PROJECT_MASTER\CezarCaisse_v.0.3\Ecom\bin\Debug\MaterialDesignColors.pdb
+C:\Users\Wave\Desktop\CEZAR_PROJECT_MASTER\CezarCaisse_v.0.3\Ecom\bin\Debug\MaterialDesignThemes.Wpf.pdb
+C:\Users\Wave\Desktop\CEZAR_PROJECT_MASTER\CezarCaisse_v.0.3\Ecom\bin\Debug\MaterialDesignThemes.Wpf.xml
+C:\Users\Wave\Desktop\CEZAR_PROJECT_MASTER\CezarCaisse_v.0.3\Ecom\bin\Debug\fr\EntityFramework.resources.dll
+C:\Users\Wave\Desktop\CEZAR_PROJECT_MASTER\CezarCaisse_v.0.3\Ecom\bin\Debug\fr\EntityFramework.SqlServer.resources.dll
+C:\Users\Wave\Desktop\CEZAR_PROJECT_MASTER\CezarCaisse_v.0.3\Ecom\obj\Debug\MainWindow.g.cs
+C:\Users\Wave\Desktop\CEZAR_PROJECT_MASTER\CezarCaisse_v.0.3\Ecom\obj\Debug\View\Caisse.g.cs
+C:\Users\Wave\Desktop\CEZAR_PROJECT_MASTER\CezarCaisse_v.0.3\Ecom\obj\Debug\View\Cashing.g.cs
+C:\Users\Wave\Desktop\CEZAR_PROJECT_MASTER\CezarCaisse_v.0.3\Ecom\obj\Debug\View\Configuration.g.cs
+C:\Users\Wave\Desktop\CEZAR_PROJECT_MASTER\CezarCaisse_v.0.3\Ecom\obj\Debug\View\CUCat.g.cs
+C:\Users\Wave\Desktop\CEZAR_PROJECT_MASTER\CezarCaisse_v.0.3\Ecom\obj\Debug\View\CUItem.g.cs
+C:\Users\Wave\Desktop\CEZAR_PROJECT_MASTER\CezarCaisse_v.0.3\Ecom\obj\Debug\View\IngredientCategoryList.g.cs
+C:\Users\Wave\Desktop\CEZAR_PROJECT_MASTER\CezarCaisse_v.0.3\Ecom\obj\Debug\View\ItemOption.g.cs
+C:\Users\Wave\Desktop\CEZAR_PROJECT_MASTER\CezarCaisse_v.0.3\Ecom\obj\Debug\View\Management.g.cs
+C:\Users\Wave\Desktop\CEZAR_PROJECT_MASTER\CezarCaisse_v.0.3\Ecom\obj\Debug\View\Message.g.cs
+C:\Users\Wave\Desktop\CEZAR_PROJECT_MASTER\CezarCaisse_v.0.3\Ecom\obj\Debug\View\OrderSend.g.cs
+C:\Users\Wave\Desktop\CEZAR_PROJECT_MASTER\CezarCaisse_v.0.3\Ecom\obj\Debug\View\Commandes.g.cs
+C:\Users\Wave\Desktop\CEZAR_PROJECT_MASTER\CezarCaisse_v.0.3\Ecom\obj\Debug\App.g.cs
+C:\Users\Wave\Desktop\CEZAR_PROJECT_MASTER\CezarCaisse_v.0.3\Ecom\obj\Debug\Ecom_MarkupCompile.cache
+C:\Users\Wave\Desktop\CEZAR_PROJECT_MASTER\CezarCaisse_v.0.3\Ecom\obj\Debug\Ecom_MarkupCompile.lref
+C:\Users\Wave\Desktop\CEZAR_PROJECT_MASTER\CezarCaisse_v.0.3\Ecom\obj\Debug\App.baml
+C:\Users\Wave\Desktop\CEZAR_PROJECT_MASTER\CezarCaisse_v.0.3\Ecom\obj\Debug\MainWindow.baml
+C:\Users\Wave\Desktop\CEZAR_PROJECT_MASTER\CezarCaisse_v.0.3\Ecom\obj\Debug\View\Caisse.baml
+C:\Users\Wave\Desktop\CEZAR_PROJECT_MASTER\CezarCaisse_v.0.3\Ecom\obj\Debug\View\Cashing.baml
+C:\Users\Wave\Desktop\CEZAR_PROJECT_MASTER\CezarCaisse_v.0.3\Ecom\obj\Debug\View\Configuration.baml
+C:\Users\Wave\Desktop\CEZAR_PROJECT_MASTER\CezarCaisse_v.0.3\Ecom\obj\Debug\View\CUCat.baml
+C:\Users\Wave\Desktop\CEZAR_PROJECT_MASTER\CezarCaisse_v.0.3\Ecom\obj\Debug\View\CUItem.baml
+C:\Users\Wave\Desktop\CEZAR_PROJECT_MASTER\CezarCaisse_v.0.3\Ecom\obj\Debug\View\IngredientCategoryList.baml
+C:\Users\Wave\Desktop\CEZAR_PROJECT_MASTER\CezarCaisse_v.0.3\Ecom\obj\Debug\View\ItemOption.baml
+C:\Users\Wave\Desktop\CEZAR_PROJECT_MASTER\CezarCaisse_v.0.3\Ecom\obj\Debug\View\Management.baml
+C:\Users\Wave\Desktop\CEZAR_PROJECT_MASTER\CezarCaisse_v.0.3\Ecom\obj\Debug\View\Message.baml
+C:\Users\Wave\Desktop\CEZAR_PROJECT_MASTER\CezarCaisse_v.0.3\Ecom\obj\Debug\View\OrderSend.baml
+C:\Users\Wave\Desktop\CEZAR_PROJECT_MASTER\CezarCaisse_v.0.3\Ecom\obj\Debug\View\Commandes.baml
+C:\Users\Wave\Desktop\CEZAR_PROJECT_MASTER\CezarCaisse_v.0.3\Ecom\obj\Debug\Ecom.g.resources
+C:\Users\Wave\Desktop\CEZAR_PROJECT_MASTER\CezarCaisse_v.0.3\Ecom\obj\Debug\Ecom.Properties.Resources.resources
+C:\Users\Wave\Desktop\CEZAR_PROJECT_MASTER\CezarCaisse_v.0.3\Ecom\obj\Debug\Ecom.csproj.GenerateResource.Cache
+C:\Users\Wave\Desktop\CEZAR_PROJECT_MASTER\CezarCaisse_v.0.3\Ecom\obj\Debug\Ecom.exe.manifest
+C:\Users\Wave\Desktop\CEZAR_PROJECT_MASTER\CezarCaisse_v.0.3\Ecom\obj\Debug\Ecom.application
+C:\Users\Wave\Desktop\CEZAR_PROJECT_MASTER\CezarCaisse_v.0.3\Ecom\obj\Debug\Ecom.exe
+C:\Users\Wave\Desktop\CEZAR_PROJECT_MASTER\CezarCaisse_v.0.3\Ecom\obj\Debug\Ecom.pdb
+C:\Users\Wave\Desktop\CEZAR_PROJECT_MASTER\CezarCaisse_v.0.3\Ecom\obj\Debug\Ecom.csprojResolveAssemblyReference.cache
+C:\Users\Wave\Desktop\CEZAR_PROJECT_MASTER\CezarCaisse_v.0.4\Ecom\bin\Debug\Ecom.exe.config
+C:\Users\Wave\Desktop\CEZAR_PROJECT_MASTER\CezarCaisse_v.0.4\Ecom\obj\Debug\Ecom.exe
+C:\Users\Wave\Desktop\CEZAR_PROJECT_MASTER\CezarCaisse_v.0.4\Ecom\obj\Debug\Ecom.pdb
+C:\Users\Wave\Desktop\CEZAR_PROJECT_MASTER\CezarCaisse_v.0.4\Ecom\bin\Debug\Ecom.exe.manifest
+C:\Users\Wave\Desktop\CEZAR_PROJECT_MASTER\CezarCaisse_v.0.4\Ecom\bin\Debug\Ecom.application
+C:\Users\Wave\Desktop\CEZAR_PROJECT_MASTER\CezarCaisse_v.0.4\Ecom\bin\Debug\Ecom.exe
+C:\Users\Wave\Desktop\CEZAR_PROJECT_MASTER\CezarCaisse_v.0.4\Ecom\bin\Debug\Ecom.pdb
+C:\Users\Wave\Desktop\CEZAR_PROJECT_MASTER\CezarCaisse_v.0.4\Ecom\bin\Debug\EntityFramework.dll
+C:\Users\Wave\Desktop\CEZAR_PROJECT_MASTER\CezarCaisse_v.0.4\Ecom\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Wave\Desktop\CEZAR_PROJECT_MASTER\CezarCaisse_v.0.4\Ecom\bin\Debug\itextsharp.dll
+C:\Users\Wave\Desktop\CEZAR_PROJECT_MASTER\CezarCaisse_v.0.4\Ecom\bin\Debug\itextsharp.xmlworker.dll
+C:\Users\Wave\Desktop\CEZAR_PROJECT_MASTER\CezarCaisse_v.0.4\Ecom\bin\Debug\MahApps.Metro.dll
+C:\Users\Wave\Desktop\CEZAR_PROJECT_MASTER\CezarCaisse_v.0.4\Ecom\bin\Debug\MaterialDesignColors.dll
+C:\Users\Wave\Desktop\CEZAR_PROJECT_MASTER\CezarCaisse_v.0.4\Ecom\bin\Debug\MaterialDesignThemes.MahApps.dll
+C:\Users\Wave\Desktop\CEZAR_PROJECT_MASTER\CezarCaisse_v.0.4\Ecom\bin\Debug\MaterialDesignThemes.Wpf.dll
+C:\Users\Wave\Desktop\CEZAR_PROJECT_MASTER\CezarCaisse_v.0.4\Ecom\bin\Debug\System.Windows.Interactivity.dll
+C:\Users\Wave\Desktop\CEZAR_PROJECT_MASTER\CezarCaisse_v.0.4\Ecom\bin\Debug\EntityFramework.xml
+C:\Users\Wave\Desktop\CEZAR_PROJECT_MASTER\CezarCaisse_v.0.4\Ecom\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Wave\Desktop\CEZAR_PROJECT_MASTER\CezarCaisse_v.0.4\Ecom\bin\Debug\itextsharp.xml
+C:\Users\Wave\Desktop\CEZAR_PROJECT_MASTER\CezarCaisse_v.0.4\Ecom\bin\Debug\MahApps.Metro.pdb
+C:\Users\Wave\Desktop\CEZAR_PROJECT_MASTER\CezarCaisse_v.0.4\Ecom\bin\Debug\MahApps.Metro.xml
+C:\Users\Wave\Desktop\CEZAR_PROJECT_MASTER\CezarCaisse_v.0.4\Ecom\bin\Debug\MaterialDesignColors.pdb
+C:\Users\Wave\Desktop\CEZAR_PROJECT_MASTER\CezarCaisse_v.0.4\Ecom\bin\Debug\MaterialDesignThemes.Wpf.pdb
+C:\Users\Wave\Desktop\CEZAR_PROJECT_MASTER\CezarCaisse_v.0.4\Ecom\bin\Debug\MaterialDesignThemes.Wpf.xml
+C:\Users\Wave\Desktop\CEZAR_PROJECT_MASTER\CezarCaisse_v.0.4\Ecom\bin\Debug\fr\EntityFramework.resources.dll
+C:\Users\Wave\Desktop\CEZAR_PROJECT_MASTER\CezarCaisse_v.0.4\Ecom\bin\Debug\fr\EntityFramework.SqlServer.resources.dll
+C:\Users\Wave\Desktop\CEZAR_PROJECT_MASTER\CezarCaisse_v.0.4\Ecom\obj\Debug\Ecom.csprojResolveAssemblyReference.cache
+C:\Users\Wave\Desktop\CEZAR_PROJECT_MASTER\CezarCaisse_v.0.4\Ecom\obj\Debug\MainWindow.g.cs
+C:\Users\Wave\Desktop\CEZAR_PROJECT_MASTER\CezarCaisse_v.0.4\Ecom\obj\Debug\View\Caisse.g.cs
+C:\Users\Wave\Desktop\CEZAR_PROJECT_MASTER\CezarCaisse_v.0.4\Ecom\obj\Debug\View\Cashing.g.cs
+C:\Users\Wave\Desktop\CEZAR_PROJECT_MASTER\CezarCaisse_v.0.4\Ecom\obj\Debug\View\Configuration.g.cs
+C:\Users\Wave\Desktop\CEZAR_PROJECT_MASTER\CezarCaisse_v.0.4\Ecom\obj\Debug\View\CUCat.g.cs
+C:\Users\Wave\Desktop\CEZAR_PROJECT_MASTER\CezarCaisse_v.0.4\Ecom\obj\Debug\View\CUItem.g.cs
+C:\Users\Wave\Desktop\CEZAR_PROJECT_MASTER\CezarCaisse_v.0.4\Ecom\obj\Debug\View\IngredientCategoryList.g.cs
+C:\Users\Wave\Desktop\CEZAR_PROJECT_MASTER\CezarCaisse_v.0.4\Ecom\obj\Debug\View\ItemOption.g.cs
+C:\Users\Wave\Desktop\CEZAR_PROJECT_MASTER\CezarCaisse_v.0.4\Ecom\obj\Debug\View\Management.g.cs
+C:\Users\Wave\Desktop\CEZAR_PROJECT_MASTER\CezarCaisse_v.0.4\Ecom\obj\Debug\View\Message.g.cs
+C:\Users\Wave\Desktop\CEZAR_PROJECT_MASTER\CezarCaisse_v.0.4\Ecom\obj\Debug\View\OrderSend.g.cs
+C:\Users\Wave\Desktop\CEZAR_PROJECT_MASTER\CezarCaisse_v.0.4\Ecom\obj\Debug\View\Commandes.g.cs
+C:\Users\Wave\Desktop\CEZAR_PROJECT_MASTER\CezarCaisse_v.0.4\Ecom\obj\Debug\App.g.cs
+C:\Users\Wave\Desktop\CEZAR_PROJECT_MASTER\CezarCaisse_v.0.4\Ecom\obj\Debug\Ecom_MarkupCompile.cache
+C:\Users\Wave\Desktop\CEZAR_PROJECT_MASTER\CezarCaisse_v.0.4\Ecom\obj\Debug\Ecom_MarkupCompile.lref
+C:\Users\Wave\Desktop\CEZAR_PROJECT_MASTER\CezarCaisse_v.0.4\Ecom\obj\Debug\App.baml
+C:\Users\Wave\Desktop\CEZAR_PROJECT_MASTER\CezarCaisse_v.0.4\Ecom\obj\Debug\MainWindow.baml
+C:\Users\Wave\Desktop\CEZAR_PROJECT_MASTER\CezarCaisse_v.0.4\Ecom\obj\Debug\View\Caisse.baml
+C:\Users\Wave\Desktop\CEZAR_PROJECT_MASTER\CezarCaisse_v.0.4\Ecom\obj\Debug\View\Cashing.baml
+C:\Users\Wave\Desktop\CEZAR_PROJECT_MASTER\CezarCaisse_v.0.4\Ecom\obj\Debug\View\Configuration.baml
+C:\Users\Wave\Desktop\CEZAR_PROJECT_MASTER\CezarCaisse_v.0.4\Ecom\obj\Debug\View\CUCat.baml
+C:\Users\Wave\Desktop\CEZAR_PROJECT_MASTER\CezarCaisse_v.0.4\Ecom\obj\Debug\View\CUItem.baml
+C:\Users\Wave\Desktop\CEZAR_PROJECT_MASTER\CezarCaisse_v.0.4\Ecom\obj\Debug\View\IngredientCategoryList.baml
+C:\Users\Wave\Desktop\CEZAR_PROJECT_MASTER\CezarCaisse_v.0.4\Ecom\obj\Debug\View\ItemOption.baml
+C:\Users\Wave\Desktop\CEZAR_PROJECT_MASTER\CezarCaisse_v.0.4\Ecom\obj\Debug\View\Management.baml
+C:\Users\Wave\Desktop\CEZAR_PROJECT_MASTER\CezarCaisse_v.0.4\Ecom\obj\Debug\View\Message.baml
+C:\Users\Wave\Desktop\CEZAR_PROJECT_MASTER\CezarCaisse_v.0.4\Ecom\obj\Debug\View\OrderSend.baml
+C:\Users\Wave\Desktop\CEZAR_PROJECT_MASTER\CezarCaisse_v.0.4\Ecom\obj\Debug\View\Commandes.baml
+C:\Users\Wave\Desktop\CEZAR_PROJECT_MASTER\CezarCaisse_v.0.4\Ecom\obj\Debug\Ecom.g.resources
+C:\Users\Wave\Desktop\CEZAR_PROJECT_MASTER\CezarCaisse_v.0.4\Ecom\obj\Debug\Ecom.Properties.Resources.resources
+C:\Users\Wave\Desktop\CEZAR_PROJECT_MASTER\CezarCaisse_v.0.4\Ecom\obj\Debug\Ecom.csproj.GenerateResource.Cache
+C:\Users\Wave\Desktop\CEZAR_PROJECT_MASTER\CezarCaisse_v.0.4\Ecom\obj\Debug\Ecom.exe.manifest
+C:\Users\Wave\Desktop\CEZAR_PROJECT_MASTER\CezarCaisse_v.0.4\Ecom\obj\Debug\Ecom.application
+C:\Users\Wave\Desktop\CEZAR_PROJECT_MASTER\CezarCaisse_v.0.4\Ecom\bin\Debug\Dragablz.dll
+C:\Users\Wave\Desktop\CEZAR_PROJECT_MASTER\CezarCaisse_v.0.4\Ecom\bin\Debug\Dragablz.pdb
+C:\Users\Wave\Desktop\CEZAR_PROJECT_MASTER\CezarCaisse_v.0.4\Ecom\bin\Debug\Dragablz.xml
+C:\Users\Hichem\Desktop\CezarCaisse_v.0.5\CezarCaisse_v.0.5\Ecom\bin\Debug\Ecom.exe.config
+C:\Users\Hichem\Desktop\CezarCaisse_v.0.5\CezarCaisse_v.0.5\Ecom\obj\Debug\Ecom.exe
+C:\Users\Hichem\Desktop\CezarCaisse_v.0.5\CezarCaisse_v.0.5\Ecom\obj\Debug\Ecom.pdb
+C:\Users\Hichem\Desktop\CezarCaisse_v.0.5\CezarCaisse_v.0.5\Ecom\bin\Debug\Ecom.exe.manifest
+C:\Users\Hichem\Desktop\CezarCaisse_v.0.5\CezarCaisse_v.0.5\Ecom\bin\Debug\Ecom.application
+C:\Users\Hichem\Desktop\CezarCaisse_v.0.5\CezarCaisse_v.0.5\Ecom\bin\Debug\Ecom.exe
+C:\Users\Hichem\Desktop\CezarCaisse_v.0.5\CezarCaisse_v.0.5\Ecom\bin\Debug\Ecom.pdb
+C:\Users\Hichem\Desktop\CezarCaisse_v.0.5\CezarCaisse_v.0.5\Ecom\bin\Debug\Dragablz.dll
+C:\Users\Hichem\Desktop\CezarCaisse_v.0.5\CezarCaisse_v.0.5\Ecom\bin\Debug\EntityFramework.dll
+C:\Users\Hichem\Desktop\CezarCaisse_v.0.5\CezarCaisse_v.0.5\Ecom\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Hichem\Desktop\CezarCaisse_v.0.5\CezarCaisse_v.0.5\Ecom\bin\Debug\itextsharp.dll
+C:\Users\Hichem\Desktop\CezarCaisse_v.0.5\CezarCaisse_v.0.5\Ecom\bin\Debug\itextsharp.xmlworker.dll
+C:\Users\Hichem\Desktop\CezarCaisse_v.0.5\CezarCaisse_v.0.5\Ecom\bin\Debug\MahApps.Metro.dll
+C:\Users\Hichem\Desktop\CezarCaisse_v.0.5\CezarCaisse_v.0.5\Ecom\bin\Debug\MaterialDesignColors.dll
+C:\Users\Hichem\Desktop\CezarCaisse_v.0.5\CezarCaisse_v.0.5\Ecom\bin\Debug\MaterialDesignThemes.MahApps.dll
+C:\Users\Hichem\Desktop\CezarCaisse_v.0.5\CezarCaisse_v.0.5\Ecom\bin\Debug\MaterialDesignThemes.Wpf.dll
+C:\Users\Hichem\Desktop\CezarCaisse_v.0.5\CezarCaisse_v.0.5\Ecom\bin\Debug\System.Windows.Interactivity.dll
+C:\Users\Hichem\Desktop\CezarCaisse_v.0.5\CezarCaisse_v.0.5\Ecom\bin\Debug\Dragablz.pdb
+C:\Users\Hichem\Desktop\CezarCaisse_v.0.5\CezarCaisse_v.0.5\Ecom\bin\Debug\Dragablz.xml
+C:\Users\Hichem\Desktop\CezarCaisse_v.0.5\CezarCaisse_v.0.5\Ecom\bin\Debug\EntityFramework.xml
+C:\Users\Hichem\Desktop\CezarCaisse_v.0.5\CezarCaisse_v.0.5\Ecom\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Hichem\Desktop\CezarCaisse_v.0.5\CezarCaisse_v.0.5\Ecom\bin\Debug\itextsharp.xml
+C:\Users\Hichem\Desktop\CezarCaisse_v.0.5\CezarCaisse_v.0.5\Ecom\bin\Debug\MahApps.Metro.pdb
+C:\Users\Hichem\Desktop\CezarCaisse_v.0.5\CezarCaisse_v.0.5\Ecom\bin\Debug\MahApps.Metro.xml
+C:\Users\Hichem\Desktop\CezarCaisse_v.0.5\CezarCaisse_v.0.5\Ecom\bin\Debug\MaterialDesignColors.pdb
+C:\Users\Hichem\Desktop\CezarCaisse_v.0.5\CezarCaisse_v.0.5\Ecom\bin\Debug\MaterialDesignThemes.Wpf.pdb
+C:\Users\Hichem\Desktop\CezarCaisse_v.0.5\CezarCaisse_v.0.5\Ecom\bin\Debug\MaterialDesignThemes.Wpf.xml
+C:\Users\Hichem\Desktop\CezarCaisse_v.0.5\CezarCaisse_v.0.5\Ecom\bin\Debug\fr\EntityFramework.resources.dll
+C:\Users\Hichem\Desktop\CezarCaisse_v.0.5\CezarCaisse_v.0.5\Ecom\bin\Debug\fr\EntityFramework.SqlServer.resources.dll
+C:\Users\Hichem\Desktop\CezarCaisse_v.0.5\CezarCaisse_v.0.5\Ecom\obj\Debug\MainWindow.g.cs
+C:\Users\Hichem\Desktop\CezarCaisse_v.0.5\CezarCaisse_v.0.5\Ecom\obj\Debug\View\Caisse.g.cs
+C:\Users\Hichem\Desktop\CezarCaisse_v.0.5\CezarCaisse_v.0.5\Ecom\obj\Debug\View\Cashing.g.cs
+C:\Users\Hichem\Desktop\CezarCaisse_v.0.5\CezarCaisse_v.0.5\Ecom\obj\Debug\View\Configuration.g.cs
+C:\Users\Hichem\Desktop\CezarCaisse_v.0.5\CezarCaisse_v.0.5\Ecom\obj\Debug\View\CUCat.g.cs
+C:\Users\Hichem\Desktop\CezarCaisse_v.0.5\CezarCaisse_v.0.5\Ecom\obj\Debug\View\CUItem.g.cs
+C:\Users\Hichem\Desktop\CezarCaisse_v.0.5\CezarCaisse_v.0.5\Ecom\obj\Debug\View\IngredientCategoryList.g.cs
+C:\Users\Hichem\Desktop\CezarCaisse_v.0.5\CezarCaisse_v.0.5\Ecom\obj\Debug\View\ItemOption.g.cs
+C:\Users\Hichem\Desktop\CezarCaisse_v.0.5\CezarCaisse_v.0.5\Ecom\obj\Debug\View\Management.g.cs
+C:\Users\Hichem\Desktop\CezarCaisse_v.0.5\CezarCaisse_v.0.5\Ecom\obj\Debug\View\Message.g.cs
+C:\Users\Hichem\Desktop\CezarCaisse_v.0.5\CezarCaisse_v.0.5\Ecom\obj\Debug\View\OrderSend.g.cs
+C:\Users\Hichem\Desktop\CezarCaisse_v.0.5\CezarCaisse_v.0.5\Ecom\obj\Debug\View\Commandes.g.cs
+C:\Users\Hichem\Desktop\CezarCaisse_v.0.5\CezarCaisse_v.0.5\Ecom\obj\Debug\App.g.cs
+C:\Users\Hichem\Desktop\CezarCaisse_v.0.5\CezarCaisse_v.0.5\Ecom\obj\Debug\Ecom_MarkupCompile.cache
+C:\Users\Hichem\Desktop\CezarCaisse_v.0.5\CezarCaisse_v.0.5\Ecom\obj\Debug\Ecom_MarkupCompile.lref
+C:\Users\Hichem\Desktop\CezarCaisse_v.0.5\CezarCaisse_v.0.5\Ecom\obj\Debug\App.baml
+C:\Users\Hichem\Desktop\CezarCaisse_v.0.5\CezarCaisse_v.0.5\Ecom\obj\Debug\MainWindow.baml
+C:\Users\Hichem\Desktop\CezarCaisse_v.0.5\CezarCaisse_v.0.5\Ecom\obj\Debug\View\Caisse.baml
+C:\Users\Hichem\Desktop\CezarCaisse_v.0.5\CezarCaisse_v.0.5\Ecom\obj\Debug\View\Cashing.baml
+C:\Users\Hichem\Desktop\CezarCaisse_v.0.5\CezarCaisse_v.0.5\Ecom\obj\Debug\View\Configuration.baml
+C:\Users\Hichem\Desktop\CezarCaisse_v.0.5\CezarCaisse_v.0.5\Ecom\obj\Debug\View\CUCat.baml
+C:\Users\Hichem\Desktop\CezarCaisse_v.0.5\CezarCaisse_v.0.5\Ecom\obj\Debug\View\CUItem.baml
+C:\Users\Hichem\Desktop\CezarCaisse_v.0.5\CezarCaisse_v.0.5\Ecom\obj\Debug\View\IngredientCategoryList.baml
+C:\Users\Hichem\Desktop\CezarCaisse_v.0.5\CezarCaisse_v.0.5\Ecom\obj\Debug\View\ItemOption.baml
+C:\Users\Hichem\Desktop\CezarCaisse_v.0.5\CezarCaisse_v.0.5\Ecom\obj\Debug\View\Management.baml
+C:\Users\Hichem\Desktop\CezarCaisse_v.0.5\CezarCaisse_v.0.5\Ecom\obj\Debug\View\Message.baml
+C:\Users\Hichem\Desktop\CezarCaisse_v.0.5\CezarCaisse_v.0.5\Ecom\obj\Debug\View\OrderSend.baml
+C:\Users\Hichem\Desktop\CezarCaisse_v.0.5\CezarCaisse_v.0.5\Ecom\obj\Debug\View\Commandes.baml
+C:\Users\Hichem\Desktop\CezarCaisse_v.0.5\CezarCaisse_v.0.5\Ecom\obj\Debug\Ecom.g.resources
+C:\Users\Hichem\Desktop\CezarCaisse_v.0.5\CezarCaisse_v.0.5\Ecom\obj\Debug\Ecom.Properties.Resources.resources
+C:\Users\Hichem\Desktop\CezarCaisse_v.0.5\CezarCaisse_v.0.5\Ecom\obj\Debug\Ecom.csproj.GenerateResource.Cache
+C:\Users\Hichem\Desktop\CezarCaisse_v.0.5\CezarCaisse_v.0.5\Ecom\obj\Debug\Ecom.exe.manifest
+C:\Users\Hichem\Desktop\CezarCaisse_v.0.5\CezarCaisse_v.0.5\Ecom\obj\Debug\Ecom.application
+C:\Users\Hichem\Desktop\CezarCaisse_v.0.5\CezarCaisse_v.0.5\Ecom\obj\Debug\View\Settings.g.cs
+C:\Users\Hichem\Desktop\CezarCaisse_v.0.5\CezarCaisse_v.0.5\Ecom\obj\Debug\View\Settings.baml
+C:\Users\Hichem\Desktop\CezarCaisse_v.0.5\CezarCaisse_v.0.5\Ecom\obj\Debug\Ecom.csprojResolveAssemblyReference.cache
+C:\Users\RZ63\Desktop\cz_v.0.6\CezarCaisse_v.0.5\Ecom\obj\Debug\Ecom.exe
+C:\Users\RZ63\Desktop\cz_v.0.6\CezarCaisse_v.0.5\Ecom\bin\Debug\Ecom.exe
+C:\Users\RZ63\Desktop\cz_v.0.6\CezarCaisse_v.0.5\Ecom\bin\Debug\Dragablz.dll
+C:\Users\RZ63\Desktop\cz_v.0.6\CezarCaisse_v.0.5\Ecom\bin\Debug\MaterialDesignColors.dll
+C:\Users\RZ63\Desktop\cz_v.0.6\CezarCaisse_v.0.5\Ecom\bin\Debug\MaterialDesignThemes.Wpf.dll
+C:\Users\RZ63\Desktop\cz_v.0.6\CezarCaisse_v.0.5\Ecom\bin\Debug\fr\EntityFramework.resources.dll
+C:\Users\RZ63\Desktop\cz_v.0.6\CezarCaisse_v.0.5\Ecom\bin\Debug\Ecom.exe.config
+C:\Users\RZ63\Desktop\cz_v.0.6\CezarCaisse_v.0.5\Ecom\bin\Debug\Ecom.exe.manifest
+C:\Users\RZ63\Desktop\cz_v.0.6\CezarCaisse_v.0.5\Ecom\bin\Debug\Ecom.application
+C:\Users\RZ63\Desktop\cz_v.0.6\CezarCaisse_v.0.5\Ecom\bin\Debug\Ecom.pdb
+C:\Users\RZ63\Desktop\cz_v.0.6\CezarCaisse_v.0.5\Ecom\bin\Debug\EntityFramework.dll
+C:\Users\RZ63\Desktop\cz_v.0.6\CezarCaisse_v.0.5\Ecom\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\RZ63\Desktop\cz_v.0.6\CezarCaisse_v.0.5\Ecom\bin\Debug\itextsharp.dll
+C:\Users\RZ63\Desktop\cz_v.0.6\CezarCaisse_v.0.5\Ecom\bin\Debug\itextsharp.xmlworker.dll
+C:\Users\RZ63\Desktop\cz_v.0.6\CezarCaisse_v.0.5\Ecom\bin\Debug\MahApps.Metro.dll
+C:\Users\RZ63\Desktop\cz_v.0.6\CezarCaisse_v.0.5\Ecom\bin\Debug\MaterialDesignThemes.MahApps.dll
+C:\Users\RZ63\Desktop\cz_v.0.6\CezarCaisse_v.0.5\Ecom\bin\Debug\System.Windows.Interactivity.dll
+C:\Users\RZ63\Desktop\cz_v.0.6\CezarCaisse_v.0.5\Ecom\bin\Debug\Dragablz.pdb
+C:\Users\RZ63\Desktop\cz_v.0.6\CezarCaisse_v.0.5\Ecom\bin\Debug\Dragablz.xml
+C:\Users\RZ63\Desktop\cz_v.0.6\CezarCaisse_v.0.5\Ecom\bin\Debug\EntityFramework.xml
+C:\Users\RZ63\Desktop\cz_v.0.6\CezarCaisse_v.0.5\Ecom\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\RZ63\Desktop\cz_v.0.6\CezarCaisse_v.0.5\Ecom\bin\Debug\itextsharp.xml
+C:\Users\RZ63\Desktop\cz_v.0.6\CezarCaisse_v.0.5\Ecom\bin\Debug\MahApps.Metro.pdb
+C:\Users\RZ63\Desktop\cz_v.0.6\CezarCaisse_v.0.5\Ecom\bin\Debug\MahApps.Metro.xml
+C:\Users\RZ63\Desktop\cz_v.0.6\CezarCaisse_v.0.5\Ecom\bin\Debug\MaterialDesignColors.pdb
+C:\Users\RZ63\Desktop\cz_v.0.6\CezarCaisse_v.0.5\Ecom\bin\Debug\MaterialDesignThemes.Wpf.pdb
+C:\Users\RZ63\Desktop\cz_v.0.6\CezarCaisse_v.0.5\Ecom\bin\Debug\MaterialDesignThemes.Wpf.xml
+C:\Users\RZ63\Desktop\cz_v.0.6\CezarCaisse_v.0.5\Ecom\bin\Debug\fr\EntityFramework.SqlServer.resources.dll
+C:\Users\RZ63\Desktop\cz_v.0.6\CezarCaisse_v.0.5\Ecom\obj\Debug\Ecom.csprojResolveAssemblyReference.cache
+C:\Users\RZ63\Desktop\cz_v.0.6\CezarCaisse_v.0.5\Ecom\obj\Debug\MainWindow.g.cs
+C:\Users\RZ63\Desktop\cz_v.0.6\CezarCaisse_v.0.5\Ecom\obj\Debug\View\Caisse.g.cs
+C:\Users\RZ63\Desktop\cz_v.0.6\CezarCaisse_v.0.5\Ecom\obj\Debug\View\Cashing.g.cs
+C:\Users\RZ63\Desktop\cz_v.0.6\CezarCaisse_v.0.5\Ecom\obj\Debug\View\Configuration.g.cs
+C:\Users\RZ63\Desktop\cz_v.0.6\CezarCaisse_v.0.5\Ecom\obj\Debug\View\CUCat.g.cs
+C:\Users\RZ63\Desktop\cz_v.0.6\CezarCaisse_v.0.5\Ecom\obj\Debug\View\CUItem.g.cs
+C:\Users\RZ63\Desktop\cz_v.0.6\CezarCaisse_v.0.5\Ecom\obj\Debug\View\IngredientCategoryList.g.cs
+C:\Users\RZ63\Desktop\cz_v.0.6\CezarCaisse_v.0.5\Ecom\obj\Debug\View\ItemOption.g.cs
+C:\Users\RZ63\Desktop\cz_v.0.6\CezarCaisse_v.0.5\Ecom\obj\Debug\View\Management.g.cs
+C:\Users\RZ63\Desktop\cz_v.0.6\CezarCaisse_v.0.5\Ecom\obj\Debug\View\Message.g.cs
+C:\Users\RZ63\Desktop\cz_v.0.6\CezarCaisse_v.0.5\Ecom\obj\Debug\View\OrderSend.g.cs
+C:\Users\RZ63\Desktop\cz_v.0.6\CezarCaisse_v.0.5\Ecom\obj\Debug\View\Commandes.g.cs
+C:\Users\RZ63\Desktop\cz_v.0.6\CezarCaisse_v.0.5\Ecom\obj\Debug\View\Settings.g.cs
+C:\Users\RZ63\Desktop\cz_v.0.6\CezarCaisse_v.0.5\Ecom\obj\Debug\App.g.cs
+C:\Users\RZ63\Desktop\cz_v.0.6\CezarCaisse_v.0.5\Ecom\obj\Debug\Ecom_MarkupCompile.cache
+C:\Users\RZ63\Desktop\cz_v.0.6\CezarCaisse_v.0.5\Ecom\obj\Debug\Ecom_MarkupCompile.lref
+C:\Users\RZ63\Desktop\cz_v.0.6\CezarCaisse_v.0.5\Ecom\obj\Debug\App.baml
+C:\Users\RZ63\Desktop\cz_v.0.6\CezarCaisse_v.0.5\Ecom\obj\Debug\MainWindow.baml
+C:\Users\RZ63\Desktop\cz_v.0.6\CezarCaisse_v.0.5\Ecom\obj\Debug\View\Caisse.baml
+C:\Users\RZ63\Desktop\cz_v.0.6\CezarCaisse_v.0.5\Ecom\obj\Debug\View\Cashing.baml
+C:\Users\RZ63\Desktop\cz_v.0.6\CezarCaisse_v.0.5\Ecom\obj\Debug\View\Configuration.baml
+C:\Users\RZ63\Desktop\cz_v.0.6\CezarCaisse_v.0.5\Ecom\obj\Debug\View\CUCat.baml
+C:\Users\RZ63\Desktop\cz_v.0.6\CezarCaisse_v.0.5\Ecom\obj\Debug\View\CUItem.baml
+C:\Users\RZ63\Desktop\cz_v.0.6\CezarCaisse_v.0.5\Ecom\obj\Debug\View\IngredientCategoryList.baml
+C:\Users\RZ63\Desktop\cz_v.0.6\CezarCaisse_v.0.5\Ecom\obj\Debug\View\ItemOption.baml
+C:\Users\RZ63\Desktop\cz_v.0.6\CezarCaisse_v.0.5\Ecom\obj\Debug\View\Management.baml
+C:\Users\RZ63\Desktop\cz_v.0.6\CezarCaisse_v.0.5\Ecom\obj\Debug\View\Message.baml
+C:\Users\RZ63\Desktop\cz_v.0.6\CezarCaisse_v.0.5\Ecom\obj\Debug\View\OrderSend.baml
+C:\Users\RZ63\Desktop\cz_v.0.6\CezarCaisse_v.0.5\Ecom\obj\Debug\View\Commandes.baml
+C:\Users\RZ63\Desktop\cz_v.0.6\CezarCaisse_v.0.5\Ecom\obj\Debug\View\Settings.baml
+C:\Users\RZ63\Desktop\cz_v.0.6\CezarCaisse_v.0.5\Ecom\obj\Debug\Ecom.g.resources
+C:\Users\RZ63\Desktop\cz_v.0.6\CezarCaisse_v.0.5\Ecom\obj\Debug\Ecom.Properties.Resources.resources
+C:\Users\RZ63\Desktop\cz_v.0.6\CezarCaisse_v.0.5\Ecom\obj\Debug\Ecom.csproj.GenerateResource.Cache
+C:\Users\RZ63\Desktop\cz_v.0.6\CezarCaisse_v.0.5\Ecom\obj\Debug\Ecom.exe.manifest
+C:\Users\RZ63\Desktop\cz_v.0.6\CezarCaisse_v.0.5\Ecom\obj\Debug\Ecom.application
+C:\Users\RZ63\Desktop\cz_v.0.6\CezarCaisse_v.0.5\Ecom\obj\Debug\Ecom.pdb
+C:\Users\Hichem\Desktop\CezarCaisse_v.0.5\CezarCaisse_v.0.6\Ecom\bin\Debug\Ecom.exe.config
+C:\Users\Hichem\Desktop\CezarCaisse_v.0.5\CezarCaisse_v.0.6\Ecom\obj\Debug\Ecom.exe
+C:\Users\Hichem\Desktop\CezarCaisse_v.0.5\CezarCaisse_v.0.6\Ecom\obj\Debug\Ecom.pdb
+C:\Users\Hichem\Desktop\CezarCaisse_v.0.5\CezarCaisse_v.0.6\Ecom\bin\Debug\Ecom.exe.manifest
+C:\Users\Hichem\Desktop\CezarCaisse_v.0.5\CezarCaisse_v.0.6\Ecom\bin\Debug\Ecom.application
+C:\Users\Hichem\Desktop\CezarCaisse_v.0.5\CezarCaisse_v.0.6\Ecom\bin\Debug\Ecom.exe
+C:\Users\Hichem\Desktop\CezarCaisse_v.0.5\CezarCaisse_v.0.6\Ecom\bin\Debug\Ecom.pdb
+C:\Users\Hichem\Desktop\CezarCaisse_v.0.5\CezarCaisse_v.0.6\Ecom\bin\Debug\Dragablz.dll
+C:\Users\Hichem\Desktop\CezarCaisse_v.0.5\CezarCaisse_v.0.6\Ecom\bin\Debug\EntityFramework.dll
+C:\Users\Hichem\Desktop\CezarCaisse_v.0.5\CezarCaisse_v.0.6\Ecom\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Hichem\Desktop\CezarCaisse_v.0.5\CezarCaisse_v.0.6\Ecom\bin\Debug\itextsharp.dll
+C:\Users\Hichem\Desktop\CezarCaisse_v.0.5\CezarCaisse_v.0.6\Ecom\bin\Debug\itextsharp.xmlworker.dll
+C:\Users\Hichem\Desktop\CezarCaisse_v.0.5\CezarCaisse_v.0.6\Ecom\bin\Debug\MahApps.Metro.dll
+C:\Users\Hichem\Desktop\CezarCaisse_v.0.5\CezarCaisse_v.0.6\Ecom\bin\Debug\MaterialDesignColors.dll
+C:\Users\Hichem\Desktop\CezarCaisse_v.0.5\CezarCaisse_v.0.6\Ecom\bin\Debug\MaterialDesignThemes.MahApps.dll
+C:\Users\Hichem\Desktop\CezarCaisse_v.0.5\CezarCaisse_v.0.6\Ecom\bin\Debug\MaterialDesignThemes.Wpf.dll
+C:\Users\Hichem\Desktop\CezarCaisse_v.0.5\CezarCaisse_v.0.6\Ecom\bin\Debug\System.Windows.Interactivity.dll
+C:\Users\Hichem\Desktop\CezarCaisse_v.0.5\CezarCaisse_v.0.6\Ecom\bin\Debug\Dragablz.pdb
+C:\Users\Hichem\Desktop\CezarCaisse_v.0.5\CezarCaisse_v.0.6\Ecom\bin\Debug\Dragablz.xml
+C:\Users\Hichem\Desktop\CezarCaisse_v.0.5\CezarCaisse_v.0.6\Ecom\bin\Debug\EntityFramework.xml
+C:\Users\Hichem\Desktop\CezarCaisse_v.0.5\CezarCaisse_v.0.6\Ecom\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Hichem\Desktop\CezarCaisse_v.0.5\CezarCaisse_v.0.6\Ecom\bin\Debug\itextsharp.xml
+C:\Users\Hichem\Desktop\CezarCaisse_v.0.5\CezarCaisse_v.0.6\Ecom\bin\Debug\MahApps.Metro.pdb
+C:\Users\Hichem\Desktop\CezarCaisse_v.0.5\CezarCaisse_v.0.6\Ecom\bin\Debug\MahApps.Metro.xml
+C:\Users\Hichem\Desktop\CezarCaisse_v.0.5\CezarCaisse_v.0.6\Ecom\bin\Debug\MaterialDesignColors.pdb
+C:\Users\Hichem\Desktop\CezarCaisse_v.0.5\CezarCaisse_v.0.6\Ecom\bin\Debug\MaterialDesignThemes.Wpf.pdb
+C:\Users\Hichem\Desktop\CezarCaisse_v.0.5\CezarCaisse_v.0.6\Ecom\bin\Debug\MaterialDesignThemes.Wpf.xml
+C:\Users\Hichem\Desktop\CezarCaisse_v.0.5\CezarCaisse_v.0.6\Ecom\bin\Debug\fr\EntityFramework.resources.dll
+C:\Users\Hichem\Desktop\CezarCaisse_v.0.5\CezarCaisse_v.0.6\Ecom\bin\Debug\fr\EntityFramework.SqlServer.resources.dll
+C:\Users\Hichem\Desktop\CezarCaisse_v.0.5\CezarCaisse_v.0.6\Ecom\obj\Debug\Ecom.csprojResolveAssemblyReference.cache
+C:\Users\Hichem\Desktop\CezarCaisse_v.0.5\CezarCaisse_v.0.6\Ecom\obj\Debug\MainWindow.g.cs
+C:\Users\Hichem\Desktop\CezarCaisse_v.0.5\CezarCaisse_v.0.6\Ecom\obj\Debug\View\Caisse.g.cs
+C:\Users\Hichem\Desktop\CezarCaisse_v.0.5\CezarCaisse_v.0.6\Ecom\obj\Debug\View\Cashing.g.cs
+C:\Users\Hichem\Desktop\CezarCaisse_v.0.5\CezarCaisse_v.0.6\Ecom\obj\Debug\View\Configuration.g.cs
+C:\Users\Hichem\Desktop\CezarCaisse_v.0.5\CezarCaisse_v.0.6\Ecom\obj\Debug\View\CUCat.g.cs
+C:\Users\Hichem\Desktop\CezarCaisse_v.0.5\CezarCaisse_v.0.6\Ecom\obj\Debug\View\CUItem.g.cs
+C:\Users\Hichem\Desktop\CezarCaisse_v.0.5\CezarCaisse_v.0.6\Ecom\obj\Debug\View\IngredientCategoryList.g.cs
+C:\Users\Hichem\Desktop\CezarCaisse_v.0.5\CezarCaisse_v.0.6\Ecom\obj\Debug\View\ItemOption.g.cs
+C:\Users\Hichem\Desktop\CezarCaisse_v.0.5\CezarCaisse_v.0.6\Ecom\obj\Debug\View\Management.g.cs
+C:\Users\Hichem\Desktop\CezarCaisse_v.0.5\CezarCaisse_v.0.6\Ecom\obj\Debug\View\Message.g.cs
+C:\Users\Hichem\Desktop\CezarCaisse_v.0.5\CezarCaisse_v.0.6\Ecom\obj\Debug\View\OrderSend.g.cs
+C:\Users\Hichem\Desktop\CezarCaisse_v.0.5\CezarCaisse_v.0.6\Ecom\obj\Debug\View\Commandes.g.cs
+C:\Users\Hichem\Desktop\CezarCaisse_v.0.5\CezarCaisse_v.0.6\Ecom\obj\Debug\View\Settings.g.cs
+C:\Users\Hichem\Desktop\CezarCaisse_v.0.5\CezarCaisse_v.0.6\Ecom\obj\Debug\App.g.cs
+C:\Users\Hichem\Desktop\CezarCaisse_v.0.5\CezarCaisse_v.0.6\Ecom\obj\Debug\Ecom_MarkupCompile.cache
+C:\Users\Hichem\Desktop\CezarCaisse_v.0.5\CezarCaisse_v.0.6\Ecom\obj\Debug\Ecom_MarkupCompile.lref
+C:\Users\Hichem\Desktop\CezarCaisse_v.0.5\CezarCaisse_v.0.6\Ecom\obj\Debug\App.baml
+C:\Users\Hichem\Desktop\CezarCaisse_v.0.5\CezarCaisse_v.0.6\Ecom\obj\Debug\MainWindow.baml
+C:\Users\Hichem\Desktop\CezarCaisse_v.0.5\CezarCaisse_v.0.6\Ecom\obj\Debug\View\Caisse.baml
+C:\Users\Hichem\Desktop\CezarCaisse_v.0.5\CezarCaisse_v.0.6\Ecom\obj\Debug\View\Cashing.baml
+C:\Users\Hichem\Desktop\CezarCaisse_v.0.5\CezarCaisse_v.0.6\Ecom\obj\Debug\View\Configuration.baml
+C:\Users\Hichem\Desktop\CezarCaisse_v.0.5\CezarCaisse_v.0.6\Ecom\obj\Debug\View\CUCat.baml
+C:\Users\Hichem\Desktop\CezarCaisse_v.0.5\CezarCaisse_v.0.6\Ecom\obj\Debug\View\CUItem.baml
+C:\Users\Hichem\Desktop\CezarCaisse_v.0.5\CezarCaisse_v.0.6\Ecom\obj\Debug\View\IngredientCategoryList.baml
+C:\Users\Hichem\Desktop\CezarCaisse_v.0.5\CezarCaisse_v.0.6\Ecom\obj\Debug\View\ItemOption.baml
+C:\Users\Hichem\Desktop\CezarCaisse_v.0.5\CezarCaisse_v.0.6\Ecom\obj\Debug\View\Management.baml
+C:\Users\Hichem\Desktop\CezarCaisse_v.0.5\CezarCaisse_v.0.6\Ecom\obj\Debug\View\Message.baml
+C:\Users\Hichem\Desktop\CezarCaisse_v.0.5\CezarCaisse_v.0.6\Ecom\obj\Debug\View\OrderSend.baml
+C:\Users\Hichem\Desktop\CezarCaisse_v.0.5\CezarCaisse_v.0.6\Ecom\obj\Debug\View\Commandes.baml
+C:\Users\Hichem\Desktop\CezarCaisse_v.0.5\CezarCaisse_v.0.6\Ecom\obj\Debug\View\Settings.baml
+C:\Users\Hichem\Desktop\CezarCaisse_v.0.5\CezarCaisse_v.0.6\Ecom\obj\Debug\Ecom.g.resources
+C:\Users\Hichem\Desktop\CezarCaisse_v.0.5\CezarCaisse_v.0.6\Ecom\obj\Debug\Ecom.Properties.Resources.resources
+C:\Users\Hichem\Desktop\CezarCaisse_v.0.5\CezarCaisse_v.0.6\Ecom\obj\Debug\Ecom.csproj.GenerateResource.Cache
+C:\Users\Hichem\Desktop\CezarCaisse_v.0.5\CezarCaisse_v.0.6\Ecom\obj\Debug\Ecom.exe.manifest
+C:\Users\Hichem\Desktop\CezarCaisse_v.0.5\CezarCaisse_v.0.6\Ecom\obj\Debug\Ecom.application
+C:\Users\Hichem\Desktop\CezarCaisse_v.0.5\CezarCaisse_v.0.6\Ecom\obj\Debug\View\CUMenu.g.cs
+C:\Users\Hichem\Desktop\CezarCaisse_v.0.5\CezarCaisse_v.0.6\Ecom\obj\Debug\View\CUMenu.baml
+C:\Users\Wave\Desktop\CEZAR_PROJECT_MASTER\CezarCaisse_v.0.7\Ecom\bin\Debug\Ecom.exe.config
+C:\Users\Wave\Desktop\CEZAR_PROJECT_MASTER\CezarCaisse_v.0.7\Ecom\obj\Debug\Ecom.exe
+C:\Users\Wave\Desktop\CEZAR_PROJECT_MASTER\CezarCaisse_v.0.7\Ecom\obj\Debug\Ecom.pdb
+C:\Users\Wave\Desktop\CEZAR_PROJECT_MASTER\CezarCaisse_v.0.7\Ecom\bin\Debug\Ecom.exe.manifest
+C:\Users\Wave\Desktop\CEZAR_PROJECT_MASTER\CezarCaisse_v.0.7\Ecom\bin\Debug\Ecom.application
+C:\Users\Wave\Desktop\CEZAR_PROJECT_MASTER\CezarCaisse_v.0.7\Ecom\bin\Debug\Ecom.exe
+C:\Users\Wave\Desktop\CEZAR_PROJECT_MASTER\CezarCaisse_v.0.7\Ecom\bin\Debug\Ecom.pdb
+C:\Users\Wave\Desktop\CEZAR_PROJECT_MASTER\CezarCaisse_v.0.7\Ecom\bin\Debug\Dragablz.dll
+C:\Users\Wave\Desktop\CEZAR_PROJECT_MASTER\CezarCaisse_v.0.7\Ecom\bin\Debug\EntityFramework.dll
+C:\Users\Wave\Desktop\CEZAR_PROJECT_MASTER\CezarCaisse_v.0.7\Ecom\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Wave\Desktop\CEZAR_PROJECT_MASTER\CezarCaisse_v.0.7\Ecom\bin\Debug\itextsharp.dll
+C:\Users\Wave\Desktop\CEZAR_PROJECT_MASTER\CezarCaisse_v.0.7\Ecom\bin\Debug\itextsharp.xmlworker.dll
+C:\Users\Wave\Desktop\CEZAR_PROJECT_MASTER\CezarCaisse_v.0.7\Ecom\bin\Debug\MahApps.Metro.dll
+C:\Users\Wave\Desktop\CEZAR_PROJECT_MASTER\CezarCaisse_v.0.7\Ecom\bin\Debug\MaterialDesignColors.dll
+C:\Users\Wave\Desktop\CEZAR_PROJECT_MASTER\CezarCaisse_v.0.7\Ecom\bin\Debug\MaterialDesignThemes.MahApps.dll
+C:\Users\Wave\Desktop\CEZAR_PROJECT_MASTER\CezarCaisse_v.0.7\Ecom\bin\Debug\MaterialDesignThemes.Wpf.dll
+C:\Users\Wave\Desktop\CEZAR_PROJECT_MASTER\CezarCaisse_v.0.7\Ecom\bin\Debug\System.Windows.Interactivity.dll
+C:\Users\Wave\Desktop\CEZAR_PROJECT_MASTER\CezarCaisse_v.0.7\Ecom\bin\Debug\Dragablz.pdb
+C:\Users\Wave\Desktop\CEZAR_PROJECT_MASTER\CezarCaisse_v.0.7\Ecom\bin\Debug\Dragablz.xml
+C:\Users\Wave\Desktop\CEZAR_PROJECT_MASTER\CezarCaisse_v.0.7\Ecom\bin\Debug\EntityFramework.xml
+C:\Users\Wave\Desktop\CEZAR_PROJECT_MASTER\CezarCaisse_v.0.7\Ecom\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Wave\Desktop\CEZAR_PROJECT_MASTER\CezarCaisse_v.0.7\Ecom\bin\Debug\itextsharp.xml
+C:\Users\Wave\Desktop\CEZAR_PROJECT_MASTER\CezarCaisse_v.0.7\Ecom\bin\Debug\MahApps.Metro.pdb
+C:\Users\Wave\Desktop\CEZAR_PROJECT_MASTER\CezarCaisse_v.0.7\Ecom\bin\Debug\MahApps.Metro.xml
+C:\Users\Wave\Desktop\CEZAR_PROJECT_MASTER\CezarCaisse_v.0.7\Ecom\bin\Debug\MaterialDesignColors.pdb
+C:\Users\Wave\Desktop\CEZAR_PROJECT_MASTER\CezarCaisse_v.0.7\Ecom\bin\Debug\MaterialDesignThemes.Wpf.pdb
+C:\Users\Wave\Desktop\CEZAR_PROJECT_MASTER\CezarCaisse_v.0.7\Ecom\bin\Debug\MaterialDesignThemes.Wpf.xml
+C:\Users\Wave\Desktop\CEZAR_PROJECT_MASTER\CezarCaisse_v.0.7\Ecom\bin\Debug\fr\EntityFramework.resources.dll
+C:\Users\Wave\Desktop\CEZAR_PROJECT_MASTER\CezarCaisse_v.0.7\Ecom\bin\Debug\fr\EntityFramework.SqlServer.resources.dll
+C:\Users\Wave\Desktop\CEZAR_PROJECT_MASTER\CezarCaisse_v.0.7\Ecom\obj\Debug\MainWindow.g.cs
+C:\Users\Wave\Desktop\CEZAR_PROJECT_MASTER\CezarCaisse_v.0.7\Ecom\obj\Debug\View\Caisse.g.cs
+C:\Users\Wave\Desktop\CEZAR_PROJECT_MASTER\CezarCaisse_v.0.7\Ecom\obj\Debug\View\Cashing.g.cs
+C:\Users\Wave\Desktop\CEZAR_PROJECT_MASTER\CezarCaisse_v.0.7\Ecom\obj\Debug\View\Configuration.g.cs
+C:\Users\Wave\Desktop\CEZAR_PROJECT_MASTER\CezarCaisse_v.0.7\Ecom\obj\Debug\View\CUCat.g.cs
+C:\Users\Wave\Desktop\CEZAR_PROJECT_MASTER\CezarCaisse_v.0.7\Ecom\obj\Debug\View\CUItem.g.cs
+C:\Users\Wave\Desktop\CEZAR_PROJECT_MASTER\CezarCaisse_v.0.7\Ecom\obj\Debug\View\CUMenu.g.cs
+C:\Users\Wave\Desktop\CEZAR_PROJECT_MASTER\CezarCaisse_v.0.7\Ecom\obj\Debug\View\IngredientCategoryList.g.cs
+C:\Users\Wave\Desktop\CEZAR_PROJECT_MASTER\CezarCaisse_v.0.7\Ecom\obj\Debug\View\ItemOption.g.cs
+C:\Users\Wave\Desktop\CEZAR_PROJECT_MASTER\CezarCaisse_v.0.7\Ecom\obj\Debug\View\Management.g.cs
+C:\Users\Wave\Desktop\CEZAR_PROJECT_MASTER\CezarCaisse_v.0.7\Ecom\obj\Debug\View\Message.g.cs
+C:\Users\Wave\Desktop\CEZAR_PROJECT_MASTER\CezarCaisse_v.0.7\Ecom\obj\Debug\View\OrderSend.g.cs
+C:\Users\Wave\Desktop\CEZAR_PROJECT_MASTER\CezarCaisse_v.0.7\Ecom\obj\Debug\View\Commandes.g.cs
+C:\Users\Wave\Desktop\CEZAR_PROJECT_MASTER\CezarCaisse_v.0.7\Ecom\obj\Debug\View\Settings.g.cs
+C:\Users\Wave\Desktop\CEZAR_PROJECT_MASTER\CezarCaisse_v.0.7\Ecom\obj\Debug\App.g.cs
+C:\Users\Wave\Desktop\CEZAR_PROJECT_MASTER\CezarCaisse_v.0.7\Ecom\obj\Debug\Ecom_MarkupCompile.cache
+C:\Users\Wave\Desktop\CEZAR_PROJECT_MASTER\CezarCaisse_v.0.7\Ecom\obj\Debug\Ecom_MarkupCompile.lref
+C:\Users\Wave\Desktop\CEZAR_PROJECT_MASTER\CezarCaisse_v.0.7\Ecom\obj\Debug\App.baml
+C:\Users\Wave\Desktop\CEZAR_PROJECT_MASTER\CezarCaisse_v.0.7\Ecom\obj\Debug\MainWindow.baml
+C:\Users\Wave\Desktop\CEZAR_PROJECT_MASTER\CezarCaisse_v.0.7\Ecom\obj\Debug\View\Caisse.baml
+C:\Users\Wave\Desktop\CEZAR_PROJECT_MASTER\CezarCaisse_v.0.7\Ecom\obj\Debug\View\Cashing.baml
+C:\Users\Wave\Desktop\CEZAR_PROJECT_MASTER\CezarCaisse_v.0.7\Ecom\obj\Debug\View\Configuration.baml
+C:\Users\Wave\Desktop\CEZAR_PROJECT_MASTER\CezarCaisse_v.0.7\Ecom\obj\Debug\View\CUCat.baml
+C:\Users\Wave\Desktop\CEZAR_PROJECT_MASTER\CezarCaisse_v.0.7\Ecom\obj\Debug\View\CUItem.baml
+C:\Users\Wave\Desktop\CEZAR_PROJECT_MASTER\CezarCaisse_v.0.7\Ecom\obj\Debug\View\CUMenu.baml
+C:\Users\Wave\Desktop\CEZAR_PROJECT_MASTER\CezarCaisse_v.0.7\Ecom\obj\Debug\View\IngredientCategoryList.baml
+C:\Users\Wave\Desktop\CEZAR_PROJECT_MASTER\CezarCaisse_v.0.7\Ecom\obj\Debug\View\ItemOption.baml
+C:\Users\Wave\Desktop\CEZAR_PROJECT_MASTER\CezarCaisse_v.0.7\Ecom\obj\Debug\View\Management.baml
+C:\Users\Wave\Desktop\CEZAR_PROJECT_MASTER\CezarCaisse_v.0.7\Ecom\obj\Debug\View\Message.baml
+C:\Users\Wave\Desktop\CEZAR_PROJECT_MASTER\CezarCaisse_v.0.7\Ecom\obj\Debug\View\OrderSend.baml
+C:\Users\Wave\Desktop\CEZAR_PROJECT_MASTER\CezarCaisse_v.0.7\Ecom\obj\Debug\View\Commandes.baml
+C:\Users\Wave\Desktop\CEZAR_PROJECT_MASTER\CezarCaisse_v.0.7\Ecom\obj\Debug\View\Settings.baml
+C:\Users\Wave\Desktop\CEZAR_PROJECT_MASTER\CezarCaisse_v.0.7\Ecom\obj\Debug\Ecom.g.resources
+C:\Users\Wave\Desktop\CEZAR_PROJECT_MASTER\CezarCaisse_v.0.7\Ecom\obj\Debug\Ecom.Properties.Resources.resources
+C:\Users\Wave\Desktop\CEZAR_PROJECT_MASTER\CezarCaisse_v.0.7\Ecom\obj\Debug\Ecom.csproj.GenerateResource.Cache
+C:\Users\Wave\Desktop\CEZAR_PROJECT_MASTER\CezarCaisse_v.0.7\Ecom\obj\Debug\Ecom.exe.manifest
+C:\Users\Wave\Desktop\CEZAR_PROJECT_MASTER\CezarCaisse_v.0.7\Ecom\obj\Debug\Ecom.application
+C:\Users\Wave\Desktop\CEZAR_PROJECT_MASTER\CezarCaisse_v.0.7\Ecom\obj\Debug\Ecom.csprojResolveAssemblyReference.cache
+C:\Users\Hichem\Desktop\CezarCaisse_v.0.7-20180423T155443Z-001\CezarCaisse_v.0.7\Ecom\bin\Debug\Ecom.exe.config
+C:\Users\Hichem\Desktop\CezarCaisse_v.0.7-20180423T155443Z-001\CezarCaisse_v.0.7\Ecom\obj\Debug\Ecom.exe
+C:\Users\Hichem\Desktop\CezarCaisse_v.0.7-20180423T155443Z-001\CezarCaisse_v.0.7\Ecom\obj\Debug\Ecom.pdb
+C:\Users\Hichem\Desktop\CezarCaisse_v.0.7-20180423T155443Z-001\CezarCaisse_v.0.7\Ecom\bin\Debug\Ecom.exe.manifest
+C:\Users\Hichem\Desktop\CezarCaisse_v.0.7-20180423T155443Z-001\CezarCaisse_v.0.7\Ecom\bin\Debug\Ecom.application
+C:\Users\Hichem\Desktop\CezarCaisse_v.0.7-20180423T155443Z-001\CezarCaisse_v.0.7\Ecom\bin\Debug\Ecom.exe
+C:\Users\Hichem\Desktop\CezarCaisse_v.0.7-20180423T155443Z-001\CezarCaisse_v.0.7\Ecom\bin\Debug\Ecom.pdb
+C:\Users\Hichem\Desktop\CezarCaisse_v.0.7-20180423T155443Z-001\CezarCaisse_v.0.7\Ecom\bin\Debug\Dragablz.dll
+C:\Users\Hichem\Desktop\CezarCaisse_v.0.7-20180423T155443Z-001\CezarCaisse_v.0.7\Ecom\bin\Debug\EntityFramework.dll
+C:\Users\Hichem\Desktop\CezarCaisse_v.0.7-20180423T155443Z-001\CezarCaisse_v.0.7\Ecom\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Hichem\Desktop\CezarCaisse_v.0.7-20180423T155443Z-001\CezarCaisse_v.0.7\Ecom\bin\Debug\itextsharp.dll
+C:\Users\Hichem\Desktop\CezarCaisse_v.0.7-20180423T155443Z-001\CezarCaisse_v.0.7\Ecom\bin\Debug\itextsharp.xmlworker.dll
+C:\Users\Hichem\Desktop\CezarCaisse_v.0.7-20180423T155443Z-001\CezarCaisse_v.0.7\Ecom\bin\Debug\MahApps.Metro.dll
+C:\Users\Hichem\Desktop\CezarCaisse_v.0.7-20180423T155443Z-001\CezarCaisse_v.0.7\Ecom\bin\Debug\MaterialDesignColors.dll
+C:\Users\Hichem\Desktop\CezarCaisse_v.0.7-20180423T155443Z-001\CezarCaisse_v.0.7\Ecom\bin\Debug\MaterialDesignThemes.MahApps.dll
+C:\Users\Hichem\Desktop\CezarCaisse_v.0.7-20180423T155443Z-001\CezarCaisse_v.0.7\Ecom\bin\Debug\MaterialDesignThemes.Wpf.dll
+C:\Users\Hichem\Desktop\CezarCaisse_v.0.7-20180423T155443Z-001\CezarCaisse_v.0.7\Ecom\bin\Debug\System.Windows.Interactivity.dll
+C:\Users\Hichem\Desktop\CezarCaisse_v.0.7-20180423T155443Z-001\CezarCaisse_v.0.7\Ecom\bin\Debug\Dragablz.pdb
+C:\Users\Hichem\Desktop\CezarCaisse_v.0.7-20180423T155443Z-001\CezarCaisse_v.0.7\Ecom\bin\Debug\Dragablz.xml
+C:\Users\Hichem\Desktop\CezarCaisse_v.0.7-20180423T155443Z-001\CezarCaisse_v.0.7\Ecom\bin\Debug\EntityFramework.xml
+C:\Users\Hichem\Desktop\CezarCaisse_v.0.7-20180423T155443Z-001\CezarCaisse_v.0.7\Ecom\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Hichem\Desktop\CezarCaisse_v.0.7-20180423T155443Z-001\CezarCaisse_v.0.7\Ecom\bin\Debug\itextsharp.xml
+C:\Users\Hichem\Desktop\CezarCaisse_v.0.7-20180423T155443Z-001\CezarCaisse_v.0.7\Ecom\bin\Debug\MahApps.Metro.pdb
+C:\Users\Hichem\Desktop\CezarCaisse_v.0.7-20180423T155443Z-001\CezarCaisse_v.0.7\Ecom\bin\Debug\MahApps.Metro.xml
+C:\Users\Hichem\Desktop\CezarCaisse_v.0.7-20180423T155443Z-001\CezarCaisse_v.0.7\Ecom\bin\Debug\MaterialDesignColors.pdb
+C:\Users\Hichem\Desktop\CezarCaisse_v.0.7-20180423T155443Z-001\CezarCaisse_v.0.7\Ecom\bin\Debug\MaterialDesignThemes.Wpf.pdb
+C:\Users\Hichem\Desktop\CezarCaisse_v.0.7-20180423T155443Z-001\CezarCaisse_v.0.7\Ecom\bin\Debug\MaterialDesignThemes.Wpf.xml
+C:\Users\Hichem\Desktop\CezarCaisse_v.0.7-20180423T155443Z-001\CezarCaisse_v.0.7\Ecom\bin\Debug\fr\EntityFramework.resources.dll
+C:\Users\Hichem\Desktop\CezarCaisse_v.0.7-20180423T155443Z-001\CezarCaisse_v.0.7\Ecom\bin\Debug\fr\EntityFramework.SqlServer.resources.dll
+C:\Users\Hichem\Desktop\CezarCaisse_v.0.7-20180423T155443Z-001\CezarCaisse_v.0.7\Ecom\obj\Debug\Ecom.csprojResolveAssemblyReference.cache
+C:\Users\Hichem\Desktop\CezarCaisse_v.0.7-20180423T155443Z-001\CezarCaisse_v.0.7\Ecom\obj\Debug\MainWindow.g.cs
+C:\Users\Hichem\Desktop\CezarCaisse_v.0.7-20180423T155443Z-001\CezarCaisse_v.0.7\Ecom\obj\Debug\View\Caisse.g.cs
+C:\Users\Hichem\Desktop\CezarCaisse_v.0.7-20180423T155443Z-001\CezarCaisse_v.0.7\Ecom\obj\Debug\View\Cashing.g.cs
+C:\Users\Hichem\Desktop\CezarCaisse_v.0.7-20180423T155443Z-001\CezarCaisse_v.0.7\Ecom\obj\Debug\View\Configuration.g.cs
+C:\Users\Hichem\Desktop\CezarCaisse_v.0.7-20180423T155443Z-001\CezarCaisse_v.0.7\Ecom\obj\Debug\View\CUCat.g.cs
+C:\Users\Hichem\Desktop\CezarCaisse_v.0.7-20180423T155443Z-001\CezarCaisse_v.0.7\Ecom\obj\Debug\View\CUItem.g.cs
+C:\Users\Hichem\Desktop\CezarCaisse_v.0.7-20180423T155443Z-001\CezarCaisse_v.0.7\Ecom\obj\Debug\View\CUMenu.g.cs
+C:\Users\Hichem\Desktop\CezarCaisse_v.0.7-20180423T155443Z-001\CezarCaisse_v.0.7\Ecom\obj\Debug\View\IngredientCategoryList.g.cs
+C:\Users\Hichem\Desktop\CezarCaisse_v.0.7-20180423T155443Z-001\CezarCaisse_v.0.7\Ecom\obj\Debug\View\ItemOption.g.cs
+C:\Users\Hichem\Desktop\CezarCaisse_v.0.7-20180423T155443Z-001\CezarCaisse_v.0.7\Ecom\obj\Debug\View\Management.g.cs
+C:\Users\Hichem\Desktop\CezarCaisse_v.0.7-20180423T155443Z-001\CezarCaisse_v.0.7\Ecom\obj\Debug\View\Message.g.cs
+C:\Users\Hichem\Desktop\CezarCaisse_v.0.7-20180423T155443Z-001\CezarCaisse_v.0.7\Ecom\obj\Debug\View\OrderSend.g.cs
+C:\Users\Hichem\Desktop\CezarCaisse_v.0.7-20180423T155443Z-001\CezarCaisse_v.0.7\Ecom\obj\Debug\View\Commandes.g.cs
+C:\Users\Hichem\Desktop\CezarCaisse_v.0.7-20180423T155443Z-001\CezarCaisse_v.0.7\Ecom\obj\Debug\View\Settings.g.cs
+C:\Users\Hichem\Desktop\CezarCaisse_v.0.7-20180423T155443Z-001\CezarCaisse_v.0.7\Ecom\obj\Debug\App.g.cs
+C:\Users\Hichem\Desktop\CezarCaisse_v.0.7-20180423T155443Z-001\CezarCaisse_v.0.7\Ecom\obj\Debug\Ecom_MarkupCompile.cache
+C:\Users\Hichem\Desktop\CezarCaisse_v.0.7-20180423T155443Z-001\CezarCaisse_v.0.7\Ecom\obj\Debug\Ecom_MarkupCompile.lref
+C:\Users\Hichem\Desktop\CezarCaisse_v.0.7-20180423T155443Z-001\CezarCaisse_v.0.7\Ecom\obj\Debug\App.baml
+C:\Users\Hichem\Desktop\CezarCaisse_v.0.7-20180423T155443Z-001\CezarCaisse_v.0.7\Ecom\obj\Debug\MainWindow.baml
+C:\Users\Hichem\Desktop\CezarCaisse_v.0.7-20180423T155443Z-001\CezarCaisse_v.0.7\Ecom\obj\Debug\View\Caisse.baml
+C:\Users\Hichem\Desktop\CezarCaisse_v.0.7-20180423T155443Z-001\CezarCaisse_v.0.7\Ecom\obj\Debug\View\Cashing.baml
+C:\Users\Hichem\Desktop\CezarCaisse_v.0.7-20180423T155443Z-001\CezarCaisse_v.0.7\Ecom\obj\Debug\View\Configuration.baml
+C:\Users\Hichem\Desktop\CezarCaisse_v.0.7-20180423T155443Z-001\CezarCaisse_v.0.7\Ecom\obj\Debug\View\CUCat.baml
+C:\Users\Hichem\Desktop\CezarCaisse_v.0.7-20180423T155443Z-001\CezarCaisse_v.0.7\Ecom\obj\Debug\View\CUItem.baml
+C:\Users\Hichem\Desktop\CezarCaisse_v.0.7-20180423T155443Z-001\CezarCaisse_v.0.7\Ecom\obj\Debug\View\CUMenu.baml
+C:\Users\Hichem\Desktop\CezarCaisse_v.0.7-20180423T155443Z-001\CezarCaisse_v.0.7\Ecom\obj\Debug\View\IngredientCategoryList.baml
+C:\Users\Hichem\Desktop\CezarCaisse_v.0.7-20180423T155443Z-001\CezarCaisse_v.0.7\Ecom\obj\Debug\View\ItemOption.baml
+C:\Users\Hichem\Desktop\CezarCaisse_v.0.7-20180423T155443Z-001\CezarCaisse_v.0.7\Ecom\obj\Debug\View\Management.baml
+C:\Users\Hichem\Desktop\CezarCaisse_v.0.7-20180423T155443Z-001\CezarCaisse_v.0.7\Ecom\obj\Debug\View\Message.baml
+C:\Users\Hichem\Desktop\CezarCaisse_v.0.7-20180423T155443Z-001\CezarCaisse_v.0.7\Ecom\obj\Debug\View\OrderSend.baml
+C:\Users\Hichem\Desktop\CezarCaisse_v.0.7-20180423T155443Z-001\CezarCaisse_v.0.7\Ecom\obj\Debug\View\Commandes.baml
+C:\Users\Hichem\Desktop\CezarCaisse_v.0.7-20180423T155443Z-001\CezarCaisse_v.0.7\Ecom\obj\Debug\View\Settings.baml
+C:\Users\Hichem\Desktop\CezarCaisse_v.0.7-20180423T155443Z-001\CezarCaisse_v.0.7\Ecom\obj\Debug\Ecom.g.resources
+C:\Users\Hichem\Desktop\CezarCaisse_v.0.7-20180423T155443Z-001\CezarCaisse_v.0.7\Ecom\obj\Debug\Ecom.Properties.Resources.resources
+C:\Users\Hichem\Desktop\CezarCaisse_v.0.7-20180423T155443Z-001\CezarCaisse_v.0.7\Ecom\obj\Debug\Ecom.csproj.GenerateResource.Cache
+C:\Users\Hichem\Desktop\CezarCaisse_v.0.7-20180423T155443Z-001\CezarCaisse_v.0.7\Ecom\obj\Debug\Ecom.exe.manifest
+C:\Users\Hichem\Desktop\CezarCaisse_v.0.7-20180423T155443Z-001\CezarCaisse_v.0.7\Ecom\obj\Debug\Ecom.application
+C:\Users\Wave\Desktop\CEZAR_PROJECT_MASTER\CezarCaisse_v.0.7\Ecom\obj\Debug\View\AddMenuOption.g.cs
+C:\Users\Wave\Desktop\CEZAR_PROJECT_MASTER\CezarCaisse_v.0.7\Ecom\obj\Debug\View\AddMenuOption.baml
+C:\Users\Hichem\Desktop\CEZAR PROJECT\CezarCaisse_v.0.8\CezarCaisse_v.0.8\Ecom\bin\Debug\Ecom.exe.config
+C:\Users\Hichem\Desktop\CEZAR PROJECT\CezarCaisse_v.0.8\CezarCaisse_v.0.8\Ecom\obj\Debug\Ecom.exe
+C:\Users\Hichem\Desktop\CEZAR PROJECT\CezarCaisse_v.0.8\CezarCaisse_v.0.8\Ecom\obj\Debug\Ecom.pdb
+C:\Users\Hichem\Desktop\CEZAR PROJECT\CezarCaisse_v.0.8\CezarCaisse_v.0.8\Ecom\bin\Debug\Ecom.exe.manifest
+C:\Users\Hichem\Desktop\CEZAR PROJECT\CezarCaisse_v.0.8\CezarCaisse_v.0.8\Ecom\bin\Debug\Ecom.application
+C:\Users\Hichem\Desktop\CEZAR PROJECT\CezarCaisse_v.0.8\CezarCaisse_v.0.8\Ecom\bin\Debug\Ecom.exe
+C:\Users\Hichem\Desktop\CEZAR PROJECT\CezarCaisse_v.0.8\CezarCaisse_v.0.8\Ecom\bin\Debug\Ecom.pdb
+C:\Users\Hichem\Desktop\CEZAR PROJECT\CezarCaisse_v.0.8\CezarCaisse_v.0.8\Ecom\bin\Debug\Dragablz.dll
+C:\Users\Hichem\Desktop\CEZAR PROJECT\CezarCaisse_v.0.8\CezarCaisse_v.0.8\Ecom\bin\Debug\EntityFramework.dll
+C:\Users\Hichem\Desktop\CEZAR PROJECT\CezarCaisse_v.0.8\CezarCaisse_v.0.8\Ecom\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Hichem\Desktop\CEZAR PROJECT\CezarCaisse_v.0.8\CezarCaisse_v.0.8\Ecom\bin\Debug\itextsharp.dll
+C:\Users\Hichem\Desktop\CEZAR PROJECT\CezarCaisse_v.0.8\CezarCaisse_v.0.8\Ecom\bin\Debug\itextsharp.xmlworker.dll
+C:\Users\Hichem\Desktop\CEZAR PROJECT\CezarCaisse_v.0.8\CezarCaisse_v.0.8\Ecom\bin\Debug\MahApps.Metro.dll
+C:\Users\Hichem\Desktop\CEZAR PROJECT\CezarCaisse_v.0.8\CezarCaisse_v.0.8\Ecom\bin\Debug\MaterialDesignColors.dll
+C:\Users\Hichem\Desktop\CEZAR PROJECT\CezarCaisse_v.0.8\CezarCaisse_v.0.8\Ecom\bin\Debug\MaterialDesignThemes.MahApps.dll
+C:\Users\Hichem\Desktop\CEZAR PROJECT\CezarCaisse_v.0.8\CezarCaisse_v.0.8\Ecom\bin\Debug\MaterialDesignThemes.Wpf.dll
+C:\Users\Hichem\Desktop\CEZAR PROJECT\CezarCaisse_v.0.8\CezarCaisse_v.0.8\Ecom\bin\Debug\System.Windows.Interactivity.dll
+C:\Users\Hichem\Desktop\CEZAR PROJECT\CezarCaisse_v.0.8\CezarCaisse_v.0.8\Ecom\bin\Debug\Dragablz.pdb
+C:\Users\Hichem\Desktop\CEZAR PROJECT\CezarCaisse_v.0.8\CezarCaisse_v.0.8\Ecom\bin\Debug\Dragablz.xml
+C:\Users\Hichem\Desktop\CEZAR PROJECT\CezarCaisse_v.0.8\CezarCaisse_v.0.8\Ecom\bin\Debug\EntityFramework.xml
+C:\Users\Hichem\Desktop\CEZAR PROJECT\CezarCaisse_v.0.8\CezarCaisse_v.0.8\Ecom\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Hichem\Desktop\CEZAR PROJECT\CezarCaisse_v.0.8\CezarCaisse_v.0.8\Ecom\bin\Debug\itextsharp.xml
+C:\Users\Hichem\Desktop\CEZAR PROJECT\CezarCaisse_v.0.8\CezarCaisse_v.0.8\Ecom\bin\Debug\MahApps.Metro.pdb
+C:\Users\Hichem\Desktop\CEZAR PROJECT\CezarCaisse_v.0.8\CezarCaisse_v.0.8\Ecom\bin\Debug\MahApps.Metro.xml
+C:\Users\Hichem\Desktop\CEZAR PROJECT\CezarCaisse_v.0.8\CezarCaisse_v.0.8\Ecom\bin\Debug\MaterialDesignColors.pdb
+C:\Users\Hichem\Desktop\CEZAR PROJECT\CezarCaisse_v.0.8\CezarCaisse_v.0.8\Ecom\bin\Debug\MaterialDesignThemes.Wpf.pdb
+C:\Users\Hichem\Desktop\CEZAR PROJECT\CezarCaisse_v.0.8\CezarCaisse_v.0.8\Ecom\bin\Debug\MaterialDesignThemes.Wpf.xml
+C:\Users\Hichem\Desktop\CEZAR PROJECT\CezarCaisse_v.0.8\CezarCaisse_v.0.8\Ecom\bin\Debug\fr\EntityFramework.resources.dll
+C:\Users\Hichem\Desktop\CEZAR PROJECT\CezarCaisse_v.0.8\CezarCaisse_v.0.8\Ecom\bin\Debug\fr\EntityFramework.SqlServer.resources.dll
+C:\Users\Hichem\Desktop\CEZAR PROJECT\CezarCaisse_v.0.8\CezarCaisse_v.0.8\Ecom\obj\Debug\Ecom.csprojResolveAssemblyReference.cache
+C:\Users\Hichem\Desktop\CEZAR PROJECT\CezarCaisse_v.0.8\CezarCaisse_v.0.8\Ecom\obj\Debug\MainWindow.g.cs
+C:\Users\Hichem\Desktop\CEZAR PROJECT\CezarCaisse_v.0.8\CezarCaisse_v.0.8\Ecom\obj\Debug\View\AddMenuOption.g.cs
+C:\Users\Hichem\Desktop\CEZAR PROJECT\CezarCaisse_v.0.8\CezarCaisse_v.0.8\Ecom\obj\Debug\View\Caisse.g.cs
+C:\Users\Hichem\Desktop\CEZAR PROJECT\CezarCaisse_v.0.8\CezarCaisse_v.0.8\Ecom\obj\Debug\View\Cashing.g.cs
+C:\Users\Hichem\Desktop\CEZAR PROJECT\CezarCaisse_v.0.8\CezarCaisse_v.0.8\Ecom\obj\Debug\View\Configuration.g.cs
+C:\Users\Hichem\Desktop\CEZAR PROJECT\CezarCaisse_v.0.8\CezarCaisse_v.0.8\Ecom\obj\Debug\View\CUCat.g.cs
+C:\Users\Hichem\Desktop\CEZAR PROJECT\CezarCaisse_v.0.8\CezarCaisse_v.0.8\Ecom\obj\Debug\View\CUItem.g.cs
+C:\Users\Hichem\Desktop\CEZAR PROJECT\CezarCaisse_v.0.8\CezarCaisse_v.0.8\Ecom\obj\Debug\View\CUMenu.g.cs
+C:\Users\Hichem\Desktop\CEZAR PROJECT\CezarCaisse_v.0.8\CezarCaisse_v.0.8\Ecom\obj\Debug\View\IngredientCategoryList.g.cs
+C:\Users\Hichem\Desktop\CEZAR PROJECT\CezarCaisse_v.0.8\CezarCaisse_v.0.8\Ecom\obj\Debug\View\ItemOption.g.cs
+C:\Users\Hichem\Desktop\CEZAR PROJECT\CezarCaisse_v.0.8\CezarCaisse_v.0.8\Ecom\obj\Debug\View\Management.g.cs
+C:\Users\Hichem\Desktop\CEZAR PROJECT\CezarCaisse_v.0.8\CezarCaisse_v.0.8\Ecom\obj\Debug\View\Message.g.cs
+C:\Users\Hichem\Desktop\CEZAR PROJECT\CezarCaisse_v.0.8\CezarCaisse_v.0.8\Ecom\obj\Debug\View\OrderSend.g.cs
+C:\Users\Hichem\Desktop\CEZAR PROJECT\CezarCaisse_v.0.8\CezarCaisse_v.0.8\Ecom\obj\Debug\View\Commandes.g.cs
+C:\Users\Hichem\Desktop\CEZAR PROJECT\CezarCaisse_v.0.8\CezarCaisse_v.0.8\Ecom\obj\Debug\View\Settings.g.cs
+C:\Users\Hichem\Desktop\CEZAR PROJECT\CezarCaisse_v.0.8\CezarCaisse_v.0.8\Ecom\obj\Debug\App.g.cs
+C:\Users\Hichem\Desktop\CEZAR PROJECT\CezarCaisse_v.0.8\CezarCaisse_v.0.8\Ecom\obj\Debug\Ecom_MarkupCompile.cache
+C:\Users\Hichem\Desktop\CEZAR PROJECT\CezarCaisse_v.0.8\CezarCaisse_v.0.8\Ecom\obj\Debug\Ecom_MarkupCompile.lref
+C:\Users\Hichem\Desktop\CEZAR PROJECT\CezarCaisse_v.0.8\CezarCaisse_v.0.8\Ecom\obj\Debug\App.baml
+C:\Users\Hichem\Desktop\CEZAR PROJECT\CezarCaisse_v.0.8\CezarCaisse_v.0.8\Ecom\obj\Debug\MainWindow.baml
+C:\Users\Hichem\Desktop\CEZAR PROJECT\CezarCaisse_v.0.8\CezarCaisse_v.0.8\Ecom\obj\Debug\View\AddMenuOption.baml
+C:\Users\Hichem\Desktop\CEZAR PROJECT\CezarCaisse_v.0.8\CezarCaisse_v.0.8\Ecom\obj\Debug\View\Caisse.baml
+C:\Users\Hichem\Desktop\CEZAR PROJECT\CezarCaisse_v.0.8\CezarCaisse_v.0.8\Ecom\obj\Debug\View\Cashing.baml
+C:\Users\Hichem\Desktop\CEZAR PROJECT\CezarCaisse_v.0.8\CezarCaisse_v.0.8\Ecom\obj\Debug\View\Configuration.baml
+C:\Users\Hichem\Desktop\CEZAR PROJECT\CezarCaisse_v.0.8\CezarCaisse_v.0.8\Ecom\obj\Debug\View\CUCat.baml
+C:\Users\Hichem\Desktop\CEZAR PROJECT\CezarCaisse_v.0.8\CezarCaisse_v.0.8\Ecom\obj\Debug\View\CUItem.baml
+C:\Users\Hichem\Desktop\CEZAR PROJECT\CezarCaisse_v.0.8\CezarCaisse_v.0.8\Ecom\obj\Debug\View\CUMenu.baml
+C:\Users\Hichem\Desktop\CEZAR PROJECT\CezarCaisse_v.0.8\CezarCaisse_v.0.8\Ecom\obj\Debug\View\IngredientCategoryList.baml
+C:\Users\Hichem\Desktop\CEZAR PROJECT\CezarCaisse_v.0.8\CezarCaisse_v.0.8\Ecom\obj\Debug\View\ItemOption.baml
+C:\Users\Hichem\Desktop\CEZAR PROJECT\CezarCaisse_v.0.8\CezarCaisse_v.0.8\Ecom\obj\Debug\View\Management.baml
+C:\Users\Hichem\Desktop\CEZAR PROJECT\CezarCaisse_v.0.8\CezarCaisse_v.0.8\Ecom\obj\Debug\View\Message.baml
+C:\Users\Hichem\Desktop\CEZAR PROJECT\CezarCaisse_v.0.8\CezarCaisse_v.0.8\Ecom\obj\Debug\View\OrderSend.baml
+C:\Users\Hichem\Desktop\CEZAR PROJECT\CezarCaisse_v.0.8\CezarCaisse_v.0.8\Ecom\obj\Debug\View\Commandes.baml
+C:\Users\Hichem\Desktop\CEZAR PROJECT\CezarCaisse_v.0.8\CezarCaisse_v.0.8\Ecom\obj\Debug\View\Settings.baml
+C:\Users\Hichem\Desktop\CEZAR PROJECT\CezarCaisse_v.0.8\CezarCaisse_v.0.8\Ecom\obj\Debug\Ecom.g.resources
+C:\Users\Hichem\Desktop\CEZAR PROJECT\CezarCaisse_v.0.8\CezarCaisse_v.0.8\Ecom\obj\Debug\Ecom.Properties.Resources.resources
+C:\Users\Hichem\Desktop\CEZAR PROJECT\CezarCaisse_v.0.8\CezarCaisse_v.0.8\Ecom\obj\Debug\Ecom.csproj.GenerateResource.Cache
+C:\Users\Hichem\Desktop\CEZAR PROJECT\CezarCaisse_v.0.8\CezarCaisse_v.0.8\Ecom\obj\Debug\Ecom.exe.manifest
+C:\Users\Hichem\Desktop\CEZAR PROJECT\CezarCaisse_v.0.8\CezarCaisse_v.0.8\Ecom\obj\Debug\Ecom.application

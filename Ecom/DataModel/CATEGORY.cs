@@ -19,14 +19,11 @@ namespace Ecom.DataModel
         public int id_category { get; set; }
 
         [Required]
-        [StringLength(25)]
         public string category_title { get; set; }
 
-        [StringLength(100)]
         public string category_description { get; set; }
 
         [Required]
-        [StringLength(50)]
         public string category_button_color { get; set; }
 
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]

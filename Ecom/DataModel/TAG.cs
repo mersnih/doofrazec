@@ -19,7 +19,6 @@ namespace Ecom.DataModel
         public int id_tag { get; set; }
 
         [Required]
-        [StringLength(25)]
         public string tag_title { get; set; }
 
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]

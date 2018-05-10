@@ -19,13 +19,13 @@ namespace Ecom.DataModel
         public int id_ingredient { get; set; }
 
         [Required]
-        [StringLength(50)]
+
         public string ingredient_title { get; set; }
 
-        [StringLength(255)]
+ 
         public string ingredient_description { get; set; }
 
-        [StringLength(50)]
+
         public string ingredient_image { get; set; }
 
         public decimal ingredient_price { get; set; }

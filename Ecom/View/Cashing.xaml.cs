@@ -29,9 +29,7 @@ namespace Ecom.View
         {
             InitializeComponent();
             totalPrice = total;
-            tb_total.Text = "Total dû : " + totalPrice.ToString()+"€";
-         
-          
+            tb_total.Text = "Total dû : " + totalPrice.ToString() + "€";            
         }
         // Foreach key pad number click, this event method is called 
         private void buttonNumberClick(object sender, RoutedEventArgs e)
@@ -68,13 +66,40 @@ namespace Ecom.View
             if(lb_cash.SelectedItem != null)
             {
              //   cvm.TotalRest = (totalPrice - temp).ToString();
-                cvm.Payement.Add(new Model.Payement
+               if(temp > 0.00)
                 {
-                    PayementType = tb_payementType.Text.ToString(),
-                    PayementValue = temp
-                });
+                    cvm.Payement.Add(new Model.Payement
+                    {
+                        PayementType = tb_payementType.Text.ToString(),
+                        PayementValue = Math.Round((temp ), 2)
+                    });
+                }
+                else
+                {
+                    cvm.Payement.Add(new Model.Payement
+                    {
+                        PayementType = tb_payementType.Text.ToString(),
+                        PayementValue = Math.Round((totalPrice), 2)
+                    });
+                }
+
             //    totalPrice = Double.Parse(cvm.TotalRest);
             }                     
+        }
+
+        private void OnSelectPayementType(object sender, SelectionChangedEventArgs e)
+        {
+            
+          
+                if(totalPrice > 0.00)
+                {
+                    bt_caching.IsEnabled = true;
+                }
+                else
+                {
+                    bt_caching.IsEnabled = false;
+                }
+           
         }
     }
 }

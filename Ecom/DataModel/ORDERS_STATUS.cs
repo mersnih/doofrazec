@@ -18,7 +18,6 @@ namespace Ecom.DataModel
         public int id_orders_status { get; set; }
 
         [Required]
-        [StringLength(25)]
         public string orders_status_title { get; set; }
 
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]

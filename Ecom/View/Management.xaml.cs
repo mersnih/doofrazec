@@ -45,6 +45,8 @@ namespace Ecom.View
             {
                 mg = new ManagementModel();
                 lv_itemsCategory.ItemsSource = mg.GetAllCategory();
+                lv_menu.ItemsSource = mg.GetAllMenu();
+                lv_menuOption.ItemsSource = mg.GetMenuOptions();
                 lv_ingredientCategory.ItemsSource = mg.GetAllIngredientCat();
             }
             catch (Exception ex)
@@ -143,8 +145,7 @@ namespace Ecom.View
             var item = (ItemModel)((ListViewItem)lv_items.ContainerFromElement((Button)sender)).Content;
             if (item != null)
             {
-
-                DialogHost.Show(new CUItem(item), "RootDialog", OnClosingEditItem);
+                DialogHost.Show(new CUItem(item , 1), "RootDialog", OnClosingEditItem);
             }
         }
         private void OnClosingEditItem(object sender, DialogClosingEventArgs eventArgs)
@@ -418,6 +419,84 @@ namespace Ecom.View
                     message_tb = { Text = "Supression impossible, vérifiez les affectations" }
                 }, "RootDialog");
             }
+        }
+
+        private void TabablzControl_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+
+        }
+
+        private void OnClickDeleteMenu(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void OnClickAddMenu(object sender, RoutedEventArgs e)
+        {
+           DialogHost.Show(new CUMenu(), onCloseCUMenu);
+        }
+
+        private void onCloseCUMenu(object sender, DialogOpenedEventArgs eventArgs)
+        {
+            lv_menu.ItemsSource = mg.GetAllMenu();
+        }
+
+        private void ShowMenuChoice(object sender, SelectionChangedEventArgs e)
+        {
+            mg = new ManagementModel();
+            var sel = (MenuModel)lv_menu.SelectedItem;
+
+            if(sel != null)
+            {
+
+                int id = sel.Id;
+                lv_menuSelectedOption.ItemsSource = mg.GetMenuSelectedOptions(id);
+
+
+            }
+
+        }
+
+        private void OnClickAddMenuSelectedOption(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void OnClickDeleteMenuSelectedOption(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void ShowItemsOptions(object sender, SelectionChangedEventArgs e)
+        {
+            mg = new ManagementModel();
+            var sel = (MenuOptions)lv_menuOption.SelectedItem;
+            if(sel != null)
+            {
+                int id = sel.Id;
+                lv_menuItemsOptions.ItemsSource = mg.GetMenuItemsOptions(id);
+            }
+
+        }
+
+        private void OnClickDeleteItemsOptions(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void OnClickAddMenuItemsOptions(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void OnClickAddMenuOption(object sender, RoutedEventArgs e)
+        {
+            DialogHost.Show(new AddMenuOption(), onCloseAddMenuOption);
+        }
+
+        private void onCloseAddMenuOption(object sender, DialogOpenedEventArgs eventArgs)
+        {
+            MessageBox.Show("OK ");
         }
     }
 }

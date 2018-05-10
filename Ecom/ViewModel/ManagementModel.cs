@@ -8,6 +8,7 @@ using System.Linq;
 using System.Net.NetworkInformation;
 using System.Text;
 using System.Threading.Tasks;
+using System.Collections;
 
 namespace Ecom.Model
 {
@@ -72,6 +73,50 @@ namespace Ecom.Model
 
 
         }
+
+        internal IEnumerable GetMenuOptions()
+        {
+            if (BddOk)
+            {
+                using (ModelCezar db = new ModelCezar())
+                {
+
+                    var menuOptionQuery = db.OPTION_CHOIX_MENU.Select(c => new MenuOptions
+                    {
+                        Id = c.id_option_choix_menu,
+                        Title = c.option_choix_menu_title
+                       
+                    });
+                    return new ObservableCollection<MenuOptions>(menuOptionQuery.ToList());
+                }
+            }
+            else
+            {
+                return null;
+            }
+        }
+
+        internal IEnumerable GetAllMenu()
+        {
+            if (BddOk)
+            {
+                using (ModelCezar db = new ModelCezar())
+                {
+
+                    var menuQuery = db.MENU.Select(c => new MenuModel
+                    {
+                        Id = c.id_menu,
+                        Title = c.menu_title
+                    });
+                    return new ObservableCollection<MenuModel>(menuQuery.ToList());
+                }
+            }
+            else
+            {
+                return null;
+            }
+        }
+
         public ObservableCollection<ItemModel> GetItemsByCat(int id)
         {
             if (BddOk)
@@ -83,7 +128,10 @@ namespace Ecom.Model
                     Title = i.item_title,
                     Price = (double)i.item_price,
                     Actif = i.actif,
-                    Color = i.item_button_color
+                    Color = i.item_button_color,
+                    Cooked = i.cooked,
+                    Status = i.actif ? "Actif" : "Inactif",
+                    StatusColor = i.actif ? "#2ecc71" : "#e74c3c"
                 });
                 return new ObservableCollection<ItemModel>(itemQuery.ToList());
             }
@@ -156,6 +204,48 @@ namespace Ecom.Model
                 return null;
             }
 
+        }
+
+        internal IEnumerable GetMenuSelectedOptions(int id)
+        {
+            if (BddOk)
+            {
+                db = new ModelCezar();
+                var itemMenuSelectedOptionQuery = (from menu in db.MENU.Where(c => c.OPTION_CHOIX_MENU.Any() &&  c.id_menu == id)
+                                                   from ocm in db.OPTION_CHOIX_MENU.Where(ci => ci.MENU.Contains(menu))
+
+                                                   select new ItemsCategoryModel()
+                                       {
+                                           Id = ocm.id_option_choix_menu,
+                                           Title = ocm.option_choix_menu_title
+                                       });
+                return new ObservableCollection<ItemsCategoryModel>(itemMenuSelectedOptionQuery.ToList());
+            }
+            else
+            {
+                return null;
+            }
+        }
+
+        internal IEnumerable GetMenuItemsOptions(int id)
+        {
+            if (BddOk)
+            {
+                db = new ModelCezar();
+                var itemMenuItemsOptionsQuery = (from menu in db.ITEM_OPTION_MENU.Where(c => c.id_option_choix_menu == id)
+                                                   from itm in db.ITEM.Where(ci => ci.id_item == menu.id_item)
+
+                                                   select new ItemsCategoryModel()
+                                                   {
+                                                       Id = itm.id_item,
+                                                       Title = itm.item_title
+                                                   });
+                return new ObservableCollection<ItemsCategoryModel>(itemMenuItemsOptionsQuery.ToList());
+            }
+            else
+            {
+                return null;
+            }
         }
 
 

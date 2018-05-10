@@ -15,6 +15,7 @@ namespace Ecom.DataModel
             ADVICE = new HashSet<ADVICE>();
             ITEM_OPTION_MENU = new HashSet<ITEM_OPTION_MENU>();
             item_selection = new HashSet<item_selection>();
+            MENU = new HashSet<MENU>();
             CATEGORY_INGREDIENT = new HashSet<CATEGORY_INGREDIENT>();
         }
 
@@ -22,13 +23,13 @@ namespace Ecom.DataModel
         public int id_item { get; set; }
 
         [Required]
-        [StringLength(25)]
+
         public string item_title { get; set; }
 
-        [StringLength(255)]
+
         public string item_decription { get; set; }
 
-        [StringLength(50)]
+
         public string item_image { get; set; }
 
         public int? item_quantity { get; set; }
@@ -38,7 +39,6 @@ namespace Ecom.DataModel
         public decimal? item_promotion_price { get; set; }
 
         [Required]
-        [StringLength(50)]
         public string item_button_color { get; set; }
 
         public bool actif { get; set; }
@@ -61,6 +61,9 @@ namespace Ecom.DataModel
 
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<item_selection> item_selection { get; set; }
+
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<MENU> MENU { get; set; }
 
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<CATEGORY_INGREDIENT> CATEGORY_INGREDIENT { get; set; }

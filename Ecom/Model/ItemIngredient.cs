@@ -94,7 +94,6 @@ namespace Ecom.Model
                 NotifyPropertyChanged("Ingredient_quantity");
             }
         }
-
         public int Ingredient_category_id
         {
             get { return ingredient_category_id; }
@@ -104,6 +103,10 @@ namespace Ecom.Model
                 NotifyPropertyChanged("Ingredient_category_id");
             }
         }
+
+
+
+
         private void NotifyPropertyChanged(string v)
         {
             if (this.PropertyChanged != null)

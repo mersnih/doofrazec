@@ -6,7 +6,7 @@
              xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
              xmlns:local="clr-namespace:Ecom.View"
              mc:Ignorable="d" 
-             
+             Width="1000" Height="1200"
              >
     <!--Width="1000" Height="1200"-->
     <Grid Background="White">
@@ -82,7 +82,6 @@
                                                     <ColumnDefinition Width="140"></ColumnDefinition>
                                                     <ColumnDefinition Width="30"></ColumnDefinition>
                                                     <ColumnDefinition Width="30"></ColumnDefinition>
-
                                                 </Grid.ColumnDefinitions>
                                                 <TextBlock Grid.Column="0" Text="{Binding ItemQuantity}"/>
                                                 <TextBlock Grid.Column="1" Text="{Binding ItemTitle}" />
@@ -91,9 +90,9 @@
                                                     <ListBox.ItemTemplate>
                                                         <DataTemplate>
                                                             <StackPanel Orientation="Horizontal" VerticalAlignment="Center">
-                                                                <TextBlock Text="{Binding Path=Ingredient_quantity}" />
+                                                                <TextBlock Text="{Binding Ingredient_quantity}" />
                                                                 <TextBlock Text=" " />
-                                                                <TextBlock Text="{Binding Path=Ingredient_title}" />
+                                                                <TextBlock Text="{Binding Ingredient_title}" />
 
                                                             </StackPanel>
                                                         </DataTemplate>
